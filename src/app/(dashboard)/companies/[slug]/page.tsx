@@ -1,0 +1,321 @@
+import { createClient } from '@/lib/supabase/server'
+import { notFound } from 'next/navigation'
+import { Badge } from '@/components/ui/badge'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Separator } from '@/components/ui/separator'
+import Link from 'next/link'
+import { 
+  Building2, 
+  Globe, 
+  MapPin, 
+  Users, 
+  Calendar,
+  ExternalLink,
+  Star,
+  TrendingUp,
+  MessageSquare
+} from 'lucide-react'
+
+interface PageProps {
+  params: Promise<{ slug: string }>
+}
+
+export default async function CompanyPage({ params }: PageProps) {
+  const { slug } = await params
+  const supabase = await createClient()
+
+  // Get company
+  const { data: company } = await supabase
+    .from('companies')
+    .select('*')
+    .eq('slug', slug)
+    .single()
+
+  if (!company) {
+    notFound()
+  }
+
+  // Get segments for this company
+  const { data: companySegments } = await supabase
+    .from('company_segments')
+    .select('segment_id, is_primary, segments(*)')
+    .eq('company_id', company.id)
+
+  // Get signals for this company
+  const { data: signals } = await supabase
+    .from('signals')
+    .select('*')
+    .eq('company_id', company.id)
+    .order('signal_date', { ascending: false })
+
+  // Get score components
+  const { data: scoreComponents } = await supabase
+    .from('score_components')
+    .select('*')
+    .eq('company_id', company.id)
+
+  const tierColors = {
+    A: 'bg-green-100 text-green-800 border-green-200',
+    B: 'bg-yellow-100 text-yellow-800 border-yellow-200',
+    C: 'bg-slate-100 text-slate-800 border-slate-200',
+  }
+
+  const signalTypeColors: Record<string, string> = {
+    funding_round: 'bg-green-100 text-green-800',
+    hiring_surge: 'bg-blue-100 text-blue-800',
+    new_facility: 'bg-purple-100 text-purple-800',
+    contract_award: 'bg-yellow-100 text-yellow-800',
+    partnership: 'bg-indigo-100 text-indigo-800',
+    regulatory_approval: 'bg-teal-100 text-teal-800',
+    product_launch: 'bg-pink-100 text-pink-800',
+    acquisition: 'bg-orange-100 text-orange-800',
+    layoff: 'bg-red-100 text-red-800',
+    facility_closure: 'bg-red-100 text-red-800',
+  }
+
+  const formatSignalType = (type: string) => {
+    return type
+      .split('_')
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ')
+  }
+
+  return (
+    <div className="space-y-6">
+      {/* Header */}
+      <div className="flex items-start justify-between">
+        <div className="flex items-center gap-4">
+          <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-slate-100">
+            {company.logo_url ? (
+              <img
+                src={company.logo_url}
+                alt={company.name}
+                className="h-12 w-12 object-contain"
+              />
+            ) : (
+              <Building2 className="h-8 w-8 text-slate-400" />
+            )}
+          </div>
+          <div>
+            <h1 className="text-2xl font-bold text-slate-900">{company.name}</h1>
+            <div className="mt-1 flex items-center gap-3 text-sm text-slate-600">
+              {company.website && (
+                <a
+                  href={company.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1 hover:text-emerald-600"
+                >
+                  <Globe className="h-4 w-4" />
+                  Website
+                  <ExternalLink className="h-3 w-3" />
+                </a>
+              )}
+              <span className="flex items-center gap-1">
+                <MapPin className="h-4 w-4" />
+                {company.hq_city}, {company.hq_state}
+              </span>
+              {company.employee_count && (
+                <span className="flex items-center gap-1">
+                  <Users className="h-4 w-4" />
+                  {company.employee_count.toLocaleString()} employees
+                </span>
+              )}
+              {company.founded_year && (
+                <span className="flex items-center gap-1">
+                  <Calendar className="h-4 w-4" />
+                  Founded {company.founded_year}
+                </span>
+              )}
+            </div>
+          </div>
+        </div>
+        <button className="flex items-center gap-2 rounded-lg border border-slate-200 px-4 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50">
+          <Star className="h-4 w-4" />
+          Add to Favorites
+        </button>
+      </div>
+
+      {/* Segments */}
+      <div className="flex flex-wrap gap-2">
+        {companySegments?.map((cs: any) => (
+          <Link key={cs.segment_id} href={`/segments/${cs.segments?.slug}`}>
+            <Badge
+              variant="outline"
+              className="cursor-pointer hover:bg-slate-50"
+              style={{
+                borderColor: cs.segments?.color || undefined,
+                color: cs.segments?.color || undefined,
+              }}
+            >
+              {cs.segments?.name}
+              {cs.is_primary && ' (Primary)'}
+            </Badge>
+          </Link>
+        ))}
+        {company.ownership_type && (
+          <Badge variant="secondary">
+            {company.ownership_type.charAt(0).toUpperCase() + company.ownership_type.slice(1)}
+            {company.ticker_symbol && ` — ${company.ticker_symbol}`}
+          </Badge>
+        )}
+      </div>
+
+      <div className="grid gap-6 lg:grid-cols-3">
+        {/* Score Panel */}
+        <div className="space-y-6">
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <TrendingUp className="h-5 w-5 text-emerald-600" />
+                Score & Tier
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="flex items-center justify-between">
+                <div>
+                  <p className="text-4xl font-bold text-emerald-600">
+                    {company.composite_score}
+                  </p>
+                  <p className="text-sm text-slate-500">Composite Score</p>
+                </div>
+                <Badge
+                  variant="outline"
+                  className={`text-lg px-4 py-2 ${tierColors[company.tier as keyof typeof tierColors]}`}
+                >
+                  Tier {company.tier}
+                </Badge>
+              </div>
+              <Separator />
+              <div className="space-y-3">
+                <p className="text-sm font-medium text-slate-700">Score Breakdown</p>
+                {scoreComponents && scoreComponents.length > 0 ? (
+                  scoreComponents.map((component: any) => (
+                    <div key={component.id} className="flex items-center justify-between">
+                      <span className="text-sm text-slate-600 capitalize">
+                        {component.component_name.replace(/_/g, ' ')}
+                      </span>
+                      <span className="font-medium">{component.component_score}</span>
+                    </div>
+                  ))
+                ) : (
+                  <p className="text-sm text-slate-500">No score breakdown available</p>
+                )}
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Messaging Hook */}
+          {company.messaging_hook && (
+            <Card className="border-emerald-200 bg-emerald-50">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-emerald-800">
+                  <MessageSquare className="h-5 w-5" />
+                  Messaging Hook
+                </CardTitle>
+                <CardDescription className="text-emerald-700">
+                  Suggested outreach angle
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-emerald-900">{company.messaging_hook}</p>
+              </CardContent>
+            </Card>
+          )}
+
+          {/* Notes */}
+          {company.notes && (
+            <Card>
+              <CardHeader>
+                <CardTitle>Notes</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-slate-600 whitespace-pre-wrap">{company.notes}</p>
+              </CardContent>
+            </Card>
+          )}
+        </div>
+
+        {/* Signal Timeline */}
+        <div className="lg:col-span-2">
+          <Card>
+            <CardHeader>
+              <CardTitle>Signal Timeline</CardTitle>
+              <CardDescription>
+                {signals?.length || 0} signals tracked
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-6">
+                {signals && signals.length > 0 ? (
+                  signals.map((signal: any) => (
+                    <div
+                      key={signal.id}
+                      className="relative border-l-2 border-slate-200 pl-6 pb-6 last:pb-0"
+                    >
+                      <div
+                        className="absolute -left-[9px] top-0 h-4 w-4 rounded-full border-2 border-white"
+                        style={{
+                          backgroundColor: signal.is_negative ? '#ef4444' : '#10b981',
+                        }}
+                      />
+                      <div className="space-y-2">
+                        <div className="flex items-center justify-between">
+                          <Badge
+                            variant="secondary"
+                            className={signalTypeColors[signal.signal_type] || 'bg-slate-100'}
+                          >
+                            {formatSignalType(signal.signal_type)}
+                          </Badge>
+                          <span className="text-sm text-slate-500">
+                            {new Date(signal.signal_date).toLocaleDateString()}
+                          </span>
+                        </div>
+                        <h4 className="font-medium text-slate-900">{signal.title}</h4>
+                        {signal.summary && (
+                          <p className="text-sm text-slate-600">{signal.summary}</p>
+                        )}
+                        {signal.source_url && (
+                          <a
+                            href={signal.source_url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1 text-sm text-emerald-600 hover:underline"
+                          >
+                            {signal.source_name || 'Source'}
+                            <ExternalLink className="h-3 w-3" />
+                          </a>
+                        )}
+                        {signal.signal_strength && (
+                          <div className="flex items-center gap-2">
+                            <span className="text-xs text-slate-500">Strength:</span>
+                            <div className="flex gap-0.5">
+                              {Array.from({ length: 10 }).map((_, i) => (
+                                <div
+                                  key={i}
+                                  className={`h-2 w-2 rounded-full ${
+                                    i < signal.signal_strength
+                                      ? 'bg-emerald-500'
+                                      : 'bg-slate-200'
+                                  }`}
+                                />
+                              ))}
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  ))
+                ) : (
+                  <p className="py-8 text-center text-sm text-slate-500">
+                    No signals recorded yet.
+                  </p>
+                )}
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  )
+}
