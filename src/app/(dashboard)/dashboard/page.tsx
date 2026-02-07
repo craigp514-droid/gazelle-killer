@@ -38,6 +38,12 @@ export default async function DashboardPage() {
     .from('companies')
     .select('*', { count: 'exact', head: true })
 
+  // Get user's favorites count
+  const { count: favoritesCount } = await supabase
+    .from('user_bookmarks')
+    .select('*', { count: 'exact', head: true })
+    .eq('user_id', user?.id)
+
   const signalTypeColors: Record<string, string> = {
     funding_round: 'bg-green-100 text-green-800',
     hiring_surge: 'bg-blue-100 text-blue-800',
@@ -107,17 +113,19 @@ export default async function DashboardPage() {
             </div>
           </CardContent>
         </Card>
-        <Card>
-          <CardHeader className="flex flex-row items-center justify-between pb-2">
-            <CardTitle className="text-sm font-medium text-slate-600">
-              Favorites
-            </CardTitle>
-            <Star className="h-4 w-4 text-emerald-600" />
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl font-bold">0</div>
-          </CardContent>
-        </Card>
+        <Link href="/favorites">
+          <Card className="hover:shadow-md transition-shadow">
+            <CardHeader className="flex flex-row items-center justify-between pb-2">
+              <CardTitle className="text-sm font-medium text-slate-600">
+                Favorites
+              </CardTitle>
+              <Star className="h-4 w-4 text-yellow-500" />
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold">{favoritesCount || 0}</div>
+            </CardContent>
+          </Card>
+        </Link>
       </div>
 
       <div className="grid gap-6 lg:grid-cols-2">

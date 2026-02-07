@@ -3,7 +3,8 @@ import { notFound } from 'next/navigation'
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import Link from 'next/link'
-import { Building2, ExternalLink, MapPin } from 'lucide-react'
+import { Building2, MapPin } from 'lucide-react'
+import { FavoriteButton } from '@/components/favorites/favorite-button'
 
 interface PageProps {
   params: Promise<{ slug: string }>
@@ -115,6 +116,7 @@ export default async function SegmentPage({ params }: PageProps) {
             <table className="w-full">
               <thead>
                 <tr className="border-b text-left text-sm font-medium text-slate-500">
+                  <th className="pb-3 pr-2 w-10"></th>
                   <th className="pb-3 pr-4">Company</th>
                   <th className="pb-3 pr-4">Location</th>
                   <th className="pb-3 pr-4">Tier</th>
@@ -133,6 +135,9 @@ export default async function SegmentPage({ params }: PageProps) {
                       key={company.id}
                       className="border-b border-slate-100 last:border-0"
                     >
+                      <td className="py-4 pr-2">
+                        <FavoriteButton companyId={company.id} variant="icon" />
+                      </td>
                       <td className="py-4 pr-4">
                         <Link
                           href={`/companies/${company.slug}`}
