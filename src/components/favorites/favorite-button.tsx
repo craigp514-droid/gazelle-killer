@@ -1,17 +1,9 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Star } from 'lucide-react'
+import { Star, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Textarea } from '@/components/ui/textarea'
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-} from '@/components/ui/dialog'
 import { createClient } from '@/lib/supabase/client'
 import { cn } from '@/lib/utils'
 
@@ -32,7 +24,7 @@ export function FavoriteButton({
 }: FavoriteButtonProps) {
   const [isFavorited, setIsFavorited] = useState(initialFavorited)
   const [isLoading, setIsLoading] = useState(false)
-  const [showDialog, setShowDialog] = useState(false)
+  const [showModal, setShowModal] = useState(false)
   const [note, setNote] = useState('')
   const supabase = createClient()
 
@@ -55,13 +47,11 @@ export function FavoriteButton({
     checkFavorite()
   }, [companyId, supabase])
 
-  const handleClick = async () => {
+  const handleClick = () => {
     if (isFavorited) {
-      // Remove favorite immediately
-      await removeFavorite()
+      removeFavorite()
     } else {
-      // Show dialog to add note
-      setShowDialog(true)
+      setShowModal(true)
     }
   }
 
@@ -85,7 +75,7 @@ export function FavoriteButton({
     setIsLoading(false)
   }
 
-  const addFavorite = async (withNote: string) => {
+  const addFavorite = async () => {
     setIsLoading(true)
     const { data: { user } } = await supabase.auth.getUser()
     
@@ -99,158 +89,136 @@ export function FavoriteButton({
       .insert({
         user_id: user.id,
         company_id: companyId,
-        notes: withNote || null,
+        notes: note || null,
       })
     
     setIsFavorited(true)
-    setNote(withNote)
     setIsLoading(false)
-    setShowDialog(false)
+    setShowModal(false)
   }
 
-  if (variant === 'icon') {
-    return (
-      <>
-        <button
-          onClick={handleClick}
-          disabled={isLoading}
-          className={cn(
-            'p-1.5 rounded-full transition-all disabled:opacity-50',
-            isFavorited 
-              ? 'bg-yellow-100 hover:bg-yellow-200' 
-              : 'hover:bg-slate-100',
-            className
-          )}
-          title={isFavorited ? 'Remove from favorites' : 'Add to favorites'}
-        >
-          <Star
-            className={cn(
-              'h-5 w-5 transition-colors',
-              isFavorited 
-                ? 'fill-yellow-500 text-yellow-500' 
-                : 'text-slate-300 hover:text-yellow-400'
-            )}
-          />
-        </button>
-        
-        <FavoriteDialog 
-          open={showDialog}
-          onOpenChange={setShowDialog}
-          companyName={companyName}
-          note={note}
-          onNoteChange={setNote}
-          onSave={addFavorite}
-          isLoading={isLoading}
-        />
-      </>
-    )
-  }
+  const starButton = variant === 'icon' ? (
+    <button
+      onClick={handleClick}
+      disabled={isLoading}
+      className={cn(
+        'p-1.5 rounded-full transition-all disabled:opacity-50',
+        isFavorited 
+          ? 'bg-yellow-100 hover:bg-yellow-200' 
+          : 'hover:bg-slate-100',
+        className
+      )}
+      title={isFavorited ? 'Remove from favorites' : 'Add to favorites'}
+    >
+      <Star
+        className={cn(
+          'h-5 w-5 transition-colors',
+          isFavorited 
+            ? 'fill-yellow-500 text-yellow-500' 
+            : 'text-slate-300 hover:text-yellow-400'
+        )}
+      />
+    </button>
+  ) : (
+    <Button
+      variant="outline"
+      onClick={handleClick}
+      disabled={isLoading}
+      className={cn(
+        'gap-2',
+        isFavorited && 'bg-yellow-50 border-yellow-200 hover:bg-yellow-100',
+        className
+      )}
+    >
+      <Star
+        className={cn(
+          'h-4 w-4',
+          isFavorited 
+            ? 'fill-yellow-500 text-yellow-500' 
+            : 'text-slate-600'
+        )}
+      />
+      {isFavorited ? 'Favorited' : 'Add to Favorites'}
+    </Button>
+  )
 
   return (
     <>
-      <Button
-        variant="outline"
-        onClick={handleClick}
-        disabled={isLoading}
-        className={cn(
-          'gap-2',
-          isFavorited && 'bg-yellow-50 border-yellow-200 hover:bg-yellow-100',
-          className
-        )}
-      >
-        <Star
-          className={cn(
-            'h-4 w-4',
-            isFavorited 
-              ? 'fill-yellow-500 text-yellow-500' 
-              : 'text-slate-600'
-          )}
-        />
-        {isFavorited ? 'Favorited' : 'Add to Favorites'}
-      </Button>
-
-      <FavoriteDialog 
-        open={showDialog}
-        onOpenChange={setShowDialog}
-        companyName={companyName}
-        note={note}
-        onNoteChange={setNote}
-        onSave={addFavorite}
-        isLoading={isLoading}
-      />
-    </>
-  )
-}
-
-function FavoriteDialog({
-  open,
-  onOpenChange,
-  companyName,
-  note,
-  onNoteChange,
-  onSave,
-  isLoading,
-}: {
-  open: boolean
-  onOpenChange: (open: boolean) => void
-  companyName?: string
-  note: string
-  onNoteChange: (note: string) => void
-  onSave: (note: string) => void
-  isLoading: boolean
-}) {
-  return (
-    <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-md">
-        <DialogHeader>
-          <DialogTitle className="flex items-center gap-2">
-            <Star className="h-5 w-5 text-yellow-500" />
-            Add to Favorites
-          </DialogTitle>
-          <DialogDescription>
-            {companyName ? (
-              <>Adding <strong>{companyName}</strong> to your watchlist.</>
-            ) : (
-              <>Add a note to remember why you're tracking this company.</>
-            )}
-          </DialogDescription>
-        </DialogHeader>
-        
-        <div className="space-y-2">
-          <label htmlFor="note" className="text-sm font-medium text-slate-700">
-            Note (optional)
-          </label>
-          <Textarea
-            id="note"
-            placeholder="e.g., Follow up after Q2 earnings, Potential site visit candidate, Check back when funding closes..."
-            value={note}
-            onChange={(e) => onNoteChange(e.target.value)}
-            rows={3}
-            className="resize-none"
+      {starButton}
+      
+      {/* Custom Modal */}
+      {showModal && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center">
+          {/* Backdrop */}
+          <div 
+            className="absolute inset-0 bg-black/50"
+            onClick={() => setShowModal(false)}
           />
-          <p className="text-xs text-slate-500">
-            This helps you remember why this company matters when you review later.
-          </p>
+          
+          {/* Modal content */}
+          <div className="relative bg-white rounded-lg shadow-xl w-full max-w-md mx-4 p-6 z-10">
+            {/* Close button */}
+            <button
+              onClick={() => setShowModal(false)}
+              className="absolute top-4 right-4 text-slate-400 hover:text-slate-600"
+            >
+              <X className="h-5 w-5" />
+            </button>
+            
+            {/* Header */}
+            <div className="mb-4">
+              <h2 className="text-lg font-semibold flex items-center gap-2">
+                <Star className="h-5 w-5 text-yellow-500" />
+                Add to Favorites
+              </h2>
+              <p className="text-sm text-slate-500 mt-1">
+                {companyName ? (
+                  <>Adding <strong>{companyName}</strong> to your watchlist.</>
+                ) : (
+                  <>Add a note to remember why you're tracking this company.</>
+                )}
+              </p>
+            </div>
+            
+            {/* Note input */}
+            <div className="mb-4">
+              <label htmlFor="note" className="block text-sm font-medium text-slate-700 mb-1">
+                Note (optional)
+              </label>
+              <Textarea
+                id="note"
+                placeholder="e.g., Follow up after Q2 earnings, Potential site visit candidate..."
+                value={note}
+                onChange={(e) => setNote(e.target.value)}
+                rows={3}
+                className="resize-none w-full"
+              />
+              <p className="text-xs text-slate-500 mt-1">
+                This helps you remember why this company matters.
+              </p>
+            </div>
+            
+            {/* Actions */}
+            <div className="flex justify-end gap-2">
+              <Button
+                variant="ghost"
+                onClick={() => setShowModal(false)}
+                disabled={isLoading}
+              >
+                Cancel
+              </Button>
+              <Button
+                onClick={addFavorite}
+                disabled={isLoading}
+                className="bg-yellow-500 hover:bg-yellow-600 text-white"
+              >
+                <Star className="h-4 w-4 mr-2 fill-white" />
+                {isLoading ? 'Saving...' : 'Save to Favorites'}
+              </Button>
+            </div>
+          </div>
         </div>
-
-        <DialogFooter className="gap-2 sm:gap-0">
-          <Button
-            variant="ghost"
-            onClick={() => onOpenChange(false)}
-            disabled={isLoading}
-          >
-            Cancel
-          </Button>
-          <Button
-            onClick={() => onSave(note)}
-            disabled={isLoading}
-            className="bg-yellow-500 hover:bg-yellow-600 text-white"
-          >
-            <Star className="h-4 w-4 mr-2 fill-white" />
-            {isLoading ? 'Saving...' : 'Save to Favorites'}
-          </Button>
-        </DialogFooter>
-      </DialogContent>
-    </Dialog>
+      )}
+    </>
   )
 }
