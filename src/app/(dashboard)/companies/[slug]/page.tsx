@@ -141,7 +141,7 @@ export default async function CompanyPage({ params }: PageProps) {
             </div>
           </div>
         </div>
-        <FavoriteButton companyId={company.id} initialFavorited={isFavorited} />
+        <FavoriteButton companyId={company.id} companyName={company.name} initialFavorited={isFavorited} />
       </div>
 
       {/* Segments */}

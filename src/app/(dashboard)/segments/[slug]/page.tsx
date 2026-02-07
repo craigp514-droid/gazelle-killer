@@ -146,7 +146,8 @@ export default async function SegmentPage({ params }: PageProps) {
                     >
                       <td className="py-4 pr-2">
                         <FavoriteButton 
-                          companyId={company.id} 
+                          companyId={company.id}
+                          companyName={company.name}
                           variant="icon" 
                           initialFavorited={favoritedCompanyIds.has(company.id)}
                         />
