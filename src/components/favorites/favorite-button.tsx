@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { createPortal } from 'react-dom'
 import { Star, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { createClient } from '@/lib/supabase/client'
@@ -27,7 +28,13 @@ export function FavoriteButton({
   const [isLoading, setIsLoading] = useState(false)
   const [showModal, setShowModal] = useState(false)
   const [note, setNote] = useState('')
+  const [mounted, setMounted] = useState(false)
   const supabase = createClient()
+
+  // For portal rendering
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   // Check initial favorite status
   useEffect(() => {
@@ -86,13 +93,17 @@ export function FavoriteButton({
       return
     }
 
-    await supabase
+    const { error } = await supabase
       .from('user_bookmarks')
       .insert({
         user_id: user.id,
         company_id: companyId,
         notes: note || null,
       })
+    
+    if (error) {
+      console.error('Error saving favorite:', error)
+    }
     
     setIsFavorited(true)
     setIsLoading(false)
@@ -145,84 +156,172 @@ export function FavoriteButton({
     </Button>
   )
 
+  const modal = showModal && mounted ? createPortal(
+    <div 
+      style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        zIndex: 99999,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: '16px',
+      }}
+    >
+      {/* Backdrop - SOLID black with opacity */}
+      <div 
+        onClick={() => setShowModal(false)}
+        style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundColor: 'rgba(0, 0, 0, 0.7)',
+        }}
+      />
+      
+      {/* Modal content - SOLID white */}
+      <div 
+        style={{
+          position: 'relative',
+          zIndex: 100000,
+          backgroundColor: '#ffffff',
+          borderRadius: '12px',
+          boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
+          width: '100%',
+          maxWidth: '420px',
+          padding: '24px',
+        }}
+      >
+        {/* Close button */}
+        <button
+          onClick={() => setShowModal(false)}
+          style={{
+            position: 'absolute',
+            top: '16px',
+            right: '16px',
+            padding: '4px',
+            color: '#9ca3af',
+            cursor: 'pointer',
+            background: 'none',
+            border: 'none',
+          }}
+        >
+          <X style={{ width: '20px', height: '20px' }} />
+        </button>
+        
+        {/* Header */}
+        <div style={{ marginBottom: '24px', paddingRight: '32px' }}>
+          <h2 style={{ 
+            fontSize: '20px', 
+            fontWeight: 600, 
+            display: 'flex', 
+            alignItems: 'center', 
+            gap: '8px',
+            color: '#0f172a',
+            margin: 0,
+          }}>
+            <Star style={{ width: '20px', height: '20px', color: '#eab308', fill: '#eab308' }} />
+            Add to Favorites
+          </h2>
+          <p style={{ fontSize: '14px', color: '#64748b', marginTop: '4px' }}>
+            {companyName ? (
+              <>Adding <strong style={{ color: '#334155' }}>{companyName}</strong> to your watchlist.</>
+            ) : (
+              <>Add a note to remember why you're tracking this company.</>
+            )}
+          </p>
+        </div>
+        
+        {/* Note input */}
+        <div style={{ marginBottom: '24px' }}>
+          <label 
+            htmlFor="favorite-note" 
+            style={{ 
+              display: 'block', 
+              fontSize: '14px', 
+              fontWeight: 500, 
+              color: '#334155',
+              marginBottom: '8px',
+            }}
+          >
+            Note (optional)
+          </label>
+          <textarea
+            id="favorite-note"
+            placeholder="e.g., Follow up after Q2 earnings, Potential site visit candidate..."
+            value={note}
+            onChange={(e) => setNote(e.target.value)}
+            rows={3}
+            style={{
+              width: '100%',
+              padding: '10px 12px',
+              border: '1px solid #d1d5db',
+              borderRadius: '8px',
+              fontSize: '14px',
+              resize: 'none',
+              outline: 'none',
+              boxSizing: 'border-box',
+              fontFamily: 'inherit',
+            }}
+          />
+          <p style={{ fontSize: '12px', color: '#64748b', marginTop: '8px' }}>
+            This helps you remember why this company matters.
+          </p>
+        </div>
+        
+        {/* Actions */}
+        <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '12px' }}>
+          <button
+            onClick={() => setShowModal(false)}
+            disabled={isLoading}
+            style={{
+              padding: '10px 16px',
+              fontSize: '14px',
+              fontWeight: 500,
+              color: '#475569',
+              background: 'transparent',
+              border: 'none',
+              borderRadius: '6px',
+              cursor: 'pointer',
+            }}
+          >
+            Cancel
+          </button>
+          <button
+            onClick={addFavorite}
+            disabled={isLoading}
+            style={{
+              padding: '10px 20px',
+              fontSize: '14px',
+              fontWeight: 500,
+              color: '#ffffff',
+              backgroundColor: '#eab308',
+              border: 'none',
+              borderRadius: '6px',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px',
+            }}
+          >
+            <Star style={{ width: '16px', height: '16px', fill: '#ffffff' }} />
+            {isLoading ? 'Saving...' : 'Save to Favorites'}
+          </button>
+        </div>
+      </div>
+    </div>,
+    document.body
+  ) : null
+
   return (
     <>
       {starButton}
-      
-      {/* Modal */}
-      {showModal && (
-        <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4">
-          {/* Backdrop - fully opaque */}
-          <div 
-            className="fixed inset-0 bg-black bg-opacity-60"
-            onClick={() => setShowModal(false)}
-          />
-          
-          {/* Modal content */}
-          <div className="relative z-[10000] bg-white rounded-lg shadow-2xl w-full max-w-md p-6 border border-slate-200">
-              {/* Close button */}
-              <button
-                onClick={() => setShowModal(false)}
-                className="absolute top-4 right-4 text-slate-400 hover:text-slate-600 p-1"
-              >
-                <X className="h-5 w-5" />
-              </button>
-              
-              {/* Header */}
-              <div className="mb-6 pr-8">
-                <h2 className="text-xl font-semibold flex items-center gap-2 text-slate-900">
-                  <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
-                  Add to Favorites
-                </h2>
-                <p className="text-sm text-slate-500 mt-1">
-                  {companyName ? (
-                    <>Adding <span className="font-medium text-slate-700">{companyName}</span> to your watchlist.</>
-                  ) : (
-                    <>Add a note to remember why you're tracking this company.</>
-                  )}
-                </p>
-              </div>
-              
-              {/* Note input */}
-              <div className="mb-6">
-                <label htmlFor="note" className="block text-sm font-medium text-slate-700 mb-2">
-                  Note (optional)
-                </label>
-                <textarea
-                  id="note"
-                  placeholder="e.g., Follow up after Q2 earnings, Potential site visit candidate..."
-                  value={note}
-                  onChange={(e) => setNote(e.target.value)}
-                  rows={3}
-                  className="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent resize-none"
-                />
-                <p className="text-xs text-slate-500 mt-2">
-                  This helps you remember why this company matters.
-                </p>
-              </div>
-              
-              {/* Actions */}
-              <div className="flex justify-end gap-3">
-                <Button
-                  variant="ghost"
-                  onClick={() => setShowModal(false)}
-                  disabled={isLoading}
-                  className="text-slate-600"
-                >
-                  Cancel
-                </Button>
-                <Button
-                  onClick={addFavorite}
-                  disabled={isLoading}
-                  className="bg-yellow-500 hover:bg-yellow-600 text-white"
-                >
-                  <Star className="h-4 w-4 mr-2 fill-white" />
-                  {isLoading ? 'Saving...' : 'Save to Favorites'}
-                </Button>
-              </div>
-            </div>
-        </div>
-      )}
+      {modal}
     </>
   )
 }
