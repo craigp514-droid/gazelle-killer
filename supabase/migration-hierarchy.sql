@@ -17,23 +17,8 @@ CREATE TABLE IF NOT EXISTS industries (
   created_at      timestamptz DEFAULT now()
 );
 
--- Enable RLS
-ALTER TABLE industries ENABLE ROW LEVEL SECURITY;
-
--- Policy: users see industries their org has access to (via segments)
-CREATE POLICY "Users see industries via segments" ON industries FOR SELECT USING (
-  id IN (
-    SELECT DISTINCT s.industry_id 
-    FROM segments s
-    INNER JOIN organization_segments os ON os.segment_id = s.id
-    INNER JOIN profiles p ON p.organization_id = os.organization_id
-    WHERE p.id = auth.uid()
-  )
-  OR is_coming_soon = true  -- Show coming soon industries to everyone
-);
-
 -- ============================================
--- 2. ADD INDUSTRY_ID TO SEGMENTS
+-- 2. ADD INDUSTRY_ID TO SEGMENTS (before RLS)
 -- ============================================
 
 ALTER TABLE segments ADD COLUMN IF NOT EXISTS industry_id uuid REFERENCES industries(id);
@@ -68,7 +53,26 @@ ON CONFLICT (slug) DO UPDATE SET
   is_coming_soon = EXCLUDED.is_coming_soon;
 
 -- ============================================
--- 5. UPDATE EXISTING SEGMENTS WITH INDUSTRY_ID
+-- 5. ENABLE RLS ON INDUSTRIES (after column exists)
+-- ============================================
+
+ALTER TABLE industries ENABLE ROW LEVEL SECURITY;
+
+-- Policy: users see industries their org has access to (via segments)
+DROP POLICY IF EXISTS "Users see industries via segments" ON industries;
+CREATE POLICY "Users see industries via segments" ON industries FOR SELECT USING (
+  id IN (
+    SELECT DISTINCT s.industry_id 
+    FROM segments s
+    INNER JOIN organization_segments os ON os.segment_id = s.id
+    INNER JOIN profiles p ON p.organization_id = os.organization_id
+    WHERE p.id = auth.uid()
+  )
+  OR is_coming_soon = true
+);
+
+-- ============================================
+-- 6. UPDATE EXISTING SEGMENTS WITH INDUSTRY_ID
 -- ============================================
 
 -- Map existing segments to Battery & Energy Storage
@@ -77,7 +81,7 @@ WHERE slug IN ('battery-storage', 'clean-energy', 'hydrogen-fuel-cells');
 
 -- Map to Space & Aerospace
 UPDATE segments SET industry_id = (SELECT id FROM industries WHERE slug = 'space-aerospace')
-WHERE slug = 'space-tech';
+WHERE slug IN ('space-tech', 'evtol');
 
 -- Map to Robotics
 UPDATE segments SET industry_id = (SELECT id FROM industries WHERE slug = 'robotics')
@@ -89,24 +93,14 @@ WHERE slug = 'defense-tech';
 
 -- Map to Semiconductors
 UPDATE segments SET industry_id = (SELECT id FROM industries WHERE slug = 'semiconductors')
-WHERE slug = 'semiconductors';
+WHERE slug IN ('semiconductors', 'advanced-materials', 'ai-ml');
 
--- Map remaining to appropriate industries
+-- Map to Life Sciences
 UPDATE segments SET industry_id = (SELECT id FROM industries WHERE slug = 'life-sciences')
 WHERE slug = 'biotech-life-sciences';
 
-UPDATE segments SET industry_id = (SELECT id FROM industries WHERE slug = 'semiconductors')
-WHERE slug = 'advanced-materials';
-
-UPDATE segments SET industry_id = (SELECT id FROM industries WHERE slug = 'semiconductors')
-WHERE slug = 'ai-ml';
-
--- eVTOL goes to Space & Aerospace
-UPDATE segments SET industry_id = (SELECT id FROM industries WHERE slug = 'space-aerospace')
-WHERE slug = 'evtol';
-
 -- ============================================
--- 6. ADD MORE DETAILED SEGMENTS PER INDUSTRY
+-- 7. ADD MORE DETAILED SEGMENTS PER INDUSTRY
 -- ============================================
 
 -- Semiconductors segments
@@ -154,7 +148,7 @@ ON CONFLICT (slug) DO UPDATE SET
   description = EXCLUDED.description;
 
 -- ============================================
--- 7. UPDATE ORG SEGMENTS FOR NEW SEGMENTS
+-- 8. UPDATE ORG SEGMENTS FOR NEW SEGMENTS
 -- ============================================
 
 -- Give demo org access to all new segments
