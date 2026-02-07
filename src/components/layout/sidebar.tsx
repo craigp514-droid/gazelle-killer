@@ -9,45 +9,69 @@ import {
   Radio, 
   Star, 
   Settings,
-  ChevronDown,
-  Battery,
-  Plane,
-  Atom,
-  Rocket,
-  Zap,
-  Truck,
-  Cog,
+  ChevronRight,
+  ChevronLeft,
   Cpu,
-  Sun,
+  Cog,
+  Battery,
+  Rocket,
   Shield,
+  Gem,
   Heart,
-  Brain
+  Sparkles
 } from 'lucide-react'
 import { useState } from 'react'
-import { Segment } from '@/types/database'
 
-const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
-  battery: Battery,
-  plane: Plane,
-  cube: Atom,
-  rocket: Rocket,
-  zap: Zap,
-  truck: Truck,
-  cog: Cog,
+// Icon mapping for industries
+const industryIconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   cpu: Cpu,
-  sun: Sun,
+  cog: Cog,
+  battery: Battery,
+  rocket: Rocket,
   shield: Shield,
+  gem: Gem,
   heart: Heart,
-  brain: Brain,
+}
+
+export type Industry = {
+  id: string
+  name: string
+  slug: string
+  description: string | null
+  icon: string | null
+  color: string | null
+  display_order: number
+  is_coming_soon: boolean
+}
+
+export type Segment = {
+  id: string
+  name: string
+  slug: string
+  description: string | null
+  icon: string | null
+  color: string | null
+  display_order: number
+  industry_id: string | null
 }
 
 interface SidebarProps {
+  industries: Industry[]
   segments: Segment[]
 }
 
-export function Sidebar({ segments }: SidebarProps) {
+export function Sidebar({ industries, segments }: SidebarProps) {
   const pathname = usePathname()
-  const [segmentsOpen, setSegmentsOpen] = useState(true)
+  const [selectedIndustry, setSelectedIndustry] = useState<Industry | null>(null)
+
+  // Check if we're currently viewing an industry or segment page
+  const currentIndustrySlug = pathname.split('/')[1]
+  const currentSegmentSlug = pathname.split('/')[2]
+
+  // Get segments for selected industry
+  const industrySegments = selectedIndustry 
+    ? segments.filter(s => s.industry_id === selectedIndustry.id)
+    : []
 
   const navItems = [
     { href: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
@@ -88,55 +112,127 @@ export function Sidebar({ segments }: SidebarProps) {
                 </li>
               )
             })}
+          </ul>
 
-            {/* Segments Section */}
-            <li className="pt-4">
-              <button
-                onClick={() => setSegmentsOpen(!segmentsOpen)}
-                className="flex w-full items-center justify-between rounded-lg px-3 py-2 text-sm font-medium text-slate-400 hover:bg-slate-800 hover:text-white"
-              >
-                <span className="flex items-center gap-3">
-                  <Building2 className="h-5 w-5" />
-                  Segments
-                </span>
-                <ChevronDown
+          {/* Industries Section */}
+          <div className="mt-6">
+            <div className="px-3 mb-2">
+              <span className="text-xs font-semibold uppercase tracking-wider text-slate-500">
+                Industries
+              </span>
+            </div>
+
+            {/* Show industry list or segment drill-down */}
+            {selectedIndustry ? (
+              // Segment view (drilled into an industry)
+              <div className="space-y-1">
+                {/* Back button */}
+                <button
+                  onClick={() => setSelectedIndustry(null)}
+                  className="flex w-full items-center gap-2 rounded-lg px-3 py-2 text-sm text-slate-400 hover:bg-slate-800 hover:text-white"
+                >
+                  <ChevronLeft className="h-4 w-4" />
+                  Back to Industries
+                </button>
+
+                {/* Industry header */}
+                <div className="px-3 py-2">
+                  <span 
+                    className="text-sm font-semibold"
+                    style={{ color: selectedIndustry.color || '#fff' }}
+                  >
+                    {selectedIndustry.name}
+                  </span>
+                </div>
+
+                {/* ALL option */}
+                <Link
+                  href={`/${selectedIndustry.slug}`}
                   className={cn(
-                    'h-4 w-4 transition-transform',
-                    segmentsOpen && 'rotate-180'
+                    'flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-colors',
+                    pathname === `/${selectedIndustry.slug}`
+                      ? 'bg-slate-800 text-white'
+                      : 'text-slate-400 hover:bg-slate-800 hover:text-white'
                   )}
-                />
-              </button>
-              {segmentsOpen && (
-                <ul className="mt-1 space-y-1 pl-4">
-                  {segments.map((segment) => {
-                    const isActive = pathname === `/segments/${segment.slug}`
-                    const IconComponent = segment.icon ? iconMap[segment.icon] : Building2
+                >
+                  <Sparkles className="h-4 w-4" style={{ color: selectedIndustry.color || undefined }} />
+                  All {selectedIndustry.name}
+                </Link>
+
+                {/* Segments list */}
+                {industrySegments
+                  .sort((a, b) => a.display_order - b.display_order)
+                  .map((segment) => {
+                    const isActive = pathname === `/${selectedIndustry.slug}/${segment.slug}`
                     return (
-                      <li key={segment.id}>
-                        <Link
-                          href={`/segments/${segment.slug}`}
+                      <Link
+                        key={segment.id}
+                        href={`/${selectedIndustry.slug}/${segment.slug}`}
+                        className={cn(
+                          'flex items-center gap-3 rounded-lg px-3 py-2 text-sm transition-colors',
+                          isActive
+                            ? 'bg-slate-800 text-white'
+                            : 'text-slate-400 hover:bg-slate-800 hover:text-white'
+                        )}
+                      >
+                        <span className="truncate">{segment.name}</span>
+                      </Link>
+                    )
+                  })}
+              </div>
+            ) : (
+              // Industry list view
+              <ul className="space-y-1">
+                {industries
+                  .sort((a, b) => a.display_order - b.display_order)
+                  .map((industry) => {
+                    const IconComponent = industry.icon ? industryIconMap[industry.icon] : Building2
+                    const isActive = currentIndustrySlug === industry.slug
+                    
+                    if (industry.is_coming_soon) {
+                      return (
+                        <li key={industry.id}>
+                          <div className="flex items-center justify-between rounded-lg px-3 py-2 text-sm text-slate-600 cursor-not-allowed">
+                            <div className="flex items-center gap-3">
+                              {IconComponent && (
+                                <IconComponent className="h-4 w-4" />
+                              )}
+                              <span>{industry.name}</span>
+                            </div>
+                            <span className="text-xs bg-slate-800 px-2 py-0.5 rounded">Soon</span>
+                          </div>
+                        </li>
+                      )
+                    }
+
+                    return (
+                      <li key={industry.id}>
+                        <button
+                          onClick={() => setSelectedIndustry(industry)}
                           className={cn(
-                            'flex items-center gap-3 rounded-lg px-3 py-2 text-sm transition-colors',
+                            'flex w-full items-center justify-between rounded-lg px-3 py-2 text-sm font-medium transition-colors',
                             isActive
                               ? 'bg-slate-800 text-white'
                               : 'text-slate-400 hover:bg-slate-800 hover:text-white'
                           )}
                         >
-                          {IconComponent && (
-                            <IconComponent 
-                              className="h-4 w-4" 
-                              style={{ color: segment.color || undefined }}
-                            />
-                          )}
-                          <span className="truncate">{segment.name}</span>
-                        </Link>
+                          <div className="flex items-center gap-3">
+                            {IconComponent && (
+                              <IconComponent 
+                                className="h-4 w-4" 
+                                style={{ color: industry.color || undefined }}
+                              />
+                            )}
+                            <span>{industry.name}</span>
+                          </div>
+                          <ChevronRight className="h-4 w-4" />
+                        </button>
                       </li>
                     )
                   })}
-                </ul>
-              )}
-            </li>
-          </ul>
+              </ul>
+            )}
+          </div>
         </nav>
 
         {/* Settings */}

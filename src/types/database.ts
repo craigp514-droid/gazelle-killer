@@ -1,3 +1,15 @@
+export type Industry = {
+  id: string
+  name: string
+  slug: string
+  description: string | null
+  icon: string | null
+  color: string | null
+  display_order: number
+  is_coming_soon: boolean
+  created_at: string
+}
+
 export type Segment = {
   id: string
   name: string
@@ -6,6 +18,7 @@ export type Segment = {
   icon: string | null
   color: string | null
   display_order: number
+  industry_id: string | null
   created_at: string
 }
 
