@@ -1,6 +1,6 @@
 'use client'
 
-import { Search, Bell, LogOut, User, Settings } from 'lucide-react'
+import { Bell, LogOut, User, Settings } from 'lucide-react'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import {
   DropdownMenu,
@@ -10,12 +10,11 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
-import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 import { createClient } from '@/lib/supabase/client'
 import { useRouter } from 'next/navigation'
 import { Profile } from '@/types/database'
-import { useEffect, useRef } from 'react'
+import { CommandSearch } from '@/components/search/command-search'
 
 interface HeaderProps {
   user: Profile | null
@@ -24,19 +23,6 @@ interface HeaderProps {
 export function Header({ user }: HeaderProps) {
   const router = useRouter()
   const supabase = createClient()
-  const searchRef = useRef<HTMLInputElement>(null)
-
-  // Command+K to focus search
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
-        e.preventDefault()
-        searchRef.current?.focus()
-      }
-    }
-    document.addEventListener('keydown', handleKeyDown)
-    return () => document.removeEventListener('keydown', handleKeyDown)
-  }, [])
 
   const handleLogout = async () => {
     await supabase.auth.signOut()
@@ -55,15 +41,7 @@ export function Header({ user }: HeaderProps) {
   return (
     <header className="sticky top-0 z-30 flex h-16 items-center justify-between border-b bg-white px-6">
       {/* Search */}
-      <div className="relative w-full max-w-md">
-        <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
-        <Input
-          ref={searchRef}
-          type="search"
-          placeholder="Search companies... (⌘K)"
-          className="pl-10"
-        />
-      </div>
+      <CommandSearch />
 
       {/* Right side */}
       <div className="flex items-center gap-4">
