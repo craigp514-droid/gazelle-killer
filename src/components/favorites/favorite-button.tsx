@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react'
 import { Star, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { Textarea } from '@/components/ui/textarea'
 import { createClient } from '@/lib/supabase/client'
 import { cn } from '@/lib/utils'
 
@@ -13,6 +12,7 @@ interface FavoriteButtonProps {
   initialFavorited?: boolean
   variant?: 'button' | 'icon'
   className?: string
+  onFavoriteChange?: (isFavorited: boolean, note: string | null) => void
 }
 
 export function FavoriteButton({ 
@@ -20,7 +20,8 @@ export function FavoriteButton({
   companyName,
   initialFavorited = false,
   variant = 'button',
-  className 
+  className,
+  onFavoriteChange
 }: FavoriteButtonProps) {
   const [isFavorited, setIsFavorited] = useState(initialFavorited)
   const [isLoading, setIsLoading] = useState(false)
@@ -73,6 +74,7 @@ export function FavoriteButton({
     setIsFavorited(false)
     setNote('')
     setIsLoading(false)
+    onFavoriteChange?.(false, null)
   }
 
   const addFavorite = async () => {
@@ -95,6 +97,7 @@ export function FavoriteButton({
     setIsFavorited(true)
     setIsLoading(false)
     setShowModal(false)
+    onFavoriteChange?.(true, note || null)
   }
 
   const starButton = variant === 'icon' ? (
@@ -146,75 +149,79 @@ export function FavoriteButton({
     <>
       {starButton}
       
-      {/* Custom Modal */}
+      {/* Modal */}
       {showModal && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center">
+        <div className="fixed inset-0 z-[9999] overflow-y-auto">
           {/* Backdrop */}
           <div 
-            className="absolute inset-0 bg-black/50"
+            className="fixed inset-0 bg-black/50 transition-opacity"
             onClick={() => setShowModal(false)}
           />
           
-          {/* Modal content */}
-          <div className="relative bg-white rounded-lg shadow-xl w-full max-w-md mx-4 p-6 z-10">
-            {/* Close button */}
-            <button
-              onClick={() => setShowModal(false)}
-              className="absolute top-4 right-4 text-slate-400 hover:text-slate-600"
-            >
-              <X className="h-5 w-5" />
-            </button>
-            
-            {/* Header */}
-            <div className="mb-4">
-              <h2 className="text-lg font-semibold flex items-center gap-2">
-                <Star className="h-5 w-5 text-yellow-500" />
-                Add to Favorites
-              </h2>
-              <p className="text-sm text-slate-500 mt-1">
-                {companyName ? (
-                  <>Adding <strong>{companyName}</strong> to your watchlist.</>
-                ) : (
-                  <>Add a note to remember why you're tracking this company.</>
-                )}
-              </p>
-            </div>
-            
-            {/* Note input */}
-            <div className="mb-4">
-              <label htmlFor="note" className="block text-sm font-medium text-slate-700 mb-1">
-                Note (optional)
-              </label>
-              <Textarea
-                id="note"
-                placeholder="e.g., Follow up after Q2 earnings, Potential site visit candidate..."
-                value={note}
-                onChange={(e) => setNote(e.target.value)}
-                rows={3}
-                className="resize-none w-full"
-              />
-              <p className="text-xs text-slate-500 mt-1">
-                This helps you remember why this company matters.
-              </p>
-            </div>
-            
-            {/* Actions */}
-            <div className="flex justify-end gap-2">
-              <Button
-                variant="ghost"
+          {/* Modal container - centered */}
+          <div className="flex min-h-full items-center justify-center p-4">
+            {/* Modal content */}
+            <div className="relative bg-white rounded-lg shadow-xl w-full max-w-md p-6">
+              {/* Close button */}
+              <button
                 onClick={() => setShowModal(false)}
-                disabled={isLoading}
+                className="absolute top-4 right-4 text-slate-400 hover:text-slate-600 p-1"
               >
-                Cancel
-              </Button>
-              <Button
-                onClick={addFavorite}
-                disabled={isLoading}
-                className="bg-yellow-500 hover:bg-yellow-600 text-white"
-              >
-                <Star className="h-4 w-4 mr-2 fill-white" />
-                {isLoading ? 'Saving...' : 'Save to Favorites'}
-              </Button>
+                <X className="h-5 w-5" />
+              </button>
+              
+              {/* Header */}
+              <div className="mb-6 pr-8">
+                <h2 className="text-xl font-semibold flex items-center gap-2 text-slate-900">
+                  <Star className="h-5 w-5 text-yellow-500 fill-yellow-500" />
+                  Add to Favorites
+                </h2>
+                <p className="text-sm text-slate-500 mt-1">
+                  {companyName ? (
+                    <>Adding <span className="font-medium text-slate-700">{companyName}</span> to your watchlist.</>
+                  ) : (
+                    <>Add a note to remember why you're tracking this company.</>
+                  )}
+                </p>
+              </div>
+              
+              {/* Note input */}
+              <div className="mb-6">
+                <label htmlFor="note" className="block text-sm font-medium text-slate-700 mb-2">
+                  Note (optional)
+                </label>
+                <textarea
+                  id="note"
+                  placeholder="e.g., Follow up after Q2 earnings, Potential site visit candidate..."
+                  value={note}
+                  onChange={(e) => setNote(e.target.value)}
+                  rows={3}
+                  className="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent resize-none"
+                />
+                <p className="text-xs text-slate-500 mt-2">
+                  This helps you remember why this company matters.
+                </p>
+              </div>
+              
+              {/* Actions */}
+              <div className="flex justify-end gap-3">
+                <Button
+                  variant="ghost"
+                  onClick={() => setShowModal(false)}
+                  disabled={isLoading}
+                  className="text-slate-600"
+                >
+                  Cancel
+                </Button>
+                <Button
+                  onClick={addFavorite}
+                  disabled={isLoading}
+                  className="bg-yellow-500 hover:bg-yellow-600 text-white"
+                >
+                  <Star className="h-4 w-4 mr-2 fill-white" />
+                  {isLoading ? 'Saving...' : 'Save to Favorites'}
+                </Button>
+              </div>
             </div>
           </div>
         </div>

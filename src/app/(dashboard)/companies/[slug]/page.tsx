@@ -12,7 +12,8 @@ import {
   Calendar,
   ExternalLink,
   TrendingUp,
-  MessageSquare
+  MessageSquare,
+  Star
 } from 'lucide-react'
 import { FavoriteButton } from '@/components/favorites/favorite-button'
 
@@ -54,16 +55,18 @@ export default async function CompanyPage({ params }: PageProps) {
     .select('*')
     .eq('company_id', company.id)
 
-  // Check if company is favorited
+  // Check if company is favorited and get user's note
   const { data: { user } } = await supabase.auth.getUser()
   const { data: favorite } = await supabase
     .from('user_bookmarks')
-    .select('id')
+    .select('id, notes, created_at')
     .eq('user_id', user?.id)
     .eq('company_id', company.id)
     .single()
   
   const isFavorited = !!favorite
+  const userNote = favorite?.notes
+  const favoritedAt = favorite?.created_at
 
   const tierColors = {
     A: 'bg-green-100 text-green-800 border-green-200',
@@ -239,6 +242,24 @@ export default async function CompanyPage({ params }: PageProps) {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-slate-600 whitespace-pre-wrap">{company.notes}</p>
+              </CardContent>
+            </Card>
+          )}
+
+          {/* My Notes (user's personal note) */}
+          {isFavorited && userNote && (
+            <Card className="border-yellow-200 bg-yellow-50">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-yellow-800">
+                  <Star className="h-5 w-5 fill-yellow-500 text-yellow-500" />
+                  My Notes
+                </CardTitle>
+                <CardDescription className="text-yellow-700">
+                  Added {favoritedAt ? new Date(favoritedAt).toLocaleDateString() : 'to favorites'}
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-yellow-900 whitespace-pre-wrap">{userNote}</p>
               </CardContent>
             </Card>
           )}
