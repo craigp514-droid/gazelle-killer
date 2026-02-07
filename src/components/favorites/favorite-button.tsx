@@ -151,17 +151,15 @@ export function FavoriteButton({
       
       {/* Modal */}
       {showModal && (
-        <div className="fixed inset-0 z-[9999] overflow-y-auto">
-          {/* Backdrop */}
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4">
+          {/* Backdrop - fully opaque */}
           <div 
-            className="fixed inset-0 bg-black/50 transition-opacity"
+            className="fixed inset-0 bg-black bg-opacity-60"
             onClick={() => setShowModal(false)}
           />
           
-          {/* Modal container - centered */}
-          <div className="flex min-h-full items-center justify-center p-4">
-            {/* Modal content */}
-            <div className="relative bg-white rounded-lg shadow-xl w-full max-w-md p-6">
+          {/* Modal content */}
+          <div className="relative z-[10000] bg-white rounded-lg shadow-2xl w-full max-w-md p-6 border border-slate-200">
               {/* Close button */}
               <button
                 onClick={() => setShowModal(false)}
@@ -223,7 +221,6 @@ export function FavoriteButton({
                 </Button>
               </div>
             </div>
-          </div>
         </div>
       )}
     </>
