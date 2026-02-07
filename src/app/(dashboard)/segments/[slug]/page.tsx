@@ -33,6 +33,15 @@ export default async function SegmentPage({ params }: PageProps) {
 
   const companyIds = companySegments?.map((cs) => cs.company_id) || []
 
+  // Get user's favorites to show filled stars
+  const { data: { user } } = await supabase.auth.getUser()
+  const { data: userFavorites } = await supabase
+    .from('user_bookmarks')
+    .select('company_id')
+    .eq('user_id', user?.id)
+  
+  const favoritedCompanyIds = new Set(userFavorites?.map(f => f.company_id) || [])
+
   const { data: companies } = await supabase
     .from('companies')
     .select('*')
@@ -136,7 +145,11 @@ export default async function SegmentPage({ params }: PageProps) {
                       className="border-b border-slate-100 last:border-0"
                     >
                       <td className="py-4 pr-2">
-                        <FavoriteButton companyId={company.id} variant="icon" />
+                        <FavoriteButton 
+                          companyId={company.id} 
+                          variant="icon" 
+                          initialFavorited={favoritedCompanyIds.has(company.id)}
+                        />
                       </td>
                       <td className="py-4 pr-4">
                         <Link

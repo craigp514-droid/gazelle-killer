@@ -80,7 +80,10 @@ export function FavoriteButton({
         onClick={toggleFavorite}
         disabled={isLoading}
         className={cn(
-          'p-1 rounded hover:bg-slate-100 transition-colors disabled:opacity-50',
+          'p-1.5 rounded-full transition-all disabled:opacity-50',
+          isFavorited 
+            ? 'bg-yellow-100 hover:bg-yellow-200' 
+            : 'hover:bg-slate-100',
           className
         )}
         title={isFavorited ? 'Remove from favorites' : 'Add to favorites'}
@@ -89,8 +92,8 @@ export function FavoriteButton({
           className={cn(
             'h-5 w-5 transition-colors',
             isFavorited 
-              ? 'fill-yellow-400 text-yellow-400' 
-              : 'text-slate-400 hover:text-yellow-400'
+              ? 'fill-yellow-500 text-yellow-500' 
+              : 'text-slate-300 hover:text-yellow-400'
           )}
         />
       </button>

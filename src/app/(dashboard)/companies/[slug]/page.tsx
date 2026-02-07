@@ -54,6 +54,17 @@ export default async function CompanyPage({ params }: PageProps) {
     .select('*')
     .eq('company_id', company.id)
 
+  // Check if company is favorited
+  const { data: { user } } = await supabase.auth.getUser()
+  const { data: favorite } = await supabase
+    .from('user_bookmarks')
+    .select('id')
+    .eq('user_id', user?.id)
+    .eq('company_id', company.id)
+    .single()
+  
+  const isFavorited = !!favorite
+
   const tierColors = {
     A: 'bg-green-100 text-green-800 border-green-200',
     B: 'bg-yellow-100 text-yellow-800 border-yellow-200',
@@ -130,7 +141,7 @@ export default async function CompanyPage({ params }: PageProps) {
             </div>
           </div>
         </div>
-        <FavoriteButton companyId={company.id} />
+        <FavoriteButton companyId={company.id} initialFavorited={isFavorited} />
       </div>
 
       {/* Segments */}
