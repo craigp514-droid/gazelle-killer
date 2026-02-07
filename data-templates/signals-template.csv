@@ -1,0 +1,3 @@
+company_slug,signal_type,title,description,source_url,signal_date,strength,urgency
+anduril-industries,funding_round,"Anduril Raises $1.5B at $8B+ Valuation","Anduril Industries closed a $1.5B Series F, valuing the defense tech company at over $8 billion.",https://techcrunch.com/anduril-series-f,2024-08-15,9,type_1
+anduril-industries,contract_award,"Anduril Wins $1B+ Counter-UAS Contract","Anduril secured a contract worth over $1B to provide counter-drone systems to the US military.",https://defensenews.com/anduril-cuas,2024-11-20,10,type_1
