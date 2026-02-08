@@ -5,7 +5,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Separator } from '@/components/ui/separator'
 import Link from 'next/link'
 import { 
-  Building2, 
   Globe, 
   MapPin, 
   Users, 
@@ -13,9 +12,12 @@ import {
   ExternalLink,
   TrendingUp,
   MessageSquare,
-  Star
+  Star,
+  Linkedin
 } from 'lucide-react'
 import { FavoriteButton } from '@/components/favorites/favorite-button'
+import { CompanyLogo } from '@/components/ui/company-logo'
+import { ExpandableText } from '@/components/ui/expandable-text'
 
 interface PageProps {
   params: Promise<{ slug: string }>
@@ -99,17 +101,7 @@ export default async function CompanyPage({ params }: PageProps) {
       {/* Header */}
       <div className="flex items-start justify-between">
         <div className="flex items-center gap-4">
-          <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-slate-100">
-            {company.logo_url ? (
-              <img
-                src={company.logo_url}
-                alt={company.name}
-                className="h-12 w-12 object-contain"
-              />
-            ) : (
-              <Building2 className="h-8 w-8 text-slate-400" />
-            )}
-          </div>
+          <CompanyLogo website={company.website} name={company.name} size="md" />
           <div>
             <h1 className="text-2xl font-bold text-slate-900">{company.name}</h1>
             <div className="mt-1 flex items-center gap-3 text-sm text-slate-600">
@@ -150,7 +142,7 @@ export default async function CompanyPage({ params }: PageProps) {
       {/* Segments */}
       <div className="flex flex-wrap gap-2">
         {companySegments?.map((cs: any) => (
-          <Link key={cs.segment_id} href={`/segments/${cs.segments?.slug}`}>
+          <Link key={cs.segment_id} href={`/companies?segment=${cs.segments?.slug}`}>
             <Badge
               variant="outline"
               className="cursor-pointer hover:bg-slate-50"
@@ -164,13 +156,39 @@ export default async function CompanyPage({ params }: PageProps) {
             </Badge>
           </Link>
         ))}
-        {company.ownership_type && (
+        {company.ownership && (
           <Badge variant="secondary">
-            {company.ownership_type.charAt(0).toUpperCase() + company.ownership_type.slice(1)}
-            {company.ticker_symbol && ` — ${company.ticker_symbol}`}
+            {company.ownership}
+            {company.ticker && ` — ${company.ticker}`}
           </Badge>
         )}
       </div>
+
+      {/* LinkedIn Description */}
+      {company.linkedin_description && (
+        <Card>
+          <CardHeader className="pb-3">
+            <CardTitle className="flex items-center gap-2 text-base">
+              <Linkedin className="h-5 w-5 text-[#0A66C2]" />
+              About
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ExpandableText text={company.linkedin_description} maxLength={300} />
+            {company.linkedin_url && (
+              <a
+                href={company.linkedin_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 mt-3 text-sm text-[#0A66C2] hover:underline"
+              >
+                View on LinkedIn
+                <ExternalLink className="h-3 w-3" />
+              </a>
+            )}
+          </CardContent>
+        </Card>
+      )}
 
       <div className="grid gap-6 lg:grid-cols-3">
         {/* Score Panel */}

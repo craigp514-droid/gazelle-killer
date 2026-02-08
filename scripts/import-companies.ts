@@ -101,7 +101,7 @@ async function importCompanies(csvPath: string) {
   let skipped = 0
   let errors = 0
 
-  for (const row of records) {
+  for (const row of records as Record<string, string>[]) {
     // Skip rows with bad data
     if (!row.name || !row.slug || row.slug === '1999') {
       console.log(`⚠ Skipping invalid row: ${row.name || 'no name'}`)

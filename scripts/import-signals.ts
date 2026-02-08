@@ -49,7 +49,7 @@ async function importSignals(csvPath: string) {
   let skipped = 0
   let errors = 0
 
-  for (const row of records) {
+  for (const row of records as Record<string, string>[]) {
     // Skip rows with bad data
     if (!row.company_slug || !row.signal_type || !row.title) {
       console.log(`⚠ Skipping invalid row: ${row.title || 'no title'}`)
