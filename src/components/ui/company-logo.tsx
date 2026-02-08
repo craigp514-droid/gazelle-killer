@@ -11,9 +11,9 @@ interface CompanyLogoProps {
 }
 
 const sizeMap = {
-  sm: { container: 'h-10 w-10', icon: 'h-5 w-5', img: 'h-8 w-8' },
-  md: { container: 'h-16 w-16', icon: 'h-8 w-8', img: 'h-12 w-12' },
-  lg: { container: 'h-20 w-20', icon: 'h-10 w-10', img: 'h-16 w-16' },
+  sm: { container: 'h-10 w-10', icon: 'h-5 w-5', img: 'h-6 w-6' },
+  md: { container: 'h-16 w-16', icon: 'h-8 w-8', img: 'h-10 w-10' },
+  lg: { container: 'h-20 w-20', icon: 'h-10 w-10', img: 'h-14 w-14' },
 }
 
 function extractDomain(website: string | null): string | null {
@@ -30,12 +30,12 @@ function extractDomain(website: string | null): string | null {
 }
 
 export function CompanyLogo({ website, name, size = 'md', className = '' }: CompanyLogoProps) {
-  const [hasError, setHasError] = useState(false)
+  const [imgSrc, setImgSrc] = useState<'google' | 'fallback'>('google')
   const domain = extractDomain(website)
   const sizes = sizeMap[size]
 
-  // If no website or error loading, show fallback
-  if (!domain || hasError) {
+  // If no website or all sources failed, show fallback
+  if (!domain || imgSrc === 'fallback') {
     return (
       <div className={`flex items-center justify-center rounded-xl bg-slate-100 ${sizes.container} ${className}`}>
         <Building2 className={`text-slate-400 ${sizes.icon}`} />
@@ -43,13 +43,16 @@ export function CompanyLogo({ website, name, size = 'md', className = '' }: Comp
     )
   }
 
+  // Use Google's favicon service (more reliable)
+  const logoUrl = `https://www.google.com/s2/favicons?domain=${domain}&sz=128`
+
   return (
     <div className={`flex items-center justify-center rounded-xl bg-white border border-slate-200 ${sizes.container} ${className}`}>
       <img
-        src={`https://logo.clearbit.com/${domain}`}
+        src={logoUrl}
         alt={`${name} logo`}
         className={`object-contain ${sizes.img}`}
-        onError={() => setHasError(true)}
+        onError={() => setImgSrc('fallback')}
       />
     </div>
   )
