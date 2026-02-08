@@ -164,32 +164,6 @@ export default async function CompanyPage({ params }: PageProps) {
         )}
       </div>
 
-      {/* LinkedIn Description */}
-      {company.linkedin_description && (
-        <Card>
-          <CardHeader className="pb-3">
-            <CardTitle className="flex items-center gap-2 text-base">
-              <Linkedin className="h-5 w-5 text-[#0A66C2]" />
-              About
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <ExpandableText text={company.linkedin_description} maxLength={300} />
-            {company.linkedin_url && (
-              <a
-                href={company.linkedin_url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 mt-3 text-sm text-[#0A66C2] hover:underline"
-              >
-                View on LinkedIn
-                <ExternalLink className="h-3 w-3" />
-              </a>
-            )}
-          </CardContent>
-        </Card>
-      )}
-
       <div className="grid gap-6 lg:grid-cols-3">
         {/* Score Panel */}
         <div className="space-y-6">
@@ -361,6 +335,34 @@ export default async function CompanyPage({ params }: PageProps) {
               </div>
             </CardContent>
           </Card>
+
+          {/* LinkedIn Description - below signals, less prominent */}
+          {company.linkedin_description && (
+            <Card className="mt-6 border-slate-200">
+              <CardHeader className="pb-2">
+                <CardTitle className="flex items-center gap-2 text-sm font-medium text-slate-600">
+                  <Linkedin className="h-4 w-4 text-[#0A66C2]" />
+                  About (LinkedIn)
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-slate-600 leading-relaxed">
+                  <ExpandableText text={company.linkedin_description} maxLength={400} />
+                </p>
+                {company.linkedin_url && (
+                  <a
+                    href={company.linkedin_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 mt-2 text-xs text-[#0A66C2] hover:underline"
+                  >
+                    View on LinkedIn
+                    <ExternalLink className="h-3 w-3" />
+                  </a>
+                )}
+              </CardContent>
+            </Card>
+          )}
         </div>
       </div>
     </div>
