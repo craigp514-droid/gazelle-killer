@@ -59,11 +59,8 @@ export default async function CompaniesPage({ searchParams }: PageProps) {
       companyIds = [...new Set(cs?.map(c => c.company_id) || [])]
     }
   } else {
-    // No filter - get all companies
-    const { data: cs } = await supabase
-      .from('company_segments')
-      .select('company_id')
-    companyIds = [...new Set(cs?.map(c => c.company_id) || [])]
+    // No filter - query companies directly (skip the company_segments lookup)
+    companyIds = [] // Empty signals "get all" mode below
   }
 
   // Pagination
@@ -77,10 +74,21 @@ export default async function CompaniesPage({ searchParams }: PageProps) {
   let totalCount = 0
 
   if (companyIds.length > 0) {
+    // Filtered by segment or industry
     const { data, count } = await supabase
       .from('companies')
       .select('*', { count: 'exact' })
       .in('id', companyIds)
+      .order('composite_score', { ascending: false })
+      .range(start, end)
+    
+    companies = data || []
+    totalCount = count || 0
+  } else if (!selectedIndustry && !selectedSegment) {
+    // No filter - get all companies directly
+    const { data, count } = await supabase
+      .from('companies')
+      .select('*', { count: 'exact' })
       .order('composite_score', { ascending: false })
       .range(start, end)
     
