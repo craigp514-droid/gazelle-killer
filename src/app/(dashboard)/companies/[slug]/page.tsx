@@ -107,13 +107,13 @@ export default async function CompanyPage({ params }: PageProps) {
             <div className="mt-1 flex items-center gap-3 text-sm text-slate-600">
               {company.website && (
                 <a
-                  href={company.website}
+                  href={company.website.startsWith('http') ? company.website : `https://${company.website}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-1 hover:text-emerald-600"
                 >
                   <Globe className="h-4 w-4" />
-                  Website
+                  {company.website.replace(/^https?:\/\//, '').replace(/\/$/, '')}
                   <ExternalLink className="h-3 w-3" />
                 </a>
               )}
