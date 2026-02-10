@@ -117,13 +117,30 @@ async function importDailySignals(csvContent) {
       newCompanies++;
     }
 
+    // Check for existing signal (same company + type + date = duplicate)
+    const signalType = row.signal_type || 'new_facility';
+    const signalDate = row.signal_date || new Date().toISOString().split('T')[0];
+    
+    const { data: existingSignal } = await supabase
+      .from('signals')
+      .select('id')
+      .eq('company_id', company.id)
+      .eq('signal_type', signalType)
+      .eq('signal_date', signalDate)
+      .single();
+
+    if (existingSignal) {
+      console.log(`↻ Exists: ${companyName} - ${signalType} (${signalDate})`);
+      continue;  // Skip duplicate
+    }
+
     // Create signal
     const { error: signalError } = await supabase.from('signals').insert({
       company_id: company.id,
-      signal_type: row.signal_type || 'new_facility',
+      signal_type: signalType,
       title: row.signal_title?.substring(0, 200) || 'Signal',
-      signal_date: row.signal_date || new Date().toISOString().split('T')[0],
-      signal_strength: parseInt(row.signal_score) || 7,
+      signal_date: signalDate,
+      strength: parseInt(row.signal_score) || 7,
       source_url: row.source_url || null,
       status: 'active',
     });
@@ -135,8 +152,8 @@ async function importDailySignals(csvContent) {
     }
 
     newSignals++;
-    const isSiteSearch = row.signal_type === 'site_search';
-    console.log(`${isSiteSearch ? '🔥' : '✓'} Signal: ${companyName} - ${row.signal_type}`);
+    const isSiteSearch = signalType === 'site_search';
+    console.log(`${isSiteSearch ? '🔥' : '✓'} Signal: ${companyName} - ${signalType}`);
   }
 
   console.log(`\n--- Summary ---`);
