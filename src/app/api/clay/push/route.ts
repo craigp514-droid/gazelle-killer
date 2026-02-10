@@ -9,95 +9,142 @@ const supabase = createClient(
   process.env.SUPABASE_SERVICE_ROLE_KEY!
 )
 
+interface CompanyToPush {
+  id: string
+  name: string
+  website: string
+}
+
 interface ClayPayload {
   company_name: string
   website: string
 }
 
-async function pushToClay(companies: ClayPayload[]): Promise<{ success: boolean; pushed: number; errors: string[] }> {
+async function pushToClay(companies: CompanyToPush[]): Promise<{ 
+  success: boolean
+  pushed: number
+  pushedIds: string[]
+  errors: string[] 
+}> {
   const errors: string[] = []
-  let pushed = 0
+  const pushedIds: string[] = []
 
   for (const company of companies) {
     try {
+      const payload: ClayPayload = {
+        company_name: company.name,
+        website: company.website,
+      }
+
       const response = await fetch(CLAY_WEBHOOK_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           'x-clay-webhook-auth': CLAY_API_KEY,
         },
-        body: JSON.stringify(company),
+        body: JSON.stringify(payload),
       })
 
       if (!response.ok) {
         const errorText = await response.text()
-        errors.push(`Failed to push ${company.company_name}: ${response.status} - ${errorText}`)
+        errors.push(`Failed to push ${company.name}: ${response.status} - ${errorText}`)
       } else {
-        pushed++
+        pushedIds.push(company.id)
       }
     } catch (error) {
-      errors.push(`Error pushing ${company.company_name}: ${error instanceof Error ? error.message : 'Unknown error'}`)
+      errors.push(`Error pushing ${company.name}: ${error instanceof Error ? error.message : 'Unknown error'}`)
     }
   }
 
   return {
     success: errors.length === 0,
-    pushed,
+    pushed: pushedIds.length,
+    pushedIds,
     errors,
   }
 }
 
+async function updateLastEnrichedAt(companyIds: string[]): Promise<void> {
+  if (companyIds.length === 0) return
+
+  const { error } = await supabase
+    .from('companies')
+    .update({ last_enriched_at: new Date().toISOString() })
+    .in('id', companyIds)
+
+  if (error) {
+    console.error('Failed to update last_enriched_at:', error)
+  }
+}
+
 // POST /api/clay/push
-// Body: { companyIds: string[] } or { companies: { company_name: string, website: string }[] }
+// Body options:
+//   { companyIds: string[] } - Push specific companies by ID
+//   { companies: { company_name, website }[] } - Push arbitrary companies (no tracking)
+//   { pushNew: true } - Push all companies never enriched (last_enriched_at IS NULL)
+//   { pushAll: true } - Push all companies with websites (re-enriches everything)
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
 
-    let companiesToPush: ClayPayload[] = []
+    let companiesToPush: CompanyToPush[] = []
+    let trackEnrichment = true // Whether to update last_enriched_at
 
-    // Option 1: Pass company IDs to look up from database
+    // Option 1: Push specific companies by ID
     if (body.companyIds && Array.isArray(body.companyIds)) {
       const { data: companies, error } = await supabase
         .from('companies')
-        .select('name, website')
+        .select('id, name, website')
         .in('id', body.companyIds)
+        .not('website', 'is', null)
 
       if (error) {
         return NextResponse.json({ error: 'Failed to fetch companies', details: error.message }, { status: 500 })
       }
 
-      companiesToPush = companies
-        .filter((c) => c.website) // Only push companies with websites
-        .map((c) => ({
-          company_name: c.name,
-          website: c.website!,
+      companiesToPush = companies.filter((c) => c.website) as CompanyToPush[]
+    }
+    // Option 2: Push arbitrary companies directly (no tracking)
+    else if (body.companies && Array.isArray(body.companies)) {
+      trackEnrichment = false // Can't track these - no IDs
+      companiesToPush = body.companies
+        .filter((c: any) => c.company_name && c.website)
+        .map((c: any) => ({
+          id: '',
+          name: c.company_name,
+          website: c.website,
         }))
     }
-    // Option 2: Pass companies directly
-    else if (body.companies && Array.isArray(body.companies)) {
-      companiesToPush = body.companies.filter(
-        (c: any) => c.company_name && c.website
-      )
+    // Option 3: Push NEW companies (never enriched) - DEFAULT for daily cron
+    else if (body.pushNew) {
+      const { data: companies, error } = await supabase
+        .from('companies')
+        .select('id, name, website')
+        .not('website', 'is', null)
+        .is('last_enriched_at', null)
+
+      if (error) {
+        return NextResponse.json({ error: 'Failed to fetch companies', details: error.message }, { status: 500 })
+      }
+
+      companiesToPush = companies.filter((c) => c.website) as CompanyToPush[]
     }
-    // Option 3: Push all companies needing enrichment
+    // Option 4: Push ALL companies (re-enrich everything)
     else if (body.pushAll) {
       const { data: companies, error } = await supabase
         .from('companies')
-        .select('name, website')
+        .select('id, name, website')
         .not('website', 'is', null)
-        .or('linkedin_url.is.null,employee_count.is.null') // Missing enrichment data
 
       if (error) {
         return NextResponse.json({ error: 'Failed to fetch companies', details: error.message }, { status: 500 })
       }
 
-      companiesToPush = companies.map((c) => ({
-        company_name: c.name,
-        website: c.website!,
-      }))
-    } else {
+      companiesToPush = companies.filter((c) => c.website) as CompanyToPush[]
+    } 
+    else {
       return NextResponse.json(
-        { error: 'Invalid request. Provide companyIds, companies, or pushAll: true' },
+        { error: 'Invalid request. Provide companyIds, companies, pushNew: true, or pushAll: true' },
         { status: 400 }
       )
     }
@@ -108,9 +155,16 @@ export async function POST(request: NextRequest) {
 
     const result = await pushToClay(companiesToPush)
 
+    // Update last_enriched_at for successfully pushed companies
+    if (trackEnrichment && result.pushedIds.length > 0) {
+      await updateLastEnrichedAt(result.pushedIds)
+    }
+
     return NextResponse.json({
       message: result.success ? 'All companies pushed successfully' : 'Some companies failed to push',
-      ...result,
+      pushed: result.pushed,
+      errors: result.errors,
+      tracked: trackEnrichment,
     })
   } catch (error) {
     console.error('Clay push error:', error)
@@ -121,12 +175,28 @@ export async function POST(request: NextRequest) {
   }
 }
 
-// GET /api/clay/push - Test endpoint
+// GET /api/clay/push - Status endpoint
 export async function GET() {
+  // Count companies needing enrichment
+  const { count: newCount } = await supabase
+    .from('companies')
+    .select('*', { count: 'exact', head: true })
+    .not('website', 'is', null)
+    .is('last_enriched_at', null)
+
+  const { count: totalCount } = await supabase
+    .from('companies')
+    .select('*', { count: 'exact', head: true })
+    .not('website', 'is', null)
+
   return NextResponse.json({
     status: 'ok',
     message: 'Clay push endpoint ready',
     webhookConfigured: !!CLAY_WEBHOOK_URL,
     apiKeyConfigured: !!CLAY_API_KEY,
+    stats: {
+      companiesNeedingEnrichment: newCount || 0,
+      totalCompaniesWithWebsite: totalCount || 0,
+    }
   })
 }
