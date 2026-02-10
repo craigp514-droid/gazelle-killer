@@ -15,7 +15,8 @@ async function run() {
   companies.forEach(c => { companyByName[c.name.toLowerCase()] = c; });
   
   // Read CSV
-  const csv = fs.readFileSync('data-imports/todd-signals/expansion-signals-export-2026-02-08.csv', 'utf-8');
+  const csvPath = process.argv[2] || 'data-imports/todd-signals/expansion-signals-export-2026-02-08.csv';
+const csv = fs.readFileSync(csvPath, 'utf-8');
   const records = parse(csv, { columns: true, skip_empty_lines: true, relax_quotes: true });
   
   console.log('Found', records.length, 'records');
