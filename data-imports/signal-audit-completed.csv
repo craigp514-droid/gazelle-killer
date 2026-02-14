@@ -1,0 +1,644 @@
+company_name,company_slug,website,current_signal_code,signal_date,signal_text,source_url,valid_signal_code,action
+2seventy bio (BMS),2seventy-bio-bms,https://2seventybio.com,expansion_announcement,2026-02-14,Signal detected,https://www.geneonline.com/bristol-myers-squibb-acquires-cancer-cell-therapy-partner-2seventy-bio-in-286m-deal/,,DELETE
+4D Molecular Therapeutics,4d-molecular-therapeutics,https://4dmoleculartherapeutics.com,investment_plan_announced,2024-01-01,Proprietary Therapeutic Vector Evolution platform; in-house 3K sq ft cGMP manufacturing; ophthalmolo,https://www.stantec.com/en/projects/united-states-projects/-/4d-molecular-therapeutics-cell-gene-therapy-facility-and-r-d-lab,INVESTMENT_PLAN_ANNOUNCED,KEEP
+A123 Systems,a123-systems,https://a123systems.com,site_search,2026-02-09,JLL hired for 3rd NA facility site search - location TBD,https://bostonrealestatetimes.com/a123-systems-appoints-jll-to-support-u-s-expansion-with-new-manufacturing-facility/,SITE_SEARCH,KEEP
+AAVantgarde Bio,aavantgarde-bio,https://aavantgarde.com,funding_ladder,2025-11-01,Italian company; $141M Series B (Nov 2025); uses AGC Biologics CDMO; retinal diseases,https://www.fiercebiotech.com/biotech/italian-biotech-aavantgarde-eyes-143m-series-b-fund-retinal-disease-gene-therapy-trials,FUNDING_LADDER,KEEP
+ABB,abb,abb.com,new_facility,2025-01-01,US low-voltage switchgear capacity expansion; SEAM acquisition 2024; domestic production ramp,https://switchgear-magazine.com/tm-news/business/data-centers-surge-but-u-s-grid-faces-hardware-bottlenecks/,,DELETE
+ABB Robotics,abb-robotics,https://new.abb.com/,new_facility,2025-01-01,$280M Sweden robotics hub investment; 50% capacity expansion; potential 2025 spinoff,https://new.abb.com/news/detail/107115/abb-to-invest-280-million-in-its-european-robotics-hub-in-sweden,,DELETE
+Abeona Therapeutics,abeona-therapeutics,https://abeonatherapeutics.com,regulatory_milestone,2025-12-01,ZEVASKYN approved Dec 2025; manufactured at small Cleveland facility; commercial launch underway,https://investors.abeonatherapeutics.com/press-releases/detail/316/zevaskyn-gene-therapy-now-available-at-new-qualified,REGULATORY_MILESTONE,KEEP
+ABL Space Systems,abl-space-systems,https://ablspacesystems.com,,,,,,
+Accion Systems,accion-systems,https://accion-systems.com,,,,,,
+ACP Composites,acp-composites,https://acpcomposites.com/,,,,,,
+Advanced Composites Inc,advanced-composites-inc,https://www.advancedcomposites.com/,,,,,,
+Advanced Navigation,advanced-navigation,https://www.advancednavigation.com/,,,,,,
+Advanced Space,advanced-space,https://advancedspace.com,,,,,,
+Advantest,advantest,advantest.com,,,,,,
+Aerojet Rocketdyne,aerojet-rocketdyne,https://aerojetrocketdyne.com,,,,,,
+Aerospacelab,aerospacelab,https://aerospacelab.be,,,,,,
+Affinia Therapeutics,affinia-therapeutics,https://affiniatx.com,funding_ladder,2025-10-01,$40M Series C (Oct 2025); uses Forge Biologics CDMO; cardiovascular and neuro AAV,https://www.prnewswire.com/news-releases/affinia-therapeutics-and-forge-biologics-announce-aav-cgmp-manufacturing-partnership-to-advance-affinia-therapeutics-pipeline-of-next-generation-gene-therapies-to-the-clinic-302301900.html,FUNDING_LADDER,KEEP
+AGC Inc,agc-inc,agc.com,new_facility,2025-01-01,59% EUV mask blank market share; 30% capacity expansion by 2025; ¥40B sales target,https://www.agc.com/en/news/detail/1203819_2814.html,,DELETE
+Agility Robotics,agility-robotics,https://www.agilityrobotics.com/,new_facility,2025-01-01,RoboFab facility in Salem OR producing Digit; capacity for 10K units/year,https://spectrum.ieee.org/agility-humanoid-robotics-factory,,DELETE
+Agility Robotics,agility-robotics,https://www.agilityrobotics.com/,new_facility,2025-01-01,RoboFab facility in Salem OR producing Digit; capacity for 10K units/year,https://spectrum.ieee.org/agility-humanoid-robotics-factory,,DELETE
+Agnikul Cosmos,agnikul-cosmos,https://agnikul.in,,,,,,
+Air Products,air-products,airproducts.com,,,,,,
+Aixtron,aixtron,aixtron.com,,,,,,
+Ajinomoto,ajinomoto,ajinomoto.com,new_facility,2025-01-01,JPY 25B ($166M) investment by 2030; 50% ABF capacity expansion; CEO is ABF inventor,https://www.trendforce.com/news/2025/04/01/news-japanese-firm-ajinomoto-to-invest-jpy-25-billion-by-2030-to-expand-abf-production-for-advanced-packaging/,,DELETE
+Albany Engineered Composites,albany-engineered-composites,https://www.albint.com/,,,,,,
+All.Space,all-space,https://all.space,,,,,,
+Allogene Therapeutics,allogene-therapeutics,https://allogene.com,investment_plan_announced,2019-02-01,118K sq ft Cell Forge 1 facility in Newark CA; allogeneic (off-the-shelf) CAR-T - one production run,https://ir.allogene.com/news-releases/news-release-details/allogene-therapeutics-enters-lease-build-manufacturing-facility/,INVESTMENT_PLAN_ANNOUNCED,KEEP
+Amber Bio,amber-bio,https://amber.bio,expansion_announcement,2026-02-14,Signal detected,https://www.forbes.com/sites/indiarice/2023/08/03/this-startup-just-raised-26-million-to-develop-safer-gene-editing-tools/,,DELETE
+AMD,amd,amd.com,,,,,,
+American Resources / ReElement,american-resources-reelement,https://www.americanresourcescorp.com/,,,,,,
+Amkor Technology,amkor-technology,amkor.com,new_facility,2025-01-01,Arizona facility expansion; advanced packaging for AI/HPC,https://www.amkor.com/,,DELETE
+Amkor Technology,amkor-technology,amkor.com,new_facility,2025-01-01,Arizona facility expansion; advanced packaging for AI/HPC,https://www.amkor.com/,,DELETE
+ams-OSRAM,ams-osram,ams-osram.com,new_facility,2025-02-01,ams-OSRAM €227M EU Chips Act Funding,https://ams-osram.com/news/press-releases/european-chips-act,,DELETE
+ams-OSRAM,ams-osram,ams-osram.com,new_facility,2025-01-01,€227M EU Chips Act funding Feb 2025; €567M investment by 2030; Austria expansion,https://ams-osram.com/news/press-releases/european-chips-act,,DELETE
+Analog Devices,analog-devices,analog.com,,,,,,
+Andelyn Biosciences,andelyn-biosciences,https://andelynbio.com,serial_expander,2024-01-01,Gene therapy CDMO spinout from Nationwide Children's; multiple facility locations,https://www.andelynbio.com/,SERIAL_EXPANDER,KEEP
+Anduril Industries,anduril-industries,https://anduril.com,contract_award,2024-12-01,Anduril Wins $1B+ Counter-UAS Contract,https://anduril.com/newsroom,CONTRACT_WIN,UPDATE
+Anduril Industries,anduril-industries,https://anduril.com,funding_round,2024-08-22,Anduril Raises $1.5B at $8B+ Valuation,https://techcrunch.com,FUNDING_LADDER,UPDATE
+Ansaldo Energia,ansaldo-energia,ansaldoenergia.com,,,,,,
+Apertura Gene Therapy,apertura-gene-therapy,https://aperturagtx.com,expansion_announcement,2026-02-14,Signal detected,https://aperturagtx.com/,,DELETE
+Apex Space,apex-space,https://apexspace.com,new_facility,2025-01-01,"$200M Series C (April 2025); Factory One scaling to 100,000 sq ft; 200+ buses/year capacity",https://www.prnewswire.com/news-releases/apex-raises-200-million-in-series-c-funding-to-increase-productized-satellite-bus-manufacturing-302440649.html,,DELETE
+Apollo Fusion (Astra),apollo-fusion-astra,https://apollo-fusion.com,,,,,,
+Applied Ion Systems,applied-ion-systems,https://appliedionsystems.com,,,,,,
+Applied Materials,applied-materials,appliedmaterials.com,new_facility,2025-01-01,$200M Arizona investment; $400M+ US expansion; Apple partnership; 6th consecutive growth year FY2025,https://www.trendforce.com/news/2025/09/02/news-applied-materials-reportedly-sees-limited-u-s-incentive-effect-offers-nuanced-view-on-china/,,DELETE
+Applied Materials,applied-materials,appliedmaterials.com,new_facility,2025-01-01,$200M Arizona investment; $400M+ US expansion; Apple partnership; 6th consecutive growth year FY2025,https://www.trendforce.com/news/2025/09/02/news-applied-materials-reportedly-sees-limited-u-s-incentive-effect-offers-nuanced-view-on-china/,,DELETE
+Apptronik,apptronik,https://apptronik.com,new_facility,2025-01-01,$350M Series A (Google-backed) + $5B valuation + leasing new space to ramp Apollo production,https://www.reuters.com/technology/apptronik-raises-350-million-scale-production-humanoid-robots-2025-02-13/,,DELETE
+Aptos Orbital,aptos-orbital,https://aptosorbital.com,,,,,,
+Arcellx,arcellx,https://arcellx.com,oem_partner,2024-01-01,Anito-cel in Phase 3 (iMMagine-3) with Kite/Gilead for multiple myeloma; D-Domain binder technology,https://www.gilead.com/news/news-details/2024/kite-and-arcellx-continue-momentum-with-advances-in-anito-cel-multiple-myeloma-program,OEM_PARTNER,KEEP
+Arcosa,arcosa,arcosa.com,,,,,,
+Ardentec,ardentec,ardentec.com,,,,,,
+ARM Holdings,arm-holdings,arm.com,,,,,,
+Array Labs,array-labs,arraylabs.com,,,,,,
+Array Technologies,array-technologies,arraytechinc.com,new_facility,2025-01-01,100% domestic content trackers H1 2025; Albuquerque NM factory construction; #3 global tracker,https://www.pv-tech.org/array-on-course-to-deliver-100-domestic-content-pv-tracker-in-h1-2025/,,DELETE
+Array Technologies,array-technologies,arraytechinc.com,new_facility,2025-01-01,100% domestic content trackers H1 2025; Albuquerque NM factory construction; #3 global tracker,https://www.pv-tech.org/array-on-course-to-deliver-100-domestic-content-pv-tracker-in-h1-2025/,,DELETE
+Arteche,arteche,arteche.com,,,,,,
+ASE Technology,ase-technology,aseglobal.com,,,,,,
+AskBio (Bayer),askbio-bayer,https://askbio.com,expansion_announcement,2026-02-14,Signal detected,https://www.askbio.com/bayer-acquires-askbio-to-broaden-innovation-base-in-cell-and-gene-therapy/,,DELETE
+ASM International,asm-international,asm.com,,,,,,
+ASML,asml,asml.com,new_facility,2025-01-01,ASML Connecticut $200M Expansion,https://www.advancect.org/news-and-media/p/item/43734/asml-investing-200-million-in-connecticut-facility-adding-1000-jobs,,DELETE
+ASML,asml,asml.com,new_facility,2025-01-01,$200M Connecticut expansion; 1000 new jobs; EUV monopoly; critical to all leading-edge fabs,https://www.advancect.org/news-and-media/p/item/43734/asml-investing-200-million-in-connecticut-facility-adding-1000-jobs,,DELETE
+ASML,asml,asml.com,new_facility,2025-01-01,$200M Connecticut expansion; 1000 new jobs; EUV monopoly; critical to all leading-edge fabs,https://www.advancect.org/news-and-media/p/item/43734/asml-investing-200-million-in-connecticut-facility-adding-1000-jobs,,DELETE
+ASMPT,asmpt,asmpt.com,,,,,,
+Astranis,astranis,https://astranis.com,new_facility,2025-01-01,4 MicroGEO satellites launched (Dec 2024); $8M USSF contract; scaling manufacturing capacity,https://spacenews.com/four-satellite-astranis-launch-signals-shift-toward-scaled-geo-deployments/,,DELETE
+Astrogate Labs,astrogate-labs,https://astrogatelabs.com,,,,,,
+Astronics Corporation,astronics-corporation,https://astronics.com,,,,,,
+Astroscale,astroscale,https://astroscale.com,,,,,,
+Atara Biotherapeutics,atara-biotherapeutics,https://atarabio.com,investment_plan_announced,2021-01-01,Building $55M 90K sq ft CAR-T manufacturing facility in Thousand Oaks; allogeneic EBV-specific T cel,https://bioinformant.com/car-t-companies-the-meteoric-rise-of-cellular-immunotherapies/,INVESTMENT_PLAN_ANNOUNCED,KEEP
+Atlant 3D,atlant-3d,atlant3d.com,,,,,,
+Atlas Space Operations,atlas-space-operations,https://atlasspace.com,,,,,,
+Atomic-6,atomic-6,https://www.atomic-6.com/,,,,,,
+Autolus Therapeutics,autolus-therapeutics,https://autolus.com,expansion_announcement,2026-02-14,Signal detected,https://autolus.gcs-web.com/news-releases/news-release-details/autolus-therapeutics-announces-updated-manufacturing-facility,,DELETE
+Axcelis Technologies,axcelis-technologies,axcelis.com,new_facility,2025-01-01,Purion Power Series+ launched Sept 2025 for SiC; $6B market opportunity by 2030; 4 SEC filings re: e,https://investor.axcelis.com/news-releases/news-release-details/axcelis-announces-launch-companys-new-purion-power-series-ion,,DELETE
+Axiom Materials,axiom-materials,https://axiommaterials.com/,,,,,,
+Axiom Space,axiom-space,https://axiomspace.com,,,,,,
+BAE Systems,bae-systems,https://www.baesystems.com/,,,,,,
+Baker Hughes Turbines,baker-hughes-turbines,bakerhughes.com,,,,,,
+Ball Aerospace,ball-aerospace,https://ballaerospace.com,,,,,,
+Ballard Power,ballard-power,ballard.com,new_facility,2025-01-01,Heavy-duty mobility fuel cells; transit bus + truck focus; European + China expansion,https://www.ballard.com/,,DELETE
+Battelle Memorial Institute,battelle-memorial-institute,https://www.battelle.org/,,,,,,
+Benchmark Space Systems,benchmark-space-systems,https://benchmarkspacesystems.com,new_facility,2025-01-01,"40,000 sq ft facility in Burlington VT; tripled production capacity; UK expansion",https://www.benchmarkspacesystems.com/news/post/press-release-benchmark-space-systems-triples-propulsion-system-production-capacity-doubles-personnel-to-meet-thruster-and-in-space-mobility-demand,,DELETE
+Benchmark Space Systems,benchmark-space-systems,https://benchmarkspacesystems.com,new_facility,2025-01-01,"40,000 sq ft facility in Burlington VT; tripled production capacity; UK expansion",https://www.benchmarkspacesystems.com/news/post/press-release-benchmark-space-systems-triples-propulsion-system-production-capacity-doubles-personnel-to-meet-thruster-and-in-space-mobility-demand,,DELETE
+Berkshire Grey,berkshire-grey,https://www.berkshiregrey.com/,,,,,,
+Besi (BE Semiconductor),besi-be-semiconductor,besi.com,,,,,,
+Beta Technologies,beta-technologies,beta.team,new_facility,2025-01-01,Charging network buildout; UPS partnership; Vermont manufacturing facility expansion,https://beta.team/news/,,DELETE
+Beta Technologies,beta-technologies,beta.team,new_facility,2025-01-01,Charging network buildout; UPS partnership; Vermont manufacturing facility expansion,https://beta.team/news/,,DELETE
+Beyond Gravity,beyond-gravity,https://beyondgravity.com,,,,,,
+Bloom Energy,bloom-energy,bloomenergy.com,,,,,,
+Blue Canyon Technologies,blue-canyon-technologies,https://bluecanyontech.com,,,,,,
+Blue Origin,blue-origin,https://blueorigin.com,new_facility,2025-01-01,New Titusville FL manufacturing facility (100 jobs); Central Texas ~$1B expansion planned,https://www.floridatoday.com/story/tech/science/space/2025/09/26/blue-origin-future-titusville-manufacturing-facility-to-employ-100-workers-in-brevard-county-florida/86350571007/,,DELETE
+Blue Origin,blue-origin,https://blueorigin.com,new_facility,2025-01-01,New Titusville FL manufacturing facility (100 jobs); Central Texas ~$1B expansion planned,https://www.floridatoday.com/story/tech/science/space/2025/09/26/blue-origin-future-titusville-manufacturing-facility-to-employ-100-workers-in-brevard-county-florida/86350571007/,,DELETE
+Blue Star Power Systems,blue-star-power-systems,bluestarps.com,,,,,,
+bluebird bio,bluebird-bio,https://bluebirdbio.com,expansion_announcement,2026-02-14,Signal detected,https://www.fiercepharma.com/pharma/bluebird-taps-lonza-boost-manufacturing-capacity-its-gene-therapies-zynteglo-and-skysona,,DELETE
+Boeing,boeing,https://www.boeing.com/,expansion_announcement,2026-02-03,$7M composite manufacturing expansion in Wichita KS,https://www.bizjournals.com/wichita/news/2026/02/03/boeing-expansion-investment-manufacturing-spirit.html,,DELETE
+Boeing,boeing,https://www.boeing.com/,expansion_announcement,2026-02-03,$7M composite manufacturing expansion in Wichita KS,https://www.bizjournals.com/wichita/news/2026/02/03/boeing-expansion-investment-manufacturing-spirit.html,,DELETE
+Boston Dynamics,boston-dynamics,https://bostondynamics.com/,,,,,,
+Boston Materials,boston-materials,https://bostonmaterials.co/,,,,,,
+Boviet Solar,boviet-solar,bovietsolar.com,new_facility,2025-01-01,3 GW North Carolina module + cell facility expansion Sept 2025; fully integrated US manufacturing,https://www.solarpowerworldonline.com/2025/09/boviet-solar-adds-another-gigawatt-of-capacity-at-nc-solar-panel-manufacturing-facility/,,DELETE
+Boviet Solar,boviet-solar,bovietsolar.com,new_facility,2025-01-01,3 GW North Carolina module + cell facility expansion Sept 2025; fully integrated US manufacturing,https://www.solarpowerworldonline.com/2025/09/boviet-solar-adds-another-gigawatt-of-capacity-at-nc-solar-panel-manufacturing-facility/,,DELETE
+Bradford Space,bradford-space,https://bradford-space.com,,,,,,
+Briggs & Stratton,briggs-stratton,briggsandstratton.com,,,,,,
+Broadcom,broadcom,broadcom.com,,,,,,
+Brooks Automation,brooks-automation,brooks.com,,,,,,
+BWX Technologies,bwx-technologies,bwxt.com,,,,,,
+BYD Energy Storage,byd-energy-storage,https://www.byd.com/,,,,,,
+C-CAT,c-cat,https://www.c-cat.net/,,,,,,
+Cambium,cambium,https://cambium-usa.com/,,,,,,
+Camtek,camtek,camtek.com,,,,,,
+Canadian Solar,canadian-solar,canadiansolar.com,new_facility,2025-01-01,3 US facilities: modules + cells + e-STORAGE; $3.2B backlog; 81 GWh storage pipeline; Texas expansio,https://investors.canadiansolar.com/news-releases/news-release-details/canadian-solar-reports-fourth-quarter-and-full-year-2024-results,,DELETE
+Canadian Solar,canadian-solar,canadiansolar.com,new_facility,2025-01-01,3 US facilities: modules + cells + e-STORAGE; $3.2B backlog; 81 GWh storage pipeline; Texas expansio,https://investors.canadiansolar.com/news-releases/news-release-details/canadian-solar-reports-fourth-quarter-and-full-year-2024-results,,DELETE
+Canopy Aerospace,canopy-aerospace,https://www.canopyaerospace.com/,,,,,,
+Capella Space,capella-space,https://capellaspace.com,,,,,,
+Capricor Therapeutics,capricor-therapeutics,https://capricor.com,regulatory_milestone,2025-09-01,Deramiocel for DMD cardiomyopathy; received CRL but addressing; small in-house San Diego facility,https://www.capricor.com/investors/news-events/press-releases/detail/329/capricor-therapeutics-reports-third-quarter-2025-financial,REGULATORY_MILESTONE,KEEP
+Capsida Biotherapeutics,capsida-biotherapeutics,https://capsida.com,oem_partner,2023-05-01,Fully integrated end-to-end including GMP manufacturing; partnered with CRISPR Therapeutics and AbbV,https://capsida.com/science-innovation/,OEM_PARTNER,KEEP
+Caribou Biosciences,caribou-biosciences,https://cariboubio.com,expansion_announcement,2026-02-14,Signal detected,https://www.cariboubio.com/,,DELETE
+Castelion,castelion,https://www.castelion.com/,new_facility,2025-01-01,$350M Series B + Project Ranger 1000-acre NM manufacturing campus,https://www.castelion.com/news/series-b/,,DELETE
+Castelion,castelion,https://www.castelion.com/,new_facility,2025-01-01,$350M Series B + Project Ranger 1000-acre NM manufacturing campus,https://www.castelion.com/news/series-b/,,DELETE
+Caterpillar Electric Power,caterpillar-electric-power,cat.com,,,,,,
+CATL,catl,https://www.catl.com/,,,,,,
+Cellectis,cellectis,https://cellectis.com,us_entity_formation,2020-06-01,French company; in-house GMP facilities in both Paris and Raleigh NC; UCART allogeneic platform,https://www.cellectis.com/en/press/cellectis-enters-lease-agreement-to-build-manufacturing-facility-advancing-towards-commercialization-of-its-ucart-portfolio,US_ENTITY_FORMATION,KEEP
+Centrus Energy,centrus-energy,centrusenergy.com,new_facility,2025-01-01,First US HALEU production Oct 2023; DOE contract expansion; critical for advanced reactors,https://www.centrusenergy.com/,,DELETE
+CesiumAstro,cesiumastro,https://cesiumastro.com,new_facility,2025-01-01,"$470M Series C; building 270,000 sq ft HQ/manufacturing facility; 500+ jobs planned",https://spacenews.com/cesiumastro-to-scale-operations-with-450-million-in-equity-and-debt-financing/,,DELETE
+ChipMOS,chipmos,chipmos.com,,,,,,
+Cirrus Logic,cirrus-logic,cirrus.com,,,,,,
+Clas-SiC Wafer Fab,clas-sic-wafer-fab,clas-sic.com,new_facility,2025-01-01,£12M investment; 150mm SiC wafer foundry; prototyping and low-volume production,https://clas-sic.com/,,DELETE
+ClearSpace,clearspace,https://clearspace.today,,,,,,
+Cognitive Space,cognitive-space,https://cognitivespace.com,,,,,,
+Coherent (II-VI),coherent-ii-vi,https://coherent.com,new_facility,2025-01-01,$1B investment from Denso/Mitsubishi; PA factory to 1M 150mm SiC equivalents by 2027; $33M CHIPS fun,https://www.coherent.com/news/press-releases/ii-vi-incorporated-accelerates-investment-in-silicon-carbide-substrate-and-epitaxial-wafer-manufacturing-with-large-scale-factory-expansions-in-pennsylvania-and-sweden,,DELETE
+Coherent (II-VI),coherent-ii-vi,https://coherent.com,new_facility,2025-01-01,$1B investment from Denso/Mitsubishi; PA factory to 1M 150mm SiC equivalents by 2027; $33M CHIPS fun,https://www.coherent.com/news/press-releases/ii-vi-incorporated-accelerates-investment-in-silicon-carbide-substrate-and-epitaxial-wafer-manufacturing-with-large-scale-factory-expansions-in-pennsylvania-and-sweden,,DELETE
+Coherent Corp,coherent-corp,https://coherent.com,earnings_signal,2026-02-09,SEC 8-K filed - SiC substrates expansion,https://www.sec.gov/cgi-bin/browse-edgar?CIK=820318,,DELETE
+Coherent Corp,coherent-corp,https://coherent.com,earnings_signal,2026-02-04,8-K filed Feb 4 - SiC substrate expansion continues,https://www.sec.gov/cgi-bin/browse-edgar?CIK=820318,,DELETE
+Cohu,cohu,cohu.com,,,,,,
+Collins Aerospace,collins-aerospace,https://collinsaerospace.com,,,,,,
+Commonwealth Fusion Systems,commonwealth-fusion,https://cfs.energy,product_launch,2024-06-18,Commonwealth Fusion Achieves SPARC Magnet Milestone,https://cfs.energy/news,PRODUCT_SUCCESS,UPDATE
+COMSPOC,comspoc,https://comspoc.com,,,,,,
+Concept Group LLC,concept-group-llc,https://conceptgroupllc.com/,,,,,,
+Convalt Energy,convalt-energy,convalt.com,,,,,,
+Corintis,corintis,corintis.com,,,,,,
+Cummins Accelera,cummins-accelera,accelerazero.com,,,,,,
+Cummins Power Generation,cummins-power-generation,cummins.com,,,,,,
+Cyclic Materials,cyclic-materials,https://cyclicmaterials.earth/,new_facility,2025-01-01,$82M investment in new rare earth recycling campus in McBee SC + existing US commercial facility,https://www.businesswire.com/news/home/20260129743973/en/Cyclic-Materials-to-Expand-U.S.-Rare-Earth-Recycling-Footprint-with-New-South-Carolina-Campus,,DELETE
+Cyclic Materials,cyclic-materials,https://cyclicmaterials.earth/,new_facility,2025-01-01,$82M investment in new rare earth recycling campus in McBee SC + existing US commercial facility,https://www.businesswire.com/news/home/20260129743973/en/Cyclic-Materials-to-Expand-U.S.-Rare-Earth-Recycling-Footprint-with-New-South-Carolina-Campus,,DELETE
+d-Matrix,d-matrix,d-matrix.ai,new_facility,2025-01-01,$275M Series C Dec 2025; digital in-memory compute; $450M total raised; global expansion,https://www.d-matrix.ai/announcements/d-matrix-raises-275-million-to-power-the-age-of-ai-inference/,,DELETE
+D-Orbit,d-orbit,https://dorbit.space,,,,,,
+Dawn Aerospace,dawn-aerospace,https://dawnaerospace.com,,,,,,
+DB HiTek,db-hitek,dbhitek.com,new_facility,2025-01-01,Image sensor expansion; machine vision/autonomous vehicles; high value-added focus,https://dbhitek.com/en/index,,DELETE
+Delta Star,delta-star,deltastar.com,,,,,,
+Diodes Incorporated,diodes-incorporated,diodes.com,,,,,,
+DISCO Corporation,disco-corporation,disco.co.jp,,,,,,
+DNP (Dai Nippon Printing),dnp-dai-nippon-printing,global.dnp,,,,,,
+Draper Laboratory,draper-laboratory,https://www.draper.com/,,,,,,
+Dynetics,dynetics,https://www.leidos.com/,,,,,,
+Eaton,eaton,eaton.com,new_facility,2025-01-01,$340M Jonesville SC 3rd transformer facility Feb 2025; $1B+ NA investment since 2023; production 202,https://www.eaton.com/us/en-us/company/news-insights/news-releases/2025/eaton-invests-in-new-south-carolina-transformer-manufacturing.html,,DELETE
+Eaton,eaton,eaton.com,new_facility,2025-01-01,$340M Jonesville SC 3rd transformer facility Feb 2025; $1B+ NA investment since 2023; production 202,https://www.eaton.com/us/en-us/company/news-insights/news-releases/2025/eaton-invests-in-new-south-carolina-transformer-manufacturing.html,,DELETE
+EchoStar,echostar,https://echostar.com,,,,,,
+Electric Hydrogen,electric-hydrogen,eh2.com,new_facility,2025-01-01,$220M+ raised; 1 GW/year stack production target; HIF Texas e-Fuels project supplier,https://eh2.com/,,DELETE
+Electric Hydrogen,electric-hydrogen,eh2.com,new_facility,2025-01-01,$220M+ raised; 1 GW/year stack production target; HIF Texas e-Fuels project supplier,https://eh2.com/,,DELETE
+Eli Lilly,eli-lilly,https://lilly.com,expansion_announcement,2026-01-30,$3.5B Pennsylvania plant - 4th new US facility in 12 months,https://www.reuters.com/business/healthcare-pharmaceuticals/eli-lilly-build-35-billion-pennsylvania-plant-us-manufacturing-push-2026-01-30/,,DELETE
+Eli Lilly,eli-lilly,https://lilly.com,expansion_announcement,2026-01-30,$3.5B Pennsylvania plant - 4th new US facility in 12 months,https://www.reuters.com/business/healthcare-pharmaceuticals/eli-lilly-build-35-billion-pennsylvania-plant-us-manufacturing-push-2026-01-30/,,DELETE
+EnCharge AI,encharge-ai,enchargeai.com,,,,,,
+Encoded Therapeutics,encoded-therapeutics,https://encoded.com,regulatory_milestone,2024-01-01,GMP manufacturing facility in RTP NC; ETX101 for Dravet syndrome has RMAT designation,https://encoded.com/in-the-code/right-sized-in-rtp-building-out-encodeds-manufacturing-ecosystem/,REGULATORY_MILESTONE,KEEP
+Encore Wire,encore-wire,encorewire.com,,,,,,
+Endurosat,endurosat,https://endurosat.com,,,,,,
+Enel 3Sun,enel-3sun,3sun.com,new_facility,2025-01-01,€560M Sicily 3 GW gigafactory (Europe's largest); US 3 GW plant announced; HJT technology,https://www.eib.org/en/press/all/2024-020-europe-s-biggest-solar-gigafactory-3sun-secures-eur560-million-financing-from-eib-and-pool-of-italian-banks-led-by-unicredit-and-backed-by-sace,,DELETE
+Enel North America,enel-north-america,enelnorthamerica.com,new_facility,2025-01-01,10+ GW US capacity; 1.3 GW Texas BESS; 520 MW/780 MWh operational storage; tripled TX capacity 2023,https://www.enelnorthamerica.com/about-us/newsroom/search-press/press/2024/03/enel-10gw,,DELETE
+Enel North America,enel-north-america,enelnorthamerica.com,new_facility,2025-01-01,10+ GW US capacity; 1.3 GW Texas BESS; 520 MW/780 MWh operational storage; tripled TX capacity 2023,https://www.enelnorthamerica.com/about-us/newsroom/search-press/press/2024/03/enel-10gw,,DELETE
+Energy Fuels,energy-fuels,https://www.energyfuels.com/,,,,,,
+EnerVenue,enervenue,https://enervenue.com/,,,,,,
+Enphase Energy,enphase-energy,https://enphase.com/,new_facility,2025-01-01,US microinverter manufacturing; IQ9 with GaN launching 2025; batteries + EV chargers; domestic conte,https://www.solarpowerworldonline.com/2024/09/inverter-manufacturers-highlight-higher-domestic-content-at-re-2024/,,DELETE
+Enphase Energy,enphase-energy,https://enphase.com/,new_facility,2025-01-01,SC + WI + third US site; IQ Battery 5P,https://enphase.com/,,DELETE
+Enphase Energy,enphase-energy,https://enphase.com/,new_facility,2025-01-01,SC + WI + third US site; IQ Battery 5P,https://enphase.com/,,DELETE
+Enpulsion,enpulsion,https://enpulsion.com,,,,,,
+Entegris,entegris,entegris.com,new_facility,2025-01-01,$1.4B total US investment; $700M R&D; $600M Colorado Springs manufacturing; Aurora IL tech center,https://evertiq.com/news/2025-08-22-entegris-announces-700-million-investment-in-us,,DELETE
+Entegris,entegris,entegris.com,new_facility,2025-01-01,$1.4B total US investment; $700M R&D; $600M Colorado Springs manufacturing; Aurora IL tech center,https://evertiq.com/news/2025-08-22-entegris-announces-700-million-investment-in-us,,DELETE
+Eos Energy,eos-energy,https://www.eose.com/,new_facility,2025-01-01,$353M DOE loan; Turtle Creek automation expansion; HQ move to Pittsburgh; 735 jobs,https://dced.pa.gov/newsroom/governor-shapiro-secures-nearly-353-million-investment-from-eos-energy/,,DELETE
+Epsilon3,epsilon3,https://epsilon3.io,,,,,,
+ERMCO,ermco,ermco-eci.com,,,,,,
+ESMC (TSMC/Bosch/Infineon/NXP),esmc-tsmcboschinfineonnxp,esmc.eu,new_facility,2025-01-01,Dresden fab joint venture; TSMC-operated; production expected 2027; €10B investment,https://pr.tsmc.com/english/news/3049,,DELETE
+ESS Inc.,ess-inc,https://essinc.com/,new_facility,2025-01-01,$50M EXIM grant for expansion,https://essinc.com/,,DELETE
+Eugene Technology,eugene-technology,eugenetech.co.kr,new_facility,2025-01-01,Samsung large ALD order; batch-type ALD localization; Icheon investment agreement,https://pitchbook.com/profiles/company/164906-29,,DELETE
+Eve Air Mobility,eve-air-mobility,eveairmobility.com,new_facility,2025-01-01,17 SEC filings; Embraer backing; $5B+ order backlog; US manufacturing planned,https://www.sec.gov/cgi-bin/browse-edgar?CIK=1823652,,DELETE
+ExoAnalytic Solutions,exoanalytic-solutions,https://exoanalytic.com,,,,,,
+Exolaunch,exolaunch,https://exolaunch.com,,,,,,
+FANUC America,fanuc-america,https://www.fanucamerica.com/,,,,,,
+Fate Therapeutics,fate-therapeutics,https://fatetherapeutics.com,investment_plan_announced,2019-09-01,In-house cGMP facility for iPSC-derived off-the-shelf cell therapies; NK cells and T cells from mast,https://ir.fatetherapeutics.com/news-releases/news-release-details/fate-therapeutics-announces-opening-its-cgmp-manufacturing,INVESTMENT_PLAN_ANNOUNCED,KEEP
+Figure AI,figure-ai,https://www.figure.ai/,new_facility,2025-01-01,$1B+ Series C at $39B valuation + BotQ manufacturing facility buildout,https://www.figure.ai/news/series-c,,DELETE
+Firefly Aerospace,firefly-aerospace,https://fireflyspace.com,new_facility,2025-01-01,"Doubled Briggs TX facility to 207,000 sq ft (Feb 2024); Rocket Ranch expansion",https://fireflyspace.com/news/firefly-aerospace-doubles-facilities-in-briggs-texas-to-support-medium-launch-vehicle/,,DELETE
+Firefly Aerospace,firefly-aerospace,https://fireflyspace.com,new_facility,2025-01-01,"Doubled Briggs TX facility to 207,000 sq ft (Feb 2024); Rocket Ranch expansion",https://fireflyspace.com/news/firefly-aerospace-doubles-facilities-in-briggs-texas-to-support-medium-launch-vehicle/,,DELETE
+Firehawk Aerospace,firehawk-aerospace,https://firehawkaerospace.com/,,,,,,
+First Solar,first-solar,firstsolar.com,new_facility,2025-01-01,$1.1B Alabama factory opened 2024 (3.5 GW); Louisiana $1.1B plant Q3 2025 (3.5 GW); Ohio 3 plants; 1,https://www.pv-tech.org/first-solar-to-open-new-3-7gw-us-manufacturing-plant-in-2026/,,DELETE
+First Solar,first-solar,firstsolar.com,new_facility,2025-01-01,$1.1B Alabama factory opened 2024 (3.5 GW); Louisiana $1.1B plant Q3 2025 (3.5 GW); Ohio 3 plants; 1,https://www.pv-tech.org/first-solar-to-open-new-3-7gw-us-manufacturing-plant-in-2026/,,DELETE
+Fleet Space Technologies,fleet-space-technologies,https://fleetspace.com,,,,,,
+Fluence Energy,fluence-energy,https://fluenceenergy.com/,new_facility,2025-01-01,Arizona manufacturing open; Houston thermal; $700M US investment; 1200+ jobs; 2.2 GWh Excelsior deal,https://ir.fluenceenergy.com/news-releases/news-release-details/fluence-expands-us-manufacturing-footprint-enclosure-and-battery,,DELETE
+Fluence Energy,fluence-energy,https://fluenceenergy.com/,new_facility,2025-01-01,Arizona manufacturing open; Houston thermal; $700M US investment; 1200+ jobs; 2.2 GWh Excelsior deal,https://ir.fluenceenergy.com/news-releases/news-release-details/fluence-expands-us-manufacturing-footprint-enclosure-and-battery,,DELETE
+Ford Energy,ford-energy,https://www.ford.com/,new_facility,2025-01-01,$2B BlueOval Battery Park Marshall; pivoting to grid/data center; 20 GWh capacity; CATL LFP tech,https://finance.yahoo.com/news/ford-starting-battery-storage-business-211745514.html,,DELETE
+Forge Biologics,forge-biologics,https://forgebiologics.com,investment_plan_announced,2023-01-01,CDMO building 200K+ sq ft 'The Hearth' facility; manufacturing for multiple clients,https://www.forgebiologics.com/,INVESTMENT_PLAN_ANNOUNCED,KEEP
+Form Energy,form-energy,https://formenergy.com,funding_round,2024-10-15,Form Energy Raises $450M Series E,https://formenergy.com/press,FUNDING_LADDER,UPDATE
+Form Energy,form-energy,https://formenergy.com,new_facility,2024-09-22,Form Energy Announces West Virginia Manufacturing Plant,https://formenergy.com/press,,DELETE
+Form Energy,form-energy,https://formenergy.com,new_facility,2025-01-01,$900M+ Series E 2025; West Virginia gigafactory construction; 100+ hour storage; multi-day grid stor,https://storm4.com/resources/industry-insights/energy-storage-startups-us/,,DELETE
+Form Energy,form-energy,https://formenergy.com,new_facility,2025-01-01,$900M+ Series E 2025; West Virginia gigafactory construction; 100+ hour storage; multi-day grid stor,https://storm4.com/resources/industry-insights/energy-storage-startups-us/,,DELETE
+FormFactor,formfactor,formfactor.com,,,,,,
+FreeFlyer (AI Solutions),freeflyer-ai-solutions,https://ai-solutions.com,,,,,,
+FuelCell Energy,fuelcell-energy,fuelcellenergy.com,,,,,,
+FuriosaAI,furiosaai,furiosa.ai,new_facility,2025-01-01,$125M Series C; tensor contraction processor; mass production of LLM accelerator,https://furiosa.ai/blog/announcing-furiosaais-125m-series-c-bridge-funding-to-scale-sustainable-ai-compute/,,DELETE
+Galactic Energy,galactic-energy,https://galactic-energy.cn,,,,,,
+GameChange Solar,gamechange-solar,gamechangesolar.com,new_facility,2025-01-01,13.7 GW shipped 2024; US manufacturing; Genius Tracker; aggressive growth,https://www.globenewswire.com/news-release/2025/11/04/3180573/0/en/Solar-Tracker-Market-to-Reach-US-32-43-Billion-by-2033-Astute-Analytica.html,,DELETE
+GE Aerospace,ge-aerospace,https://www.geaerospace.com/,,,,,,
+GE Hitachi Nuclear Energy,ge-hitachi-nuclear-energy,gevernova.com/nuclear,,,,,,
+GE Vernova,ge-vernova,https://www.gevernova.com/,new_facility,2025-01-01,$20M Charleroi PA switchgear + Clearwater FL expansion; HVDC expertise; utility-scale grid solutions,https://www.reuters.com/business/energy/grid-equipment-makers-invest-us-ease-supply-shortage--reeii-2025-12-02/,,DELETE
+GE Vernova,ge-vernova,https://www.gevernova.com/,earnings_signal,2026-02-04,8-K filed Feb 4 - continued expansion activity,https://www.sec.gov/cgi-bin/browse-edgar?CIK=1996810,,DELETE
+GE Vernova,ge-vernova,https://www.gevernova.com/,new_facility,2025-01-01,$20M Charleroi PA switchgear + Clearwater FL expansion; HVDC expertise; utility-scale grid solutions,https://www.reuters.com/business/energy/grid-equipment-makers-invest-us-ease-supply-shortage--reeii-2025-12-02/,,DELETE
+GE Vernova,ge-vernova,https://www.gevernova.com/,earnings_signal,2026-02-04,8-K filed Feb 4 - continued expansion activity,https://www.sec.gov/cgi-bin/browse-edgar?CIK=1996810,,DELETE
+Generac Power Systems,generac-power-systems,generac.com,new_facility,2025-01-01,345K sqft Beaver Dam facility Jul 2025; Sussex WI C&I expansion Jan 2026; megawatt-scale data center,https://investors.generac.com/news-releases/news-release-details/generac-expands-its-commercial-industrial-manufacturing,,DELETE
+Generac Power Systems,generac-power-systems,generac.com,new_facility,2025-01-01,345K sqft Beaver Dam facility Jul 2025; Sussex WI C&I expansion Jan 2026; megawatt-scale data center,https://investors.generac.com/news-releases/news-release-details/generac-expands-its-commercial-industrial-manufacturing,,DELETE
+General Atomics EMS,general-atomics-ems,https://www.ga.com/,,,,,,
+General Dynamics,general-dynamics,https://www.gd.com/,,,,,,
+Generation Bio,generation-bio,https://generationbio.com,expansion_announcement,2026-02-14,Signal detected,https://investors.generationbio.com/news-releases/news-release-details/generation-bio-announces-breakthrough-its-non-viral-genetic,,DELETE
+GHGSat,ghgsat,https://ghgsat.com,,,,,,
+GlobalFoundries,globalfoundries,gf.com,new_facility,2025-06-01,GlobalFoundries $16B US Investment,https://gf.com/gf-press-release/globalfoundries-announces-16b-u-s-investment/,,DELETE
+GlobalFoundries,globalfoundries,gf.com,new_facility,2025-01-01,$16B US investment Jun 2025; $1.5B CHIPS award; Malta NY 358K sqft new fab; Vermont modernization; a,https://gf.com/gf-press-release/globalfoundries-announces-16b-u-s-investment-to-reshore-essential-chip-manufacturing-and-accelerate-ai-growth/,,DELETE
+GlobalFoundries,globalfoundries,gf.com,new_facility,2025-01-01,$16B US investment Jun 2025; $1.5B CHIPS award; Malta NY 358K sqft new fab; Vermont modernization; a,https://gf.com/gf-press-release/globalfoundries-announces-16b-u-s-investment-to-reshore-essential-chip-manufacturing-and-accelerate-ai-growth/,,DELETE
+GMV,gmv,https://gmv.com,,,,,,
+GomSpace,gomspace,https://gomspace.com,,,,,,
+Gotion,gotion,https://www.gotion.com/,,,,,,
+Gracell Biotechnologies (AstraZeneca),gracell-biotechnologies-astrazeneca,https://gracellbio.com,expansion_announcement,2026-02-14,Signal detected,https://www.astrazeneca.com/media-centre/press-releases/2023/astrazeneca-to-acquire-gracell-furthering-cell-therapy-ambition-across-oncology-and-autoimmune-diseases.html,,DELETE
+Graham Corp,graham-corp,https://grahamcorp.com,facility_opening,2026-02-06,30K sqft Navy manufacturing facility completed in Batavia NY,https://news.alphastreet.com/graham-corporation-expands-capabilities-across-defense-energy-and-space-markets/,,DELETE
+Graham Corp,graham-corp,https://grahamcorp.com,facility_opening,2026-02-06,30K sqft Navy manufacturing facility completed in Batavia NY,https://news.alphastreet.com/graham-corporation-expands-capabilities-across-defense-energy-and-space-markets/,,DELETE
+Graybar Electric,graybar-electric,graybar.com,,,,,,
+Guident,guident,https://guident.co,,,,,,
+Hammond Power Solutions,hammond-power-solutions,hammondpowersolutions.com,,,,,,
+HAMR Industries,hamr-industries,https://www.hamrindustries.com/,,,,,,
+Hanmi Semiconductor,hanmi-semiconductor,hanmisemi.com,,,,,,
+Hanwha Qcells,hanwha-qcells,https://www.hanwhaaerospace.com,new_facility,2025-01-01,$2.5B Cartersville GA fully integrated (3.3 GW); 8.4 GW total GA capacity; only NA company with full,https://us.qcells.com/blog/qcells-invests-2-5-billion-in-building-complete-solar-supply-chain-in-u-s/,,DELETE
+Hanwha Qcells,hanwha-qcells,https://www.hanwhaaerospace.com,new_facility,2025-01-01,$2.5B Cartersville GA fully integrated (3.3 GW); 8.4 GW total GA capacity; only NA company with full,https://us.qcells.com/blog/qcells-invests-2-5-billion-in-building-complete-solar-supply-chain-in-u-s/,,DELETE
+HawkEye 360,hawkeye-360,https://he360.com,,,,,,
+Haynes International,haynes-international,https://haynesintl.com/,,,,,,
+Heliene,heliene,heliene.com,new_facility,2025-01-01,Minnesota facility operational; Canadian + US manufacturing; Iron Range expansion,https://www.solarpowerworldonline.com/2023/10/3sun-expects-its-american-made-solar-cells-to-enter-market-in-2025/,,DELETE
+Heliene,heliene,heliene.com,new_facility,2025-01-01,Minnesota facility operational; Canadian + US manufacturing; Iron Range expansion,https://www.solarpowerworldonline.com/2023/10/3sun-expects-its-american-made-solar-cells-to-enter-market-in-2025/,,DELETE
+Hera Technologies,hera-technologies,https://www.heratechnologies.com/,,,,,,
+Heraeus Electronics,heraeus-electronics,heraeus-electronics.com,,,,,,
+Hermeus,hermeus,https://www.hermeus.com/,,,,,,
+Hexcel Corporation,hexcel-corporation,https://hexcel.com/,,,,,,
+HIMOINSA,himoinsa,himoinsa.com,,,,,,
+Hitachi Energy,hitachi-energy,hitachienergy.com,new_facility,2025-01-01,$1B+ US investment; $457M South Boston VA 2nd facility Sept 2025; $106M Alamo TN expansion; $6B glob,https://www.manufacturingdive.com/news/hitachi-unveils-1b-grid-manufacturing-investment-virginia-transformer/759512/,,DELETE
+Hitachi Energy,hitachi-energy,hitachienergy.com,new_facility,2025-01-01,$1B+ US investment; $457M South Boston VA 2nd facility Sept 2025; $106M Alamo TN expansion; $6B glob,https://www.manufacturingdive.com/news/hitachi-unveils-1b-grid-manufacturing-investment-virginia-transformer/759512/,,DELETE
+Hitachi High-Tech,hitachi-high-tech,hitachi-hightech.com,new_facility,2025-01-01,New Kasado production facility completed 2025; etching systems expansion,https://www.hitachi.com/New/cnews/month/2023/04/230418a.html,,DELETE
+Hitachi High-Tech,hitachi-high-tech,hitachi-hightech.com,new_facility,2025-01-01,New Kasado production facility completed 2025; etching systems expansion,https://www.hitachi.com/New/cnews/month/2023/04/230418a.html,,DELETE
+Holtec International,holtec-international,holtecinternational.com,new_facility,2025-01-01,$400M DOE funding Dec 2025; SMR-300 multi-site deployment; Palisades plant restart,https://world-nuclear-news.org/articles/two-smr-projects-selected-for-us-federal-funding,,DELETE
+Homology Medicines,homology-medicines,https://homologymedicines.com,expansion_announcement,2026-02-14,Signal detected,https://www.homologymedicines.com/contact-us/,,DELETE
+Honeybee Robotics,honeybee-robotics,https://honeybeerobotics.com,,,,,,
+Honeywell Aerospace,honeywell-aerospace,https://aerospace.honeywell.com/,,,,,,
+Howard Industries,howard-industries,howard-ind.com,,,,,,
+Hoya,hoya,hoya.com,,,,,,
+Hubbell,hubbell,hubbell.com,,,,,,
+HydrogenPro,hydrogenpro,hydrogenpro.com,new_facility,2025-01-01,Large-scale alkaline modules; electrode production expansion; industrial hydrogen,https://www.snsinsider.com/blogs/leading-hydrogen-electrolyzer-manufacturers-in-2025,,DELETE
+HyImpulse,hyimpulse,https://hyimpulse.de,,,,,,
+Hyosung Heavy Industries,hyosung-heavy-industries,hyosungheavyindustries.com,new_facility,2025-01-01,Hyosung HICO Memphis TN expanding Nov 2025 (2nd time in 6 months); doubling US output to 150 units/y,https://www.kedglobal.com/energy/newsView/ked202503030002,,DELETE
+Hyosung Heavy Industries,hyosung-heavy-industries,hyosungheavyindustries.com,new_facility,2025-01-01,Hyosung HICO Memphis TN expanding Nov 2025 (2nd time in 6 months); doubling US output to 150 units/y,https://www.kedglobal.com/energy/newsView/ked202503030002,,DELETE
+HyperSciences,hypersciences,https://hypersciences.com/,,,,,,
+Hypersonix Launch Systems,hypersonix-launch-systems,https://www.hypersonix.com,,,,,,
+Ibiden,ibiden,ibiden.co.jp,new_facility,2025-12-01,Ibiden $3.3B Japan Expansion,https://www.digitimes.com/news/a20260204PD227/ibiden-expansion-capacity-production-plant.html,,DELETE
+Ibiden,ibiden,ibiden.co.jp,new_facility,2025-01-01,$3.3B investment over 3 years from FY2026; new Gifu factory late 2025; 40% AI server output boost,https://www.digitimes.com/news/a20260204PD227/ibiden-expansion-capacity-production-plant.html,,DELETE
+ICEYE,iceye,https://iceye.com,new_facility,2025-01-01,JV with Rheinmetall for SAR manufacturing at Neuss Germany (Q2 2026); Spain manufacturing center; UA,https://www.janes.com/osint-insights/defence-news/air/rheinmetall-and-iceye-to-establish-joint-sar-satellite-production,,DELETE
+Immatics,immatics,https://immatics.com,us_entity_formation,2025-10-01,German company with 100K sq ft US manufacturing facility in Houston; TCR-T for solid tumors,https://immatics.com/manufacturing/,US_ENTITY_FORMATION,KEEP
+Impulse Space,impulse-space,https://impulsespace.com,new_facility,2025-01-01,$300M Series C (June 2025); NASA orbital transfer contract; scaling manufacturing,https://www.impulsespace.com/updates/impulse-space-secures-300-million-dollar-series-c-to-accelerate-the-future-of-in-space-mobility,,DELETE
+Infineon Technologies,infineon-technologies,infineon.com,,,,,,
+INNIO Group,innio-group,innio.com,,,,,,
+Instil Bio,instil-bio,https://instilbio.com,investment_plan_announced,2022-01-01,70K sq ft LA facility for TIL therapy; CoStAR-TIL platform to enhance tumor microenvironment activit,https://ir.instilbio.com/news-releases/news-release-details/instil-bio-announces-ind-clearance-first-costar-til-program-itil,INVESTMENT_PLAN_ANNOUNCED,KEEP
+Intel,intel,https://intel.com,new_facility,2025-10-01,Intel Ohio Megafab + CHIPS Award,https://www.nist.gov/chips/intel-corporation-arizona-chandler,,DELETE
+Intel,intel,https://intel.com,new_facility,2025-01-01,$8.5B CHIPS Act award; Fab 52 Chandler opened Oct 2025; $100B Ohio megafab (2 fabs); 18A process; In,https://www.nist.gov/chips/intel-corporation-arizona-chandler,,DELETE
+Intel,intel,https://intel.com,new_facility,2025-01-01,$8.5B CHIPS Act award; Fab 52 Chandler opened Oct 2025; $100B Ohio megafab (2 fabs); 18A process; In,https://www.nist.gov/chips/intel-corporation-arizona-chandler,,DELETE
+Iovance Biotherapeutics,iovance-biotherapeutics,https://iovance.com,regulatory_milestone,2024-02-01,AMTAGVI (lifileucel) approved Feb 2024 for melanoma; 136K sq ft Cell Therapy Center in Philadelphia ,https://www.iovance.com/iovance-cell-therapy-center/,REGULATORY_MILESTONE,KEEP
+IQE,iqe,iqep.com,,,,,,
+IronRidge,ironridge,ironridge.com,,,,,,
+Isar Aerospace,isar-aerospace,https://isaraerospace.com,new_facility,2025-01-01,€150M convertible bond (June 2025); Munich production expansion; €220M+ Series C with NATO,https://europeanspaceflight.com/isar-aerospace-raises-e150m-through-convertible-bond-agreement/,,DELETE
+ISISPACE,isispace,https://isispace.nl,,,,,,
+ispace,ispace,https://ispace-inc.com,,,,,,
+ITM Power,itm-power,itm-power.com,,,,,,
+Itron,itron,itron.com,,,,,,
+JA Solar,ja-solar,jasolar.com,new_facility,2025-01-01,Phoenix AZ 2 GW module factory announced; targeting US domestic content,https://unicorn-sd.com/jinkosolar-trina-solar-ja-solar-longi-and-csi-solar-considered-the-worlds-top-five-module-manufacturers-have-established-or-plan-to-construct-manufacturing-facilities-in-the-us/,,DELETE
+JA Solar,ja-solar,jasolar.com,new_facility,2025-01-01,Phoenix AZ 2 GW module factory announced; targeting US domestic content,https://unicorn-sd.com/jinkosolar-trina-solar-ja-solar-longi-and-csi-solar-considered-the-worlds-top-five-module-manufacturers-have-established-or-plan-to-construct-manufacturing-facilities-in-the-us/,,DELETE
+Jaguar Gene Therapy,jaguar-gene-therapy,https://jaguargenetherapy.com,investment_plan_announced,2025-12-01,$125M 200-job manufacturing facility in RTP NC; JAG201 for autism/Phelan-McDermid,https://www.ncbiotech.org/news/jaguar-gene-therapy-build-1254-m-200-job-manufacturing-site-rtp,INVESTMENT_PLAN_ANNOUNCED,KEEP
+JinkoSolar,jinkosolar,jinkosolar.com,new_facility,2025-01-01,Jacksonville FL 2 GW module factory; $67M investment; 600 jobs; operational 2024,https://finance.yahoo.com/news/factbox-chinese-owned-solar-factories-100904217.html,,DELETE
+JinkoSolar,jinkosolar,jinkosolar.com,new_facility,2025-01-01,Jacksonville FL 2 GW module factory; $67M investment; 600 jobs; operational 2024,https://finance.yahoo.com/news/factbox-chinese-owned-solar-factories-100904217.html,,DELETE
+Joby Aviation,joby-aviation,https://jobyaviation.com,regulatory_approval,2024-11-08,Joby Receives FAA Part 135 Air Carrier Certification,https://jobyaviation.com/news,,DELETE
+Joby Aviation,joby-aviation,https://jobyaviation.com,partnership,2024-08-14,Joby and Delta Air Lines Expand Partnership,https://news.delta.com,,DELETE
+Joby Aviation,joby-aviation,https://jobyaviation.com,new_facility,2025-01-01,36 SEC filings re: expansion; Toyota alliance; FAA certification on track; Marina CA manufacturing,https://www.sec.gov/cgi-bin/browse-edgar?CIK=1819848,,DELETE
+Joby Aviation,joby-aviation,https://jobyaviation.com,new_facility,2025-01-01,36 SEC filings re: expansion; Toyota alliance; FAA certification on track; Marina CA manufacturing,https://www.sec.gov/cgi-bin/browse-edgar?CIK=1819848,,DELETE
+John Cockerill,john-cockerill,johncockerill.com,,,,,,
+JSR Corporation,jsr-corporation,jsr.co.jp,,,,,,
+K2 Space,k2-space,k2space.com,,,,,,
+Kairos Power,kairos-power,kairospower.com,new_facility,2025-01-01,Hermes reactor nuclear construction started May 2025 in Oak Ridge TN; first commercial reactor next ,https://kairospower.com/external_updates/kairos-power-begins-nuclear-construction-of-hermes-demonstration-reactor/,,DELETE
+Kairos Power,kairos-power,kairospower.com,new_facility,2025-01-01,Hermes reactor nuclear construction started May 2025 in Oak Ridge TN; first commercial reactor next ,https://kairospower.com/external_updates/kairos-power-begins-nuclear-construction-of-hermes-demonstration-reactor/,,DELETE
+Kawasaki Gas Turbines,kawasaki-gas-turbines,kawasaki.com,,,,,,
+Kayhan Space,kayhan-space,https://kayhan.space,,,,,,
+Kepler Communications,kepler-communications,https://keplercommunications.com,,,,,,
+King Yuan Electronics (KYEC),king-yuan-electronics-kyec,kyec.com.tw,new_facility,2025-01-01,Singapore expansion accelerating; triple AI chip testing contracts; capex increased to NT$12.3B,https://www.digitimes.com/news/a20251222PD210/expansion-king-yuan-testing-kyec-ai-chip.html,,DELETE
+Kinsus Interconnect,kinsus-interconnect,kinsus.com.tw,,,,,,
+Kite Pharma (Gilead),kite-pharma-gilead,https://kitepharma.com,expansion_announcement,2026-02-14,Signal detected,https://www.kitepharma.com/,,DELETE
+KLA,kla,kla.com,,,,,,
+Kokusai Electric,kokusai-electric,kokusai-electric.com,new_facility,2025-01-01,New US demo center; Toyama manufacturing expansion,https://www.kokusai-electric.com/en/news/document,,DELETE
+Koppers,koppers,koppers.com,,,,,,
+Kratos Defense,kratos-defense,https://www.kratosdefense.com/,,,,,,
+Krystal Biotech,krystal-biotech,https://krystalbio.com,product_success,2023-05-01,Vyjuvek approved; built second 100K sq ft ASTRA facility; HSV-1 vector platform,https://ir.krystalbio.com/news-releases/news-release-details/krystal-biotech-breaks-ground-second-commercial-gene-therapy,,DELETE
+KSAT,ksat,https://ksat.no,,,,,,
+KUKA,kuka,https://www.kuka.com/,,,,,,
+Kulicke & Soffa,kulicke-soffa,kns.com,,,,,,
+Kythera Space Solutions,kythera-space-solutions,https://kythera.space,,,,,,
+L3Harris,l3harris,https://www.l3harris.com/,new_facility,2025-01-01,$22M GAMMA-H scramjet + Zeus motor production increase to 60 units,https://www.l3harris.com/newsroom/press-release/2025/12/l3harris-receives-letter-intent-kratos-defense-production-large,,DELETE
+Lam Research,lam-research,lamresearch.com,new_facility,2025-01-01,$65M Oregon Tualatin facility opened Nov 2025; 700 workers; R&D expansion for AI chips,https://www.oregonlive.com/silicon-forest/2025/11/lam-research-opens-65-million-tualatin-office-with-room-for-700-workers.html,,DELETE
+Lam Research,lam-research,lamresearch.com,new_facility,2025-01-01,$65M Oregon Tualatin facility opened Nov 2025; 700 workers; R&D expansion for AI chips,https://www.oregonlive.com/silicon-forest/2025/11/lam-research-opens-65-million-tualatin-office-with-room-for-700-workers.html,,DELETE
+Landis+Gyr,landis-gyr,landisgyr.com,,,,,,
+LAPP Insulators,lapp-insulators,lappinsulators.com,,,,,,
+Lasertec,lasertec,lasertec.co.jp,,,,,,
+Last Energy,last-energy,lastenergy.com,,,,,,
+Lattice Semiconductor,lattice-semiconductor,latticesemi.com,,,,,,
+LEENO Industrial,leeno-industrial,leeno.com,,,,,,
+Legend Biotech,legend-biotech,https://legendbiotech.com,investment_plan_announced,2022-10-01,CARVYKTI approved for myeloma; $500M investment with J&J in Raritan NJ; doubling capacity,https://www.fiercepharma.com/manufacturing/legend-jj-double-down-car-t-manufacturing-500m-carvykti-eyes-wider-myeloma-use,INVESTMENT_PLAN_ANNOUNCED,KEEP
+LeoLabs,leolabs,https://leolabs.space,,,,,,
+Lexeo Therapeutics,lexeo-therapeutics,https://lexeotx.com,expansion_announcement,2026-02-14,Signal detected,https://www.lexeotx.com/post/lexeo-therapeutics-announces-fda-clearance-of-ind-for-lx2020-an-aav-based-gene-therapy-candidate-for-pkp2-arrhythmogenic-cardiomyopathy/,,DELETE
+LG Energy Solution Michigan,lg-energy-solution-michigan,https://www.lgenergymi.com/,,,,,,
+Lilium,lilium,lilium.com,,,,,,
+Linde,linde,linde.com,,,,,,
+Lockheed Martin,lockheed-martin,https://www.lockheedmartin.com/,,,,,,
+Locus Robotics,locus-robotics,https://locusrobotics.com/,new_facility,2025-01-01,New HQ construction in Wilmington; expanding globally; FedEx and major 3PL deployments,https://www.bostonglobe.com/2023/07/26/business/locus-launches-work-new-hq-wilmington/,,DELETE
+Loft Orbital,loft-orbital,https://loftorbital.com,,,,,,
+LONGi Green Energy,longi-green-energy,longi.com,new_facility,2025-01-01,Ohio module factory partnership announced Mar 2024; operations Q1 2025,https://unicorn-sd.com/jinkosolar-trina-solar-ja-solar-longi-and-csi-solar-considered-the-worlds-top-five-module-manufacturers-have-established-or-plan-to-construct-manufacturing-facilities-in-the-us/,,DELETE
+LONGi Green Energy,longi-green-energy,longi.com,new_facility,2025-01-01,Ohio module factory partnership announced Mar 2024; operations Q1 2025,https://unicorn-sd.com/jinkosolar-trina-solar-ja-solar-longi-and-csi-solar-considered-the-worlds-top-five-module-manufacturers-have-established-or-plan-to-construct-manufacturing-facilities-in-the-us/,,DELETE
+LS Cable & System,ls-cable-system,lscns.co.kr,,,,,,
+Lucy Electric,lucy-electric,lucyelectric.com,,,,,,
+Lunar Outpost,lunar-outpost,https://lunaroutpost.com,,,,,,
+Lynas Rare Earths,lynas-rare-earths,https://lynasrareearths.com/,,,,,,
+Lynk Global,lynk-global,https://lynk.world,,,,,,
+Machina Labs,machina-labs,https://machinalabs.ai/,,,,,,
+MacLean Power Systems,maclean-power-systems,macleanpower.com,,,,,,
+Maddox Industrial Transformer,maddox-industrial-transformer,maddox.com,,,,,,
+Magdrive,magdrive,https://magdrive.space,,,,,,
+Mangata Networks,mangata-networks,https://mangatanetworks.com,,,,,,
+Marvell Technology,marvell-technology,marvell.com,new_facility,2025-01-01,Vietnam expansion (HCM + Da Nang) Sept 2025; India R&D expansion; $5.5B Celestial AI acquisition Dec,https://www.marvell.com/company/newsroom/marvell-accelerates-expansion-in-vietnam.html,,DELETE
+Maxeon Solar,maxeon-solar,maxeon.com,new_facility,2025-01-01,Premium IBC technology; US cell manufacturing plans; SunPower spinoff,https://www.maxeon.com/,,DELETE
+MediaTek,mediatek,mediatek.com,,,,,,
+Melexis,melexis,melexis.com,,,,,,
+MemryX,memryx,memryx.com,new_facility,2025-01-01,$44M Series B; compute-at-memory AI accelerators; ramping production,https://www.prnewswire.com/news-releases/memryx-raises-44-million-in-series-b-funding-for-advanced-edge-ai-computing-302412842.html,,DELETE
+Mentis Sciences,mentis-sciences,https://www.mentissciences.com/,,,,,,
+Meyer Burger,meyer-burger,meyerburger.com,new_facility,2025-01-01,Arizona module plant operational; Colorado cell plant announced Q4 2024 start; 2 GW HJT cell capacit,https://www.meyerburger.com/en/newsroom/artikel/meyer-burger-announces-solar-cell-production-facility-in-colorado-usa,,DELETE
+Meyer Burger,meyer-burger,meyerburger.com,new_facility,2025-01-01,Arizona module plant operational; Colorado cell plant announced Q4 2024 start; 2 GW HJT cell capacit,https://www.meyerburger.com/en/newsroom/artikel/meyer-burger-announces-solar-cell-production-facility-in-colorado-usa,,DELETE
+Microchip Technology,microchip-technology,microchip.com,new_facility,2025-01-01,$162M CHIPS for Oregon + Colorado expansion; closing Tempe AZ Sept 2025; consolidating,https://www.oregonlive.com/silicon-forest/2024/12/microchip-will-close-arizona-factory-while-it-pursues-federal-subsidies-to-expand-in-oregon-colorado.html,,DELETE
+Microchip Technology,microchip-technology,microchip.com,new_facility,2025-01-01,$162M CHIPS for Oregon + Colorado expansion; closing Tempe AZ Sept 2025; consolidating,https://www.oregonlive.com/silicon-forest/2024/12/microchip-will-close-arizona-factory-while-it-pursues-federal-subsidies-to-expand-in-oregon-colorado.html,,DELETE
+Micron,micron,micron.com,new_facility,2025-06-01,Micron NY + Idaho + VA Expansion,https://investors.micron.com/news-releases/news-release-details/micron-and-trump-administration-announce-expanded-us-investments,,DELETE
+Micron,micron,micron.com,new_facility,2025-01-01,$6.4B CHIPS funding; 2nd Boise fab announced Jun 2025; NY Clay megafab ($100B); Virginia expansion; ,https://investors.micron.com/news-releases/news-release-details/micron-and-trump-administration-announce-expanded-us-investments,,DELETE
+Micron,micron,micron.com,new_facility,2025-01-01,$6.4B CHIPS funding; 2nd Boise fab announced Jun 2025; NY Clay megafab ($100B); Virginia expansion; ,https://investors.micron.com/news-releases/news-release-details/micron-and-trump-administration-announce-expanded-us-investments,,DELETE
+Millennium Space Systems,millennium-space-systems,https://millennium-space.com,,,,,,
+Mission Solar,mission-solar,missionsolar.com,,,,,,
+Mitsubishi Electric,mitsubishi-electric,mitsubishielectric.com,new_facility,2025-01-01,Strategic investment in Realtime Robotics (May 2024) for motion planning,https://www.credenceresearch.com/report/warehouse-robotics-market,,DELETE
+Mitsubishi Power,mitsubishi-power,power.mhi.com,new_facility,2025-01-01,Savannah GA manufacturing; JAC turbine most efficient; Takasago Hydrogen Park verification; 4M+ oper,https://power.mhi.com/regions/amer/products/gas-turbines,,DELETE
+Mitsubishi Power,mitsubishi-power,power.mhi.com,new_facility,2025-01-01,Savannah GA manufacturing; JAC turbine most efficient; Takasago Hydrogen Park verification; 4M+ oper,https://power.mhi.com/regions/amer/products/gas-turbines,,DELETE
+Mkango Resources,mkango-resources,https://mkango.ca/,,,,,,
+Modine Manufacturing,modine-manufacturing,https://modine.com,expansion_announcement,2025-11-17,Data center cooling expansion - multiple US facilities,https://www.stocktitan.net/news/MOD/modine-reports-third-quarter-fiscal-2026-pad8obfnnt8b.html,,DELETE
+Modine Manufacturing,modine-manufacturing,https://modine.com,expansion_announcement,2025-11-17,Data center cooling expansion - multiple US facilities,https://www.stocktitan.net/news/MOD/modine-reports-third-quarter-fiscal-2026-pad8obfnnt8b.html,,DELETE
+Modus Advanced,modus-advanced,https://www.modusadvanced.com/,,,,,,
+Momentus,momentus,https://momentus.space,,,,,,
+Monolithic Power Systems,monolithic-power-systems,monolithicpower.com,,,,,,
+Moog Inc,moog-inc,https://moog.com,,,,,,
+Morpheus Space,morpheus-space,https://morpheus-space.com,new_facility,2025-01-01,$15M strategic investment (Feb 2026); Reloaded Facility expansion in Dresden; targeting 100 units,https://www.prnewswire.com/news-releases/morpheus-space-secures-a-15-million-strategic-investment-to-accelerate-mass-production-expansion-302678253.html,,DELETE
+MP Materials,mp-materials,https://mpmaterials.com/,,,,,,
+Muon Space,muon-space,https://muonspace.com,new_facility,2025-01-01,"$146M Series B (June 2025); new 70,000 sq ft facility (10x expansion); acquired Starlight propulsion",https://www.prnewswire.com/news-releases/muon-space-completes-146-million-series-b-to-scale-satellite-constellations-for-defense-and-commercial-missions-302479524.html,,DELETE
+NanoAvionics,nanoavionics,https://nanoavionics.com,,,,,,
+Nanya Technology,nanya-technology,nanya.com,,,,,,
+Nel ASA,nel-asa,nelhydrogen.com,new_facility,2025-01-01,Acquired Green Hydrogen Systems assets Jun 2025; alkaline + PEM technology; scaling production,https://www.marketsandmarkets.com/ResearchInsight/electrolyzers-market.asp,,DELETE
+NeoVolta,neovolta,https://neovolta.com/,,,,,,
+Neura Robotics,neura-robotics,https://neura-robotics.com/,new_facility,2025-01-01,€120M Series B for cognitive robots in logistics/care/manufacturing; US market expansion planned,https://www.marionstreetcapital.com/insights/the-robotics-industry-funding-landscape-2025,,DELETE
+Neurogene,neurogene,https://neurogene.com,investment_plan_announced,2024-11-01,State-of-the-art in-house facility in Houston; NGN-401 for Rett syndrome advancing toward pivotal,https://www.biospace.com/press-releases/neurogene-reports-third-quarter-2024-financial-results-and-highlights-recent-updates,INVESTMENT_PLAN_ANNOUNCED,KEEP
+Newcleo,newcleo,newcleo.com,,,,,,
+Nexans,nexans,nexans.com,,,,,,
+NextEra Energy Resources,nextera-energy-resources,https://www.nexteraenergyresources.com/,,,,,,
+Nextracker,nextracker,nextracker.com,new_facility,2025-01-01,28.5 GW shipped 2024; 100 GW cumulative milestone; US manufacturing; 35 GW annual capacity across 6 ,https://www.globenewswire.com/news-release/2025/11/04/3180573/0/en/Solar-Tracker-Market-to-Reach-US-32-43-Billion-by-2033-Astute-Analytica.html,,DELETE
+NGK-Locke,ngk-locke,ngk-locke.com,,,,,,
+Niagara Power Transformer,niagara-power-transformer,niagarapowertransformer.com,,,,,,
+Nikola,nikola,nikolamotor.com,,,,,,
+Niron Magnetics,niron-magnetics,https://www.nironmagnetics.com/,,,,,,
+Nordson Electronics,nordson-electronics,nordson.com,,,,,,
+Northrop Grumman,northrop-grumman,https://northropgrumman.com,,,,,,
+Nova Ltd,nova-ltd,novami.com,,,,,,
+Novartis Cell Therapy,novartis-cell-therapy,https://novartis.com,expansion_announcement,2026-02-14,Signal detected,https://www.novartis.com/,,DELETE
+NovaTech Automation,novatech-automation,novatechautomation.com,,,,,,
+Noveon Magnetics,noveon-magnetics,https://noveon.co/,new_facility,2025-01-01,$215M Series C led by OneIM ($200M) to expand US rare earth magnet manufacturing capacity,https://www.prnewswire.com/news-releases/noveon-magnetics-completes-215-million-series-c-to-expand-us-rare-earth-magnet-manufacturing-capacity-302664196.html,,DELETE
+NuScale Power,nuscale-power,nuscalepower.com,,,,,,
+NVIDIA,nvidia,nvidia.com,new_facility,2025-01-01,$374M Santa Clara campus purchase 2024; 324K sqft new facility May 2025; $4.5T market cap,https://www.credaily.com/briefs/nvidia-expansion-drives-silicon-valley-office-growth-amid-ai-boom/,,DELETE
+Oceaneering,oceaneering,https://www.oceaneering.com/,,,,,,
+OHB System,ohb-system,https://ohb.de,,,,,,
+Ohmium,ohmium,ohmium.com,new_facility,2025-01-01,$250M Series C from TPG; modular PEM systems; rapid production ramp,https://pubs.acs.org/doi/10.1021/cen-10115-buscon7,,DELETE
+Oklo,oklo,oklo.com,new_facility,2025-01-01,12 GW Switch data center deal through 2044; Idaho plant groundbreaking Sept 2025; $2B fuel developme,https://en.wikipedia.org/wiki/Oklo_Inc.,,DELETE
+Oklo,oklo,oklo.com,new_facility,2025-01-01,12 GW Switch data center deal through 2044; Idaho plant groundbreaking Sept 2025; $2B fuel developme,https://en.wikipedia.org/wiki/Oklo_Inc.,,DELETE
+Olsun Electrics,olsun-electrics,olsun.com,,,,,,
+ON Semiconductor,on-semiconductor,onsemi.com,new_facility,2025-01-01,SiC fab expansion South Korea completed; US CHIPS funding for SiC epitaxial expansion,https://www.semiconductors.org/chip-supply-chain-investments/,,DELETE
+ON Semiconductor,on-semiconductor,onsemi.com,new_facility,2025-01-01,SiC fab expansion South Korea completed; US CHIPS funding for SiC epitaxial expansion,https://www.semiconductors.org/chip-supply-chain-investments/,,DELETE
+Onto Innovation,onto-innovation,ontoinnovation.com,,,,,,
+Orbex,orbex,https://orbex.space,new_facility,2025-01-01,£20M UK government investment (Jan 2025); London base + Scotland HQ expansion,https://www.scotsman.com/business/all-systems-go-for-ground-breaking-rocket-launch-after-scotlands-orbex-secures-ps20m-boost-4964379,,DELETE
+Orbion Space Technology,orbion-space-technology,https://orbionspace.com,,,,,,
+Orbit Fab,orbit-fab,https://orbitfab.com,new_facility,2025-01-01,$28.5M Series A; expanding manufacturing; 3 launches for US government 2025; UK £2M investment,https://www.orbitfab.com/news/uk-refueling-innovation/,,DELETE
+Orbital Assembly,orbital-assembly,https://orbitalassembly.com,,,,,,
+Orbital Composites,orbital-composites,https://www.orbitalcomposites.com/,,,,,,
+Orbital Sidekick,orbital-sidekick,https://orbitalsidekick.com,,,,,,
+Orbital Therapeutics,orbital-therapeutics,https://orbitaltx.com,,,,,,
+Ormazabal,ormazabal,ormazabal.com,,,,,,
+OroraTech,ororatech,https://ororatech.com,,,,,,
+OSI (Open Systems International),osi-open-systems-international,osii.com,,,,,,
+Paragraf,paragraf,paragraf.com,,,,,,
+Park Aerospace,park-aerospace,https://parkaerospace.com/,new_facility,2025-01-01,$50M Midwest plant expansion to double capacity - LOCATION TBD,https://seekingalpha.com/news/4538969-park-aerospace-plans-50m-manufacturing-expansion-to-double-capacity-as-demand-surges,,DELETE
+Passage Bio,passage-bio,https://passagebio.com,expansion_announcement,2026-02-14,Signal detected,https://www.globenewswire.com/news-release/2020/12/16/2146113/0/en/Passage-Bio-Announces-Gene-Therapy-Manufacturing-Research-and-Development-Site.html,,DELETE
+PDF Solutions,pdf-solutions,pdf.com,,,,,,
+Peak Energy,peak-energy,https://www.peakenergy.com/,,,,,,
+Perkins Engines,perkins-engines,perkins.com,,,,,,
+Photronics,photronics,photronics.com,,,,,,
+Pixxel,pixxel,https://pixxel.space,,,,,,
+Planet Labs,planet-labs,https://planet.com,new_facility,2025-01-01,New Berlin satellite manufacturing facility (Sept 2025); doubling Pelican production capacity,https://www.businesswire.com/news/home/20250925738688/en/Planet-to-Open-New-Satellite-Manufacturing-Facility-in-Berlin,,DELETE
+Plasma-Therm,plasma-therm,plasmatherm.com,,,,,,
+Plug Power,plug-power,plugpower.com,new_facility,2025-01-01,95+ MW electrolyzer capacity delivered; 100MW Galp Portugal project; Georgia + Tennessee production ,https://www.plugpower.com/plug-power-2025-a-year-of-momentum-milestones-and-meaningful-progress/,,DELETE
+Plug Power,plug-power,plugpower.com,new_facility,2025-01-01,95+ MW electrolyzer capacity delivered; 100MW Galp Portugal project; Georgia + Tennessee production ,https://www.plugpower.com/plug-power-2025-a-year-of-momentum-milestones-and-meaningful-progress/,,DELETE
+Polar Semiconductor,polar-semiconductor,polarsemi.com,,,,,,
+Polaris Sensor Technologies,polaris-sensor-technologies,https://www.polarissensor.com/,,,,,,
+Poseida Therapeutics (Roche),poseida-therapeutics-roche,https://poseida.com,expansion_announcement,2026-02-14,Signal detected,https://poseida.com/,,DELETE
+Powell Industries,powell-industries,powellind.com,,,,,,
+Powertech Technology (PTI),powertech-technology-pti,pti.com.tw,new_facility,2025-10-01,Powertech $1B Panel Packaging Expansion,https://www.digitimes.com/news/a20251029PD215/pti-foplp-packaging-expansion-testing.html,,DELETE
+Powertech Technology (PTI),powertech-technology-pti,pti.com.tw,new_facility,2025-01-01,$1B FOPLP expansion by 2026; 6000-7000 WPM capacity; panel-level packaging leader; full bookings,https://www.digitimes.com/news/a20251029PD215/pti-foplp-packaging-expansion-testing.html,,DELETE
+Powin,powin,https://powin.com/,,,,,,
+PPC Insulators,ppc-insulators,ppcinsulators.com,,,,,,
+Pratt & Whitney Power Systems,pratt-whitney-power-systems,pwps.com,,,,,,
+Preformed Line Products,preformed-line-products,plp.com,,,,,,
+Privateer,privateer,https://privateer.com,,,,,,
+Prolec GE,prolec-ge,prolec.energy,new_facility,2025-01-01,$140M North Carolina facility 2025 doubling capacity; acquired SPX Waukesha; 144K sqft NC plant,https://finance.yahoo.com/news/u-transformers-industry-research-report-080100983.html,,DELETE
+Prolec GE,prolec-ge,prolec.energy,new_facility,2025-01-01,$140M North Carolina facility 2025 doubling capacity; acquired SPX Waukesha; 144K sqft NC plant,https://finance.yahoo.com/news/u-transformers-industry-research-report-080100983.html,,DELETE
+Prysmian Group,prysmian-group,prysmian.com,,,,,,
+Purespring Therapeutics,purespring-therapeutics,https://purespringtx.com,expansion_announcement,2026-02-14,Signal detected,https://purespringtx.com/,,DELETE
+Qualcomm,qualcomm,qualcomm.com,,,,,,
+Quilty Analytics,quilty-analytics,https://quiltyanalytics.com,,,,,,
+Radiant Industries,radiant-industries,radiantnuclear.com,,,,,,
+Rapidus,rapidus,rapidus.inc,new_facility,2025-07-01,Rapidus First 2nm Chips July 2025,https://en.wikipedia.org/wiki/Rapidus,,DELETE
+Rapidus,rapidus,rapidus.inc,new_facility,2025-01-01,$5.4B subsidies FY2025; first 2nm GAA transistors Jul 2025; mass production 2027 target,https://en.wikipedia.org/wiki/Rapidus,,DELETE
+Raytheon,raytheon,https://www.rtx.com/,,,,,,
+RBC Signals,rbc-signals,https://rbcsignals.com,,,,,,
+Rebellions,rebellions,rebellions.ai,new_facility,2025-01-01,$250M Series C; ARM + Samsung backed; mass production accelerating,https://rebellions.ai/newsroom/rebellions-raises-250-million-to-advance-the-next-generation-ai-infrastructure-backed-by-arm-and-samsung/,,DELETE
+REC Group,rec-group,recgroup.com,,,,,,
+Redwire,redwire,https://redwirespace.com,,,,,,
+Redwood Materials,redwood-materials,https://redwoodmaterials.com,new_facility,2024-07-30,Redwood Materials Breaks Ground on South Carolina Campus,https://redwoodmaterials.com/news,,DELETE
+REEtec,reetec,https://reetec.no/,,,,,,
+REGENXBIO,regenxbio,https://regenxbio.com,regulatory_milestone,2026-01-11,RGX-121 PDUFA Feb 8 2026; fully in-house end-to-end capabilities; single facility,https://www.prnewswire.com/news-releases/regenxbio-highlights-key-2026-catalysts-and-announces-positive-long-term-functional-outcomes-in-lead-duchenne-gene-therapy-program-302657988.html,REGULATORY_MILESTONE,KEEP
+Rehlko (Kohler Energy),rehlko-kohler-energy,rehlko.com,new_facility,2025-01-01,Rebranded from Kohler Energy Sep 2024; Mosel WI site redesigned; expanding industrial generators; Mi,https://www.rehlko.com/kohler-energy-is-now-rehlko,,DELETE
+Rehlko (Kohler Energy),rehlko-kohler-energy,rehlko.com,new_facility,2025-01-01,Rebranded from Kohler Energy Sep 2024; Mosel WI site redesigned; expanding industrial generators; Mi,https://www.rehlko.com/kohler-energy-is-now-rehlko,,DELETE
+Relativity Space,relativity-space,https://relativityspace.com,new_facility,2025-01-01,Flight production started; new horizontal integration facility at launch site; SES contract expansio,https://www.relativityspace.com/press-release/2025/3/7/rycbar123,,DELETE
+Renesas Electronics,renesas-electronics,renesas.com,new_facility,2025-01-01,Kofu fab reopened for power semis 2024; SiC production end 2024; acquired Transphorm GaN,https://www.datacenterdynamics.com/en/news/renesas-reopens-previously-shuttered-japanese-chip-fab/,,DELETE
+Renesas Electronics,renesas-electronics,renesas.com,new_facility,2025-01-01,Kofu fab reopened for power semis 2024; SiC production end 2024; acquired Transphorm GaN,https://www.datacenterdynamics.com/en/news/renesas-reopens-previously-shuttered-japanese-chip-fab/,,DELETE
+Replimune,replimune,https://replimune.com,regulatory_milestone,2026-02-01,RP1 BLA resubmitted for advanced melanoma; single in-house manufacturing facility,https://ir.replimune.com/news-releases/news-release-details/replimune-receives-complete-response-letter-fda-rp1-biologics,REGULATORY_MILESTONE,KEEP
+RobCo,robco,https://www.robco.de/,new_facility,2025-01-01,$100M Series C + US expansion (SF HQ + Austin manufacturing),https://theaiinsider.tech/2026/01/30/robco-raises-100m-in-series-c-funding-to-scale-its-autonomous-industrial-robotics-platform/,,DELETE
+Rocket Factory Augsburg,rocket-factory-augsburg,https://rfa.space,,,,,,
+Rocket Lab,rocket-lab,https://rocketlabusa.com,new_facility,2025-01-01,New Space Structures Complex in Baltimore County MD; expanded semiconductor manufacturing (Aug 2025),https://www.businesswire.com/news/home/20250822243590/en/Rocket-Lab-Announces-Expanded-U.S.-Investments-for-National-Security-Programs-and-Semiconductor-Manufacturing,,DELETE
+Rocket Lab,rocket-lab,https://rocketlabusa.com,new_facility,2025-01-01,New Space Structures Complex in Baltimore County MD; expanded semiconductor manufacturing (Aug 2025),https://www.businesswire.com/news/home/20250822243590/en/Rocket-Lab-Announces-Expanded-U.S.-Investments-for-National-Security-Programs-and-Semiconductor-Manufacturing,,DELETE
+Rocket Pharmaceuticals,rocket-pharmaceuticals,https://rocketpharma.com,regulatory_milestone,2025-10-01,Kresladi BLA resubmitted; PDUFA Q1 2026; in-house manufacturing at NJ facility,https://ir.rocketpharma.com/news-releases/news-release-details/rocket-pharmaceuticals-announces-buildout-rd-and-manufacturing,REGULATORY_MILESTONE,KEEP
+Rockwell Automation,rockwell-automation,https://www.rockwellautomation.com/,expansion_announcement,2026-02-06,1M sqft greenfield manufacturing facility announced,https://dailyreporter.com/2026/02/06/rockwell-automation-new-berlin-facility/,,DELETE
+Rockwell Automation,rockwell-automation,https://www.rockwellautomation.com/,expansion_announcement,2026-02-06,1M sqft greenfield manufacturing facility announced,https://dailyreporter.com/2026/02/06/rockwell-automation-new-berlin-facility/,,DELETE
+Rogue Space Systems,rogue-space-systems,https://rogue.space,,,,,,
+Rohm Semiconductor,rohm-semiconductor,rohm.com,new_facility,2025-01-01,Largest facility to start end 2024; SiC production expansion; acquired Solar Frontier fab,https://www.eenewseurope.com/en/rohm-buys-japanese-fab-for-sic-boost/,,DELETE
+Rolls-Royce MTU,rolls-royce-mtu,mtu-solutions.com,,,,,,
+Rolls-Royce SMR,rolls-royce-smr,rolls-royce-smr.com,,,,,,
+S&C Electric,s-c-electric,sandc.com,,,,,,
+Sabre Industries,sabre-industries,sabreindustries.com,,,,,,
+Samsung Foundry,samsung-foundry,samsung.com/semiconductor,,,,,,
+Samsung SDI America,samsung-sdi-america,https://www.samsungsdi.com/,,,,,,
+Sangamo Therapeutics,sangamo-therapeutics,https://sangamo.com,regulatory_milestone,2025-12-01,ST-920 BLA rolling submission Dec 2025 for Fabry disease; in-house Brisbane facility + Thermo CDMO,https://investor.sangamo.com/news-releases/news-release-details/sangamo-announces-strategic-investment-manufacturing-and,REGULATORY_MILESTONE,KEEP
+Sarepta Therapeutics,sarepta-therapeutics,https://sarepta.com,expansion_announcement,2026-02-14,Signal detected,https://investorrelations.sarepta.com/news-releases/news-release-details/sarepta-therapeutics-opens-genetic-therapies-center-excellence,,DELETE
+Satellogic,satellogic,https://satellogic.com,,,,,,
+Satrec Initiative,satrec-initiative,https://satreci.com,,,,,,
+Schneider Electric,schneider-electric,se.com,,,,,,
+Scout Space,scout-space,https://scout.space,,,,,,
+SCREEN Semiconductor Solutions,screen-semiconductor-solutions,screen.co.jp,,,,,,
+Sediver,sediver,sediver.com,,,,,,
+SEL (Schweitzer Engineering),sel-schweitzer-engineering,selinc.com,,,,,,
+Serve Robotics,serve-robotics,https://www.serverobotics.com/,,,,,,
+Shin-Etsu Chemical,shin-etsu-chemical,shinetsu.com,,,,,,
+Shinkawa (Yamaha),shinkawa-yamaha,yamaha-robotics.com/shinkawa,,,,,,
+Shinko Electric Industries,shinko-electric-industries,shinko.co.jp,new_facility,2025-01-01,BGA substrate expansion; AI server revenue 3x FY2023; Fujitsu subsidiary,https://www.digitimes.com/news/a20241105PD208/demand-ibiden-ic-substrate-shinko-electric-2024.html,,DELETE
+Sidus Space,sidus-space,https://sidusspace.com,,,,,,
+Siemens Energy,siemens-energy,siemens-energy.com,expansion_announcement,2026-02-03,$300M Mississippi + Houston expansion for grid components,https://www.supertalk.fm/siemens-mississippi/,,DELETE
+Siemens Energy,siemens-energy,siemens-energy.com,new_facility,2025-01-01,US transformer factory expansion; dry-transformer facilities; grid solutions growth,https://www.npcelectric.com/news/transformer-market-2025-performance-and-2026-outlook.html,,DELETE
+Siemens Energy,siemens-energy,siemens-energy.com,expansion_announcement,2026-02-03,$300M Mississippi + Houston expansion for grid components,https://www.supertalk.fm/siemens-mississippi/,,DELETE
+Sierra Space,sierra-space,https://sierraspace.com,,,,,,
+Silfab Solar,silfab-solar,silfabsolar.com,new_facility,2025-01-01,Burlington WA + Fort Mill SC facilities; 1.3 GW combined capacity; North American focused,https://silfabsolar.com/our-story/,,DELETE
+Silfab Solar,silfab-solar,silfabsolar.com,new_facility,2025-01-01,Burlington WA + Fort Mill SC facilities; 1.3 GW combined capacity; North American focused,https://silfabsolar.com/our-story/,,DELETE
+Siltronic,siltronic,siltronic.com,new_facility,2025-01-01,EUR 136M Germany expansion; Burghausen + Freiberg; 225 new jobs; new 300mm Freiberg plant,https://www.siltronic.com/en/press/press-releases/siltronic-expands-300-mm-production-in-germany.html,,DELETE
+Siren Biotechnology,siren-biotechnology,https://sirenbiotechnology.com,expansion_announcement,2026-02-14,Signal detected,https://sirenbiotechnology.com/,,DELETE
+SK Hynix,sk-hynix,skhynix.com,,,,,,
+SK Siltron,sk-siltron,sksiltron.com,,,,,,
+Skykraft,skykraft,https://skykraft.com.au,,,,,,
+Skyrora,skyrora,https://skyrora.com,,,,,,
+SkyWater Technology,skywater-technology,skywatertechnology.com,acquisition,2025-02-01,SkyWater Acquires Infineon Austin Fab,https://www.skywatertechnology.com/skywater-to-acquire-infineons-austin-fab/,,DELETE
+SkyWater Technology,skywater-technology,skywatertechnology.com,new_facility,2025-01-01,$16M CHIPS funding Dec 2024; acquiring Infineon Austin fab Feb 2025 for 65-130nm capacity; US-only t,https://www.skywatertechnology.com/skywater-to-acquire-infineons-austin-fab-and-establish-strategic-partnership-to-expand-u-s-foundry-capacity-for-foundational-chips/,,DELETE
+Slingshot Aerospace,slingshot-aerospace,https://slingshotaerospace.com,,,,,,
+Soitec,soitec,soitec.com,,,,,,
+Solar Turbines,solar-turbines,solarturbines.com,,,,,,
+SolarEdge Technologies,solaredge-technologies,solaredge.com,new_facility,2025-01-01,Texas inverters + Florida optimizers + Utah batteries; 8M optimizers/quarter capacity; domestic cont,https://investors.solaredge.com/news-releases/news-release-details/solaredge-marks-milestones-us-manufacturing-strategy-achieving,,DELETE
+SolarEdge Technologies,solaredge-technologies,solaredge.com,new_facility,2025-01-01,Texas inverters + Florida optimizers + Utah batteries; 8M optimizers/quarter capacity; domestic cont,https://investors.solaredge.com/news-releases/news-release-details/solaredge-marks-milestones-us-manufacturing-strategy-achieving,,DELETE
+Solid Biosciences,solid-biosciences,https://solidbio.com,expansion_announcement,2026-02-14,Signal detected,https://investors.solidbio.com/news-releases/news-release-details/solid-biosciences-and-forge-biologics-announce-viral-vector,,DELETE
+Soulbrain,soulbrain,soulbrain.co.kr,new_facility,2025-01-01,Soulbrain Taylor TX Plant Construction,https://www.statesman.com/story/news/local/2024/07/29/samsung-semiconductors-plant-taylor-texas-south-korean-company-soulbrain-tx-llc-invest/74562610007/,,DELETE
+Soulbrain,soulbrain,soulbrain.co.kr,new_facility,2025-01-01,$175M Taylor Texas plant for Samsung; high-purity phosphoric acid; construction Jan 2025,https://www.statesman.com/story/news/local/2024/07/29/samsung-semiconductors-plant-taylor-texas-south-korean-company-soulbrain-tx-llc-invest/74562610007/,,DELETE
+Soulbrain,soulbrain,soulbrain.co.kr,new_facility,2025-01-01,$175M Taylor Texas plant for Samsung; high-purity phosphoric acid; construction Jan 2025,https://www.statesman.com/story/news/local/2024/07/29/samsung-semiconductors-plant-taylor-texas-south-korean-company-soulbrain-tx-llc-invest/74562610007/,,DELETE
+Southwire,southwire,southwire.com,,,,,,
+Space Forge,space-forge,https://spaceforge.com,,,,,,
+SpaceX,spacex,https://spacex.com,,,,,,
+Spark Therapeutics (Roche),spark-therapeutics-roche,https://sparktx.com,expansion_announcement,2026-02-14,Signal detected,https://www.pharmaceutical-technology.com/projects/spark-therapeutics-gene-therapy-innovation-center-philadelphia-usa/,,DELETE
+Special Metals,special-metals,https://www.specialmetals.com/,,,,,,
+Spectrolab,spectrolab,https://spectrolab.com,,,,,,
+SpinLaunch,spinlaunch,https://spinlaunch.com,,,,,,
+Spire Global,spire-global,https://spire.com,,,,,,
+Spirit AeroSystems,spirit-aerosystems,https://www.spiritaero.com/,,,,,,
+Spirovant Sciences,spirovant-sciences,https://spirovant.com,regulatory_milestone,2024-11-01,Phase 1/2 for cystic fibrosis (first patient Nov 2024); inhaled AAV gene therapy,https://www.biospace.com/press-releases/spirovant-sciences-doses-first-patient-in-the-saave-phase-1-2-clinical-trial-of-its-investigational-aerosol-delivered-genetic-medicine-for-the-treatment-of-cystic-fibrosis,REGULATORY_MILESTONE,KEEP
+SPTS Technologies (KLA),spts-technologies-kla,spts.com,,,,,,
+SPX Transformer Solutions,spx-transformer-solutions,spxtransformersolutions.com,new_facility,2025-01-01,$70M Waukesha expansion; Goldsboro NC 50th anniversary; 1200+ US employees; 5-1200 MVA up to 345kV,https://www.spx.com/spx-transformer-solutions-goldsboro-north-carolina-facility-celebrates-50th-anniversary/,,DELETE
+SPX Transformer Solutions,spx-transformer-solutions,spxtransformersolutions.com,new_facility,2025-01-01,$70M Waukesha expansion; Goldsboro NC 50th anniversary; 1200+ US employees; 5-1200 MVA up to 345kV,https://www.spx.com/spx-transformer-solutions-goldsboro-north-carolina-facility-celebrates-50th-anniversary/,,DELETE
+Starfish Space,starfish-space,https://starfishspace.com,,,,,,
+Stella-Jones,stella-jones,stella-jones.com,,,,,,
+Stem Inc,stem-inc,stem.com,,,,,,
+STMicroelectronics,stmicroelectronics,st.com,new_facility,2025-01-01,Catania Italy SiC campus with 200mm fab; EUR730M investment; reshaping EU manufacturing footprint,https://www.yolegroup.com/player-interviews/sic-is-in-a-race-to-meet-growing-demand-for-new-technologies-an-interview-with-stmicroelectronics/,,DELETE
+Stoke Space,stoke-space,https://stokespace.com,new_facility,2025-01-01,$510M Series D + $260M funding; scaling manufacturing for Nova reusable launch vehicle,https://www.stokespace.com/stoke-space-technologies-raises-510-million-to-scale-manufacturing-of-fully-reusable-nova-launch-vehicle/,,DELETE
+Stoke Therapeutics,stoke-therapeutics,https://stoketherapeutics.com,oem_partner,2024-08-01,Antisense oligonucleotide platform (not viral); partnered with Biogen for zorevunersen,https://investor.stoketherapeutics.com/news-releases/news-release-details/biogen-and-stoke-therapeutics-enter-collaboration-develop-and,OEM_PARTNER,KEEP
+Stratolaunch,stratolaunch,https://www.stratolaunch.com/,,,,,,
+StressCrete Group,stresscrete-group,scgrp.com,,,,,,
+StrideBio,stridebio,https://stridebio.com,oem_partner,2021-03-01,"In-house manufacturing at 1000L in RTP; STRIVE capsid platform; partnered with CRISPR Tx, Takeda, Sa",https://www.prnewswire.com/news-releases/stridebio-announces-closing-of-81-5m-series-b-financing-301247395.html,OEM_PARTNER,KEEP
+Stryten Energy,stryten-energy,https://www.stryten.com/,,,,,,
+Substrate,substrate,substrate.com,new_facility,2025-01-01,$100M seed from Founders Fund + In-Q-Tel; building X-ray lithography equipment; US manufacturing,https://www.wsj.com/tech/peter-thiel-backed-startup-secures-100-million-to-make-chips-in-u-s-baff93ac,,DELETE
+SUMCO,sumco,sumco.com,,,,,,
+Sungrow,sungrow,https://www.sungrow.com/,,,,,,
+Suniva,suniva,suniva.com,new_facility,2025-01-01,Georgia cell factory restarted Nov 2024 (1 GW); scaling to 2.5 GW; first US cell production restart,https://www.reuters.com/business/energy/solar-manufacturer-suniva-resumes-production-american-made-cells-2024-11-08/,,DELETE
+Suniva,suniva,suniva.com,new_facility,2025-01-01,Georgia cell factory restarted Nov 2024 (1 GW); scaling to 2.5 GW; first US cell production restart,https://www.reuters.com/business/energy/solar-manufacturer-suniva-resumes-production-american-made-cells-2024-11-08/,,DELETE
+Supernal,supernal,supernal.aero,,,,,,
+Surrey Satellite Technology Ltd,surrey-satellite-technology-ltd,https://sstl.co.uk,,,,,,
+Survalent Technology,survalent-technology,survalent.com,,,,,,
+SUSS MicroTec,suss-microtec,suss.com,new_facility,2025-01-01,AI chip module capacity expansion; multi-year growth cycle; CMD 2025 targets,https://www.suss.com/en,,DELETE
+Swinburne University of Technology (Space),swinburne-university-of-technology-space,swinburne.edu.au,,,,,,
+Symbotic,symbotic,https://www.symbotic.com/,,,,,,
+Synthetaic,synthetaic,https://synthetaic.com,,,,,,
+Tavrida Electric,tavrida-electric,tavrida.com,,,,,,
+Taysha Gene Therapies,taysha-gene-therapies,https://tayshagtx.com,investment_plan_announced,2021-07-01,$75M investment in Durham NC facility; single manufacturing site for entire pipeline,https://ir.tayshagtx.com/news-releases/news-release-details/taysha-gene-therapies-announces-new-cgmp-gene-therapy,INVESTMENT_PLAN_ANNOUNCED,KEEP
+TE Connectivity,te-connectivity,https://www.te.com/,,,,,,
+Tenaya Therapeutics,tenaya-therapeutics,https://tenayatherapeutics.com,investment_plan_announced,2024-11-01,In-house manufacturing center in Union City CA; TN-201 and TN-401 for genetic cardiomyopathies,https://www.tenayatherapeutics.com/our-science/,INVESTMENT_PLAN_ANNOUNCED,KEEP
+Teradyne,teradyne,teradyne.com,,,,,,
+Teradyne Robotics,teradyne-robotics,https://www.universal-robots.com/,,,,,,
+Terran Orbital,terran-orbital,https://terranorbital.com,new_facility,2025-01-01,"Acquired by Lockheed Martin (Aug 2024); 98,000 sq ft manufacturing facility",https://news.lockheedmartin.com/2024-08-15-Lockheed-Martin-to-Acquire-Terran-Orbital,,DELETE
+TerraPower,terrapower,terrapower.com,new_facility,2025-01-01,Wyoming Natrium plant under construction; state permit approved Jan 2025; training center Aug 2025; ,https://www.ans.org/news/2025-01-16/article-6690/wyoming-oks-construction-of-terrapowers-natrium-plant/,,DELETE
+TerraPower,terrapower,terrapower.com,new_facility,2025-01-01,Wyoming Natrium plant under construction; state permit approved Jan 2025; training center Aug 2025; ,https://www.ans.org/news/2025-01-16/article-6690/wyoming-oks-construction-of-terrapowers-natrium-plant/,,DELETE
+Tesla Energy,tesla-energy,https://www.tesla.com/megapack,new_facility,2025-01-01,40 GWh Lathrop Megafactory; 10000th Megapack Nov 2024; $150M+ Texas expansion 2026; 31.4 GWh deploye,https://www.tesla.com/megafactory,,DELETE
+Tesla Energy,tesla-energy,https://www.tesla.com/megapack,new_facility,2025-01-01,40 GWh Lathrop Megafactory; 10000th Megapack Nov 2024; $150M+ Texas expansion 2026; 31.4 GWh deploye,https://www.tesla.com/megafactory,,DELETE
+Tex Tech Industries,tex-tech-industries,https://textechindustries.com/,,,,,,
+Texas Instruments,texas-instruments,https://ti.com,new_facility,2025-12-01,Texas Instruments Sherman Fab Opens,https://www.ti.com/about-ti/newsroom/news-releases/2025/texas-instruments-begins-production-at-its-newest-300mm-semiconductor-manufacturing-facility-in-sherman-texas.html,,DELETE
+Texas Instruments,texas-instruments,https://ti.com,new_facility,2025-01-01,$60B+ across 7 fabs in Texas and Utah; Sherman TX fab opened Dec 2025; 300mm analog leader; largest ,https://www.ti.com/about-ti/newsroom/news-releases/2025/texas-instruments-begins-production-at-its-newest-300mm-semiconductor-manufacturing-facility-in-sherman-texas.html,,DELETE
+Texas Instruments,texas-instruments,https://ti.com,new_facility,2025-01-01,$60B+ across 7 fabs in Texas and Utah; Sherman TX fab opened Dec 2025; 300mm analog leader; largest ,https://www.ti.com/about-ti/newsroom/news-releases/2025/texas-instruments-begins-production-at-its-newest-300mm-semiconductor-manufacturing-facility-in-sherman-texas.html,,DELETE
+Textron eAviation,textron-eaviation,txtav.com,,,,,,
+Thales,thales,https://www.thalesgroup.com/,,,,,,
+The Aerospace Corporation,the-aerospace-corporation,aerospace.org,,,,,,
+ThinkOrbital,thinkorbital,https://thinkorbital.com,,,,,,
+Thyssenkrupp Nucera,thyssenkrupp-nucera,thyssenkrupp-nucera.com,new_facility,2025-01-01,3+ GW electrolyzer capacity supplying; 110 NEOM modules completed; 2 GW Air Products Saudi order,https://za.investing.com/news/company-news/thyssenkrupp-nucera-q4-2025-slides-delivers-on-targets-amid-green-hydrogen-headwinds-93CH-4032579,,DELETE
+Thyssenkrupp Nucera,thyssenkrupp-nucera,thyssenkrupp-nucera.com,new_facility,2025-01-01,3+ GW electrolyzer capacity supplying; 110 NEOM modules completed; 2 GW Air Products Saudi order,https://za.investing.com/news/company-news/thyssenkrupp-nucera-q4-2025-slides-delivers-on-targets-amid-green-hydrogen-headwinds-93CH-4032579,,DELETE
+TMEIC,tmeic,tmeic.com,new_facility,2025-01-01,9 GW Texas solar inverter factory opened Nov 2024; 144K sqft Westport facility; 300+ inverters by Fe,https://pv-magazine-usa.com/2024/08/23/tmeic-announces-9-gw-utility-scale-solar-inverter-factory-in-texas/,,DELETE
+TMEIC,tmeic,tmeic.com,new_facility,2025-01-01,9 GW Texas solar inverter factory opened Nov 2024; 144K sqft Westport facility; 300+ inverters by Fe,https://pv-magazine-usa.com/2024/08/23/tmeic-announces-9-gw-utility-scale-solar-inverter-factory-in-texas/,,DELETE
+Tokyo Electron,tokyo-electron,tel.com,new_facility,2025-01-01,$170M US chip equipment facility 2025; aiming for US production parity with Japan,https://asia.nikkei.com/business/tech/semiconductors/tokyo-electron-aims-to-boost-us-manufacturing-to-same-level-as-japan,,DELETE
+Tokyo Ohka Kogyo (TOK),tokyo-ohka-kogyo-tok,tok.co.jp,,,,,,
+Tomorrow.io,tomorrow-io,https://tomorrow.io,,,,,,
+Toppan / Tekscend Photomask,toppan-tekscend-photomask,holdings.toppan.com,new_facility,2025-01-01,$2B IPO for Tekscend spinoff 2025; IBM EUV R&D partnership 5-year; FC-BGA substrate expansion,https://www.reuters.com/technology/tekscend-photomask-targets-2-billion-valuation-japan-ipo-sources-say-2025-08-26/,,DELETE
+Toray Composite Materials,toray-composite-materials,https://www.toraycma.com/,,,,,,
+Toray Engineering,toray-engineering,toray-eng.com,,,,,,
+Tower Semiconductor,tower-semiconductor,towersemi.com,new_facility,2025-01-01,Intel New Mexico partnership; ST Italy joint facility qualified Q4 2024; $300M investment in Intel f,https://newsroom.intel.com/intel-foundry/sept-2023-manufacturing-news,,DELETE
+Tower Semiconductor,tower-semiconductor,towersemi.com,new_facility,2025-01-01,Intel New Mexico partnership; ST Italy joint facility qualified Q4 2024; $300M investment in Intel f,https://newsroom.intel.com/intel-foundry/sept-2023-manufacturing-news,,DELETE
+TransAstra,transastra,https://transastra.com,,,,,,
+Trench Group,trench-group,trench-group.com,,,,,,
+Tridelta Meidensha,tridelta-meidensha,tridelta-meidensha.de,,,,,,
+Trina Solar (T1 Energy),trina-solar-t1-energy,trinasolar.com,new_facility,2025-01-01,$200M 5 GW Texas module plant opened; expansion in 2025; rebranded T1 Energy for US ops,https://www.sunhub.com/blog/top-5-american-solar-panel-manufacturers-in-2025/,,DELETE
+Trina Solar (T1 Energy),trina-solar-t1-energy,trinasolar.com,new_facility,2025-01-01,$200M 5 GW Texas module plant opened; expansion in 2025; rebranded T1 Energy for US ops,https://www.sunhub.com/blog/top-5-american-solar-panel-manufacturers-in-2025/,,DELETE
+True Anomaly,true-anomaly,https://trueanomaly.space,new_facility,2025-01-01,"90,000 sq ft Long Beach factory expansion; rapid growth in space defense",https://www.trueanomaly.space/newsroom/true-anomaly-announces-significant-expansion-into-california-with-long-beach-campus,,DELETE
+Trystar,trystar,trystar.com,,,,,,
+TSMC,tsmc,https://tsmc.com,new_facility,2025-03-01,TSMC $165B US Investment Announced,https://pr.tsmc.com/english/news/3210,,DELETE
+TSMC,tsmc,https://tsmc.com,new_facility,2025-01-01,$165B total US investment announced Mar 2025; $65B Arizona 3-fab complex; Fab 1 producing Q4 2024; 9,https://pr.tsmc.com/english/news/3210,,DELETE
+TSMC,tsmc,https://tsmc.com,new_facility,2025-01-01,$165B total US investment announced Mar 2025; $65B Arizona 3-fab complex; Fab 1 producing Q4 2024; 9,https://pr.tsmc.com/english/news/3210,,DELETE
+Tune Therapeutics,tune-therapeutics,https://tunetx.com,funding_ladder,2025-01-01,$175M Series B (Jan 2025); TEMPO epigenetic editing platform; LNP delivery (not AAV),https://www.fiercebiotech.com/biotech/epigenetic-biotech-raises-bumper-round-tune-175m-fund-first-hbv-trials,FUNDING_LADDER,KEEP
+Turion Space,turion-space,https://turionspace.com,,,,,,
+Ucore Rare Metals,ucore-rare-metals,https://ucore.com/,,,,,,
+Ultra Safe Nuclear,ultra-safe-nuclear,usnc.com,,,,,,
+Ultragenyx,ultragenyx,https://ultragenyx.com,regulatory_milestone,2026-01-05,DTX401 BLA submitted Jan 2026; in-house HEK manufacturing; multiple gene therapies in pipeline,https://www.ultragenyx.com/our-research/our-gene-therapy-platform/,REGULATORY_MILESTONE,KEEP
+Ultramet,ultramet,https://ultramet.com/,,,,,,
+Umbra,umbra,https://umbra.space,new_facility,2025-01-01,"New 50,000 sq ft Southern California manufacturing facility (June 2025); new Space Systems business",https://umbra.space/blog/umbra-expands-u-s-production-capacity-with-move-to-new-50000-sq-ft-manufacturing-facility/,,DELETE
+Umbra,umbra,https://umbra.space,new_facility,2025-01-01,"New 50,000 sq ft Southern California manufacturing facility (June 2025); new Space Systems business",https://umbra.space/blog/umbra-expands-u-s-production-capacity-with-move-to-new-50000-sq-ft-manufacturing-facility/,,DELETE
+UMC,umc,umc.com,new_facility,2025-04-01,UMC Singapore Fab Phase 3 Opening,https://www.umc.com/en/News/press_release/Content/corporate/20250401,,DELETE
+UMC,umc,umc.com,new_facility,2025-01-01,New Singapore fab Phase 3 opening Apr 2025; 22nm production 2026; 700 new jobs; Intel 12nm collabora,https://www.umc.com/en/News/press_release/Content/corporate/20250401,,DELETE
+UMC,umc,umc.com,new_facility,2025-01-01,New Singapore fab Phase 3 opening Apr 2025; 22nm production 2026; 700 new jobs; Intel 12nm collabora,https://www.umc.com/en/News/press_release/Content/corporate/20250401,,DELETE
+Unimicron,unimicron,unimicron.com,new_facility,2025-01-01,UMC-backed expansion; aims to surpass Japanese by 2025; double-digit revenue growth 2024; high-end s,https://www.digitimes.com/news/a20251217PD240/umc-unimicron-ic-substrate-demand-investment.html,,DELETE
+Unirac,unirac,unirac.com,,,,,,
+United Launch Alliance,united-launch-alliance,https://ulalaunch.com,,,,,,
+Ursa Major,ursa-major,https://ursamajor.com,new_facility,2025-01-01,$14.5M R&D center in Youngstown OH (July 2024); $138M Series D; $25M DoD joint investment,https://executivebiz.com/2024/07/ursa-major-to-build-new-rocket-propulsion-tech-randd-center-in-ohio/,,DELETE
+Ursa Major,ursa-major,https://ursamajor.com,new_facility,2025-01-01,$14.5M R&D center in Youngstown OH (July 2024); $138M Series D; $25M DoD joint investment,https://executivebiz.com/2024/07/ursa-major-to-build-new-rocket-propulsion-tech-randd-center-in-ohio/,,DELETE
+USA Rare Earth,usa-rare-earth,https://www.usare.com/,,,,,,
+UTAC,utac,utacgroup.com,,,,,,
+VACCO Industries,vacco-industries,https://vacco.com,,,,,,
+Valmont Industries,valmont-industries,valmontutility.com,,,,,,
+Vast,vast,https://vastspace.com,,,,,,
+VAT Group,vat-group,vatgroup.com,partnership,2025-04-01,VAT Group New R&D Center April 2025,https://www.vatgroup.com/investor-relations/group-results,,DELETE
+VAT Group,vat-group,vatgroup.com,new_facility,2025-01-01,New R&D center April 2025; Haag production expansion for European customers,https://www.vatgroup.com/investor-relations/group-results,,DELETE
+Vaya Space,vaya-space,https://vayaspace.com,,,,,,
+Veeco Instruments,veeco-instruments,veeco.com,,,,,,
+Venus Aerospace,venus-aerospace,https://www.venusaero.com/,new_facility,2025-01-01,Lockheed Martin Ventures investment + May 2025 RDRE flight test,https://spacenews.com/lockheed-martin-ventures-invests-in-rocket-propulsion-startup-venus-aerospace/,,DELETE
+Verdagy,verdagy,verdagy.com,new_facility,2025-01-01,Advanced Water Electrolysis technology; IRA-driven US focus; production ramp 2024,https://www.latitudemedia.com/news/flush-with-new-funding-electrolyzer-startups-are-ready-to-ramp-up/,,DELETE
+Vertical Aerospace,vertical-aerospace,vertical-aerospace.com,,,,,,
+Vertiv,vertiv,vertiv.com,,,,,,
+Viasat,viasat,https://viasat.com,,,,,,
+Victor Insulators,victor-insulators,victorinsulators.com,,,,,,
+Vinci,vinci,getvinci.ai,,,,,,
+Viralgen,viralgen,https://viralgen.com,investment_plan_announced,2023-01-01,Spain-based AAV CDMO; 7 single-use suites; cGMP certified for commercial production,https://www.prnewswire.com/news-releases/viralgen-receives-cgmp-certification-to-produce-raav-commercial-grade-product-at-new-facility-in-san-sebastian-spain-301716069.html,INVESTMENT_PLAN_ANNOUNCED,KEEP
+Virgin Galactic,virgin-galactic,https://virgingalactic.com,,,,,,
+Virgin Orbit,virgin-orbit,https://virginorbit.com,,,,,,
+Virginia Transformer Corp,virginia-transformer-corp,vatransformer.com,new_facility,2025-01-01,Largest US-owned transformer maker; 6 facilities (Roanoke + Troutville VA + Rincon GA + Pocatello ID,https://en.wikipedia.org/wiki/Virginia_Transformer_Corporation,,DELETE
+Virginia Transformer Corp,virginia-transformer-corp,vatransformer.com,new_facility,2025-01-01,Largest US-owned transformer maker; 6 facilities (Roanoke + Troutville VA + Rincon GA + Pocatello ID,https://en.wikipedia.org/wiki/Virginia_Transformer_Corporation,,DELETE
+Vishay Intertechnology,vishay-intertechnology,vishay.com,new_facility,2025-01-01,Acquired Newport Wafer Fab UK $177M Mar 2024; £51M UK investment Nov 2024; accelerates SiC plans,https://ir.vishay.com/news-releases/news-release-details/vishay-intertechnology-acquires-nexperias-newport-wafer-fab-177,,DELETE
+Volocopter,volocopter,volocopter.com,,,,,,
+Voyager Space,voyager-space,https://voyagerspace.com,,,,,,
+Vulcan Elements,vulcan-elements,https://vulcanelements.com/,new_facility,2025-01-01,"$918M investment + $620M DoD loan + 1,000 jobs in Benson NC — largest magnet factory outside China",https://governor.nc.gov/news/press-releases/2025/11/18/governor-stein-announces-vulcan-elements-selects-johnston-county-1000-job-magnet-factory-investing-0,,DELETE
+Vulcan Elements,vulcan-elements,https://vulcanelements.com/,new_facility,2025-01-01,"$918M investment + $620M DoD loan + 1,000 jobs in Benson NC — largest magnet factory outside China",https://governor.nc.gov/news/press-releases/2025/11/18/governor-stein-announces-vulcan-elements-selects-johnston-county-1000-job-magnet-factory-investing-0,,DELETE
+Wärtsilä Energy,w-rtsil-energy,wartsila.com,,,,,,
+WEG Transformers USA,weg-transformers-usa,weg.us,new_facility,2025-01-01,$77M 5th NA factory expansion Sept 2025; 3 Missouri facilities; acquired CG Power USA; wind/solar fo,https://www.missourinet.com/2025/09/23/washington-missouri-lands-major-expansion-from-weg-transformers/,,DELETE
+WEG Transformers USA,weg-transformers-usa,weg.us,new_facility,2025-01-01,$77M 5th NA factory expansion Sept 2025; 3 Missouri facilities; acquired CG Power USA; wind/solar fo,https://www.missourinet.com/2025/09/23/washington-missouri-lands-major-expansion-from-weg-transformers/,,DELETE
+WESCO International,wesco-international,wesco.com,,,,,,
+Westinghouse Electric,westinghouse-electric,westinghousenuclear.com,,,,,,
+Wisk Aero,wisk-aero,wisk.aero,,,,,,
+Wolfspeed,wolfspeed,wolfspeed.com,new_facility,2025-01-01,World's largest SiC fab in Siler City NC (topped out Mar 2024); Marcy NY expansion; CHIPS preliminar,https://www.nist.gov/news-events/news/2024/10/biden-harris-administration-announces-preliminary-terms-wolfspeed-solidify,,DELETE
+Wolfspeed,wolfspeed,wolfspeed.com,new_facility,2025-01-01,World's largest SiC fab in Siler City NC (topped out Mar 2024); Marcy NY expansion; CHIPS preliminar,https://www.nist.gov/news-events/news/2024/10/biden-harris-administration-announces-preliminary-terms-wolfspeed-solidify,,DELETE
+Wonik IPS,wonik-ips,ips.co.kr,,,,,,
+Wooptix,wooptix,wooptix.com,,,,,,
+X-Bow Systems,x-bow-systems,https://www.xbowsystems.com/,new_facility,2025-01-01,DoD contract expansion + Texas campus expansion,https://www.prnewswire.com/news-releases/x-bow-to-receive-additional-funding-for-expansion-of-dod-contract-for-hypersonic-solid-rocket-motor-development-302337560.html,,DELETE
+X-Bow Systems,x-bow-systems,https://www.xbowsystems.com/,new_facility,2025-01-01,DoD contract expansion + Texas campus expansion,https://www.prnewswire.com/news-releases/x-bow-to-receive-additional-funding-for-expansion-of-dod-contract-for-hypersonic-solid-rocket-motor-development-302337560.html,,DELETE
+X-energy,x-energy,x-energy.com,new_facility,2025-01-01,Oak Ridge TRISO fuel facility construction Nov 2025; Dow Seadrift TX 4-unit plant; operations 2027,https://x-energy.com/media/news-releases/x-energy-begins-vertical-construction-for-first-in-the-nation-advanced-nuclear-fuel-fabrication-facility,,DELETE
+X-energy,x-energy,x-energy.com,new_facility,2025-01-01,Oak Ridge TRISO fuel facility construction Nov 2025; Dow Seadrift TX 4-unit plant; operations 2027,https://x-energy.com/media/news-releases/x-energy-begins-vertical-construction-for-first-in-the-nation-advanced-nuclear-fuel-fabrication-facility,,DELETE
+X-FAB,x-fab,xfab.com,new_facility,2025-01-01,$50M CHIPS funding Dec 2024; only high-volume SiC foundry in USA; Lubbock TX expansion,https://www.nist.gov/chips/x-fab-texas-lubbock,,DELETE
+X-FAB,x-fab,xfab.com,new_facility,2025-01-01,$50M CHIPS funding Dec 2024; only high-volume SiC foundry in USA; Lubbock TX expansion,https://www.nist.gov/chips/x-fab-texas-lubbock,,DELETE
+Xona Space Systems,xona-space-systems,https://xonaspace.com,,,,,,
+Yaskawa America,yaskawa-america,https://www.yaskawa.com/,,,,,,
+York Space Systems,york-space-systems,https://yorkspacesystems.com,new_facility,2025-01-01,"4th production facility (Potomac) adding 60,000 sq ft; 1,000+ spacecraft/year capacity",https://www.prnewswire.com/news-releases/construction-of-york-space-systems-fourth-production-facility-is-complete-doubling-production-capacity-to-meet-growing-commercial-and-government-demand-301895989.html,,DELETE
+Zero 2 Infinity,zero-2-infinity,https://zero2infinity.space,,,,,,
+Zhuque Aerospace (Landspace),zhuque-aerospace-landspace,https://landspace.com,,,,,,
