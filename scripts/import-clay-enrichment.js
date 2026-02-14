@@ -5,7 +5,7 @@
  * Expected columns:
  * company_slug, linkedin_url, linkedin_description, employee_range,
  * employee_count, website, founded_date, locality, industry,
- * follower_count, enriched_at
+ * follower_count, linkedin_last_updated
  */
 const { google } = require('googleapis');
 const { createClient } = require('@supabase/supabase-js');
@@ -138,6 +138,9 @@ async function importClayEnrichment() {
     
     const followerCount = row[colIndex['follower_count']];
     if (followerCount) updates.linkedin_followers = parseInt(followerCount) || null;
+    
+    const linkedinLastUpdated = row[colIndex['linkedin_last_updated']];
+    if (linkedinLastUpdated) updates.linkedin_last_updated = linkedinLastUpdated;
     
     // Always update last_enriched_at
     updates.last_enriched_at = new Date().toISOString();
