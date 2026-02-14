@@ -1,6 +1,11 @@
 /**
  * Import Clay enrichment data from Google Sheet
  * Reads from "Clay-Enrichment-Output" sheet and updates company records
+ * 
+ * Expected columns:
+ * company_slug, linkedin_url, linkedin_description, employee_range,
+ * employee_count, website, founded_date, locality, industry,
+ * follower_count, revenue_estimate, funding_total, recent_news, enriched_at
  */
 const { google } = require('googleapis');
 const { createClient } = require('@supabase/supabase-js');
@@ -20,6 +25,23 @@ oauth2Client.setCredentials({
   refresh_token: process.env.GOOGLE_REFRESH_TOKEN
 });
 
+// Employee range normalization
+function normalizeEmployeeRange(range, count) {
+  const countNum = parseInt(count);
+  if (countNum) {
+    // If we have exact count, derive correct range
+    if (countNum <= 10) return '1-10';
+    if (countNum <= 50) return '11-50';
+    if (countNum <= 200) return '51-200';
+    if (countNum <= 500) return '201-500';
+    if (countNum <= 1000) return '501-1000';
+    if (countNum <= 5000) return '1001-5000';
+    if (countNum <= 10000) return '5001-10000';
+    return '10000+';
+  }
+  return range || null;
+}
+
 async function importClayEnrichment() {
   const sheets = google.sheets({ version: 'v4', auth: oauth2Client });
   
@@ -32,7 +54,6 @@ async function importClayEnrichment() {
 
   if (!files.files?.length) {
     console.log('❌ Sheet "Clay-Enrichment-Output" not found in Drive');
-    console.log('   Create it with columns: company_slug, linkedin_url, linkedin_description, employee_range, website, enriched_at');
     return;
   }
 
@@ -42,7 +63,7 @@ async function importClayEnrichment() {
   // Read the data
   const { data: sheetData } = await sheets.spreadsheets.values.get({
     spreadsheetId: sheetId,
-    range: 'A:F', // company_slug through enriched_at
+    range: 'Sheet1!A:O',
   });
 
   const rows = sheetData.values || [];
@@ -94,10 +115,35 @@ async function importClayEnrichment() {
     if (linkedinDesc) updates.linkedin_description = linkedinDesc;
     
     const employeeRange = row[colIndex['employee_range']];
-    if (employeeRange) updates.employee_range = employeeRange;
+    const employeeCount = row[colIndex['employee_count']];
+    const normalizedRange = normalizeEmployeeRange(employeeRange, employeeCount);
+    if (normalizedRange) updates.employee_range = normalizedRange;
+    if (employeeCount) updates.employee_count = parseInt(employeeCount) || null;
     
     const website = row[colIndex['website']];
-    if (website && !company.website) updates.website = website;
+    if (website) updates.website = website;
+    
+    const foundedDate = row[colIndex['founded_date']];
+    if (foundedDate) updates.founded_year = parseInt(foundedDate) || null;
+    
+    const locality = row[colIndex['locality']];
+    if (locality) {
+      // Try to parse "City, State" or "City, State, Country"
+      const parts = locality.split(',').map(p => p.trim());
+      if (parts.length >= 2) {
+        if (!updates.hq_city) updates.hq_city = parts[0];
+        if (!updates.hq_state) updates.hq_state = parts[1];
+      }
+    }
+    
+    const followerCount = row[colIndex['follower_count']];
+    if (followerCount) updates.linkedin_followers = parseInt(followerCount) || null;
+    
+    const revenueEstimate = row[colIndex['revenue_estimate']];
+    if (revenueEstimate) updates.revenue_estimate = revenueEstimate;
+    
+    const fundingTotal = row[colIndex['funding_total']];
+    if (fundingTotal) updates.funding_total = fundingTotal;
     
     // Always update last_enriched_at
     updates.last_enriched_at = new Date().toISOString();
