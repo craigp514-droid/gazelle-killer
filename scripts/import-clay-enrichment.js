@@ -92,12 +92,35 @@ async function importClayEnrichment() {
       continue;
     }
 
-    // Find company
-    const { data: company } = await supabase
+    // Find company by slug first, then by name, then by partial match
+    const slugified = slug.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+    
+    let { data: company } = await supabase
       .from('companies')
       .select('id, name, last_enriched_at')
-      .eq('slug', slug)
+      .eq('slug', slugified)
       .single();
+    
+    // Fallback: exact name match (case-insensitive)
+    if (!company) {
+      const { data: byName } = await supabase
+        .from('companies')
+        .select('id, name, last_enriched_at')
+        .ilike('name', slug);
+      company = byName?.[0];
+    }
+    
+    // Fallback: partial name match (first word)
+    if (!company) {
+      const firstWord = slug.split(/[\s\/\-]+/)[0];
+      if (firstWord.length >= 3) {
+        const { data: byPartial } = await supabase
+          .from('companies')
+          .select('id, name, last_enriched_at')
+          .ilike('name', firstWord + '%');
+        company = byPartial?.[0];
+      }
+    }
 
     if (!company) {
       console.log(`⚠ Company not found: ${slug}`);
