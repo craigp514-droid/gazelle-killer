@@ -4,5 +4,3 @@
 ALTER TABLE companies ADD COLUMN IF NOT EXISTS employee_count INTEGER;
 ALTER TABLE companies ADD COLUMN IF NOT EXISTS founded_year INTEGER;
 ALTER TABLE companies ADD COLUMN IF NOT EXISTS linkedin_followers INTEGER;
-ALTER TABLE companies ADD COLUMN IF NOT EXISTS revenue_estimate TEXT;
-ALTER TABLE companies ADD COLUMN IF NOT EXISTS funding_total TEXT;
