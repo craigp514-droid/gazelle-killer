@@ -13,7 +13,9 @@ import {
   TrendingUp,
   MessageSquare,
   Star,
-  Linkedin
+  Linkedin,
+  Building2,
+  Briefcase
 } from 'lucide-react'
 import { FavoriteButton } from '@/components/favorites/favorite-button'
 import { CompanyLogo } from '@/components/ui/company-logo'
@@ -50,6 +52,13 @@ export default async function CompanyPage({ params }: PageProps) {
     .select('*')
     .eq('company_id', company.id)
     .order('signal_date', { ascending: false })
+
+  // Get projects for this company
+  const { data: projects } = await supabase
+    .from('projects')
+    .select('*')
+    .eq('company_id', company.id)
+    .order('announcement_date', { ascending: false })
 
   // Get score components
   const { data: scoreComponents } = await supabase
@@ -335,6 +344,90 @@ export default async function CompanyPage({ params }: PageProps) {
               </div>
             </CardContent>
           </Card>
+
+          {/* Past Projects */}
+          {projects && projects.length > 0 && (
+            <Card className="mt-6">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Building2 className="h-5 w-5 text-slate-600" />
+                  Past Projects
+                </CardTitle>
+                <CardDescription>
+                  {projects.length} announced project{projects.length !== 1 ? 's' : ''}
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  {projects.map((project: any) => (
+                    <div
+                      key={project.id}
+                      className="border rounded-lg p-4 bg-slate-50 space-y-3"
+                    >
+                      {/* Location & Date Row */}
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-2">
+                          <MapPin className="h-4 w-4 text-slate-500" />
+                          <span className="font-medium text-slate-900">
+                            {project.location_city && project.location_state
+                              ? `${project.location_city}, ${project.location_state}`
+                              : project.location_state || project.location_city || 'Location TBD'}
+                          </span>
+                          {project.fdi_origin && (
+                            <Badge variant="outline" className="text-xs bg-blue-50 text-blue-700 border-blue-200">
+                              FDI: {project.fdi_origin}
+                            </Badge>
+                          )}
+                        </div>
+                        {project.announcement_date && (
+                          <span className="text-sm text-slate-500">
+                            {new Date(project.announcement_date).toLocaleDateString('en-US', { 
+                              month: 'short', 
+                              year: 'numeric' 
+                            })}
+                          </span>
+                        )}
+                      </div>
+
+                      {/* Project Details */}
+                      <div className="flex flex-wrap gap-3 text-sm">
+                        {project.project_type && (
+                          <div className="flex items-center gap-1.5">
+                            <Briefcase className="h-3.5 w-3.5 text-slate-400" />
+                            <span className="text-slate-600 capitalize">{project.project_type.replace(/_/g, ' ')}</span>
+                          </div>
+                        )}
+                        {project.jobs_announced && (
+                          <div className="flex items-center gap-1.5">
+                            <Users className="h-3.5 w-3.5 text-slate-400" />
+                            <span className="text-slate-600">{project.jobs_announced.toLocaleString()} jobs</span>
+                          </div>
+                        )}
+                      </div>
+
+                      {/* Notes */}
+                      {project.notes && (
+                        <p className="text-sm text-slate-600">{project.notes}</p>
+                      )}
+
+                      {/* Source */}
+                      {project.source_url && (
+                        <a
+                          href={project.source_url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1 text-sm text-emerald-600 hover:underline"
+                        >
+                          Source
+                          <ExternalLink className="h-3 w-3" />
+                        </a>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          )}
 
           {/* LinkedIn Description - below signals, less prominent */}
           {company.linkedin_description && (
