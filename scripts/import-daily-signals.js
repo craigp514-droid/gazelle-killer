@@ -132,7 +132,11 @@ async function importDailySignals(csvPath) {
 
     // Create signal
     const signalCode = row.signal_code || row.signal_type || 'EXPANSION_ANNOUNCEMENT';
-    const signalDate = row.signal_date || new Date().toISOString().split('T')[0];
+    let signalDate = row.signal_date || new Date().toISOString().split('T')[0];
+    // Handle YYYY-MM format (add -01 for first of month)
+    if (/^\d{4}-\d{2}$/.test(signalDate)) {
+      signalDate = signalDate + '-01';
+    }
     const signalText = row.signal_text || row.signal_title || row.Signal || 'Signal detected';
     
     // Check for duplicate signal
