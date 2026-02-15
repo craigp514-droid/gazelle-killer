@@ -1072,3 +1072,54 @@
 2026-02-15 10:32:58 | GuideNav | https://guidenav.com/ | SUCCESS
 2026-02-15 10:32:58 | Illuminate USA (LONGi) | illuminateusa.solar | SUCCESS
 2026-02-15 10:32:58 | ES Foundry | esfoundry.com | SUCCESS
+2026-02-15 10:32:58 | FirstElement Fuel | firstelementfuel.com | SUCCESS
+2026-02-15 10:32:58 | Hanwha Aerospace | https://www.hanwhaaerospace.com | SUCCESS
+2026-02-15 10:32:58 | Mitra Chem | mitrachem.com | SUCCESS
+2026-02-15 10:32:58 | ARC Clean Technology | arccleantech.com | SUCCESS
+2026-02-15 10:32:58 | Coherent | coherent.com | SUCCESS
+2026-02-15 10:32:58 | Urban Mining Company | urbanminingcompany.com | SUCCESS
+2026-02-15 10:32:58 | CMC Materials (Entegris) | cmcmaterials.com | SUCCESS
+2026-02-15 10:32:58 | Array Labs | arraylabs.com | SUCCESS
+2026-02-15 10:32:58 | ESMC (TSMC/Bosch/Infineon/NXP) | esmc.eu | SUCCESS
+2026-02-15 10:32:58 | Solid Biosciences | https://solidbio.com | SUCCESS
+2026-02-15 10:32:58 | Eli Lilly | https://lilly.com | SUCCESS
+2026-02-15 10:32:58 | Affinia Therapeutics | https://affiniatx.com | SUCCESS
+2026-02-15 10:32:58 | Stoke Therapeutics | https://stoketherapeutics.com | SUCCESS
+2026-02-15 10:32:58 | bluebird bio | https://bluebirdbio.com | SUCCESS
+2026-02-15 10:32:58 | Generation Bio | https://generationbio.com | SUCCESS
+2026-02-15 10:32:58 | Spirovant Sciences | https://spirovant.com | SUCCESS
+2026-02-15 10:32:58 | Siren Biotechnology | https://sirenbiotechnology.com | SUCCESS
+2026-02-15 10:32:58 | 2seventy bio (BMS) | https://2seventybio.com | SUCCESS
+2026-02-15 10:32:58 | Amber Bio | https://amber.bio | SUCCESS
+2026-02-15 10:32:58 | AskBio (Bayer) | https://askbio.com | SUCCESS
+2026-02-15 10:32:58 | Redwood Materials | https://redwoodmaterials.com | SUCCESS
+2026-02-15 10:32:58 | Commonwealth Fusion Systems | https://cfs.energy | SUCCESS
+2026-02-15 10:32:58 | Shin-Etsu Chemical | shinetsu.com | SUCCESS
+2026-02-15 10:32:58 | Caribou Biosciences | https://cariboubio.com | SUCCESS
+2026-02-15 10:32:58 | Spark Therapeutics (Roche) | https://sparktx.com | SUCCESS
+2026-02-15 10:32:58 | Abeona Therapeutics | https://abeonatherapeutics.com | SUCCESS
+2026-02-15 10:32:58 | REGENXBIO | https://regenxbio.com | SUCCESS
+2026-02-15 10:32:58 | Taysha Gene Therapies | https://tayshagtx.com | SUCCESS
+2026-02-15 10:32:58 | Encoded Therapeutics | https://encoded.com | SUCCESS
+2026-02-15 10:32:58 | Jaguar Gene Therapy | https://jaguargenetherapy.com | SUCCESS
+2026-02-15 10:32:58 | StrideBio | https://stridebio.com | SUCCESS
+2026-02-15 10:32:58 | Tenaya Therapeutics | https://tenayatherapeutics.com | SUCCESS
+2026-02-15 10:32:58 | Tune Therapeutics | https://tunetx.com | SUCCESS
+2026-02-15 10:32:58 | Capsida Biotherapeutics | https://capsida.com | SUCCESS
+2026-02-15 10:32:58 | Forge Biologics | https://forgebiologics.com | SUCCESS
+2026-02-15 10:32:58 | Iovance Biotherapeutics | https://iovance.com | SUCCESS
+2026-02-15 10:32:58 | Andelyn Biosciences | https://andelynbio.com | SUCCESS
+2026-02-15 10:32:58 | Krystal Biotech | https://krystalbio.com | SUCCESS
+2026-02-15 10:32:58 | Viralgen | https://viralgen.com | SUCCESS
+2026-02-15 10:32:58 | Galactic Energy | https://galactic-energy.cn | SUCCESS
+2026-02-15 10:32:58 | Instil Bio | https://instilbio.com | SUCCESS
+2026-02-15 10:32:58 | Modine Manufacturing | https://modine.com | SUCCESS
+2026-02-15 10:32:58 | Neurogene | https://neurogene.com | SUCCESS
+2026-02-15 10:32:58 | Replimune | https://replimune.com | SUCCESS
+2026-02-15 10:32:58 | Sangamo Therapeutics | https://sangamo.com | SUCCESS
+2026-02-15 10:32:58 | Allogene Therapeutics | https://allogene.com | SUCCESS
+2026-02-15 10:32:58 | Atara Biotherapeutics | https://atarabio.com | SUCCESS
+2026-02-15 10:32:58 | Fate Therapeutics | https://fatetherapeutics.com | SUCCESS
+2026-02-15 10:32:58 | Immatics | https://immatics.com | SUCCESS
+2026-02-15 10:32:58 | Legend Biotech | https://legendbiotech.com | SUCCESS
+2026-02-15 10:32:58 | Rocket Pharmaceuticals | https://rocketpharma.com | SUCCESS
