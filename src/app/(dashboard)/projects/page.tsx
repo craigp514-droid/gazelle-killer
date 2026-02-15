@@ -8,7 +8,8 @@ import {
   Users, 
   MapPin,
   TrendingUp,
-  Lightbulb
+  Lightbulb,
+  Globe
 } from 'lucide-react'
 
 export default async function ProjectIntelligencePage() {
@@ -62,6 +63,22 @@ export default async function ProjectIntelligencePage() {
     .map(([sector, d]) => ({ sector, ...d }))
     .sort((a, b) => b.jobs - a.jobs)
     .slice(0, 5)
+
+  // FDI by source country
+  const fdiProjects = projects?.filter(p => p.fdi_origin) || []
+  const fdiByCountry: Record<string, { count: number; capex: number; jobs: number }> = {}
+  fdiProjects.forEach(p => {
+    const country = p.fdi_origin || 'Unknown'
+    if (!fdiByCountry[country]) fdiByCountry[country] = { count: 0, capex: 0, jobs: 0 }
+    fdiByCountry[country].count++
+    fdiByCountry[country].capex += p.capex_millions || 0
+    fdiByCountry[country].jobs += p.jobs_announced || 0
+  })
+  const topFdiCountries = Object.entries(fdiByCountry)
+    .map(([country, data]) => ({ country, ...data }))
+    .sort((a, b) => b.capex - a.capex)
+    .slice(0, 6)
+  const totalFdiCapex = fdiProjects.reduce((s, p) => s + (p.capex_millions || 0), 0)
 
   const formatCurrency = (value: number) => {
     if (value >= 1000000) return `$${(value / 1000000).toFixed(1)}T`
@@ -274,6 +291,36 @@ export default async function ProjectIntelligencePage() {
               </p>
               <p className="text-xs text-amber-600 mt-2 pt-2 border-t border-amber-200">
                 These sectors absorb <span className="font-medium">{((((bySector['Semiconductors']?.capex || 0) + (bySector['Data Centers']?.capex || 0)) / totalCapex) * 100).toFixed(0)}% of capex</span> but create minimal direct jobs
+              </p>
+            </CardContent>
+          </Card>
+
+          {/* FDI Source Countries */}
+          <Card className="border-cyan-200 bg-cyan-50">
+            <CardHeader className="pb-2">
+              <CardTitle className="text-sm font-medium text-cyan-800 flex items-center gap-2">
+                <Globe className="h-4 w-4" />
+                Foreign Investment
+              </CardTitle>
+              <CardDescription className="text-cyan-600 text-xs">
+                {fdiProjects.length} projects • {formatCurrency(totalFdiCapex)} ({((totalFdiCapex / totalCapex) * 100).toFixed(0)}% of total)
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-1.5">
+                {topFdiCountries.map((c, i) => (
+                  <div key={c.country} className="flex justify-between text-sm">
+                    <span className={i < 2 ? "text-cyan-800 font-medium" : "text-cyan-700"}>
+                      {c.country}
+                    </span>
+                    <span className={i < 2 ? "font-semibold text-cyan-900" : "text-cyan-700"}>
+                      {formatCurrency(c.capex)}
+                    </span>
+                  </div>
+                ))}
+              </div>
+              <p className="text-xs text-cyan-500 mt-3 pt-2 border-t border-cyan-200">
+                Taiwan alone = {((fdiByCountry['Taiwan']?.capex || 0) / totalCapex * 100).toFixed(0)}% of all capex (TSMC)
               </p>
             </CardContent>
           </Card>
