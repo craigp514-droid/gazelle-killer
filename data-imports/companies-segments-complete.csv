@@ -1,0 +1,539 @@
+company_name,website,project_sector,project_state,industry,segment
+Eli Lilly,https://lilly.com,Life Sciences,Texas,Life Sciences,Biotech & Life Sciences
+Modine Manufacturing,https://modine.com,,,Unknown,
+Graham Corp,https://grahamcorp.com,,New York,Unknown,
+Corning Optical Communications,,Tech/Fiber,North Carolina,Tech,"Communications, PNT & Connectivity"
+KettenWulf,,Advanced Mfg,Alabama,General Manufacturing,
+Bad Boy Mowers,,Advanced Mfg,Alabama,General Manufacturing,
+Aquatic Leisure Technologies,,Advanced Mfg,Alabama,General Manufacturing,
+SmartWiz,,Tech/AI,Alabama,Tech,AI & Machine Learning
+ArcelorMittal,,Steel/Metals,Alabama,Metals & Materials,
+Diageo,,Food & Bev,Alabama,Food & Beverage,
+Wellborn Cabinet,,Advanced Mfg,Alabama,General Manufacturing,
+Owens Corning,,Advanced Mfg,Alabama,General Manufacturing,
+Fratco,,Advanced Mfg,Alabama,General Manufacturing,
+U.S. Space Command,,Defense/Aerospace,Alabama,Defense,Defense Tech
+Performance Drone Works,,Defense/Aerospace,Alabama,Defense,Defense Tech
+Core Scientific,,Data Center,Alabama,Tech,AI & Machine Learning
+Samkwang,,Automotive,Alabama,Automotive,
+CPT America,,Automotive,Alabama,Automotive,
+International Paper,,Paper/Pulp,Alabama,Forest Products,
+Georgia Pacific/Alabama River Cellulose,,Paper/Pulp,Alabama,Forest Products,
+Meta/Dotier,,Data Center,Alabama,Tech,AI & Machine Learning
+Kronospan,,Wood Products,Alabama,Forest Products,
+Pilgrims,,Food/Poultry,Alabama,Food & Beverage,
+DAS North America,,Automotive,Alabama,Automotive,
+Evonik,,Chemicals,Alabama,Chemicals,
+U.S. Steel,,Steel/Metals,Alabama,Metals & Materials,
+SSAB,,Steel,Alabama,Metals & Materials,
+Constellium,,Aluminum,Alabama,Metals & Materials,
+Butting USA,,Pipe,Alabama,Metals & Materials,
+Hwashin America,,Automotive,Alabama,Automotive,
+Envision Cold Storage,,Logistics/Cold Chain,Alabama,Logistics,
+Parsons Corporation,,Defense/Tech,Alabama,Defense,Defense Tech
+Ace Aeronautics,,Aerospace/MRO,Alabama,Space,Space Tech
+Kimberly-Clark,,Paper/Consumer,Alabama,Forest Products,
+Jasper Lumber,,Wood/Forestry,Alabama,Forest Products,
+Alabama State Port Authority,,Logistics/Port,Alabama,Logistics,
+Owens Corning Corporation Prattville,,Asphalt Shingle and Coating Materials Ma,Alabama,Construction,
+Maximus Meats Summerdale,,Meat Processing and Distribution,Alabama,Food & Beverage,
+Butting USA Inc. Loxley,,Pipe Manufacturing,Alabama,Metals & Materials,
+Green Health Laboratories Foley,,Testing Laboratories and Services,Alabama,General Manufacturing,
+Wayne-Sanderson Farms Union Springs,,Poultry Processing,Alabama,Food & Beverage,
+Phoenix Building Solutions Greenville,,Park Model Manufacturer,Alabama,General Manufacturing,
+Hwashin America Corporation Greenville,,Stamped Automotive Car Parts,Alabama,Automotive,
+Altex Packaging Inc. Anniston,,Packaging - Wood and Plastic/Foam,Alabama,Forest Products,
+Interstate Sheet Metal Anniston,,Sheet Metal Work Manufacturing,Alabama,Metals & Materials,
+AMZ Alabama Inc. Anniston,,Armored Vehicle Manufacturing,Alabama,Defense,Defense Tech
+Amazon Oxford,,Distribution and Delivery,Alabama,Logistics,
+Kronospan Oxford,,Engineered Wood Products,Alabama,Forest Products,
+Doncasters Oxford,,Investment Castings,Alabama,Metals & Materials,
+Kobay Enstal Oxford,,Automotive Metal Stamping,Alabama,Metals & Materials,
+Bryant Machine Jacksonville,,Machine Shop,Alabama,Industrial Equipment,
+Changer & Dresser Anniston,,Welding and Soldering Equipment Manufact,Alabama,Metals & Materials,
+JOON LLC (AJIN USA) Cusseta,,Automotive Stamping,Alabama,Automotive,
+Tree Brand Packaging Ranburne,,Wood Pallet Manufacturer,Alabama,Forest Products,
+Hello Chonky Cookie Enterprise,,Cookie Manufacturing,Alabama,Food & Beverage,
+Constellium Muscle Shoals,,Recycled Aluminum Products,Alabama,Metals & Materials,
+Sims Bark Florala,,Mulch Manufacturing,Alabama,Forest Products,
+Aqua Technics (aka Aquatic Leisure) Opp,,Fiberglass Swimming Pool Manufacturer,Alabama,Tech,"Communications, PNT & Connectivity"
+Tyson Garden City,,Poultry Processing,Alabama,Food & Beverage,
+Louisiana Pacific Cullman,,OBS Board Manufacturer,Alabama,General Manufacturing,
+Corrugated Supplies Corporation Cullman,,Corrugated Packaging,Alabama,Packaging,
+Rusken Packaging Cullman,,Corrugated Packaging,Alabama,Packaging,
+SRM Concrete Cullman,,Ready-Mix Concrete Manufacturing,Alabama,Construction,
+North Alabama Fabricating Company Cullman,,Structural Metal,Alabama,Metals & Materials,
+Cobra Metal Cullman,,Metal Fabrication and Precision Machinin,Alabama,Metals & Materials,
+RESRG Automotive Cullman,,Plastic Injected Automotive Parts,Alabama,Chemicals,
+Sovereign American Industries LLC Rainsville,,Industrial Sewing,Alabama,General Manufacturing,
+Nucor Vulcraft Group Fort Payne,,Fabricated Structural Metal Manufacturin,Alabama,Metals & Materials,
+Perdido River Farms/Poarch Band of Creek Indians Atmore,,Meat Processing,Alabama,Food & Beverage,
+SMD Steel Rainbow City,,Plate Work Manufacturing,Alabama,General Manufacturing,
+Choice Fabricators Rainbow City,,Fabricated Metal Product Manufacturing,Alabama,Metals & Materials,
+Omaha Track Attalla,,Rail Tie Disposal,Alabama,Transportation,
+Pilgrims Russellville,,Poultry Processing,Alabama,Food & Beverage,
+Franklin Manufacturing Inc. Russellville,,Fabricated Structural Metal Manufacturin,Alabama,Metals & Materials,
+G&G Steel Inc. Russellville,,Fabricated Structural Metal Manufacturin,Alabama,Metals & Materials,
+Oldcastle Lawn & Garden Abbeville,,Wood Mulch,Alabama,Forest Products,
+Venture Milk LLC Cowarts,,Milk Processing and Yogurt Processing,Alabama,Food & Beverage,
+Qualico Webb,,Steel Fabrication,Alabama,Metals & Materials,
+Advance Displays Inc. Scottsboro,,Wholesale Distribution Hub,Alabama,Logistics,
+Yamaha Motor Corporation USA Bridgeport,,Marine Test and Development Facility,Alabama,Transportation,
+U.S. Steel Corporation Fairfield,,Steel Making and Processing,Alabama,Metals & Materials,
+Weelth Inc./TaxxWiz,,Tax Prep Software Development,Alabama,Financial Services,
+Valicor Environmental Services Adamsville,,Sustainable Solutions for Waste Manageme,Alabama,General Manufacturing,
+Stinson Breads LLC Opelika,,Manufacturing Fresh and Frozen Bread,Alabama,General Manufacturing,
+Oak Bowery Spirits LLC Opelika,,Distillery,Alabama,Food & Beverage,
+SCA Inc.,,Plastics Product Manufacturing,Alabama,Chemicals,
+Miele Manufacturing Inc. Opelika,,"Cooking Appliances, Ovens and Range Cook",Alabama,Industrial Equipment,
+Briggs & Stratton LLC,,Gasoline Engines,Alabama,Industrial Equipment,
+HL Mando America Corporation Opelika,,Automotive - Supplier,Alabama,Automotive,
+AGS America Inc. Opelika,,Motor Vehicle Parts Manufacturing,Alabama,General Manufacturing,
+Korea Fuel Tech America Inc.,,Plastic Fuel Tanks,Alabama,Chemicals,
+SEUNGWON USA Inc. Opelika,,Specialized Packaging Solutions,Alabama,Packaging,
+Toyota Tsusho,,Solar Power Generation,Alabama,Energy,Clean Energy
+Titomic USA Inc.,,Titanium Additive Coatings,Alabama,Metals & Materials,
+Exalta (formally Intech/Turner Medical) Athens,,Medical Devices,Alabama,Life Sciences,Biotech & Life Sciences
+Daikyo Nishikawa USA Inc.,,Automotive Parts Manufacturing,Alabama,Automotive,
+TSA LLC Tuskegee,,Specialty Automotive Fabricator,Alabama,Metals & Materials,
+CPT America LLC Tuskegee,,Steel-Stamping Automotive Parts Manufact,Alabama,Metals & Materials,
+Plasma Processes,,Advanced Materials and Metal Coatings,Alabama,Metals & Materials,
+L3Harris Technologies,,Rocket Engine Manufacturing,Alabama,Space,Space Tech
+SEA Wire & Cable Madison,,Wire and Cable Distributor,Alabama,Metals & Materials,
+SES Inc.,,Aircraft Integration,Alabama,General Manufacturing,
+Hybird Space Systems,,Rocket Engine Manufacturing,Alabama,Space,Space Tech
+Cargill Guntersville,,Soybean Processing,Alabama,General Manufacturing,
+PrismFlex Guntersville,,Industrial Printing,Alabama,General Manufacturing,
+Ace Aeronautics LLC Guntersville,,MRO Rotorcraft,Alabama,General Manufacturing,
+A&G Holdings LLC Arab,,Warehouse/Distribution,Alabama,Logistics,
+Evonik Theodore,,Methyl Mercaptan Production,Alabama,General Manufacturing,
+Primo,,Plastic Extrusion,Alabama,Chemicals,
+ArcelorMittal Calvert,,Non-Grain Oriented Steel,Alabama,Metals & Materials,
+SSAB Axis,,Steel Manufacturer,Alabama,Metals & Materials,
+Master Boat Builders Inc. Coden,,Boat Manufacturers,Alabama,Transportation,
+Gulf Distributing,,Beverage Distribution,Alabama,Food & Beverage,
+Derichebourg,,Aerospace Staffing,Alabama,Space,Space Tech
+APM Terminals,,Container Terminal,Alabama,Logistics,
+Prism Systems,,Software Engineering Firm,Alabama,Industrial Equipment,
+AAA USA,,Corporate HQ/Insurance Companies,Alabama,Financial Services,
+Alabama River Cellulose (Georgia Pacific) Monroeville,,Paper Product Manufacturing - Pulp Mill,Alabama,Forest Products,
+Bad Boy Mowers Monroeville,,Mowers and Tractors,Alabama,Industrial Equipment,
+Webster Fulfillment Monroeville,,General Warehousing and Storage,Alabama,Logistics,
+Lightsource BP,,Solar Power Generation,Alabama,Energy,Clean Energy
+SoGo Packaging LLC,,Syrup and Bottled Fruit Juices,Alabama,Food & Beverage,
+Browder Veneer Works Inc.,,Hardwood Veneer,Alabama,Forest Products,
+Ju-Young Manufacturing America Inc.,,Seat Harness and Levers,Alabama,General Manufacturing,
+Lear Corporation,,Automobile Seats,Alabama,Automotive,
+Guyoungtech USA Inc.,,Automobile Body Parts,Alabama,Automotive,
+Hartzell Engine Technologies,,Aircraft and Engine Components,Alabama,Industrial Equipment,
+CIRG Industries,,Just in Time Sequencing,Alabama,General Manufacturing,
+Dotier LLC (Meta),,Data Storage and Distribution,Alabama,Logistics,
+Alfa Insurance,,Corporate HQ/Insurance Companies,Alabama,Financial Services,
+J.M. Smucker Co.,,Manufactures Cat Food,Alabama,Food & Beverage,
+OCI Alabama LLC,,Sodium Percarbonate,Alabama,Chemicals,
+Daikin America,,Fluoropolymers,Alabama,Chemicals,
+Wolverine Industries,,Integrated Aluminum Manufacturing,Alabama,Metals & Materials,
+M&J Industries,,Machine Shop,Alabama,Industrial Equipment,
+Pro-Fab Machine of Hartselle Hartselle,,Machine Shop/Fabricated Metal Products,Alabama,Metals & Materials,
+Cima Solutions LLC Phenix City,,Rubber Mats,Alabama,Chemicals,
+NVH Georgia LLC Phenix City,,Automotive Floor Mats,Alabama,Automotive,
+Johns Manville Phenix City,,Rockwool Insulation,Alabama,Construction,
+Logan Machine Works Phenix City,,Metal Fabrication,Alabama,Metals & Materials,
+Edgar's Old Style Bakery Pelham,,Commercial Bakery,Alabama,Food & Beverage,
+Specification Rubber Pelham,,Rubber Product Manufacturing,Alabama,Chemicals,
+Buckner Trailers Springville,,Truck Trailer Manufacturing,Alabama,Transportation,
+The Distribution Point LLC Moody,,Plumbing Distribution,Alabama,Logistics,
+Prystup Packaging Products Livingston,,Folding Paperboard Box,Alabama,Forest Products,
+JW Holdings Dadeville,,Painting Auto Parts,Alabama,Automotive,
+Southern Ionics Incorporated,,Sodium Bisulfite,Alabama,Chemicals,
+Microchip Technology Inc.,,Semiconductor and Related Device Manufac,Alabama,Semiconductors,Semiconductors
+Tosyali International Ltd.,,Jewelry Manufacturing,Alabama,Consumer Products,
+Mercedes-Benz USA LLC Vance,,Auto Merchant Wholesaler,Alabama,Automotive,
+Nat 20 Scientific LLC Buhl,,Scientific Research and Development Serv,Alabama,General Manufacturing,
+Jasper Lumber Company LLC Jasper,,Saw Mill,Alabama,Forest Products,
+Jones Machine & Welding Oakman,,"Production, Welding, Warehouse",Alabama,Logistics,
+Cooper Marine Inc. Calvert,,Barge Transportation,Alabama,Logistics,
+J.M. Smucker Co. Decatur Morgan,,Manufactures Cat Food,Alabama,Food & Beverage,
+Eli Lilly Huntsville Limestone,,Pharmaceutical Preparation Manufacturing,Alabama,Life Sciences,Biotech & Life Sciences
+AAA USA Mobile,,Corporate HQ/Insurance Companies,Alabama,Financial Services,
+Alfa Insurance Montgomery,,Corporate HQ/Insurance Companies,Alabama,Financial Services,
+Primo Mobile,,Plastic Extrusion,Alabama,Chemicals,
+Daikin America Decatur Morgan,,Fluoropolymers,Alabama,Chemicals,
+Nelson Brothers LLC Parrish Walker,,Specialty Chemicals and Commercial Explo,Alabama,Chemicals,
+OCI Alabama LLC Decatur Morgan,,Sodium Percarbonate,Alabama,Chemicals,
+SCA Inc. Auburn Lee,,Plastics Product Manufacturing,Alabama,Chemicals,
+Amazon Oxford Calhoun,,Distribution and Delivery,Alabama,Logistics,
+APM Terminals Mobile,,Container Terminal,Alabama,Logistics,
+CIRG Industries Montgomery,,Just in Time Sequencing,Alabama,General Manufacturing,
+Titomic USA Inc. Huntsville Limestone,,Titanium Additive Coatings,Alabama,Metals & Materials,
+M&J Industries Decatur Morgan,,Machine Shop,Alabama,Industrial Equipment,
+Qualico Webb Houston,,Steel Fabrication,Alabama,Metals & Materials,
+Derichebourg Mobile,,Aerospace Staffing,Alabama,Space,Space Tech
+GE Aerospace Auburn Lee,,Aerospace Product and Parts Manufacturin,Alabama,Space,Space Tech
+GE Aerospace Huntsville Limestone,,Carbon Composites,Alabama,General Manufacturing,
+SES Inc. Huntsville Madison,,Aircraft Integration,Alabama,General Manufacturing,
+TSA LLC Tuskegee Macon,,Specialty Automotive Fabricator,Alabama,Metals & Materials,
+Kimberly-Clark Mobile,,Paper Manufacturing,Alabama,Forest Products,
+Lightsource BP Montgomery,,Solar Power Generation,Alabama,Energy,Clean Energy
+Toyota Tsusho Huntsville Limestone,,Solar Power Generation,Alabama,Energy,Clean Energy
+Core Scientific Auburn Lee,,Multi - Tenant Data Center,Alabama,Tech,AI & Machine Learning
+SmartWiz Birmingham Jefferson,,Tax Software Technology Company,Alabama,Financial Services,
+Dotier LLC (Meta) Montgomery,,Data Storage and Distribution,Alabama,Logistics,
+Prism Systems Mobile,,Software Engineering Firm,Alabama,Industrial Equipment,
+Hadrian,,Aerospace/AI Mfg,Arizona,Space,Space Tech
+KPPC Advanced Chemicals,,Semiconductors,Arizona,Semiconductors,Semiconductors
+Ascent Aviation Services,,Aerospace,Arizona,Space,Space Tech
+KoMiCo,,Semiconductors,Arizona,Semiconductors,Semiconductors
+Gifthealth,,Life Sciences/Tech,Arizona,Life Sciences,Biotech & Life Sciences
+DSV,,Logistics,Arizona,Logistics,
+AbbVie,,Life Sciences,Arizona,Life Sciences,Biotech & Life Sciences
+Mayo Clinic,,Life Sciences,Arizona,Life Sciences,Biotech & Life Sciences
+Eternity Technologies,,Battery,Arizona,Energy,Battery Storage
+Komatsu,,Mining,Arizona,General Manufacturing,
+Brewer Science,,Semiconductors,Arizona,Semiconductors,Semiconductors
+Dutch Bros,,HQ/Food & Bev,Arizona,Food & Beverage,
+Kestra Holdings,,Financial Services,Arizona,Financial Services,
+Quantum Computing Inc,,Tech/Quantum,Arizona,Tech,AI & Machine Learning
+Cognite,,Tech/AI,Arizona,Tech,AI & Machine Learning
+AVAIO Digital Partners,,Data Center/AI,Arkansas,Tech,AI & Machine Learning
+SPP,,Energy/Utilities,Arkansas,General Manufacturing,
+R2S,,Defense/Missiles,Arkansas,Defense,Defense Tech
+Packaging Specialties,,Packaging,Arkansas,Packaging,
+Tate Inc,,Advanced Mfg,Arkansas,General Manufacturing,
+InnovAsian,,Food Mfg,Arkansas,Food & Beverage,
+Panasonic,,Battery/EV,Kansas,Energy,Battery Storage
+California Jobs First,,Various,California,General Manufacturing,
+Project Ladybug (Hypersonics),,Aerospace/Defense/Hypersonics,Colorado,Defense,Defense Tech
+Project Caraway,,Tech/Software,Colorado,Tech,
+Project Rey/Oxygen (Semis),,Semiconductors,Colorado,Semiconductors,Semiconductors
+Project Captain (Food),,Food & Bev,Colorado,Food & Beverage,
+GKN Aerospace,,Aerospace,Connecticut,Space,Space Tech
+Merck,,Life Sciences/Pharma,New Jersey,Life Sciences,Biotech & Life Sciences
+Williams International,,Aerospace/Defense,Florida,Defense,Defense Tech
+Otto Aerospace,,Aerospace,Florida,Space,Space Tech
+D-Wave Quantum,,Tech/Quantum,Florida,Tech,AI & Machine Learning
+Rivian,,EV Manufacturing,Georgia,Automotive,EV Battery
+Preciball USA,,Advanced Mfg,Georgia,General Manufacturing,
+Dongwon Autopart Technology,,Automotive,Georgia,Automotive,
+Grupo Vialume,,Advanced Mfg,Georgia,General Manufacturing,
+BioTouch,,Healthcare/Logistics,Georgia,Logistics,
+Virginia Transformer,,Grid/Transformers,Georgia,Energy,Clean Energy
+Salesforce,,Tech,Georgia,Tech,
+Socomec,,Advanced Mfg,Georgia,General Manufacturing,
+Underwood Ammo,,Advanced Mfg,Georgia,General Manufacturing,
+Anovion Technologies,,Battery/Materials,Georgia,Energy,Battery Storage
+stow Group,,Automation,Georgia,Robotics,Robotics & Automation
+Archer Aviation,,eVTOL/Aerospace,Georgia,Space,Space Tech
+Jack Links,,Food Mfg,Georgia,Food & Beverage,
+GF Casting Solutions,,Automotive,Georgia,Automotive,
+SynQor,,Defense/Electronics,New Hampshire,Defense,Defense Tech
+Cronus Chemicals,,Agribusiness/Clean,Illinois,Food & Beverage,
+Savencia Cheese USA,,Food,Illinois,Food & Beverage,
+Caldwell Group,,Advanced Mfg,Illinois,General Manufacturing,
+Tangent,,Advanced Mfg,Illinois,General Manufacturing,
+Amazon,,Data Center/AI,Indiana,Tech,AI & Machine Learning
+Meta,,Data Center/AI,Indiana,Tech,AI & Machine Learning
+Roche Diagnostics,,Life Sciences,Indiana,Life Sciences,Biotech & Life Sciences
+John Deere,,Logistics,Indiana,Logistics,
+Kimball Electronics,,Advanced Mfg,Indiana,General Manufacturing,
+Caterpillar,,Heavy Equipment,Indiana,Industrial Equipment,
+Sioux Honey,,Food Processing,Iowa,Food & Beverage,
+Electro Freeze (H.C. Duke),,Food Equipment Mfg,Iowa,Food & Beverage,
+TPI Composites,,Wind Energy,Iowa,Energy,Clean Energy
+Robinson Inc,,Metal Fabrication,Iowa,Metals & Materials,
+LMT Defense,,Defense,Iowa,Defense,Defense Tech
+New Horizon Cuisine,,Food Mfg,Iowa,Food & Beverage,
+Dexter Laundry,,Industrial Equipment,Iowa,Industrial Equipment,
+Morrison Weighing Systems,,Industrial Equipment,Iowa,Industrial Equipment,
+Kraft Heinz,,Food Processing,Iowa,Food & Beverage,
+Critical Materials Recycling,,Advanced Mfg/Critical Minerals,Iowa,Energy,Battery Components
+HF Rubber,,Industrial Equipment,Kansas,Industrial Equipment,
+Three Dog Brands,,Food,Kansas,Food & Beverage,
+GM Fairfax,,Automotive,Kansas,Automotive,
+Ford Motor Company,,Automotive/EV,Kentucky,Automotive,EV Battery
+GE Appliances,,Advanced Mfg,Kentucky,General Manufacturing,
+Tate Inc./Kingspan,,Data Center,Kentucky,Tech,AI & Machine Learning
+Shinsung ST USA,,Energy Storage,Kentucky,Energy,Battery Storage
+James Composites,,Advanced Mfg,Kentucky,General Manufacturing,
+Saronic Technologies,,Defense/Autonomous,Louisiana,Defense,Defense Tech
+Walmart,,Logistics,Louisiana,Logistics,
+SLB,,Data Center/Tech,Louisiana,Tech,AI & Machine Learning
+The Shaw Group,,Advanced Mfg,Louisiana,General Manufacturing,
+Ampirical,,Grid/Engineering,Louisiana,Energy,Clean Energy
+Viking Attachments,,Advanced Mfg,Louisiana,General Manufacturing,
+Hut 8,,Data Center/AI,Louisiana,Tech,AI & Machine Learning
+ElementUSA,,Critical Minerals,Louisiana,Energy,Battery Components
+Epic Piping,,Industrial Mfg,Louisiana,General Manufacturing,
+Plastipak Packaging,,Packaging,Louisiana,Packaging,
+Pipe & Steel Industrial,,Industrial Mfg,Louisiana,General Manufacturing,
+MD Manufacturing 4.0,,Advanced Mfg,Maryland,General Manufacturing,
+Samsung Biologics,,Life Sciences,Maryland,Life Sciences,Biotech & Life Sciences
+AstraZeneca,,Life Sciences,Texas,Life Sciences,Biotech & Life Sciences
+Patton/PTI,,Defense/Electronics,Maryland,Defense,Defense Tech
+Syngene International,,Life Sciences,Maryland,Life Sciences,Biotech & Life Sciences
+TransMedics,,Life Sciences,Massachusetts,Life Sciences,Biotech & Life Sciences
+DuPont/DDP,,EV Materials,Michigan,Energy,Battery Storage
+Legacy Port Huron Paper,,Advanced Mfg,Michigan,General Manufacturing,
+Volkswagen,,Automotive,Michigan,Automotive,
+Utilidata,,Grid/Tech,Michigan,Energy,Clean Energy
+MOTIV Bowling,,Advanced Mfg,Michigan,General Manufacturing,
+Oerlikon,,Advanced Mfg,Michigan,General Manufacturing,
+Louisiana-Pacific,,Wood Products,Minnesota,Forest Products,
+Sofidel,,Paper Products,Minnesota,Forest Products,
+Forgent Power Solutions,,Grid/Power,Minnesota,Energy,Clean Energy
+Delkor,,Advanced Mfg,Minnesota,General Manufacturing,
+xAI,,Data Center/AI,Mississippi,Tech,AI & Machine Learning
+Entergy Mississippi,,Energy/Power/GRID,Mississippi,Energy,Clean Energy
+BWC Terminals,,Energy/Logistics,Mississippi,Logistics,
+Toyota,,Automotive,Kentucky,Automotive,
+Canfor,,Forest Products,Mississippi,Forest Products,
+Missouri Technology Corp,,Various,Missouri,General Manufacturing,
+SRC Technologies,,Defense/Electronics,Missouri,Defense,Defense Tech
+Bozeman Photonics,,Photonics/Advanced Mfg,Montana,Semiconductors,Semiconductors
+BD (Becton Dickinson),,Life Sciences/Medical,Nebraska,Life Sciences,Biotech & Life Sciences
+Hitchiner,,Aerospace/Auto,New Hampshire,Space,Space Tech
+Celltrion,,Life Sciences,New Jersey,Life Sciences,Biotech & Life Sciences
+CMP Advanced Mechanical Solutions,,Battery,New York,Energy,Battery Storage
+Reju,,Advanced Mfg,New York,General Manufacturing,
+JetZero,,Aerospace,North Carolina,Space,Space Tech
+Johnson & Johnson,,Life Sciences,North Carolina,Life Sciences,Biotech & Life Sciences
+Scout Motors,,Automotive,North Carolina,Automotive,
+Environmental Air Systems,,Advanced Mfg,North Carolina,General Manufacturing,
+Maersk,,Logistics,North Carolina,Logistics,
+FIT Precast,,Advanced Mfg,North Carolina,General Manufacturing,
+Aspida Financial,,Financial Services,North Carolina,Financial Services,
+Chatsworth Products,,Data Center Infrastructure,North Carolina,Tech,AI & Machine Learning
+Genentech,,Life Sciences,North Carolina,Life Sciences,Biotech & Life Sciences
+Novartis,,Life Sciences,North Carolina,Life Sciences,Biotech & Life Sciences
+Pennsylvania Transformer Technology,,Grid,North Carolina,Energy,Clean Energy
+BorgWarner,,Automotive,North Carolina,Automotive,
+CITEL America,,Advanced Mfg,North Carolina,General Manufacturing,
+Roche,,Life Sciences,North Carolina,Life Sciences,Biotech & Life Sciences
+Novartis Gene Therapies,,Life Sciences,North Carolina,Life Sciences,Biotech & Life Sciences
+Pacific Life Insurance,,Financial Services,North Carolina,Financial Services,
+AWS,,Data Center,Ohio,Tech,AI & Machine Learning
+Honda/LG Battery,,Automotive/EV,Ohio,Automotive,EV Battery
+Louis Dreyfus Company,,Food/Agribusiness,Ohio,Food & Beverage,
+Nestlé Purina,,Food/Pet Food,Ohio,Food & Beverage,
+Pharmavite,,Life Sciences,Ohio,Life Sciences,Biotech & Life Sciences
+Sheetz,,Food/Distribution,Ohio,Food & Beverage,
+Medpace,,Life Sciences/CRO,Ohio,Life Sciences,Biotech & Life Sciences
+Great Day Improvements,,Manufacturing,Ohio,General Manufacturing,
+Smucker's,,Food/R&D,Ohio,Food & Beverage,
+Resilience,,Life Sciences/Biopharma,Ohio,Life Sciences,Biotech & Life Sciences
+BJ's Wholesale Club,,Logistics,Ohio,Logistics,
+Encore Technologies,,Tech/Data Center,Ohio,Tech,AI & Machine Learning
+New Horizons Baking,,Food/Mfg,Ohio,Food & Beverage,
+EGLO USA,,Distribution,Ohio,Logistics,
+Diversified Fall Protection,,Advanced Mfg,Ohio,General Manufacturing,
+Crocs,,Logistics,Ohio,Logistics,
+Gabe's,,Logistics,Ohio,Logistics,
+NSG Group/Pilkington,,Advanced Mfg/Solar,Ohio,Energy,Clean Energy
+PureCycle Technologies,,Advanced Mfg/Recycling,Ohio,General Manufacturing,
+AMG Vanadium,,Advanced Mfg/Metals,Ohio,Metals & Materials,
+Honeywell Intelligrated,,Tech/Automation,Ohio,Robotics,Robotics & Automation
+Upstart,,Tech/Fintech,Ohio,Financial Services,
+Crown Equipment,,Advanced Mfg,Ohio,General Manufacturing,
+MRI Software,,Tech/SaaS,Ohio,Tech,
+Oculii,,Tech/Autonomous,Ohio,Robotics,Autonomous Vehicles
+GEALAN,,Distribution,Ohio,Logistics,
+Aerospace Lubricants,,Energy/Chemicals,Ohio,Chemicals,
+Lubrizol,,Energy/Chemicals,Ohio,Chemicals,
+RUPES USA,,Advanced Mfg,Ohio,General Manufacturing,
+Riverain Technologies,,Healthcare/AI,Ohio,Tech,AI & Machine Learning
+Supply Technologies,,Logistics,Ohio,Logistics,
+Joby Aviation (2nd facility),,Aerospace/eVTOL,Ohio,Space,Space Tech
+Hims & Hers,,Healthcare/Digital,Ohio,Healthcare,
+Revere Plastics Systems,,Advanced Mfg,Ohio,General Manufacturing,
+LEWCO/LogistiQ,,Advanced Mfg,Ohio,General Manufacturing,
+Salvagnini America,,Advanced Mfg,Ohio,General Manufacturing,
+La Linea Verde,,Food/Agri,Ohio,Food & Beverage,
+Poly6 Technologies,,Advanced Mfg/Aerospace,Ohio,Space,Space Tech
+SencorpWhite,,Advanced Mfg,Ohio,General Manufacturing,
+Imasen Bucyrus Technology,,Automotive,Ohio,Automotive,
+Ohio Lumex,,Energy/Tech,Ohio,Tech,
+Wieland Chase,,Advanced Mfg,Ohio,General Manufacturing,
+Vultr,,Data Center/AI,Ohio,Tech,AI & Machine Learning
+Westrafo America,,Grid/Transformers,Ohio,Energy,Clean Energy
+Vallourec,,Energy/Mfg,Ohio,General Manufacturing,
+Joby Aviation (propeller blades),,Aerospace/eVTOL,Ohio,Space,Space Tech
+LayerZero Power Systems,,Grid/Data Center,Ohio,Energy,Clean Energy
+Whirlpool,,Advanced Mfg,Ohio,General Manufacturing,
+Steves & Sons,,Jackson,Georgia,General Manufacturing,
+TMC Transformers,,Grid/Transformers,Georgia,Energy,Clean Energy
+Flock Safety,,Tech/Security,Georgia,Tech,
+Red Cedar Steel,,Advanced Mfg,Iowa,General Manufacturing,
+Hyundai Steel,,Steel/Metals,Louisiana,Metals & Materials,
+Moderna,,Life Sciences,Massachusetts,Life Sciences,Biotech & Life Sciences
+Various AI Data Centers,,Data Center/AI,Nevada,Tech,AI & Machine Learning
+Switch,,Data Center,Nevada,Tech,AI & Machine Learning
+Eco King Solutions (Kingsun),,Advanced Mfg,North Carolina,General Manufacturing,
+Citigroup Technology,,Financial Services,North Carolina,Financial Services,
+(Data center development),,Data Center,North Dakota,Tech,AI & Machine Learning
+Axium Packaging,,Advanced Mfg,Ohio,General Manufacturing,
+Becker Mining,,Advanced Mfg,Ohio,General Manufacturing,
+ATSG/AMES,,Aerospace,Ohio,Space,Space Tech
+PRC-Saltillo,,Tech/Healthcare,Ohio,Healthcare,
+EPC-Columbia,,Advanced Mfg,Ohio,General Manufacturing,
+U.S. Bridge,,Advanced Mfg/Infrastructure,Ohio,General Manufacturing,
+Centrus/Fluor,,Nuclear/Energy,Ohio,Energy,Clean Energy
+Pacific Manufacturing,,Automotive/EV,Ohio,Automotive,EV Battery
+Ohio Gratings,,Advanced Mfg,Ohio,General Manufacturing,
+Vaughn Industries,,Electrical/Renewables,Ohio,General Manufacturing,
+Wieland Group,,Metals,Ohio,Metals & Materials,
+Google,,Data Center/AI,Oklahoma,Tech,AI & Machine Learning
+Mecad USA,,Advanced Mfg,Oklahoma,General Manufacturing,
+Apple,,Technology,Oregon,Tech,
+Mitsubishi Electric Power Products,,Grid/Energy,Pennsylvania,Energy,Clean Energy
+First Quality,,Advanced Mfg,Pennsylvania,General Manufacturing,
+Eurofins Lancaster Labs,,Life Sciences,Pennsylvania,Life Sciences,Biotech & Life Sciences
+QuaLex Manufacturing,,Advanced Mfg,Pennsylvania,General Manufacturing,
+Quonset Business Park,,Various,Rhode Island,General Manufacturing,
+Isuzu North America,,Auto,South Carolina,Automotive,
+DartPoints,,Data Center,South Carolina,Tech,AI & Machine Learning
+Safe Industries,,Industrial,South Carolina,General Manufacturing,
+Vermeer Corp,,Industrial Equipment,South Carolina,Industrial Equipment,
+Span-America Medical,,Medical Devices,South Carolina,Life Sciences,Biotech & Life Sciences
+KADIA USA,,Industrial,South Carolina,General Manufacturing,
+Aran USA,,Industrial,South Carolina,General Manufacturing,
+Georg Utz,,Advanced Mfg,South Carolina,General Manufacturing,
+Coastal Precast Systems,,Advanced Mfg,South Carolina,General Manufacturing,
+Hydrite Chemical,,Chemicals,South Carolina,Chemicals,
+Huwell US,,Consumer Products,South Carolina,Consumer Products,
+JGB Brothers,,Food,South Carolina,Food & Beverage,
+Ironline Metals,,Advanced Mfg,South Carolina,General Manufacturing,
+MCIS,,Data Center,South Carolina,Tech,AI & Machine Learning
+Fenner Precision Polymers,,Advanced Mfg,South Carolina,General Manufacturing,
+Coastal Ready Mix,,Advanced Mfg,South Carolina,General Manufacturing,
+Woodward,,Aerospace/Industrial,South Carolina,Space,Space Tech
+Rolls-Royce,,Aerospace,South Carolina,Space,Space Tech
+WiJo Pouches NA,,Consumer,South Carolina,Consumer Products,
+(Data center pipeline),,Data Center,South Dakota,Tech,AI & Machine Learning
+LIS Technologies,,Energy/Nuclear,Tennessee,Energy,Clean Energy
+Heil Trailer International,,Advanced Mfg,Tennessee,General Manufacturing,
+ALUKO Group,,Advanced Mfg,Tennessee,General Manufacturing,
+Korea Zinc,,Metals,Tennessee,Metals & Materials,
+CDF Distributors,,Advanced Mfg,Tennessee,General Manufacturing,
+Carlex Glass America,,Advanced Mfg,Tennessee,General Manufacturing,
+Hyosung HICO,,Grid/Transformers,Tennessee,Energy,Clean Energy
+Anatolia Cabinet,,Advanced Mfg,Tennessee,General Manufacturing,
+Aqua Membranes,,Advanced Mfg,Tennessee,General Manufacturing,
+Biederman,,Advanced Mfg,Tennessee,General Manufacturing,
+Radiant,,Energy/Nuclear,Tennessee,Energy,Clean Energy
+Nidec,,Advanced Mfg,Tennessee,General Manufacturing,
+BWXT Nuclear Fuel Services,,Energy/Nuclear/Defense,Tennessee,Defense,Defense Tech
+Microtex Composites,,Advanced Mfg,Tennessee,General Manufacturing,
+Samsung,,Semiconductors,Texas,Semiconductors,Semiconductors
+Scotiabank,,Financial Services,Texas,Financial Services,
+Prysmian/Encore Wire,,Grid/Wire,Texas,Energy,Clean Energy
+Bridor USA,,Food,Texas,Food & Beverage,
+GCP Paper,,Advanced Mfg,Texas,General Manufacturing,
+Ferrovial,,Energy/Solar,Texas,Energy,Clean Energy
+Vantage Data Centers,,Data Center,Texas,Tech,AI & Machine Learning
+NNA Polymers,,Chemicals,Texas,Chemicals,
+SPC Group,,Food,Texas,Food & Beverage,
+Ninth Avenue Foods,,Food,Texas,Food & Beverage,
+MGC Pure Chemicals,,Semiconductors,Texas,Semiconductors,Semiconductors
+Applied Optoelectronics,,Tech/Data Center,Texas,Tech,AI & Machine Learning
+Formosa Plastics,,Chemicals,Texas,Chemicals,
+MTU Aero Engines,,Aerospace,Texas,Space,Space Tech
+E-Space,,Aerospace/Space,Texas,Space,Space Tech
+Bionova,,Life Sciences,Texas,Life Sciences,Biotech & Life Sciences
+Select Water/Mariana Minerals,,Energy/Lithium,Texas,Energy,Battery Storage
+Inventec,,Tech,Texas,Tech,
+Embraer,,Aerospace,Texas,Space,Space Tech
+Rowan Digital,,Data Center,Texas,Tech,AI & Machine Learning
+MGM/VanTran Transformers,,Grid/Transformers,Texas,Energy,Clean Energy
+Salcomp,,Tech,Texas,Tech,
+L&T Technology,,Tech,Texas,Tech,
+Immatics,https://immatics.com,Life Sciences,Texas,Life Sciences,Biotech & Life Sciences
+Lefko,,Advanced Mfg,Texas,General Manufacturing,
+NTxBio,,Life Sciences,Texas,Life Sciences,Biotech & Life Sciences
+PEGATRON,,Tech,Texas,Tech,
+Gattefossé,,Life Sciences,Texas,Life Sciences,Biotech & Life Sciences
+Gerdau,,Advanced Mfg,Texas,General Manufacturing,
+BMK Pharma,,Life Sciences,Texas,Life Sciences,Biotech & Life Sciences
+Yerico Manufacturing,,Semiconductors,Texas,Semiconductors,Semiconductors
+Cancoil USA,,Industrial Mfg,Texas,General Manufacturing,
+Ariat International,,Consumer/Apparel,Texas,Consumer Products,
+Innovative Labs,,Life Sciences,Utah,Life Sciences,Biotech & Life Sciences
+Bridor,,Food,Utah,Food & Beverage,
+MCM Engineering II,,Grid/Switchgear,Utah,Energy,Clean Energy
+Holtec/Hi Tech Solutions,,Nuclear/SMR Mfg,Utah,Energy,Clean Energy
+Ionic Mineral Technologies,,Critical Minerals,Utah,Energy,Battery Components
+Integrated Rail & Resources,,Rail/Resources,Utah,Transportation,
+Solstice Advanced Materials,,Advanced Materials,Virginia,General Manufacturing,
+Infinity Global,,Advanced Mfg,Virginia,General Manufacturing,
+Anchor,,Defense/Maritime,Virginia,Defense,Defense Tech
+Echodyne,,Defense/Radar,Washington,Defense,Defense Tech
+Frontieras North America,,Energy/Clean Coal,West Virginia,General Manufacturing,
+Calpine,,Energy/Natural Gas,West Virginia,General Manufacturing,
+Microsoft,,Data Center/AI,Wisconsin,Tech,AI & Machine Learning
+Nestle Purina,,Food,Wisconsin,Food & Beverage,
+Foxconn,,Tech,Wisconsin,Tech,
+Milwaukee Tool,,Advanced Mfg,Wisconsin,General Manufacturing,
+Catalent,,Life Sciences,Wisconsin,Life Sciences,Biotech & Life Sciences
+"Enerpac Tool Group, Corp.",,Manufacturing,Wisconsin,General Manufacturing,
+Cascades Holding US Inc.,,Manufacturing,Wisconsin,General Manufacturing,
+"Furlani Foods, LLC",,Manufacturing,Wisconsin,General Manufacturing,
+Microbial Discovery Group,,Manufacturing,Wisconsin,General Manufacturing,
+Vermilion Madison Development LLC,,Construction,Wisconsin,Construction,
+"XeteX, LLC",,Manufacturing,Wisconsin,General Manufacturing,
+"Associated Milk Producers, Inc.",,Manufacturing,Wisconsin,General Manufacturing,
+"Reinhart FoodService, LLC",,Wholesale Trade,Wisconsin,General Manufacturing,
+"Schutz Container Systems, Inc.",,Manufacturing,Wisconsin,General Manufacturing,
+"WHPC-Regent Street-Madison, LLC",,Construction,Wisconsin,Construction,
+Meta House Inc.,,Health Care,Wisconsin,Healthcare,
+Kin at Freshwater LLC,,Construction,Wisconsin,Construction,
+Big Lift LLC,,Wholesale Trade,Wisconsin,General Manufacturing,
+"Dynamic Ratings, Inc.",,Manufacturing,Wisconsin,General Manufacturing,
+"Urnex Brands, LLC",,Manufacturing,Wisconsin,General Manufacturing,
+"Worthington Cylinders Wisconsin, LLC",,Manufacturing,Wisconsin,General Manufacturing,
+"AmeriLux International, LLC",,Manufacturing,Wisconsin,General Manufacturing,
+"Four South Blair, LLC",,Construction,Wisconsin,Construction,
+"Degas, LLC",,Info and Comm,Wisconsin,General Manufacturing,
+"FIT Investment Group, LLC",,Construction,Wisconsin,Construction,
+Kitchen Fresh Foods LLC,,Manufacturing,Wisconsin,General Manufacturing,
+Triangle Manufacturing Company,,Manufacturing,Wisconsin,General Manufacturing,
+"Impact Seven, Inc.",,Health Care,Wisconsin,Healthcare,
+"New Richmond, City of",,Construction,Wisconsin,Construction,
+"Catalent Pharma Solutions, LLC",,Manufacturing,Wisconsin,General Manufacturing,
+Swiss-Tech LLC,,Manufacturing,Wisconsin,General Manufacturing,
+"Edgerton, City of",,Construction,Wisconsin,Construction,
+"Oshkosh, City of",,Health Care,Wisconsin,Healthcare,
+"USV 222, LLC",,Real Estate,Wisconsin,Construction,
+Brearly Street Property Group LLC,,Construction,Wisconsin,Construction,
+"Couleecap, Inc.",,Real Estate,Wisconsin,Construction,
+"South Milwaukee, City of",,Public Admin,Wisconsin,Government,
+"Wixon, Inc.",,Manufacturing,Wisconsin,General Manufacturing,
+NOVA GB SPE LLC,,Real Estate,Wisconsin,Construction,
+Kenosha Downtown Block I LLC,,Real Estate,Wisconsin,Construction,
+"Yaskawa America, Inc",,Manufacturing,Wisconsin,General Manufacturing,
+2510 Good Hope LLC,,Real Estate,Wisconsin,Construction,
+"La Crosse, City of",,Public Admin,Wisconsin,Government,
+Balcan USA Inc.,,Manufacturing,Wisconsin,General Manufacturing,
+LAG Family LLC,,Accommodation,Wisconsin,General Manufacturing,
+Belmark Inc,,Manufacturing,Wisconsin,General Manufacturing,
+"PS Seasoning & Spices, Inc.",,Manufacturing,Wisconsin,General Manufacturing,
+Eli Lilly and Company,,Manufacturing,Wisconsin,General Manufacturing,
+Stanpac USA LLC,,Manufacturing,Wisconsin,General Manufacturing,
+"The DeLong Company, Inc.",,Wholesale Trade,Wisconsin,General Manufacturing,
+"Derse, Inc",,Manufacturing,Wisconsin,General Manufacturing,
+"Children's Museum of Rock County, Inc.",,Recreation,Wisconsin,Consumer Products,
+"Impact Confections, Inc",,Manufacturing,Wisconsin,General Manufacturing,
+Apple/Corning,,Tech/Advanced Mfg,Kentucky,Tech,
+Samsung Electronics,,Semiconductors,Texas,Semiconductors,Semiconductors
+Stellantis,,Automotive,Multiple,Automotive,
+Tesla,,Automotive/EV,Nevada,Automotive,EV Battery
+Sweetwater,,Distribution,Indiana,Logistics,
+DDP Specialty Electronic Materials,,Chemicals/Electronics,Michigan,Chemicals,
+E-Space Inc,,Aerospace/Space,Texas,Space,Space Tech
+Rowan Digital Infrastructure,,Data Center,Texas,Tech,AI & Machine Learning
+Lollicup USA,,Manufacturing,Texas,General Manufacturing,
+Hennessey,,Automotive,Texas,Automotive,
+Tubefab,,Manufacturing,Texas,General Manufacturing,
+AeroVironment,,Aerospace/Defense,Utah,Defense,Defense Tech
+Edwards Lifesciences,,Life Sciences,Utah,Life Sciences,Biotech & Life Sciences
+Fervo Energy,,Energy/Geothermal,Utah,Energy,Clean Energy
+Nucor,,Steel,Utah,Metals & Materials,
+ContiTech USA,,Manufacturing/Rubber,Iowa,Chemicals,

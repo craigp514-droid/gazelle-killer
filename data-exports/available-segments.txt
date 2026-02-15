@@ -1,0 +1,47 @@
+Advanced Materials
+Agricultural Robotics
+AI & Machine Learning
+Autonomous Vehicles
+Battery Components
+Battery Storage
+Biotech & Life Sciences
+Clean Energy
+Communications, PNT & Connectivity
+Data, Software & Space Intelligence
+Defense Tech
+Earth Observation & Geospatial Intelligence
+Equipment (Back-End)
+Equipment (Front-End)
+EV Battery
+eVTOL
+Fabless
+Fabs / Foundries
+Grid Storage
+Ground Infrastructure & Mission Operations
+Ground Segment
+Human Spaceflight & Commercial Space
+Humanoid Robots
+Hydrogen & Fuel Cells
+In-Space Manufacturing & Zero-G R&D
+In-Space Services, Logistics & Safety
+Industrial Robotics
+Launch & Space Access
+Launch Services
+Long-Duration Storage
+Materials & Chemicals
+Medical Robotics
+OSAT
+Research, Workforce & Ecosystem
+Robotics & Automation
+Satellites
+Semiconductors
+Service Robotics
+Space Infrastructure
+Space Resources & Off-World Infrastructure
+Space Stations, Habitats & Orbital Platforms
+Space Tech
+Spacecraft & Satellite Systems
+Spacecraft Components & Subsystems
+Substrates
+Testing & Metrology
+Warehouse Robotics

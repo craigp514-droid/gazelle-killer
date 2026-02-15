@@ -148,8 +148,15 @@ export default async function CompanyPage({ params }: PageProps) {
         <FavoriteButton companyId={company.id} companyName={company.name} initialFavorited={isFavorited} />
       </div>
 
-      {/* Segments */}
+      {/* Industry & Segments */}
       <div className="flex flex-wrap gap-2">
+        {/* Always show Industry if available */}
+        {company.industry && (
+          <Badge variant="secondary" className="bg-slate-100 text-slate-700">
+            {company.industry}
+          </Badge>
+        )}
+        {/* Show segments if assigned (target industries only) */}
         {companySegments?.map((cs: any) => (
           <Link key={cs.segment_id} href={`/companies?segment=${cs.segments?.slug}`}>
             <Badge
@@ -161,7 +168,6 @@ export default async function CompanyPage({ params }: PageProps) {
               }}
             >
               {cs.segments?.name}
-              {cs.is_primary && ' (Primary)'}
             </Badge>
           </Link>
         ))}
