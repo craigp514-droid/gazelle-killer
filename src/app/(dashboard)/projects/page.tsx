@@ -91,6 +91,7 @@ export default async function ProjectIntelligencePage() {
         <h1 className="text-2xl font-bold text-slate-900">Project Intelligence</h1>
         <p className="text-slate-600 mt-1">
           Real-time insights from {totalProjects.toLocaleString()} announced facility projects
+          <span className="text-slate-400 ml-2">• Since October 2025</span>
         </p>
       </div>
 
@@ -164,7 +165,7 @@ export default async function ProjectIntelligencePage() {
               Capex by Sector
             </CardTitle>
             <CardDescription>
-              Where the money is going
+              Where the money is going — since October 2025
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -288,7 +289,7 @@ export default async function ProjectIntelligencePage() {
             <Badge variant="secondary" className="ml-2">${'10B+'}</Badge>
           </CardTitle>
           <CardDescription>
-            {megaDeals.length} projects with $10B+ investment
+            {megaDeals.length} projects with $10B+ investment — since October 2025
           </CardDescription>
         </CardHeader>
         <CardContent>
