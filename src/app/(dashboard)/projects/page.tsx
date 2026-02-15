@@ -8,9 +8,7 @@ import {
   Users, 
   MapPin,
   TrendingUp,
-  Globe,
-  Lightbulb,
-  ExternalLink
+  Lightbulb
 } from 'lucide-react'
 
 export default async function ProjectIntelligencePage() {
@@ -46,26 +44,23 @@ export default async function ProjectIntelligencePage() {
   // Mega deals ($10B+)
   const megaDeals = projects?.filter(p => (p.capex_millions || 0) >= 10000) || []
 
-  // FDI stats
-  const fdiProjects = projects?.filter(p => p.fdi_origin) || []
-  const domesticProjects = projects?.filter(p => !p.fdi_origin) || []
-  const fdiAvgDeal = fdiProjects.length > 0 
-    ? fdiProjects.reduce((sum, p) => sum + (p.capex_millions || 0), 0) / fdiProjects.length 
-    : 0
-  const domesticAvgDeal = domesticProjects.length > 0 
-    ? domesticProjects.reduce((sum, p) => sum + (p.capex_millions || 0), 0) / domesticProjects.length 
-    : 0
-
-  // Jobs per $M by sector (labor intensity)
+  // Jobs per $M by sector (labor intensity) - minimum 20 projects
   const laborIntensity = Object.entries(bySector)
-    .filter(([_, d]) => d.capex > 0 && d.count >= 3)
+    .filter(([_, d]) => d.capex > 0 && d.jobs > 0 && d.count >= 20)
     .map(([sector, d]) => ({
       sector,
       ratio: d.jobs / d.capex,
       jobs: d.jobs,
-      capex: d.capex
+      capex: d.capex,
+      count: d.count
     }))
     .sort((a, b) => b.ratio - a.ratio)
+  
+  // Top job creating sectors (absolute numbers)
+  const topJobSectors = Object.entries(bySector)
+    .filter(([_, d]) => d.count >= 20)
+    .map(([sector, d]) => ({ sector, ...d }))
+    .sort((a, b) => b.jobs - a.jobs)
     .slice(0, 5)
 
   const formatCurrency = (value: number) => {
@@ -211,46 +206,59 @@ export default async function ProjectIntelligencePage() {
 
         {/* Intelligence Cards - Right column */}
         <div className="space-y-4">
-          {/* FDI Insight */}
-          <Card className="border-blue-200 bg-blue-50">
-            <CardHeader className="pb-2">
-              <CardTitle className="text-sm font-medium text-blue-800 flex items-center gap-2">
-                <Globe className="h-4 w-4" />
-                Foreign Investment
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-2xl font-bold text-blue-900">
-                {formatCurrency(fdiAvgDeal)} avg
-              </p>
-              <p className="text-sm text-blue-700 mt-1">
-                FDI projects average <span className="font-semibold">{(fdiAvgDeal / domesticAvgDeal).toFixed(1)}x larger</span> than domestic ({formatCurrency(domesticAvgDeal)} avg)
-              </p>
-              <p className="text-xs text-blue-600 mt-2">
-                {fdiProjects.length} FDI projects • {formatCurrency(fdiProjects.reduce((s, p) => s + (p.capex_millions || 0), 0))} total
-              </p>
-            </CardContent>
-          </Card>
-
-          {/* Labor Intensity Insight */}
+          {/* Labor Intensity Insight - Expanded */}
           <Card className="border-purple-200 bg-purple-50">
             <CardHeader className="pb-2">
               <CardTitle className="text-sm font-medium text-purple-800 flex items-center gap-2">
                 <Users className="h-4 w-4" />
                 Jobs per $1M Invested
               </CardTitle>
+              <CardDescription className="text-purple-600 text-xs">
+                Sectors with 20+ projects
+              </CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="space-y-2">
-                {laborIntensity.slice(0, 3).map(s => (
+              <div className="space-y-1.5">
+                {laborIntensity.map((s, i) => (
                   <div key={s.sector} className="flex justify-between text-sm">
-                    <span className="text-purple-700">{s.sector}</span>
-                    <span className="font-semibold text-purple-900">{s.ratio.toFixed(1)} jobs</span>
+                    <span className={i < 3 ? "text-purple-800 font-medium" : "text-purple-600"}>
+                      {s.sector}
+                    </span>
+                    <span className={i < 3 ? "font-semibold text-purple-900" : "text-purple-700"}>
+                      {s.ratio.toFixed(2)}
+                    </span>
                   </div>
                 ))}
               </div>
-              <p className="text-xs text-purple-600 mt-3 pt-2 border-t border-purple-200">
-                Semiconductors: 0.25 jobs/$M (capital-intensive)
+              <p className="text-xs text-purple-500 mt-3 pt-2 border-t border-purple-200">
+                Higher = more labor-intensive • Lower = capital-intensive
+              </p>
+            </CardContent>
+          </Card>
+
+          {/* Top Job Creators */}
+          <Card className="border-blue-200 bg-blue-50">
+            <CardHeader className="pb-2">
+              <CardTitle className="text-sm font-medium text-blue-800 flex items-center gap-2">
+                <Building2 className="h-4 w-4" />
+                Top Job Creators
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-1.5">
+                {topJobSectors.map((s, i) => (
+                  <div key={s.sector} className="flex justify-between text-sm">
+                    <span className={i === 0 ? "text-blue-800 font-medium" : "text-blue-700"}>
+                      {s.sector}
+                    </span>
+                    <span className={i === 0 ? "font-semibold text-blue-900" : "text-blue-700"}>
+                      {formatNumber(s.jobs)}
+                    </span>
+                  </div>
+                ))}
+              </div>
+              <p className="text-xs text-blue-500 mt-3 pt-2 border-t border-blue-200">
+                Total: {formatNumber(totalJobs)} jobs announced
               </p>
             </CardContent>
           </Card>
