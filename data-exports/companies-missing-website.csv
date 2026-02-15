@@ -1,0 +1,532 @@
+company_name,slug,industry,needs
+"(Data center development)",data-center-development,"Tech",website
+"(Data center pipeline)",data-center-pipeline,"Tech",website
+"2510 Good Hope LLC",2510-good-hope-llc,"Construction",website
+"A&G Holdings LLC Arab",a-g-holdings-llc-arab,"Logistics",website
+"AAA USA",aaa-usa,"Financial Services",website
+"AAA USA Mobile",aaa-usa-mobile,"Financial Services",website
+"AbbVie",abbvie,"Life Sciences",website
+"Ace Aeronautics",ace-aeronautics,"Space",website
+"Ace Aeronautics LLC Guntersville",ace-aeronautics-llc-guntersville,"General Manufacturing",website
+"Advance Displays Inc. Scottsboro",advance-displays-inc-scottsboro,"Logistics",website
+"Aerospace Lubricants",aerospace-lubricants,"Chemicals",website
+"AeroVironment",aerovironment,"Defense",website
+"AGS America Inc. Opelika",ags-america-inc-opelika,"General Manufacturing",website
+"Alabama River Cellulose (Georgia Pacific) Monroeville",alabama-river-cellulose-georgia-pacific-monroeville,"Forest Products",website
+"Alabama State Port Authority",alabama-state-port-authority,"Logistics",website
+"Alfa Insurance",alfa-insurance,"Financial Services",website
+"Alfa Insurance Montgomery",alfa-insurance-montgomery,"Financial Services",website
+"Altex Packaging Inc. Anniston",altex-packaging-inc-anniston,"Forest Products",website
+"ALUKO Group",aluko-group,"General Manufacturing",website
+"Amazon",amazon,"Tech",website
+"Amazon Oxford",amazon-oxford,"Logistics",website
+"Amazon Oxford Calhoun",amazon-oxford-calhoun,"Logistics",website
+"AmeriLux International, LLC",amerilux-international-llc,"General Manufacturing",website
+"AMG Vanadium",amg-vanadium,"Metals & Materials",website
+"Ampirical",ampirical,"Energy",website
+"AMZ Alabama Inc. Anniston",amz-alabama-inc-anniston,"Defense",website
+"Anatolia Cabinet",anatolia-cabinet,"General Manufacturing",website
+"Anchor",anchor,"Defense",website
+"Anovion Technologies",anovion-technologies,"Energy",website
+"APM Terminals",apm-terminals,"Logistics",website
+"APM Terminals Mobile",apm-terminals-mobile,"Logistics",website
+"Apple",apple,"Tech",website
+"Apple/Corning",apple-corning,"Tech",website
+"Applied Optoelectronics",applied-optoelectronics,"Tech",website
+"Aqua Membranes",aqua-membranes,"General Manufacturing",website
+"Aqua Technics (aka Aquatic Leisure) Opp",aqua-technics-aka-aquatic-leisure-opp,"Tech",website
+"Aquatic Leisure Technologies",aquatic-leisure-technologies,"General Manufacturing",website
+"Aran USA",aran-usa,"General Manufacturing",website
+"ArcelorMittal",arcelormittal,"Metals & Materials",website
+"ArcelorMittal Calvert",arcelormittal-calvert,"Metals & Materials",website
+"Archer Aviation",archer-aviation,"Space",website
+"Ariat International",ariat-international,"Consumer Products",website
+"Ascent Aviation Services",ascent-aviation-services,"Space",website
+"Aspida Financial",aspida-financial,"Financial Services",website
+"Associated Milk Producers, Inc.",associated-milk-producers-inc,"General Manufacturing",website
+"AstraZeneca",astrazeneca,"Life Sciences",website
+"ATSG/AMES",atsg-ames,"Space",website
+"AVAIO Digital Partners",avaio-digital-partners,"Tech",website
+"AWS",aws,"Tech",website
+"Axium Packaging",axium-packaging,"General Manufacturing",website
+"Bad Boy Mowers",bad-boy-mowers,"General Manufacturing",website
+"Bad Boy Mowers Monroeville",bad-boy-mowers-monroeville,"Industrial Equipment",website
+"Balcan USA Inc.",balcan-usa-inc,"General Manufacturing",website
+"BD (Becton Dickinson)",bd-becton-dickinson,"Life Sciences",website
+"Becker Mining",becker-mining,"General Manufacturing",website
+"Belmark Inc",belmark-inc,"General Manufacturing",website
+"Biederman",biederman,"General Manufacturing",website
+"Big Lift LLC",big-lift-llc,"General Manufacturing",website
+"Bionova",bionova,"Life Sciences",website
+"BioTouch",biotouch,"Logistics",website
+"BJ's Wholesale Club",bj-s-wholesale-club,"Logistics",website
+"BMK Pharma",bmk-pharma,"Life Sciences",website
+"BorgWarner",borgwarner,"Automotive",website
+"Bozeman Photonics",bozeman-photonics,"Semiconductors",website
+"Brearly Street Property Group LLC",brearly-street-property-group-llc,"Construction",website
+"Brewer Science",brewer-science,"Semiconductors",website
+"Bridor",bridor,"Food & Beverage",website
+"Bridor USA",bridor-usa,"Food & Beverage",website
+"Briggs & Stratton LLC",briggs-stratton-llc,"Industrial Equipment",website
+"Browder Veneer Works Inc.",browder-veneer-works-inc,"Forest Products",website
+"Bryant Machine Jacksonville",bryant-machine-jacksonville,"Industrial Equipment",website
+"Buckner Trailers Springville",buckner-trailers-springville,"Transportation",website
+"Butting USA",butting-usa,"Metals & Materials",website
+"Butting USA Inc. Loxley",butting-usa-inc-loxley,"Metals & Materials",website
+"BWC Terminals",bwc-terminals,"Logistics",website
+"BWXT Nuclear Fuel Services",bwxt-nuclear-fuel-services,"Defense",website
+"Caldwell Group",caldwell-group,"General Manufacturing",website
+"California Jobs First",california-jobs-first,"General Manufacturing",website
+"Calpine",calpine,"General Manufacturing",website
+"Cancoil USA",cancoil-usa,"General Manufacturing",website
+"Canfor",canfor,"Forest Products",website
+"Cargill Guntersville",cargill-guntersville,"General Manufacturing",website
+"Carlex Glass America",carlex-glass-america,"General Manufacturing",website
+"Cascades Holding US Inc.",cascades-holding-us-inc,"General Manufacturing",website
+"Catalent",catalent,"Life Sciences",website
+"Catalent Pharma Solutions, LLC",catalent-pharma-solutions-llc,"General Manufacturing",website
+"Caterpillar",caterpillar,"Industrial Equipment",website
+"CDF Distributors",cdf-distributors,"General Manufacturing",website
+"Celltrion",celltrion,"Life Sciences",website
+"Centrus/Fluor",centrus-fluor,"Energy",website
+"Changer & Dresser Anniston",changer-dresser-anniston,"Metals & Materials",website
+"Chatsworth Products",chatsworth-products,"Tech",website
+"Children's Museum of Rock County, Inc.",children-s-museum-of-rock-county-inc,"Consumer Products",website
+"Choice Fabricators Rainbow City",choice-fabricators-rainbow-city,"Metals & Materials",website
+"Cima Solutions LLC Phenix City",cima-solutions-llc-phenix-city,"Chemicals",website
+"CIRG Industries",cirg-industries,"General Manufacturing",website
+"CIRG Industries Montgomery",cirg-industries-montgomery,"General Manufacturing",website
+"CITEL America",citel-america,"General Manufacturing",website
+"Citigroup Technology",citigroup-technology,"Financial Services",website
+"CMP Advanced Mechanical Solutions",cmp-advanced-mechanical-solutions,"Energy",website
+"Coastal Precast Systems",coastal-precast-systems,"General Manufacturing",website
+"Coastal Ready Mix",coastal-ready-mix,"General Manufacturing",website
+"Cobra Metal Cullman",cobra-metal-cullman,"Metals & Materials",website
+"Cognite",cognite,"Tech",website
+"Constellium",constellium,"Metals & Materials",website
+"Constellium Muscle Shoals",constellium-muscle-shoals,"Metals & Materials",website
+"ContiTech USA",contitech-usa,"Chemicals",website
+"Cooper Marine Inc. Calvert",cooper-marine-inc-calvert,"Logistics",website
+"Core Scientific",core-scientific,"Tech",website
+"Core Scientific Auburn Lee",core-scientific-auburn-lee,"Tech",website
+"Corning Optical Communications",corning-optical-communications,"Tech",website
+"Corrugated Supplies Corporation Cullman",corrugated-supplies-corporation-cullman,"Packaging",website
+"Couleecap, Inc.",couleecap-inc,"Construction",website
+"CPT America",cpt-america,"Automotive",website
+"CPT America LLC Tuskegee",cpt-america-llc-tuskegee,"Metals & Materials",website
+"Critical Materials Recycling",critical-materials-recycling,"Energy",website
+"Crocs",crocs,"Logistics",website
+"Cronus Chemicals",cronus-chemicals,"Food & Beverage",website
+"Crown Equipment",crown-equipment,"General Manufacturing",website
+"D-Wave Quantum",d-wave-quantum,"Tech",website
+"Daikin America",daikin-america,"Chemicals",website
+"Daikin America Decatur Morgan",daikin-america-decatur-morgan,"Chemicals",website
+"Daikyo Nishikawa USA Inc.",daikyo-nishikawa-usa-inc,"Automotive",website
+"DartPoints",dartpoints,"Tech",website
+"DAS North America",das-north-america,"Automotive",website
+"DDP Specialty Electronic Materials",ddp-specialty-electronic-materials,"Chemicals",website
+"Degas, LLC",degas-llc,"General Manufacturing",website
+"Delkor",delkor,"General Manufacturing",website
+"Derichebourg",derichebourg,"Space",website
+"Derichebourg Mobile",derichebourg-mobile,"Space",website
+"Derse, Inc",derse-inc,"General Manufacturing",website
+"Dexter Laundry",dexter-laundry,"Industrial Equipment",website
+"Diageo",diageo,"Food & Beverage",website
+"Diversified Fall Protection",diversified-fall-protection,"General Manufacturing",website
+"Doncasters Oxford",doncasters-oxford,"Metals & Materials",website
+"Dongwon Autopart Technology",dongwon-autopart-technology,"Automotive",website
+"Dotier LLC (Meta)",dotier-llc-meta,"Logistics",website
+"Dotier LLC (Meta) Montgomery",dotier-llc-meta-montgomery,"Logistics",website
+"DSV",dsv,"Logistics",website
+"DuPont/DDP",dupont-ddp,"Energy",website
+"Dutch Bros",dutch-bros,"Food & Beverage",website
+"Dynamic Ratings, Inc.",dynamic-ratings-inc,"General Manufacturing",website
+"E-Space",e-space,"Space",website
+"E-Space Inc",e-space-inc,"Space",website
+"Eco King Solutions (Kingsun)",eco-king-solutions-kingsun,"General Manufacturing",website
+"Edgar's Old Style Bakery Pelham",edgar-s-old-style-bakery-pelham,"Food & Beverage",website
+"Edgerton, City of",edgerton-city-of,"Construction",website
+"Edwards Lifesciences",edwards-lifesciences,"Life Sciences",website
+"EGLO USA",eglo-usa,"Logistics",website
+"Electro Freeze (H.C. Duke)",electro-freeze-h-c-duke,"Food & Beverage",website
+"ElementUSA",elementusa,"Energy",website
+"Eli Lilly and Company",eli-lilly-and-company,"General Manufacturing",website
+"Eli Lilly Huntsville Limestone",eli-lilly-huntsville-limestone,"Life Sciences",website
+"Embraer",embraer,"Space",website
+"Encore Technologies",encore-technologies,"Tech",website
+"Enerpac Tool Group, Corp.",enerpac-tool-group-corp,"General Manufacturing",website
+"Entergy Mississippi",entergy-mississippi,"Energy",website
+"Environmental Air Systems",environmental-air-systems,"General Manufacturing",website
+"Envision Cold Storage",envision-cold-storage,"Logistics",website
+"EPC-Columbia",epc-columbia,"General Manufacturing",website
+"Epic Piping",epic-piping,"General Manufacturing",website
+"Eternity Technologies",eternity-technologies,"Energy",website
+"Eurofins Lancaster Labs",eurofins-lancaster-labs,"Life Sciences",website
+"Evonik",evonik,"Chemicals",website
+"Evonik Theodore",evonik-theodore,"General Manufacturing",website
+"Exalta (formally Intech/Turner Medical) Athens",exalta-formally-intech-turner-medical-athens,"Life Sciences",website
+"Fenner Precision Polymers",fenner-precision-polymers,"General Manufacturing",website
+"Ferrovial",ferrovial,"Energy",website
+"Fervo Energy",fervo-energy,"Energy",website
+"First Quality",first-quality,"General Manufacturing",website
+"FIT Investment Group, LLC",fit-investment-group-llc,"Construction",website
+"FIT Precast",fit-precast,"General Manufacturing",website
+"Flock Safety",flock-safety,"Tech",website
+"Ford Motor Company",ford-motor-company,"Automotive",website
+"Forgent Power Solutions",forgent-power-solutions,"Energy",website
+"Formosa Plastics",formosa-plastics,"Chemicals",website
+"Four South Blair, LLC",four-south-blair-llc,"Construction",website
+"Foxconn",foxconn,"Tech",website
+"Franklin Manufacturing Inc. Russellville",franklin-manufacturing-inc-russellville,"Metals & Materials",website
+"Fratco",fratco,"General Manufacturing",website
+"Frontieras North America",frontieras-north-america,"General Manufacturing",website
+"Furlani Foods, LLC",furlani-foods-llc,"General Manufacturing",website
+"G&G Steel Inc. Russellville",g-g-steel-inc-russellville,"Metals & Materials",website
+"Gabe's",gabe-s,"Logistics",website
+"Gattefossé",gattefoss,"Life Sciences",website
+"GCP Paper",gcp-paper,"General Manufacturing",website
+"GE Aerospace Auburn Lee",ge-aerospace-auburn-lee,"Space",website
+"GE Aerospace Huntsville Limestone",ge-aerospace-huntsville-limestone,"General Manufacturing",website
+"GE Appliances",ge-appliances,"General Manufacturing",website
+"GEALAN",gealan,"Logistics",website
+"Genentech",genentech,"Life Sciences",website
+"Georg Utz",georg-utz,"General Manufacturing",website
+"Georgia Pacific/Alabama River Cellulose",georgia-pacific-alabama-river-cellulose,"Forest Products",website
+"Gerdau",gerdau,"General Manufacturing",website
+"GF Casting Solutions",gf-casting-solutions,"Automotive",website
+"Gifthealth",gifthealth,"Life Sciences",website
+"GKN Aerospace",gkn-aerospace,"Space",website
+"GM Fairfax",gm-fairfax,"Automotive",website
+"Google",google,"Tech",website
+"Great Day Improvements",great-day-improvements,"General Manufacturing",website
+"Green Health Laboratories Foley",green-health-laboratories-foley,"General Manufacturing",website
+"Grupo Vialume",grupo-vialume,"General Manufacturing",website
+"Gulf Distributing",gulf-distributing,"Food & Beverage",website
+"Guyoungtech USA Inc.",guyoungtech-usa-inc,"Automotive",website
+"Hadrian",hadrian,"Space",website
+"Hartzell Engine Technologies",hartzell-engine-technologies,"Industrial Equipment",website
+"Heil Trailer International",heil-trailer-international,"General Manufacturing",website
+"Hello Chonky Cookie Enterprise",hello-chonky-cookie-enterprise,"Food & Beverage",website
+"Hennessey",hennessey,"Automotive",website
+"HF Rubber",hf-rubber,"Industrial Equipment",website
+"Hims & Hers",hims-hers,"Healthcare",website
+"Hitchiner",hitchiner,"Space",website
+"HL Mando America Corporation Opelika",hl-mando-america-corporation-opelika,"Automotive",website
+"Holtec/Hi Tech Solutions",holtec-hi-tech-solutions,"Energy",website
+"Honda/LG Battery",honda-lg-battery,"Automotive",website
+"Honeywell Intelligrated",honeywell-intelligrated,"Robotics",website
+"Hut 8",hut-8,"Tech",website
+"Huwell US",huwell-us,"Consumer Products",website
+"Hwashin America",hwashin-america,"Automotive",website
+"Hwashin America Corporation Greenville",hwashin-america-corporation-greenville,"Automotive",website
+"Hybird Space Systems",hybird-space-systems,"Space",website
+"Hydrite Chemical",hydrite-chemical,"Chemicals",website
+"Hyosung HICO",hyosung-hico,"Energy",website
+"Hyundai Steel",hyundai-steel,"Metals & Materials",website
+"Imasen Bucyrus Technology",imasen-bucyrus-technology,"Automotive",website
+"Impact Confections, Inc",impact-confections-inc,"General Manufacturing",website
+"Impact Seven, Inc.",impact-seven-inc,"Healthcare",website
+"Infinity Global",infinity-global,"General Manufacturing",website
+"InnovAsian",innovasian,"Food & Beverage",website
+"Innovative Labs",innovative-labs,"Life Sciences",website
+"Integrated Rail & Resources",integrated-rail-resources,"Transportation",website
+"International Paper",international-paper,"Forest Products",website
+"Interstate Sheet Metal Anniston",interstate-sheet-metal-anniston,"Metals & Materials",website
+"Inventec",inventec,"Tech",website
+"Ionic Mineral Technologies",ionic-mineral-technologies,"Energy",website
+"Ironline Metals",ironline-metals,"General Manufacturing",website
+"Isuzu North America",isuzu-north-america,"Automotive",website
+"J.M. Smucker Co.",j-m-smucker-co,"Food & Beverage",website
+"J.M. Smucker Co. Decatur Morgan",j-m-smucker-co-decatur-morgan,"Food & Beverage",website
+"Jack Links",jack-links,"Food & Beverage",website
+"James Composites",james-composites,"General Manufacturing",website
+"Jasper Lumber",jasper-lumber,"Forest Products",website
+"Jasper Lumber Company LLC Jasper",jasper-lumber-company-llc-jasper,"Forest Products",website
+"JetZero",jetzero,"Space",website
+"JGB Brothers",jgb-brothers,"Food & Beverage",website
+"Joby Aviation (2nd facility)",joby-aviation-2nd-facility,"Space",website
+"Joby Aviation (propeller blades)",joby-aviation-propeller-blades,"Space",website
+"John Deere",john-deere,"Logistics",website
+"Johns Manville Phenix City",johns-manville-phenix-city,"Construction",website
+"Johnson & Johnson",johnson-johnson,"Life Sciences",website
+"Jones Machine & Welding Oakman",jones-machine-welding-oakman,"Logistics",website
+"JOON LLC (AJIN USA) Cusseta",joon-llc-ajin-usa-cusseta,"Automotive",website
+"Ju-Young Manufacturing America Inc.",ju-young-manufacturing-america-inc,"General Manufacturing",website
+"JW Holdings Dadeville",jw-holdings-dadeville,"Automotive",website
+"KADIA USA",kadia-usa,"General Manufacturing",website
+"Kenosha Downtown Block I LLC",kenosha-downtown-block-i-llc,"Construction",website
+"Kestra Holdings",kestra-holdings,"Financial Services",website
+"KettenWulf",kettenwulf,"General Manufacturing",website
+"Kimball Electronics",kimball-electronics,"General Manufacturing",website
+"Kimberly-Clark",kimberly-clark,"Forest Products",website
+"Kimberly-Clark Mobile",kimberly-clark-mobile,"Forest Products",website
+"Kin at Freshwater LLC",kin-at-freshwater-llc,"Construction",website
+"Kitchen Fresh Foods LLC",kitchen-fresh-foods-llc,"General Manufacturing",website
+"Kobay Enstal Oxford",kobay-enstal-oxford,"Metals & Materials",website
+"Komatsu",komatsu,"General Manufacturing",website
+"KoMiCo",komico,"Semiconductors",website
+"Korea Fuel Tech America Inc.",korea-fuel-tech-america-inc,"Chemicals",website
+"Korea Zinc",korea-zinc,"Metals & Materials",website
+"KPPC Advanced Chemicals",kppc-advanced-chemicals,"Semiconductors",website
+"Kraft Heinz",kraft-heinz,"Food & Beverage",website
+"Kronospan",kronospan,"Forest Products",website
+"Kronospan Oxford",kronospan-oxford,"Forest Products",website
+"L&T Technology",l-t-technology,"Tech",website
+"La Crosse, City of",la-crosse-city-of,"Government",website
+"La Linea Verde",la-linea-verde,"Food & Beverage",website
+"LAG Family LLC",lag-family-llc,"General Manufacturing",website
+"LayerZero Power Systems",layerzero-power-systems,"Energy",website
+"Lear Corporation",lear-corporation,"Automotive",website
+"Lefko",lefko,"General Manufacturing",website
+"Legacy Port Huron Paper",legacy-port-huron-paper,"General Manufacturing",website
+"LEWCO/LogistiQ",lewco-logistiq,"General Manufacturing",website
+"Lightsource BP",lightsource-bp,"Energy",website
+"Lightsource BP Montgomery",lightsource-bp-montgomery,"Energy",website
+"LIS Technologies",lis-technologies,"Energy",website
+"LMT Defense",lmt-defense,"Defense",website
+"Logan Machine Works Phenix City",logan-machine-works-phenix-city,"Metals & Materials",website
+"Lollicup USA",lollicup-usa,"General Manufacturing",website
+"Louis Dreyfus Company",louis-dreyfus-company,"Food & Beverage",website
+"Louisiana Pacific Cullman",louisiana-pacific-cullman,"General Manufacturing",website
+"Louisiana-Pacific",louisiana-pacific,"Forest Products",website
+"Lubrizol",lubrizol,"Chemicals",website
+"M&J Industries",m-j-industries,"Industrial Equipment",website
+"M&J Industries Decatur Morgan",m-j-industries-decatur-morgan,"Industrial Equipment",website
+"Maersk",maersk,"Logistics",website
+"Master Boat Builders Inc. Coden",master-boat-builders-inc-coden,"Transportation",website
+"Maximus Meats Summerdale",maximus-meats-summerdale,"Food & Beverage",website
+"Mayo Clinic",mayo-clinic,"Life Sciences",website
+"MCIS",mcis,"Tech",website
+"MCM Engineering II",mcm-engineering-ii,"Energy",website
+"MD Manufacturing 4.0",md-manufacturing-4-0,"General Manufacturing",website
+"Mecad USA",mecad-usa,"General Manufacturing",website
+"Medpace",medpace,"Life Sciences",website
+"Mercedes-Benz USA LLC Vance",mercedes-benz-usa-llc-vance,"Automotive",website
+"Merck",merck,"Life Sciences",website
+"Meta",meta,"Tech",website
+"Meta House Inc.",meta-house-inc,"Healthcare",website
+"Meta/Dotier",meta-dotier,"Tech",website
+"MGC Pure Chemicals",mgc-pure-chemicals,"Semiconductors",website
+"MGM/VanTran Transformers",mgm-vantran-transformers,"Energy",website
+"Microbial Discovery Group",microbial-discovery-group,"General Manufacturing",website
+"Microchip Technology Inc.",microchip-technology-inc,"Semiconductors",website
+"Microsoft",microsoft,"Tech",website
+"Microtex Composites",microtex-composites,"General Manufacturing",website
+"Miele Manufacturing Inc. Opelika",miele-manufacturing-inc-opelika,"Industrial Equipment",website
+"Milwaukee Tool",milwaukee-tool,"General Manufacturing",website
+"Missouri Technology Corp",missouri-technology-corp,"General Manufacturing",website
+"Mitsubishi Electric Power Products",mitsubishi-electric-power-products,"Energy",website
+"Moderna",moderna,"Life Sciences",website
+"Morrison Weighing Systems",morrison-weighing-systems,"Industrial Equipment",website
+"MOTIV Bowling",motiv-bowling,"General Manufacturing",website
+"MRI Software",mri-software,"Tech",website
+"MTU Aero Engines",mtu-aero-engines,"Space",website
+"Nat 20 Scientific LLC Buhl",nat-20-scientific-llc-buhl,"General Manufacturing",website
+"Nelson Brothers LLC Parrish Walker",nelson-brothers-llc-parrish-walker,"Chemicals",website
+"Nestle Purina",nestle-purina,"Food & Beverage",website
+"Nestlé Purina",nestl-purina,"Food & Beverage",website
+"New Horizon Cuisine",new-horizon-cuisine,"Food & Beverage",website
+"New Horizons Baking",new-horizons-baking,"Food & Beverage",website
+"New Richmond, City of",new-richmond-city-of,"Construction",website
+"Nidec",nidec,"General Manufacturing",website
+"Ninth Avenue Foods",ninth-avenue-foods,"Food & Beverage",website
+"NNA Polymers",nna-polymers,"Chemicals",website
+"North Alabama Fabricating Company Cullman",north-alabama-fabricating-company-cullman,"Metals & Materials",website
+"NOVA GB SPE LLC",nova-gb-spe-llc,"Construction",website
+"Novartis Gene Therapies",novartis-gene-therapies,"Life Sciences",website
+"NSG Group/Pilkington",nsg-group-pilkington,"Energy",website
+"NTxBio",ntxbio,"Life Sciences",website
+"Nucor",nucor,"Metals & Materials",website
+"Nucor Vulcraft Group Fort Payne",nucor-vulcraft-group-fort-payne,"Metals & Materials",website
+"NVH Georgia LLC Phenix City",nvh-georgia-llc-phenix-city,"Automotive",website
+"Oak Bowery Spirits LLC Opelika",oak-bowery-spirits-llc-opelika,"Food & Beverage",website
+"OCI Alabama LLC",oci-alabama-llc,"Chemicals",website
+"OCI Alabama LLC Decatur Morgan",oci-alabama-llc-decatur-morgan,"Chemicals",website
+"Oculii",oculii,"Robotics",website
+"Oerlikon",oerlikon,"General Manufacturing",website
+"Ohio Gratings",ohio-gratings,"General Manufacturing",website
+"Ohio Lumex",ohio-lumex,"Tech",website
+"Oldcastle Lawn & Garden Abbeville",oldcastle-lawn-garden-abbeville,"Forest Products",website
+"Omaha Track Attalla",omaha-track-attalla,"Transportation",website
+"Oshkosh, City of",oshkosh-city-of,"Healthcare",website
+"Otto Aerospace",otto-aerospace,"Space",website
+"Owens Corning",owens-corning,"General Manufacturing",website
+"Owens Corning Corporation Prattville",owens-corning-corporation-prattville,"Construction",website
+"Pacific Life Insurance",pacific-life-insurance,"Financial Services",website
+"Pacific Manufacturing",pacific-manufacturing,"Automotive",website
+"Packaging Specialties",packaging-specialties,"Packaging",website
+"Panasonic",panasonic,"Energy",website
+"Parsons Corporation",parsons-corporation,"Defense",website
+"Patton/PTI",patton-pti,"Defense",website
+"PEGATRON",pegatron,"Tech",website
+"Pennsylvania Transformer Technology",pennsylvania-transformer-technology,"Energy",website
+"Perdido River Farms/Poarch Band of Creek Indians Atmore",perdido-river-farms-poarch-band-of-creek-indians-atmore,"Food & Beverage",website
+"Performance Drone Works",performance-drone-works,"Defense",website
+"Pharmavite",pharmavite,"Life Sciences",website
+"Phoenix Building Solutions Greenville",phoenix-building-solutions-greenville,"General Manufacturing",website
+"Pilgrims",pilgrims,"Food & Beverage",website
+"Pilgrims Russellville",pilgrims-russellville,"Food & Beverage",website
+"Pipe & Steel Industrial",pipe-steel-industrial,"General Manufacturing",website
+"Plasma Processes",plasma-processes,"Metals & Materials",website
+"Plastipak Packaging",plastipak-packaging,"Packaging",website
+"Poly6 Technologies",poly6-technologies,"Space",website
+"PRC-Saltillo",prc-saltillo,"Healthcare",website
+"Preciball USA",preciball-usa,"General Manufacturing",website
+"Primo",primo,"Chemicals",website
+"Primo Mobile",primo-mobile,"Chemicals",website
+"Prism Systems",prism-systems,"Industrial Equipment",website
+"Prism Systems Mobile",prism-systems-mobile,"Industrial Equipment",website
+"PrismFlex Guntersville",prismflex-guntersville,"General Manufacturing",website
+"Pro-Fab Machine of Hartselle Hartselle",pro-fab-machine-of-hartselle-hartselle,"Metals & Materials",website
+"Project Captain (Food)",project-captain-food,"Food & Beverage",website
+"Project Caraway",project-caraway,"Tech",website
+"Project Ladybug (Hypersonics)",project-ladybug-hypersonics,"Defense",website
+"Project Rey/Oxygen (Semis)",project-rey-oxygen-semis,"Semiconductors",website
+"Prysmian/Encore Wire",prysmian-encore-wire,"Energy",website
+"Prystup Packaging Products Livingston",prystup-packaging-products-livingston,"Forest Products",website
+"PS Seasoning & Spices, Inc.",ps-seasoning-spices-inc,"General Manufacturing",website
+"PureCycle Technologies",purecycle-technologies,"General Manufacturing",website
+"QuaLex Manufacturing",qualex-manufacturing,"General Manufacturing",website
+"Qualico Webb",qualico-webb,"Metals & Materials",website
+"Qualico Webb Houston",qualico-webb-houston,"Metals & Materials",website
+"Quantum Computing Inc",quantum-computing-inc,"Tech",website
+"Quonset Business Park",quonset-business-park,"General Manufacturing",website
+"R2S",r2s,"Defense",website
+"Radiant",radiant,"Energy",website
+"Red Cedar Steel",red-cedar-steel,"General Manufacturing",website
+"Reinhart FoodService, LLC",reinhart-foodservice-llc,"General Manufacturing",website
+"Reju",reju,"General Manufacturing",website
+"Resilience",resilience,"Life Sciences",website
+"RESRG Automotive Cullman",resrg-automotive-cullman,"Chemicals",website
+"Revere Plastics Systems",revere-plastics-systems,"General Manufacturing",website
+"Riverain Technologies",riverain-technologies,"Tech",website
+"Rivian",rivian,"Automotive",website
+"Robinson Inc",robinson-inc,"Metals & Materials",website
+"Roche",roche,"Life Sciences",website
+"Roche Diagnostics",roche-diagnostics,"Life Sciences",website
+"Rolls-Royce",rolls-royce,"Space",website
+"Rowan Digital",rowan-digital,"Tech",website
+"Rowan Digital Infrastructure",rowan-digital-infrastructure,"Tech",website
+"RUPES USA",rupes-usa,"General Manufacturing",website
+"Rusken Packaging Cullman",rusken-packaging-cullman,"Packaging",website
+"Safe Industries",safe-industries,"General Manufacturing",website
+"Salcomp",salcomp,"Tech",website
+"Salesforce",salesforce,"Tech",website
+"Salvagnini America",salvagnini-america,"General Manufacturing",website
+"Samkwang",samkwang,"Automotive",website
+"Samsung",samsung,"Semiconductors",website
+"Samsung Biologics",samsung-biologics,"Life Sciences",website
+"Samsung Electronics",samsung-electronics,"Semiconductors",website
+"Saronic Technologies",saronic-technologies,"Defense",website
+"Savencia Cheese USA",savencia-cheese-usa,"Food & Beverage",website
+"SCA Inc.",sca-inc,"Chemicals",website
+"SCA Inc. Auburn Lee",sca-inc-auburn-lee,"Chemicals",website
+"Schutz Container Systems, Inc.",schutz-container-systems-inc,"General Manufacturing",website
+"Scotiabank",scotiabank,"Financial Services",website
+"Scout Motors",scout-motors,"Automotive",website
+"SEA Wire & Cable Madison",sea-wire-cable-madison,"Metals & Materials",website
+"Select Water/Mariana Minerals",select-water-mariana-minerals,"Energy",website
+"SencorpWhite",sencorpwhite,"General Manufacturing",website
+"SES Inc.",ses-inc,"General Manufacturing",website
+"SES Inc. Huntsville Madison",ses-inc-huntsville-madison,"General Manufacturing",website
+"SEUNGWON USA Inc. Opelika",seungwon-usa-inc-opelika,"Packaging",website
+"Sheetz",sheetz,"Food & Beverage",website
+"Shinsung ST USA",shinsung-st-usa,"Energy",website
+"Sims Bark Florala",sims-bark-florala,"Forest Products",website
+"Sioux Honey",sioux-honey,"Food & Beverage",website
+"SLB",slb,"Tech",website
+"SmartWiz",smartwiz,"Tech",website
+"SmartWiz Birmingham Jefferson",smartwiz-birmingham-jefferson,"Financial Services",website
+"SMD Steel Rainbow City",smd-steel-rainbow-city,"General Manufacturing",website
+"Smucker's",smucker-s,"Food & Beverage",website
+"Socomec",socomec,"General Manufacturing",website
+"Sofidel",sofidel,"Forest Products",website
+"SoGo Packaging LLC",sogo-packaging-llc,"Food & Beverage",website
+"Solstice Advanced Materials",solstice-advanced-materials,"General Manufacturing",website
+"South Milwaukee, City of",south-milwaukee-city-of,"Government",website
+"Southern Ionics Incorporated",southern-ionics-incorporated,"Chemicals",website
+"Sovereign American Industries LLC Rainsville",sovereign-american-industries-llc-rainsville,"General Manufacturing",website
+"Span-America Medical",span-america-medical,"Life Sciences",website
+"SPC Group",spc-group,"Food & Beverage",website
+"Specification Rubber Pelham",specification-rubber-pelham,"Chemicals",website
+"SPP",spp,"General Manufacturing",website
+"SRC Technologies",src-technologies,"Defense",website
+"SRM Concrete Cullman",srm-concrete-cullman,"Construction",website
+"SSAB",ssab,"Metals & Materials",website
+"SSAB Axis",ssab-axis,"Metals & Materials",website
+"Stanpac USA LLC",stanpac-usa-llc,"General Manufacturing",website
+"Stellantis",stellantis,"Automotive",website
+"Steves & Sons",steves-sons,"General Manufacturing",website
+"Stinson Breads LLC Opelika",stinson-breads-llc-opelika,"General Manufacturing",website
+"stow Group",stow-group,"Robotics",website
+"Supply Technologies",supply-technologies,"Logistics",website
+"Sweetwater",sweetwater,"Logistics",website
+"Swiss-Tech LLC",swiss-tech-llc,"General Manufacturing",website
+"Switch",switch,"Tech",website
+"Syngene International",syngene-international,"Life Sciences",website
+"SynQor",synqor,"Defense",website
+"Tangent",tangent,"General Manufacturing",website
+"Tate Inc",tate-inc,"General Manufacturing",website
+"Tate Inc./Kingspan",tate-inc-kingspan,"Tech",website
+"Tesla",tesla,"Automotive",website
+"The DeLong Company, Inc.",the-delong-company-inc,"General Manufacturing",website
+"The Distribution Point LLC Moody",the-distribution-point-llc-moody,"Logistics",website
+"The Shaw Group",the-shaw-group,"General Manufacturing",website
+"Three Dog Brands",three-dog-brands,"Food & Beverage",website
+"Titomic USA Inc.",titomic-usa-inc,"Metals & Materials",website
+"Titomic USA Inc. Huntsville Limestone",titomic-usa-inc-huntsville-limestone,"Metals & Materials",website
+"TMC Transformers",tmc-transformers,"Energy",website
+"Tosyali International Ltd.",tosyali-international-ltd,"Consumer Products",website
+"Toyota",toyota,"Automotive",website
+"Toyota Tsusho",toyota-tsusho,"Energy",website
+"Toyota Tsusho Huntsville Limestone",toyota-tsusho-huntsville-limestone,"Energy",website
+"TPI Composites",tpi-composites,"Energy",website
+"TransMedics",transmedics,"Life Sciences",website
+"Tree Brand Packaging Ranburne",tree-brand-packaging-ranburne,"Forest Products",website
+"Triangle Manufacturing Company",triangle-manufacturing-company,"General Manufacturing",website
+"TSA LLC Tuskegee",tsa-llc-tuskegee,"Metals & Materials",website
+"TSA LLC Tuskegee Macon",tsa-llc-tuskegee-macon,"Metals & Materials",website
+"Tubefab",tubefab,"General Manufacturing",website
+"Tyson Garden City",tyson-garden-city,"Food & Beverage",website
+"U.S. Bridge",u-s-bridge,"General Manufacturing",website
+"U.S. Space Command",u-s-space-command,"Defense",website
+"U.S. Steel",u-s-steel,"Metals & Materials",website
+"U.S. Steel Corporation Fairfield",u-s-steel-corporation-fairfield,"Metals & Materials",website
+"Underwood Ammo",underwood-ammo,"General Manufacturing",website
+"Upstart",upstart,"Financial Services",website
+"Urnex Brands, LLC",urnex-brands-llc,"General Manufacturing",website
+"USV 222, LLC",usv-222-llc,"Construction",website
+"Utilidata",utilidata,"Energy",website
+"Valicor Environmental Services Adamsville",valicor-environmental-services-adamsville,"General Manufacturing",website
+"Vallourec",vallourec,"General Manufacturing",website
+"Vantage Data Centers",vantage-data-centers,"Tech",website
+"Various AI Data Centers",various-ai-data-centers,"Tech",website
+"Vaughn Industries",vaughn-industries,"General Manufacturing",website
+"Venture Milk LLC Cowarts",venture-milk-llc-cowarts,"Food & Beverage",website
+"Vermeer Corp",vermeer-corp,"Industrial Equipment",website
+"Vermilion Madison Development LLC",vermilion-madison-development-llc,"Construction",website
+"Viking Attachments",viking-attachments,"General Manufacturing",website
+"Virginia Transformer",virginia-transformer,"Energy",website
+"Volkswagen",volkswagen,"Automotive",website
+"Vultr",vultr,"Tech",website
+"Walmart",walmart,"Logistics",website
+"Wayne-Sanderson Farms Union Springs",wayne-sanderson-farms-union-springs,"Food & Beverage",website
+"Webster Fulfillment Monroeville",webster-fulfillment-monroeville,"Logistics",website
+"Weelth Inc./TaxxWiz",weelth-inc-taxxwiz,"Financial Services",website
+"Wellborn Cabinet",wellborn-cabinet,"General Manufacturing",website
+"Westrafo America",westrafo-america,"Energy",website
+"Whirlpool",whirlpool,"General Manufacturing",website
+"WHPC-Regent Street-Madison, LLC",whpc-regent-street-madison-llc,"Construction",website
+"Wieland Chase",wieland-chase,"General Manufacturing",website
+"Wieland Group",wieland-group,"Metals & Materials",website
+"WiJo Pouches NA",wijo-pouches-na,"Consumer Products",website
+"Williams International",williams-international,"Defense",website
+"Wixon, Inc.",wixon-inc,"General Manufacturing",website
+"Wolverine Industries",wolverine-industries,"Metals & Materials",website
+"Woodward",woodward,"Space",website
+"Worthington Cylinders Wisconsin, LLC",worthington-cylinders-wisconsin-llc,"General Manufacturing",website
+"xAI",xai,"Tech",website
+"XeteX, LLC",xetex-llc,"General Manufacturing",website
+"Yamaha Motor Corporation USA Bridgeport",yamaha-motor-corporation-usa-bridgeport,"Transportation",website
+"Yaskawa America, Inc",yaskawa-america-inc,"General Manufacturing",website
+"Yerico Manufacturing",yerico-manufacturing,"Semiconductors",website

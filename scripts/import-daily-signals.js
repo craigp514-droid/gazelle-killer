@@ -33,6 +33,7 @@ async function importDailySignals(csvPath) {
     columns: true, 
     skip_empty_lines: true, 
     relax_quotes: true,
+    relax_column_count: true,
     trim: true 
   });
 
@@ -110,11 +111,21 @@ async function importDailySignals(csvPath) {
       const segmentName = (row.segment || row.sub_segment || '').toLowerCase();
       const segment = segmentByName[segmentName] || segmentBySlug[segmentName];
       if (segment) {
-        await supabase.from('company_segments').insert({
-          company_id: company.id,
-          segment_id: segment.id,
-          is_primary: true
-        }).onConflict('company_id,segment_id').ignore();
+        // Check if already exists
+        const { data: existing } = await supabase
+          .from('company_segments')
+          .select('id')
+          .eq('company_id', company.id)
+          .eq('segment_id', segment.id)
+          .single();
+        
+        if (!existing) {
+          await supabase.from('company_segments').insert({
+            company_id: company.id,
+            segment_id: segment.id,
+            is_primary: true
+          });
+        }
       }
 
       // Queue for enrichment
@@ -133,9 +144,26 @@ async function importDailySignals(csvPath) {
     // Create signal
     const signalCode = row.signal_code || row.signal_type || 'EXPANSION_ANNOUNCEMENT';
     let signalDate = row.signal_date || new Date().toISOString().split('T')[0];
-    // Handle YYYY-MM format (add -01 for first of month)
+    
+    // Handle various date formats
     if (/^\d{4}-\d{2}$/.test(signalDate)) {
+      // YYYY-MM -> YYYY-MM-01
       signalDate = signalDate + '-01';
+    } else if (/^\d{4}$/.test(signalDate)) {
+      // YYYY -> YYYY-01-01
+      signalDate = signalDate + '-01-01';
+    } else if (/^\d{4}-\d{4}$/.test(signalDate)) {
+      // YYYY-YYYY range -> use first year
+      signalDate = signalDate.substring(0, 4) + '-01-01';
+    } else if (/^\d{4}-Q[1-4]$/i.test(signalDate)) {
+      // YYYY-Q1/Q2/Q3/Q4
+      const year = signalDate.substring(0, 4);
+      const quarter = signalDate.charAt(6);
+      const monthMap = { '1': '01', '2': '04', '3': '07', '4': '10' };
+      signalDate = year + '-' + monthMap[quarter] + '-01';
+    } else if (!/^\d{4}-\d{2}-\d{2}$/.test(signalDate)) {
+      // Unknown format - use today
+      signalDate = new Date().toISOString().split('T')[0];
     }
     const signalText = row.signal_text || row.signal_title || row.Signal || 'Signal detected';
     

@@ -10,7 +10,8 @@ import {
   Star, 
   Settings,
   Compass,
-  List
+  List,
+  TrendingUp
 } from 'lucide-react'
 
 export function Sidebar() {
@@ -20,6 +21,7 @@ export function Sidebar() {
     { href: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
     { href: '/explore', label: 'Explore Industries', icon: Compass },
     { href: '/companies', label: 'All Companies', icon: List },
+    { href: '/projects', label: 'Project Intelligence', icon: TrendingUp },
     { href: '/favorites', label: 'Favorites', icon: Star },
     { href: '/signals', label: 'Signals Feed', icon: Radio },
   ]
