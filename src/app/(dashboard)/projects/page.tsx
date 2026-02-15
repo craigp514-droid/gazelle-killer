@@ -105,7 +105,7 @@ export default async function ProjectIntelligencePage() {
               </div>
               <div>
                 <p className="text-3xl font-bold text-white">{formatCurrency(totalCapex)}</p>
-                <p className="text-emerald-100 text-sm">Total Capex</p>
+                <p className="text-white/80 text-sm">Total Capex</p>
               </div>
             </div>
           </CardContent>
@@ -119,7 +119,7 @@ export default async function ProjectIntelligencePage() {
               </div>
               <div>
                 <p className="text-3xl font-bold text-white">{totalProjects.toLocaleString()}</p>
-                <p className="text-blue-100 text-sm">Projects</p>
+                <p className="text-white/80 text-sm">Projects</p>
               </div>
             </div>
           </CardContent>
@@ -133,7 +133,7 @@ export default async function ProjectIntelligencePage() {
               </div>
               <div>
                 <p className="text-3xl font-bold text-white">{formatNumber(totalJobs)}</p>
-                <p className="text-purple-100 text-sm">Jobs Announced</p>
+                <p className="text-white/80 text-sm">Jobs Announced</p>
               </div>
             </div>
           </CardContent>
@@ -147,7 +147,7 @@ export default async function ProjectIntelligencePage() {
               </div>
               <div>
                 <p className="text-3xl font-bold text-white">{uniqueStates}</p>
-                <p className="text-orange-100 text-sm">States</p>
+                <p className="text-white/80 text-sm">States</p>
               </div>
             </div>
           </CardContent>
