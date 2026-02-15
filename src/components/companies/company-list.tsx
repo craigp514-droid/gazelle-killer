@@ -46,6 +46,7 @@ interface CompanyListProps {
   segments: Segment[]
   selectedIndustry?: string
   selectedSegment?: string
+  selectedFilter?: string
   currentPage: number
   totalPages: number
   totalCount: number
@@ -61,6 +62,7 @@ export function CompanyList({
   segments,
   selectedIndustry,
   selectedSegment,
+  selectedFilter,
   currentPage,
   totalPages,
   totalCount,
@@ -164,6 +166,19 @@ export function CompanyList({
             </select>
           </div>
         )}
+
+        {/* Special Filters */}
+        <div className="flex items-center gap-2">
+          <label className="text-sm font-medium text-slate-700">Filter:</label>
+          <select
+            value={selectedFilter || ''}
+            onChange={(e) => updateFilters({ filter: e.target.value || null })}
+            className="px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
+          >
+            <option value="">All Companies</option>
+            <option value="expanded">Recently Expanded</option>
+          </select>
+        </div>
 
         {/* Spacer */}
         <div className="flex-1" />

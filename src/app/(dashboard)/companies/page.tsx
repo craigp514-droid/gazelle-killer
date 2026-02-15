@@ -7,6 +7,7 @@ interface PageProps {
     segment?: string
     page?: string
     view?: string
+    filter?: string  // 'expanded' for recently expanded companies
   }>
 }
 
@@ -34,6 +35,15 @@ export default async function CompaniesPage({ searchParams }: PageProps) {
     : []
 
   const selectedSegment = allSegments?.find(s => s.slug === params.segment)
+
+  // Get companies with projects (for "Recently Expanded" filter)
+  let expandedCompanyIds: string[] = []
+  if (params.filter === 'expanded') {
+    const { data: projectCompanies } = await supabase
+      .from('projects')
+      .select('company_id')
+    expandedCompanyIds = [...new Set(projectCompanies?.map(p => p.company_id) || [])]
+  }
 
   // Build company query based on filters
   let companyIds: string[] = []
@@ -69,16 +79,28 @@ export default async function CompaniesPage({ searchParams }: PageProps) {
   const start = (page - 1) * perPage
   const end = start + perPage - 1
 
+  // Apply "Recently Expanded" filter if active
+  if (params.filter === 'expanded' && expandedCompanyIds.length > 0) {
+    if (companyIds.length > 0) {
+      // Intersect with industry/segment filter
+      companyIds = companyIds.filter(id => expandedCompanyIds.includes(id))
+    } else {
+      // Just use expanded filter
+      companyIds = expandedCompanyIds
+    }
+  }
+
   // Get companies with pagination
   let companies: any[] = []
   let totalCount = 0
 
-  if (companyIds.length > 0) {
-    // Filtered by segment or industry
+  if (companyIds.length > 0 || params.filter === 'expanded') {
+    // Filtered by segment, industry, or expanded
+    const idsToQuery = companyIds.length > 0 ? companyIds : expandedCompanyIds
     const { data, count } = await supabase
       .from('companies')
       .select('*', { count: 'exact' })
-      .in('id', companyIds)
+      .in('id', idsToQuery)
       .order('composite_score', { ascending: false })
       .range(start, end)
     
@@ -158,6 +180,7 @@ export default async function CompaniesPage({ searchParams }: PageProps) {
       segments={filteredSegments || []}
       selectedIndustry={params.industry}
       selectedSegment={params.segment}
+      selectedFilter={params.filter}
       currentPage={page}
       totalPages={totalPages}
       totalCount={totalCount}
