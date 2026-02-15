@@ -96,56 +96,56 @@ export default async function ProjectIntelligencePage() {
 
       {/* Hero Stats Bar */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <Card className="bg-gradient-to-br from-emerald-500 to-emerald-600 text-white">
+        <Card className="bg-gradient-to-br from-emerald-500 to-emerald-600 border-0">
           <CardContent className="pt-6">
             <div className="flex items-center gap-3">
               <div className="p-2 bg-white/20 rounded-lg">
-                <DollarSign className="h-6 w-6" />
+                <DollarSign className="h-6 w-6 text-white" />
               </div>
               <div>
-                <p className="text-3xl font-bold">{formatCurrency(totalCapex)}</p>
+                <p className="text-3xl font-bold text-white">{formatCurrency(totalCapex)}</p>
                 <p className="text-emerald-100 text-sm">Total Capex</p>
               </div>
             </div>
           </CardContent>
         </Card>
 
-        <Card className="bg-gradient-to-br from-blue-500 to-blue-600 text-white">
+        <Card className="bg-gradient-to-br from-blue-500 to-blue-600 border-0">
           <CardContent className="pt-6">
             <div className="flex items-center gap-3">
               <div className="p-2 bg-white/20 rounded-lg">
-                <Building2 className="h-6 w-6" />
+                <Building2 className="h-6 w-6 text-white" />
               </div>
               <div>
-                <p className="text-3xl font-bold">{totalProjects.toLocaleString()}</p>
+                <p className="text-3xl font-bold text-white">{totalProjects.toLocaleString()}</p>
                 <p className="text-blue-100 text-sm">Projects</p>
               </div>
             </div>
           </CardContent>
         </Card>
 
-        <Card className="bg-gradient-to-br from-purple-500 to-purple-600 text-white">
+        <Card className="bg-gradient-to-br from-purple-500 to-purple-600 border-0">
           <CardContent className="pt-6">
             <div className="flex items-center gap-3">
               <div className="p-2 bg-white/20 rounded-lg">
-                <Users className="h-6 w-6" />
+                <Users className="h-6 w-6 text-white" />
               </div>
               <div>
-                <p className="text-3xl font-bold">{formatNumber(totalJobs)}</p>
+                <p className="text-3xl font-bold text-white">{formatNumber(totalJobs)}</p>
                 <p className="text-purple-100 text-sm">Jobs Announced</p>
               </div>
             </div>
           </CardContent>
         </Card>
 
-        <Card className="bg-gradient-to-br from-orange-500 to-orange-600 text-white">
+        <Card className="bg-gradient-to-br from-orange-500 to-orange-600 border-0">
           <CardContent className="pt-6">
             <div className="flex items-center gap-3">
               <div className="p-2 bg-white/20 rounded-lg">
-                <MapPin className="h-6 w-6" />
+                <MapPin className="h-6 w-6 text-white" />
               </div>
               <div>
-                <p className="text-3xl font-bold">{uniqueStates}</p>
+                <p className="text-3xl font-bold text-white">{uniqueStates}</p>
                 <p className="text-orange-100 text-sm">States</p>
               </div>
             </div>

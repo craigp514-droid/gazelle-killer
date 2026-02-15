@@ -1,0 +1,638 @@
+company_name,website,state,sector,capex_millions,notes
+ABB,abb.com,,,,US low-voltage switchgear capacity expansion; SEAM acquisition 2024; domestic production ramp
+ASML,asml.com,Connecticut,,,$200M Connecticut expansion; 1000 new jobs; EUV monopoly; critical to all leading-edge fabs
+Agility Robotics,https://www.agilityrobotics.com/,Oregon,,,RoboFab facility in Salem OR producing Digit; capacity for 10K units/year
+Amkor Technology,amkor.com,Arizona,Semiconductors,7000,Korean; advanced packaging campus
+Applied Materials,appliedmaterials.com,Arizona,,,$200M Arizona investment; $400M+ US expansion; Apple partnership; 6th consecutive growth year FY2025
+Array Technologies,arraytechinc.com,New Mexico,,,100% domestic content trackers H1 2025; Albuquerque NM factory construction; #3 global tracker
+Ballard Power,ballard.com,,,,Heavy-duty mobility fuel cells; transit bus + truck focus; European + China expansion
+Beta Technologies,beta.team,Vermont,,,Charging network buildout; UPS partnership; Vermont manufacturing facility expansion
+Blue Origin,https://blueorigin.com,Florida,,,New Titusville FL manufacturing facility (100 jobs); Central Texas ~$1B expansion planned
+Boeing,https://www.boeing.com/,Kansas,,,$7M composite manufacturing expansion in Wichita KS
+Boviet Solar,bovietsolar.com,North Carolina,,,3 GW North Carolina module + cell facility expansion Sept 2025; fully integrated US manufacturing
+Canadian Solar,canadiansolar.com,Texas,,,3 US facilities: modules + cells + e-STORAGE; $3.2B backlog; 81 GWh storage pipeline; Texas expansio
+Castelion,https://www.castelion.com/,New Mexico,Defense/Hypersonic,220,Project Ranger; 1000-acre campus; 21 buildings; solid rocket motors; $650M economic impact over deca
+Centrus Energy,centrusenergy.com,Ohio,Energy/Nuclear,2000,Uranium enrichment expansion; 1000 construction jobs; multi-billion total
+Coherent (II-VI),https://coherent.com,Pennsylvania,,,$1B investment from Denso/Mitsubishi; PA factory to 1M 150mm SiC equivalents by 2027; $33M CHIPS fun
+Cyclic Materials,https://cyclicmaterials.earth/,Arizona,Battery/Recycling,20,Canadian; rare earth recycling
+DB HiTek,dbhitek.com,,,,Image sensor expansion; machine vision/autonomous vehicles; high value-added focus
+Eaton,eaton.com,Virginia,Power/Grid,50,Grid-to-chip AI data center power distribution; doubling Richmond footprint; GRID!
+Electric Hydrogen,eh2.com,Texas,,,$220M+ raised; 1 GW/year stack production target; HIF Texas e-Fuels project supplier
+Eli Lilly,https://lilly.com,Texas,Life Sciences,6500,First API manufacturing facility in TX; $5.5M TEF grant
+Enel 3Sun,3sun.com,,,,€560M Sicily 3 GW gigafactory (Europe's largest); US 3 GW plant announced; HJT technology
+Enel North America,enelnorthamerica.com,Texas,,,10+ GW US capacity; 1.3 GW Texas BESS; 520 MW/780 MWh operational storage; tripled TX capacity 2023
+Enphase Energy,https://enphase.com/,,,,US microinverter manufacturing; IQ9 with GaN launching 2025; batteries + EV chargers; domestic conte
+Entegris,entegris.com,Colorado,,,$1.4B total US investment; $700M R&D; $600M Colorado Springs manufacturing; Aurora IL tech center
+Eos Energy,https://www.eose.com/,Pennsylvania,Battery/Clean Energy,353,HQ relocation + 432K sq ft manufacturing; $22M state investment
+Eve Air Mobility,eveairmobility.com,,,,17 SEC filings; Embraer backing; $5B+ order backlog; US manufacturing planned
+Firefly Aerospace,https://fireflyspace.com,Texas,,,"Doubled Briggs TX facility to 207,000 sq ft (Feb 2024); Rocket Ranch expansion"
+First Solar,firstsolar.com,Alabama,,,$1.1B Alabama factory opened 2024 (3.5 GW); Louisiana $1.1B plant Q3 2025 (3.5 GW); Ohio 3 plants; 1
+Form Energy,https://formenergy.com,Virginia,,,$900M+ Series E 2025; West Virginia gigafactory construction; 100+ hour storage; multi-day grid stor
+GameChange Solar,gamechangesolar.com,,,,13.7 GW shipped 2024; US manufacturing; Genius Tracker; aggressive growth
+GlobalFoundries,gf.com,New York,Semiconductors,12000,$15B facility + $12B expansion planned
+Hanwha Qcells,https://www.hanwhaaerospace.com,Georgia,,,$2.5B Cartersville GA fully integrated (3.3 GW); 8.4 GW total GA capacity; only NA company with full
+Hitachi Energy,hitachienergy.com,Virginia,Grid,457,Japanese; power transformer production; Deal of Year - GRID! 🔌
+Intel,https://intel.com,Ohio,Semiconductor,28000,2 new fabs; avg salary $135K; 7K construction jobs; 10K indirect
+JinkoSolar,jinkosolar.com,Florida,,,Jacksonville FL 2 GW module factory; $67M investment; 600 jobs; operational 2024
+Kokusai Electric,kokusai-electric.com,,,,New US demo center; Toyama manufacturing expansion
+LONGi Green Energy,longi.com,Ohio,,,Ohio module factory partnership announced Mar 2024; operations Q1 2025
+Maxeon Solar,maxeon.com,,,,Premium IBC technology; US cell manufacturing plans; SunPower spinoff
+Microchip Technology,microchip.com,Arizona,,,$162M CHIPS for Oregon + Colorado expansion; closing Tempe AZ Sept 2025; consolidating
+Micron,micron.com,Multiple,Semiconductors,200000,Memory chips; 2 fabs ID + 4 fabs NY + VA expansion; CHIPS Act $6.4B
+Modine Manufacturing,https://modine.com,,,,Data center cooling expansion - multiple US facilities
+Neura Robotics,https://neura-robotics.com/,,,,€120M Series B for cognitive robots in logistics/care/manufacturing; US market expansion planned
+Noveon Magnetics,https://noveon.co/,,,,$215M Series C led by OneIM ($200M) to expand US rare earth magnet manufacturing capacity
+Oklo,oklo.com,Idaho,,,12 GW Switch data center deal through 2044; Idaho plant groundbreaking Sept 2025; $2B fuel developme
+Plug Power,plugpower.com,Georgia,,,95+ MW electrolyzer capacity delivered; 100MW Galp Portugal project; Georgia + Tennessee production
+Rapidus,rapidus.inc,,,,Rapidus First 2nm Chips July 2025
+Rehlko (Kohler Energy),rehlko.com,Wisconsin,,,Rebranded from Kohler Energy Sep 2024; Mosel WI site redesigned; expanding industrial generators; Mi
+SPX Transformer Solutions,spxtransformersolutions.com,North Carolina,,,$70M Waukesha expansion; Goldsboro NC 50th anniversary; 1200+ US employees; 5-1200 MVA up to 345kV
+Siemens Energy,siemens-energy.com,Mississippi,Grid/Energy,300,German; high-voltage switchgear; part of $1B US expansion - GRID
+SkyWater Technology,skywatertechnology.com,,,,$16M CHIPS funding Dec 2024; acquiring Infineon Austin fab Feb 2025 for 65-130nm capacity; US-only t
+Soulbrain,soulbrain.co.kr,Texas,,,$175M Taylor Texas plant for Samsung; high-purity phosphoric acid; construction Jan 2025
+Suniva,suniva.com,Georgia,,,Georgia cell factory restarted Nov 2024 (1 GW); scaling to 2.5 GW; first US cell production restart
+TSMC,https://tsmc.com,Arizona,Semiconductors,165000,Taiwanese; $165B total; 6 fabs planned
+Tesla Energy,https://www.tesla.com/megapack,Texas,,,40 GWh Lathrop Megafactory; 10000th Megapack Nov 2024; $150M+ Texas expansion 2026; 31.4 GWh deploye
+Fluence Energy,https://fluenceenergy.com/,Arizona,,,Arizona manufacturing open; Houston thermal; $700M US investment; 1200+ jobs; 2.2 GWh Excelsior deal
+GE Vernova,https://www.gevernova.com/,South Carolina,Power/Grid,200,Power equipment; grid infrastructure; GRID!
+Generac Power Systems,generac.com,Wisconsin,,,345K sqft Beaver Dam facility Jul 2025; Sussex WI C&I expansion Jan 2026; megawatt-scale data center
+Graham Corp,https://grahamcorp.com,New York,,,30K sqft Navy manufacturing facility completed in Batavia NY
+Heliene,heliene.com,Minnesota,,,Minnesota facility operational; Canadian + US manufacturing; Iron Range expansion
+Hyosung Heavy Industries,hyosungheavyindustries.com,Tennessee,,,Hyosung HICO Memphis TN expanding Nov 2025 (2nd time in 6 months); doubling US output to 150 units/y
+JA Solar,jasolar.com,Arizona,,,Phoenix AZ 2 GW module factory announced; targeting US domestic content
+Joby Aviation,https://jobyaviation.com,Ohio,Aerospace/eVTOL,477,140 acres; up to 500 aircraft/year; Dayton Intl Airport
+L3Harris,https://www.l3harris.com/,,,,$22M GAMMA-H scramjet + Zeus motor production increase to 60 units
+Lam Research,lamresearch.com,Oregon,,,$65M Oregon Tualatin facility opened Nov 2025; 700 workers; R&D expansion for AI chips
+Meyer Burger,meyerburger.com,Arizona,,,Arizona module plant operational; Colorado cell plant announced Q4 2024 start; 2 GW HJT cell capacit
+Mitsubishi Power,power.mhi.com,Georgia,,,Savannah GA manufacturing; JAC turbine most efficient; Takasago Hydrogen Park verification; 4M+ oper
+NVIDIA,nvidia.com,,,,$374M Santa Clara campus purchase 2024; 324K sqft new facility May 2025; $4.5T market cap
+Nextracker,nextracker.com,,,,28.5 GW shipped 2024; 100 GW cumulative milestone; US manufacturing; 35 GW annual capacity across 6
+ON Semiconductor,onsemi.com,,,,SiC fab expansion South Korea completed; US CHIPS funding for SiC epitaxial expansion
+Orbit Fab,https://orbitfab.com,,,,$28.5M Series A; expanding manufacturing; 3 launches for US government 2025; UK £2M investment
+Prolec GE,prolec.energy,North Carolina,,,$140M North Carolina facility 2025 doubling capacity; acquired SPX Waukesha; 144K sqft NC plant
+Redwood Materials,https://redwoodmaterials.com,South Carolina,,,Redwood Materials Breaks Ground on South Carolina Campus
+RobCo,https://www.robco.de/,,,,$100M Series C + US expansion (SF HQ + Austin manufacturing)
+STMicroelectronics,st.com,,,,Catania Italy SiC campus with 200mm fab; EUR730M investment; reshaping EU manufacturing footprint
+Silfab Solar,silfabsolar.com,South Carolina,,,Burlington WA + Fort Mill SC facilities; 1.3 GW combined capacity; North American focused
+SolarEdge Technologies,solaredge.com,Florida,,,Texas inverters + Florida optimizers + Utah batteries; 8M optimizers/quarter capacity; domestic cont
+Substrate,substrate.com,,,,$100M seed from Founders Fund + In-Q-Tel; building X-ray lithography equipment; US manufacturing
+TMEIC,tmeic.com,Texas,,,9 GW Texas solar inverter factory opened Nov 2024; 144K sqft Westport facility; 300+ inverters by Fe
+TerraPower,terrapower.com,Wyoming,,,Wyoming Natrium plant under construction; state permit approved Jan 2025; training center Aug 2025;
+Corning Optical Communications,corning.com,North Carolina,Tech/Fiber,170,Trivium Cable Plant
+Texas Instruments,https://ti.com,Utah,Semiconductors,11000,300mm fab next to existing Micron-acquired facility
+Tower Semiconductor,towersemi.com,New Mexico,,,Intel New Mexico partnership; ST Italy joint facility qualified Q4 2024; $300M investment in Intel f
+Umbra,https://umbra.space,California,,,"New 50,000 sq ft Southern California manufacturing facility (June 2025); new Space Systems business"
+Verdagy,verdagy.com,,,,Advanced Water Electrolysis technology; IRA-driven US focus; production ramp 2024
+Vulcan Elements,https://vulcanelements.com/,North Carolina,Advanced Mfg/Defense,918,Rare earth magnets; largest magnet factory outside China
+Wolfspeed,wolfspeed.com,New York,,,World's largest SiC fab in Siler City NC (topped out Mar 2024); Marcy NY expansion; CHIPS preliminar
+X-FAB,xfab.com,Texas,,,$50M CHIPS funding Dec 2024; only high-volume SiC foundry in USA; Lubbock TX expansion
+Tokyo Electron,tel.com,,,,$170M US chip equipment facility 2025; aiming for US production parity with Japan
+Trina Solar (T1 Energy),trinasolar.com,Texas,,,$200M 5 GW Texas module plant opened; expansion in 2025; rebranded T1 Energy for US ops
+Ursa Major,https://ursamajor.com,Ohio,,,$14.5M R&D center in Youngstown OH (July 2024); $138M Series D; $25M DoD joint investment
+Virginia Transformer Corp,vatransformer.com,Georgia,,,Largest US-owned transformer maker; 6 facilities (Roanoke + Troutville VA + Rincon GA + Pocatello ID
+WEG Transformers USA,weg.us,Missouri,,,$77M 5th NA factory expansion Sept 2025; 3 Missouri facilities; acquired CG Power USA; wind/solar fo
+X-Bow Systems,https://www.xbowsystems.com/,Texas,,,DoD contract expansion + Texas campus expansion
+X-energy,x-energy.com,Texas,,,Oak Ridge TRISO fuel facility construction Nov 2025; Dow Seadrift TX 4-unit plant; operations 2027
+KettenWulf,kettenwulf.com,Alabama,Advanced Mfg,34,German; conveyor chains/sprockets; 100 year old company
+Bad Boy Mowers,badboycountry.com,Alabama,Advanced Mfg,10.5,Tractor assembly; 9000/year production
+Southwire,southwire.com,Alabama,Grid/Wire,176,Wire/cable manufacturer; medium voltage - GRID
+Aquatic Leisure Technologies,aquatechs.com,Alabama,Advanced Mfg,,Australian; fiberglass pools; first US facility
+SmartWiz,smartwiz.com,Alabama,Tech/AI,0.125,AI tax software; IRS-approved provider
+ArcelorMittal,arcelormittal.com,Alabama,Steel/Metals,1200,Luxembourg; electrical steel for EVs/energy - GRID adjacent
+Diageo,diageo.com,Alabama,Food & Bev,415,UK; Smirnoff/Captain Morgan production hub
+Wellborn Cabinet,wellborn.com,Alabama,Advanced Mfg,,New cabinet plant opening
+Owens Corning,owenscorning.com,Alabama,Advanced Mfg,,Shingle manufacturing
+Fratco,fratco.com,Alabama,Advanced Mfg,,Pipe manufacturing
+U.S. Space Command,spacecom.mil,Alabama,Defense/Aerospace,,Federal HQ; massive job impact
+Northrop Grumman,https://northropgrumman.com,Alabama,Defense/Aerospace,92,Missile defense systems; two expansions
+Performance Drone Works,performancedroneworks.com,Alabama,Defense/Aerospace,9.1,Drone manufacturing
+Core Scientific,corescientific.com,Alabama,Data Center,424,Multi-tenant data center
+Samkwang,samkwang.co.kr,Alabama,Automotive,35,Korean; injection-molded automotive parts
+CPT America,cptgroup.com,Alabama,Automotive,163,Steel-stamping automotive parts
+International Paper,internationalpaper.com,Alabama,Paper/Pulp,260,Renewable fiber-based products expansion
+GE Aerospace,https://www.geaerospace.com/,Ohio,Aerospace,127,R&D; RISE program; engineering jobs
+Georgia Pacific/Alabama River Cellulose,gp.com,Alabama,Paper/Pulp,800,Major expansion
+Meta/Dotier,meta.com,Alabama,Data Center,800,Data storage facility
+Kronospan,kronospan.com,Alabama,Wood Products,200,Engineered wood products
+Pilgrims,pilgrims.com,Alabama,Food/Poultry,90,Poultry processing expansion
+DAS North America,das-na.com,Alabama,Automotive,78,Korean; automotive supplier
+Evonik,evonik.com,Alabama,Chemicals,78,German; specialty chemicals
+U.S. Steel,ussteel.com,Alabama,Steel/Metals,75,Steel making and processing
+SSAB,ssab.com,Alabama,Steel,75,Swedish; steel
+Constellium,constellium.com,Alabama,Aluminum,69,French; recycled aluminum
+Butting USA,butting.com,Alabama,Pipe,62,German; pipe manufacturing
+Hwashin America,hwashin.co.kr,Alabama,Automotive,60,Korean; stamped automotive parts
+Envision Cold Storage,envisioncold.com,Alabama,Logistics/Cold Chain,64,Cold storage facility
+Parsons Corporation,parsons.com,Alabama,Defense/Tech,5,Intelligence services
+Ace Aeronautics,aceaero.com,Alabama,Aerospace/MRO,4.25,MRO rotorcraft
+Kimberly-Clark,kimberly-clark.com,Alabama,Paper/Consumer,137,Paper manufacturing
+Jasper Lumber,jasperlumber.com,Alabama,Wood/Forestry,95,Lumber expansion
+Alabama State Port Authority,asdd.com,Alabama,Logistics/Port,94,Inland port facility
+Owens Corning Corporation Prattville,owenscorning.com,Alabama,Asphalt Shingle and Coating Materials Ma,325,New
+Maximus Meats Summerdale,maximusmeats.com,Alabama,Meat Processing and Distribution,16.8,New
+Butting USA Inc. Loxley,butting.com,Alabama,Pipe Manufacturing,61.7,New
+Green Health Laboratories Foley,greenhealthlabs.com,Alabama,Testing Laboratories and Services,3.5,New
+Wayne-Sanderson Farms Union Springs,sandersonfarms.com,Alabama,Poultry Processing,10.7,Expansion
+Phoenix Building Solutions Greenville,phoenixbuildingsolutions.com,Alabama,Park Model Manufacturer,5,New
+Hwashin America Corporation Greenville,hwashin.co.kr,Alabama,Stamped Automotive Car Parts,60.1,Expansion
+Altex Packaging Inc. Anniston,altexpackaging.com,Alabama,Packaging - Wood and Plastic/Foam,8,Expansion
+Interstate Sheet Metal Anniston,meta.com,Alabama,Sheet Metal Work Manufacturing,2.1,Expansion
+AMZ Alabama Inc. Anniston,rheinmetall.com,Alabama,Armored Vehicle Manufacturing,22,Expansion
+Amazon Oxford,amazon.com,Alabama,Distribution and Delivery,15,New
+Kronospan Oxford,kronospan.com,Alabama,Engineered Wood Products,200,Expansion
+Doncasters Oxford,ford.com,Alabama,Investment Castings,7,Expansion
+Kobay Enstal Oxford,ford.com,Alabama,Automotive Metal Stamping,12,Expansion
+Bryant Machine Jacksonville,bryantmachine.com,Alabama,Machine Shop,3.2,Expansion
+Changer & Dresser Anniston,changerdresser.com,Alabama,Welding and Soldering Equipment Manufact,3.5,Expansion
+JOON LLC (AJIN USA) Cusseta,ajinusa.com,Alabama,Automotive Stamping,3.4,Expansion
+Tree Brand Packaging Ranburne,treebrand.com,Alabama,Wood Pallet Manufacturer,20,Expansion
+Hello Chonky Cookie Enterprise,hellochonkycookie.com,Alabama,Cookie Manufacturing,10,New
+Constellium Muscle Shoals,constellium.com,Alabama,Recycled Aluminum Products,68.8,Expansion
+Sims Bark Florala,simsbark.com,Alabama,Mulch Manufacturing,8,New
+Aqua Technics (aka Aquatic Leisure) Opp,aquatechs.com,Alabama,Fiberglass Swimming Pool Manufacturer,3.1,New
+Tyson Garden City,tysonfoods.com,Alabama,Poultry Processing,9.2,Expansion
+Louisiana Pacific Cullman,lpcorp.com,Alabama,OBS Board Manufacturer,19.6,Expansion
+Corrugated Supplies Corporation Cullman,corrubox.com,Alabama,Corrugated Packaging,21.5,Expansion
+Rusken Packaging Cullman,rusken.com,Alabama,Corrugated Packaging,25.6,Expansion
+SRM Concrete Cullman,srmconcrete.com,Alabama,Ready-Mix Concrete Manufacturing,26,New
+North Alabama Fabricating Company Cullman,nafco.com,Alabama,Structural Metal,17.7,Expansion
+Cobra Metal Cullman,meta.com,Alabama,Metal Fabrication and Precision Machinin,0.5,Expansion
+RESRG Automotive Cullman,resrgautomotive.com,Alabama,Plastic Injected Automotive Parts,8,Expansion
+Sovereign American Industries LLC Rainsville,sovereignamerican.com,Alabama,Industrial Sewing,2.8,New
+Nucor Vulcraft Group Fort Payne,vulcraft.com,Alabama,Fabricated Structural Metal Manufacturin,18.9,Expansion
+Perdido River Farms/Poarch Band of Creek Indians Atmore,pfrfarms.com,Alabama,Meat Processing,30,New
+SMD Steel Rainbow City,smdsteel.com,Alabama,Plate Work Manufacturing,9,New
+Choice Fabricators Rainbow City,choicefab.com,Alabama,Fabricated Metal Product Manufacturing,15,Expansion
+Omaha Track Attalla,omahatrack.com,Alabama,Rail Tie Disposal,0.5,New
+Pilgrims Russellville,pilgrims.com,Alabama,Poultry Processing,90,Expansion
+Franklin Manufacturing Inc. Russellville,franklinmfg.com,Alabama,Fabricated Structural Metal Manufacturin,6.7,Expansion
+G&G Steel Inc. Russellville,ggsteel.com,Alabama,Fabricated Structural Metal Manufacturin,5.4,Expansion
+Oldcastle Lawn & Garden Abbeville,abb.com,Alabama,Wood Mulch,5.4,New
+Venture Milk LLC Cowarts,venturemilk.com,Alabama,Milk Processing and Yogurt Processing,5.7,New
+Qualico Webb,qualico.us,Alabama,Steel Fabrication,10,Expansion
+Advance Displays Inc. Scottsboro,advancedisplays.com,Alabama,Wholesale Distribution Hub,0.8,New
+Yamaha Motor Corporation USA Bridgeport,yamahamotorsports.com,Alabama,Marine Test and Development Facility,39,Expansion
+U.S. Steel Corporation Fairfield,ussteel.com,Alabama,Steel Making and Processing,75,Expansion
+Weelth Inc./TaxxWiz,weelth.com,Alabama,Tax Prep Software Development,0.1,Expansion
+Valicor Environmental Services Adamsville,valicor.com,Alabama,Sustainable Solutions for Waste Manageme,12.3,New
+Stinson Breads LLC Opelika,stinsonbreads.com,Alabama,Manufacturing Fresh and Frozen Bread,1.3,New
+Oak Bowery Spirits LLC Opelika,oakboweryspirits.com,Alabama,Distillery,1.1,New
+SCA Inc.,essity.com,Alabama,Plastics Product Manufacturing,19.6,Expansion
+Miele Manufacturing Inc. Opelika,miele.com,Alabama,"Cooking Appliances, Ovens and Range Cook",2,Expansion
+Briggs & Stratton LLC,briggsandstratton.com,Alabama,Gasoline Engines,8.2,Expansion
+HL Mando America Corporation Opelika,hlmando.com,Alabama,Automotive - Supplier,5.2,Expansion
+AGS America Inc. Opelika,ags-america.com,Alabama,Motor Vehicle Parts Manufacturing,3.6,Expansion
+Korea Fuel Tech America Inc.,kftec.co.kr,Alabama,Plastic Fuel Tanks,4,Expansion
+SEUNGWON USA Inc. Opelika,seungwon.co.kr,Alabama,Specialized Packaging Solutions,32.5,New
+Toyota Tsusho,toyota-tsusho.com,Alabama,Solar Power Generation,163.3,Expansion
+Titomic USA Inc.,titomic.com,Alabama,Titanium Additive Coatings,30,New
+Exalta (formally Intech/Turner Medical) Athens,exalta.com,Alabama,Medical Devices,0.9,Expansion
+Daikyo Nishikawa USA Inc.,daikyonishikawa.co.jp,Alabama,Automotive Parts Manufacturing,18,Expansion
+TSA LLC Tuskegee,tsallc.com,Alabama,Specialty Automotive Fabricator,3,New
+CPT America LLC Tuskegee,cptgroup.com,Alabama,Steel-Stamping Automotive Parts Manufact,163.4,New
+Plasma Processes,plasmapros.com,Alabama,Advanced Materials and Metal Coatings,6.9,Expansion
+L3Harris Technologies,l3harris.com,Alabama,Rocket Engine Manufacturing,20,Expansion
+SEA Wire & Cable Madison,sea-wire.com,Alabama,Wire and Cable Distributor,4.8,Expansion
+SES Inc.,ses.com,Alabama,Aircraft Integration,17,Expansion
+Hybird Space Systems,hybirdspace.com,Alabama,Rocket Engine Manufacturing,0.7,New
+Cargill Guntersville,cargill.com,Alabama,Soybean Processing,40,Expansion
+PrismFlex Guntersville,prismflex.com,Alabama,Industrial Printing,2.2,Expansion
+Ace Aeronautics LLC Guntersville,aceaero.com,Alabama,MRO Rotorcraft,4.2,Expansion
+A&G Holdings LLC Arab,agholdings.com,Alabama,Warehouse/Distribution,1.2,Expansion
+Evonik Theodore,evonik.com,Alabama,Methyl Mercaptan Production,77.5,Expansion
+Primo,primogrill.com,Alabama,Plastic Extrusion,5.8,New
+ArcelorMittal Calvert,arcelormittal.com,Alabama,Non-Grain Oriented Steel,1163.9,New
+SSAB Axis,ssab.com,Alabama,Steel Manufacturer,75,Expansion
+Master Boat Builders Inc. Coden,masterboatbuilders.com,Alabama,Boat Manufacturers,7.8,Expansion
+Gulf Distributing,gulfdist.com,Alabama,Beverage Distribution,11.5,Expansion
+Derichebourg,derichebourg.com,Alabama,Aerospace Staffing,0.2,New
+APM Terminals,apmterminals.com,Alabama,Container Terminal,58.6,Expansion
+Prism Systems,prismsystems.com,Alabama,Software Engineering Firm,6.4,Expansion
+AAA USA,aaa-usa.com,Alabama,Corporate HQ/Insurance Companies,1.4,Expansion
+Alabama River Cellulose (Georgia Pacific) Monroeville,gp.com,Alabama,Paper Product Manufacturing - Pulp Mill,800,Expansion
+Bad Boy Mowers Monroeville,badboycountry.com,Alabama,Mowers and Tractors,10.5,New
+Webster Fulfillment Monroeville,websterfulfillment.com,Alabama,General Warehousing and Storage,2,New
+Lightsource BP,lightsourcebp.com,Alabama,Solar Power Generation,21.5,Expansion
+SoGo Packaging LLC,sogopackaging.com,Alabama,Syrup and Bottled Fruit Juices,12.4,Expansion
+Browder Veneer Works Inc.,browderveneer.com,Alabama,Hardwood Veneer,1.5,Expansion
+Ju-Young Manufacturing America Inc.,juyoung.co.kr,Alabama,Seat Harness and Levers,15.7,Expansion
+Lear Corporation,lear.com,Alabama,Automobile Seats,10.9,Expansion
+Guyoungtech USA Inc.,guyoungtech.com,Alabama,Automobile Body Parts,34,Expansion
+Hartzell Engine Technologies,hartzell.aero,Alabama,Aircraft and Engine Components,0.3,Expansion
+CIRG Industries,cirgindustries.com,Alabama,Just in Time Sequencing,14.3,Expansion
+Dotier LLC (Meta),meta.com,Alabama,Data Storage and Distribution,800,Expansion
+Alfa Insurance,alfainsurance.com,Alabama,Corporate HQ/Insurance Companies,58,Expansion
+J.M. Smucker Co.,jmsmucker.com,Alabama,Manufactures Cat Food,28,Expansion
+OCI Alabama LLC,oci-global.com,Alabama,Sodium Percarbonate,19.1,Expansion
+Daikin America,daikincomfort.com,Alabama,Fluoropolymers,29,Expansion
+Wolverine Industries,wolverineindustries.com,Alabama,Integrated Aluminum Manufacturing,20.4,Expansion
+M&J Industries,mjind.com,Alabama,Machine Shop,9.6,Expansion
+Pro-Fab Machine of Hartselle Hartselle,profabmachine.com,Alabama,Machine Shop/Fabricated Metal Products,13.5,Expansion
+Cima Solutions LLC Phenix City,cimasolutions.com,Alabama,Rubber Mats,4.8,New
+NVH Georgia LLC Phenix City,nvhgeorgia.com,Alabama,Automotive Floor Mats,14.7,New
+Johns Manville Phenix City,jm.com,Alabama,Rockwool Insulation,28.2,Expansion
+Logan Machine Works Phenix City,loganmachineworks.com,Alabama,Metal Fabrication,1.1,Expansion
+Edgar's Old Style Bakery Pelham,edgarsbakery.com,Alabama,Commercial Bakery,13.2,Expansion
+Specification Rubber Pelham,specrubber.com,Alabama,Rubber Product Manufacturing,16.1,Expansion
+Buckner Trailers Springville,bucknertrailers.com,Alabama,Truck Trailer Manufacturing,1.5,Expansion
+The Distribution Point LLC Moody,thedistributionpoint.com,Alabama,Plumbing Distribution,3.5,Expansion
+Prystup Packaging Products Livingston,prystup.com,Alabama,Folding Paperboard Box,4.4,Expansion
+JW Holdings Dadeville,jwholdings.com,Alabama,Painting Auto Parts,21.8,New
+Southern Ionics Incorporated,southernionics.com,Alabama,Sodium Bisulfite,34.1,Expansion
+Microchip Technology Inc.,microchip.com,Alabama,Semiconductor and Related Device Manufac,5,Expansion
+Tosyali International Ltd.,tosyali.com.tr,Alabama,Jewelry Manufacturing,20.9,Expansion
+Mercedes-Benz USA LLC Vance,mercedes-benz.com,Alabama,Auto Merchant Wholesaler,26.7,Expansion
+Nat 20 Scientific LLC Buhl,nat20scientific.com,Alabama,Scientific Research and Development Serv,0.5,New
+Jasper Lumber Company LLC Jasper,jasperlumber.com,Alabama,Saw Mill,95,Expansion
+Jones Machine & Welding Oakman,jonesmachinewelding.com,Alabama,"Production, Welding, Warehouse",2.5,Expansion
+Cooper Marine Inc. Calvert,coopermarine.com,Alabama,Barge Transportation,2,Expansion
+J.M. Smucker Co. Decatur Morgan,jmsmucker.com,Alabama,Manufactures Cat Food,28,Expansion
+Eli Lilly Huntsville Limestone,lilly.com,Alabama,Pharmaceutical Preparation Manufacturing,6000,New
+AAA USA Mobile,aaa-usa.com,Alabama,Corporate HQ/Insurance Companies,1.4,Expansion
+Alfa Insurance Montgomery,alfainsurance.com,Alabama,Corporate HQ/Insurance Companies,58,Expansion
+Primo Mobile,primogrill.com,Alabama,Plastic Extrusion,5.8,New
+Daikin America Decatur Morgan,daikin.com,Alabama,Fluoropolymers,29,Expansion
+Nelson Brothers LLC Parrish Walker,nelsonbros.com,Alabama,Specialty Chemicals and Commercial Explo,19.4,Expansion
+OCI Alabama LLC Decatur Morgan,oci-global.com,Alabama,Sodium Percarbonate,19.1,Expansion
+SCA Inc. Auburn Lee,essity.com,Alabama,Plastics Product Manufacturing,19.6,Expansion
+Amazon Oxford Calhoun,amazon.com,Alabama,Distribution and Delivery,15,New
+APM Terminals Mobile,apmterminals.com,Alabama,Container Terminal,58.6,Expansion
+CIRG Industries Montgomery,cirgindustries.com,Alabama,Just in Time Sequencing,14.3,Expansion
+Titomic USA Inc. Huntsville Limestone,titomic.com,Alabama,Titanium Additive Coatings,30,New
+M&J Industries Decatur Morgan,mjind.com,Alabama,Machine Shop,9.6,Expansion
+Qualico Webb Houston,qualico.us,Alabama,Steel Fabrication,10,Expansion
+Derichebourg Mobile,derichebourg.com,Alabama,Aerospace Staffing,0.2,New
+GE Aerospace Auburn Lee,geaerospace.com,Alabama,Aerospace Product and Parts Manufacturin,35.3,Expansion
+GE Aerospace Huntsville Limestone,geaerospace.com,Alabama,Carbon Composites,22,Expansion
+SES Inc. Huntsville Madison,ses.com,Alabama,Aircraft Integration,17,Expansion
+TSA LLC Tuskegee Macon,tsallc.com,Alabama,Specialty Automotive Fabricator,3,New
+Kimberly-Clark Mobile,kimberly-clark.com,Alabama,Paper Manufacturing,136.7,Expansion
+Lightsource BP Montgomery,lightsourcebp.com,Alabama,Solar Power Generation,21.5,Expansion
+Toyota Tsusho Huntsville Limestone,toyota-tsusho.com,Alabama,Solar Power Generation,163.3,Expansion
+Core Scientific Auburn Lee,corescientific.com,Alabama,Multi - Tenant Data Center,424,New
+SmartWiz Birmingham Jefferson,smartwiz.com,Alabama,Tax Software Technology Company,0.1,New
+Dotier LLC (Meta) Montgomery,meta.com,Alabama,Data Storage and Distribution,800,Expansion
+Prism Systems Mobile,prismsystems.com,Alabama,Software Engineering Firm,6.4,Expansion
+Hadrian,hadrian.co,Arizona,Aerospace/AI Mfg,200,AI-powered factories; Factory 3; 290K sq ft
+ERMCO,ermco-eci.com,Arizona,Grid/Transformers,,Distribution transformers; first west of Mississippi - GRID
+KPPC Advanced Chemicals,kppc.com,Arizona,Semiconductors,120,Japanese; ultrapure chemicals; growing to 200 jobs
+Ascent Aviation Services,ascentmro.com,Arizona,Aerospace,70,Two widebody hangars; 200% capacity increase
+KoMiCo,komico.com,Arizona,Semiconductors,60,Korean; semiconductor equipment cleaning; 200 jobs total
+Gifthealth,gifthealth.com,Arizona,Life Sciences/Tech,,Digital pharmacy; 43K sq ft; robotic processing
+DSV,dsv.com,Arizona,Logistics,14.5,Danish; regional HQ; 950K sq ft
+AbbVie,abbvie.com,Arizona,Life Sciences,,Acquiring manufacturing facility
+Mayo Clinic,mayoclinic.org,Arizona,Life Sciences,1900,$1.9B expansion
+Eternity Technologies,eternitytechnologies.com,Arizona,Battery,20,NA HQ + battery facility
+Komatsu,komatsu.com,Arizona,Mining,200,Japanese; mining equipment
+Brewer Science,brewerscience.com,Arizona,Semiconductors,,Office + lab expansion
+Dutch Bros,dutchbros.com,Arizona,HQ/Food & Bev,,HQ relocation from Oregon
+Kestra Holdings,kestraholdings.com,Arizona,Financial Services,,Secondary HQ
+Quantum Computing Inc,quantumcomputinginc.com,Arizona,Tech/Quantum,,Quantum photonic chip foundry
+Cognite,cognite.com,Arizona,Tech/AI,,Norwegian; industrial AI; HQ
+AVAIO Digital Partners,avaio.com,Arkansas,Data Center/AI,6000,AI-ready data center; $6B phase 1; $21B full build; largest in state history
+SPP,spp.org,Arkansas,Energy/Utilities,,Southwest Power Pool; regional market expansion
+R2S,r2s.com,Arkansas,Defense/Missiles,,Tamir and SkyHunter missiles production
+Packaging Specialties,packagingspecialties.com,Arkansas,Packaging,24,Manufacturing expansion
+Tate Inc,tateinc.com,Arkansas,Advanced Mfg,,New state-of-the-art facility
+InnovAsian,innovasiancuisine.com,Arkansas,Food Mfg,105,175K sq ft; Nichirei capital contribution
+Panasonic,panasonic.com,Kansas,Battery/EV,4000,Japanese; EV battery plant
+California Jobs First,,California,Various,1600,$1.6B invested statewide; 61K jobs; 142K trained
+Project Ladybug (Hypersonics),ursamajor.space,Colorado,Aerospace/Defense/Hypersonics,,Propulsion systems; solid rockets; $400M R&D; competing OH/MS/CA
+Project Caraway,,Colorado,Tech/Software,,Home upgrade platform; Series A; competing Austin
+Project Rey/Oxygen (Semis),,Colorado,Semiconductors,15,Analog/mixed signal; packaging facility; competing CA
+Project Captain (Food),,Colorado,Food & Bev,,International food mfg; competing GA/AZ/TX
+GKN Aerospace,gknaerospace.com,Connecticut,Aerospace,,UK FDI; additive manufacturing; 3D-printed critical aircraft component; first in world
+Merck,merck.com,New Jersey,Life Sciences/Pharma,3500,HQ expansion; part of $70B US expansion
+Williams International,williams-int.com,Florida,Aerospace/Defense,1000,Aviation gas turbine engines; 3-phase construction; high-paying jobs
+Otto Aerospace,ottoaviation.com,Florida,Aerospace,500,Phantom 3500 business jet; Cecil Airport; $430M+ state incentives
+D-Wave Quantum,d-wave.com,Florida,Tech/Quantum,,Canadian; HQ relocation from CA; quantum computing; $20M FAU investment
+Rivian,rivian.com,Georgia,EV Manufacturing,5000,9M sq ft; 400K vehicles/year by 2028; $1.5B state incentives
+Preciball USA,preciball.com,Georgia,Advanced Mfg,17.6,New production facility
+Dongwon Autopart Technology,dwat.co.kr,Georgia,Automotive,30,Korean; new production facility
+Grupo Vialume,vialume.com,Georgia,Advanced Mfg,4.4,US manufacturing operations
+BioTouch,biotouch.com,Georgia,Healthcare/Logistics,12.5,Healthcare logistics expansion
+Virginia Transformer,vatransformer.com,Georgia,Grid/Transformers,40,Transformer manufacturing expansion - GRID PLAY
+Salesforce,salesforce.com,Georgia,Tech,15,Expanding Georgia presence
+Socomec,socomec.com,Georgia,Advanced Mfg,10,French; electrical components and systems
+Underwood Ammo,underwoodammo.com,Georgia,Advanced Mfg,41,Ammunition manufacturing; new facility
+Anovion Technologies,anoviontech.com,Georgia,Battery/Materials,800,Anode materials manufacturing
+stow Group,stow-group.com,Georgia,Automation,36,Industrial storage and automation; Belgian
+Archer Aviation,archer.com,Georgia,eVTOL/Aerospace,,Electric air taxi manufacturing
+Jack Links,jacklinks.com,Georgia,Food Mfg,,Meat snacks manufacturing
+GF Casting Solutions,gf.com,Georgia,Automotive,,Swiss; high pressure die casting for EVs
+SynQor,synqor.com,New Hampshire,Defense/Electronics,,Power converters; relocating from MA
+Cronus Chemicals,cronuschemicals.com,Illinois,Agribusiness/Clean,2000,$2B ammonia fertilizer; 950K tons/year; carbon capture; 1500-2000 construction jobs
+Savencia Cheese USA,savencia.com,Illinois,Food,,French; new production line; retaining 125
+Caldwell Group,caldwellinc.com,Illinois,Advanced Mfg,,Lifting equipment mfg expansion
+Tangent,tangent.com,Illinois,Advanced Mfg,,Plastic lumber; consolidating operations
+Amazon,amazon.com,Indiana,Data Center/AI,15000,AI data center campuses; largest investment in state
+Meta,meta.com,Indiana,Data Center/AI,10000,LEAP District; 15 buildings; 1GW facility; groundbreaking today
+Roche Diagnostics,roche.com,Indiana,Life Sciences,550,Swiss; CGM manufacturing; hundreds of jobs
+John Deere,deere.com,Indiana,Logistics,125,1.2M sq ft distribution center; I-65 access
+Kimball Electronics,kimballelectronics.com,Indiana,Advanced Mfg,,Electronics manufacturing expansion
+Caterpillar,caterpillar.com,Indiana,Heavy Equipment,5,Facility expansion; completion end of 2026
+Sioux Honey,siouxhoney.com,Iowa,Food Processing,130,World's largest beekeeper co-op; Sue Bee brand; $2M forgivable loan
+Electro Freeze (H.C. Duke),electrofreeze.com,Iowa,Food Equipment Mfg,7,Relocating from Illinois; 300K sq ft facility; foodservice equipment
+TPI Composites,tpicomposites.com,Iowa,Wind Energy,3.2,Wind turbine blades; restarting production; $500K forgivable loan
+Robinson Inc,robinsoncompany.com,Iowa,Metal Fabrication,75.8,Relocating from Wisconsin; 800K sq ft facility
+LMT Defense,lmtdefense.com,Iowa,Defense,5.5,Lewis Machine & Tool; plating/coating expansion; rifle to cannon barrels
+New Horizon Cuisine,newhorizoncuisine.com,Iowa,Food Mfg,14.5,Sauce and flavor manufacturer; 30K sq ft facility
+Dexter Laundry,dexter.com,Iowa,Industrial Equipment,22.5,Employee-owned; commercial laundry equipment; paint system expansion
+Morrison Weighing Systems,morrisonweighing.com,Iowa,Industrial Equipment,1.5,Relocating from Illinois; weighing/labeling systems
+Kraft Heinz,kraftheinzcompany.com,Iowa,Food Processing,48,Oldest Kraft facility; infrastructure modernization; job retention; $2M forgivable loan
+Critical Materials Recycling,criticalmaterialsrecycling.com,Iowa,Advanced Mfg/Critical Minerals,,Rare earth recycling; acid-free process; defense applications
+HF Rubber,hfrubber.com,Kansas,Industrial Equipment,1.6,$71M economic impact; rubber machinery; 65+ years in Topeka
+Three Dog Brands,threedogbrands.com,Kansas,Food,,Pet treats; 87K sq ft facility
+GM Fairfax,gm.com,Kansas,Automotive,30,Workforce investment; new vehicle launches
+Ford Motor Company,ford.com,Kentucky,Automotive/EV,2000,'Assembly tree' EV platform; transforming LAP; 15-40% faster assembly
+GE Appliances,geappliances.com,Kentucky,Advanced Mfg,490,Chinese (Haier); moving washer production from China; part of $3B US investment
+Tate Inc./Kingspan,tateinc.com,Kentucky,Data Center,76,Irish; data center interior infrastructure; largest job creation in county in 18 years
+Shinsung ST USA,shinsungst.com,Kentucky,Energy Storage,53.5,Korean; energy storage solutions
+James Composites,jamescomposites.com,Kentucky,Advanced Mfg,5.8,Marine composites; Tennessee River access
+Saronic Technologies,saronic.com,Louisiana,Defense/Autonomous,300,Autonomous surface vessels; avg salary $88K
+Walmart,walmart.com,Louisiana,Logistics,330,Distribution center modernization; doubles shipping capacity
+SLB,slb.com,Louisiana,Data Center/Tech,30,Digital infrastructure; former GM plant
+The Shaw Group,shawgrp.com,Louisiana,Advanced Mfg,,Module fabrication; doubling workforce
+Ampirical,ampirical.com,Louisiana,Grid/Engineering,,Power system engineering; 90K sq ft HQ expansion - GRID
+Viking Attachments,vikingattachments.com,Louisiana,Advanced Mfg,0.16,Pile drivers; marine/infrastructure
+Hut 8,hut8.com,Louisiana,Data Center/AI,10000,$10B AI data center; Google Fluidstack backed
+ElementUSA,elementusa.com,Louisiana,Critical Minerals,850,Rare earth and critical mineral refining
+Epic Piping,epicpiping.com,Louisiana,Industrial Mfg,25,HQ expansion; nat gas/nuclear/data center markets
+Plastipak Packaging,plastipak.com,Louisiana,Packaging,53.8,Manufacturing expansion; Q4 2026 completion
+Pipe & Steel Industrial,,Louisiana,Industrial Mfg,,2nd expansion in 2 years
+MD Manufacturing 4.0,mdmanufacturing.com,Maryland,Advanced Mfg,,$2M in grants to 24 manufacturers for automation/digitization
+Samsung Biologics,samsung.com,Maryland,Life Sciences,,Korean; expanding acquired facility; biologics
+Kratos Defense,https://www.kratosdefense.com/,Maryland,Defense/Hypersonic,,55K sq ft; hypersonic systems; payload integration - HYPERSONIC
+AstraZeneca,astrazeneca.com,Texas,Life Sciences,445,UK pharma; doubles Lokelma production
+Patton/PTI,pattonelectronics.com,Maryland,Defense/Electronics,,Electronics hub; defense/aerospace
+Syngene International,syngeneintl.com,Maryland,Life Sciences,,Indian; first US facility; former Emergent plant
+TransMedics,transmedics.com,Massachusetts,Life Sciences,,Medical devices; $18M tax incentives; organ transplant tech
+DuPont/DDP,dupont.com,Michigan,EV Materials,24.5,EV supply chain; 6000 sq ft expansion
+Legacy Port Huron Paper,,Michigan,Advanced Mfg,20,BMI Group subsidiary; food-grade packaging
+Volkswagen,volkswagen.com,Michigan,Automotive,13,German; 900+ jobs retained
+Utilidata,utilidata.com,Michigan,Grid/Tech,,Grid technology; HQ and Innovation Lab - GRID
+MOTIV Bowling,motivbowling.com,Michigan,Advanced Mfg,9,96K sq ft facility; bowling equipment; export hub
+Oerlikon,oerlikon.com,Michigan,Advanced Mfg,,Swiss; powder production; aerospace/auto materials; 2028 expansion
+Louisiana-Pacific,lpcorp.com,Minnesota,Wood Products,157,Flagship wood products plant; seeking MN Forward Fund aid
+Sofidel,sofidel.com,Minnesota,Paper Products,200,Italian; paper towels/tissues; 600K sq ft expansion; FDI - just before cutoff but major
+Forgent Power Solutions,forgentpower.com,Minnesota,Grid/Power,,$1.5B IPO; expanding HQ with manufacturing - GRID
+Delkor,delkorsystems.com,Minnesota,Advanced Mfg,,22K sq ft expansion; machinery; reshoring wins
+Niron Magnetics,https://www.nironmagnetics.com/,Minnesota,Advanced Mfg,,Magnet manufacturing; broke ground Sept 2025
+xAI,x.ai,Mississippi,Data Center/AI,20000,Elon Musk; 2GW AI data center MACROHARDRR; operations Feb 2026; largest MS project ever
+Entergy Mississippi,entergy.com,Mississippi,Energy/Power/GRID,1200,New power plant; record Warren County investment - GRID
+Howard Industries,howard-ind.com,Mississippi,Grid/Transformers,236,Electrical transformer expansion - GRID
+BWC Terminals,bwcterminals.com,Mississippi,Energy/Logistics,316,Liquid storage and logistics
+Toyota,toyota.com,Kentucky,Automotive,204.4,EV Highlander production; Japanese
+Canfor,canfor.com,Mississippi,Forest Products,245,Southern yellow pine sawmill; completion Oct 2026
+Missouri Technology Corp,missouritechnology.com,Missouri,Various,,Small business/startup investments creating 8K jobs statewide
+SRC Technologies,srctec.com,Missouri,Defense/Electronics,,$1M grant; PCB assembly line; remanufacturing
+Bozeman Photonics,bozemanphotonics.com,Montana,Photonics/Advanced Mfg,,New facility; photonics industry; MSU talent pipeline
+BD (Becton Dickinson),bd.com,Nebraska,Life Sciences/Medical,110,Glass prefillable syringes; GLP-1 drug demand; supply mid-2026
+Hitchiner,hitchiner.com,New Hampshire,Aerospace/Auto,,57K sq ft; casting-based components; aerospace/auto
+Celltrion,celltrion.com,New Jersey,Life Sciences,18000,Korean; $18B over 10 years; 132K liter capacity; acquired facility
+CMP Advanced Mechanical Solutions,cmpams.com,New York,Battery,8.8,Canadian; battery storage manufacturing; modernization
+Reju,reju.com,New York,Advanced Mfg,390,French; textile regeneration hub; Eastman Business Park; circular economy
+JetZero,jetzero.aero,North Carolina,Aerospace,4700,All-wing Z4 aircraft; largest job announcement in NC history; HQ moving from CA
+Johnson & Johnson,jnj.com,North Carolina,Life Sciences,2000,2nd major Wilson facility; oncology/neurological drugs
+Scout Motors,scoutmotors.com,North Carolina,Automotive,206,VW subsidiary; EV HQ; $172K avg salary
+Environmental Air Systems,environmentalairsystems.com,North Carolina,Advanced Mfg,20,HVAC modular mfg; Comfort Systems subsidiary
+Maersk,maersk.com,North Carolina,Logistics,16,Danish; NA HQ; shipping/logistics
+FIT Precast,fitprecast.com,North Carolina,Advanced Mfg,102,Concrete products HQ; most advanced precast facility in US
+Aspida Financial,aspidafinancial.com,North Carolina,Financial Services,28,Life insurance/annuity; HQ relocation
+Chatsworth Products,chatsworth.com,North Carolina,Data Center Infrastructure,15,Employee-owned; server racks/cable management; 100K sq ft expansion
+Genentech,gene.com,North Carolina,Life Sciences,700,Roche subsidiary; first East Coast plant; biologics
+Novartis,novartis.com,North Carolina,Life Sciences,771,Swiss; gene therapies; $111K avg salary
+Pennsylvania Transformer Technology,patransformer.com,North Carolina,Grid,102.5,Domestic transformer mfg - GRID! 🔌
+BorgWarner,borgwarner.com,North Carolina,Automotive,75,Industrial products; advanced manufacturing
+CITEL America,citel.us,North Carolina,Advanced Mfg,12.5,French; surge protection; NA HQ relocation
+Roche,roche.com,North Carolina,Life Sciences,2000,Doubled investment from $700M to $2B
+Novartis Gene Therapies,novartis.com,North Carolina,Life Sciences,540,Swiss; gene therapies
+Pacific Life Insurance,pacificlife.com,North Carolina,Financial Services,12.3,
+AWS,aws.amazon.com,Ohio,Data Center,10000,$10B additional; $23B total by 2030
+Honda/LG Battery,honda.com,Ohio,Automotive/EV,4200,$3.5B battery plant + $700M retooling
+Louis Dreyfus Company,ldc.com,Ohio,Food/Agribusiness,541,Soybean processing; crushing/refining/lecithin
+Nestlé Purina,purina.com,Ohio,Food/Pet Food,550,1.2M sqft; dry dog/cat food; South Afton Industrial Park
+Pharmavite,pharmavite.com,Ohio,Life Sciences,200,Nature Made gummies; 225K sqft
+Sheetz,sheetz.com,Ohio,Food/Distribution,150,500K sqft food prep/distribution; spring 2026 completion
+Medpace,medpace.com,Ohio,Life Sciences/CRO,150,250K sqft office; 1000-space garage; HQ expansion
+Great Day Improvements,greatdayimprovements.com,Ohio,Manufacturing,,583 Sharonville + 412 Cleveland; home improvement
+Smucker's,jmsmucker.com,Ohio,Food/R&D,13,R&D facility; Uncrustables brand
+Resilience,resilience.com,Ohio,Life Sciences/Biopharma,,190K sqft; device assembly; total ~1000 workers
+BJ's Wholesale Club,bjs.com,Ohio,Logistics,126,Ambient distribution center; first OH facility
+Encore Technologies,encoretg.com,Ohio,Tech/Data Center,2,Data center colocation; $18M payroll; 273 retained
+New Horizons Baking,newhorizonsbaking.com,Ohio,Food/Mfg,13.5,Muffin line; 20K sqft cold storage
+EGLO USA,eglo.com,Ohio,Distribution,0.15,Austrian lighting company; new US HQ
+Diversified Fall Protection,fallpd.com,Ohio,Advanced Mfg,2.2,Fall protection systems; consolidation; 68 retained
+Crocs,crocs.com,Ohio,Logistics,,550K sqft distribution center; replaced CA facility
+Gabe's,gabesdiscount.com,Ohio,Logistics,77.5,850K sqft distribution center; 800-1000 jobs planned
+NSG Group/Pilkington,nsg.com,Ohio,Advanced Mfg/Solar,,Solar glass supplier to First Solar; Toledo Glass City
+PureCycle Technologies,purecycle.com,Ohio,Advanced Mfg/Recycling,,Plastic recycling; P&G technology; $750K JobsOhio grant
+AMG Vanadium,amg-v.com,Ohio,Advanced Mfg/Metals,200,Vanadium recycling; doubles capacity; 500-600 construction
+Honeywell Intelligrated,honeywell.com,Ohio,Tech/Automation,12.2,R&D + manufacturing; exceeded 238 job target by 750
+Upstart,upstart.com,Ohio,Tech/Fintech,0.7,AI lending platform; R&D center; Google founders
+Crown Equipment,crown.com,Ohio,Advanced Mfg,,Forklift mfg expansion; 85% vertical integration
+MRI Software,mrisoftware.com,Ohio,Tech/SaaS,,Real estate software; doubling 100K sqft HQ
+Oculii,oculii.com,Ohio,Tech/Autonomous,,Radar for autonomous vehicles; Wright State spinout
+GEALAN,gealan.de,Ohio,Distribution,0.7,German window systems; new US HQ
+Aerospace Lubricants,aerospacelubricants.com,Ohio,Energy/Chemicals,5,Specialty greases; aerospace/defense; 37 retained
+Lubrizol,lubrizol.com,Ohio,Energy/Chemicals,50,HQ consolidation; 1000+ employees; 100 year anniversary
+RUPES USA,rupes.com,Ohio,Advanced Mfg,15,Italian company; polishing tools; new US facility
+Riverain Technologies,riveraintech.com,Ohio,Healthcare/AI,,Medical imaging AI; radiology tools; 29 retained
+Supply Technologies,supplytech.com,Ohio,Logistics,5.75,375K sqft distribution center; robotic automation; 38 retained
+Joby Aviation (2nd facility),jobyaviation.com,Ohio,Aerospace/eVTOL,,700K+ sqft; doubles production to 4 aircraft/month
+Hims & Hers,forhims.com,Ohio,Healthcare/Digital,200,Digital health; pharmacy/fulfillment; doubling footprint
+Revere Plastics Systems,eveairmobility.com,Ohio,Advanced Mfg,111,Injection molding; data center battery components; 268 retained
+LEWCO/LogistiQ,lewcoinc.com,Ohio,Advanced Mfg,24,Conveyors/industrial ovens; e-commerce/parcel logistics
+Salvagnini America,salvagninigroup.com,Ohio,Advanced Mfg,6,Italian company; sheet metal automation; 118 retained
+La Linea Verde,lalineaverde.it,Ohio,Food/Agri,10,Italian agri-food; pre-packaged salads; first US facility
+Poly6 Technologies,poly6.com,Ohio,Advanced Mfg/Aerospace,20.5,Ceramic additive mfg; turbine engine airfoils
+SencorpWhite,sencorpwhite.com,Ohio,Advanced Mfg,16,Automated storage solutions; new US HQ from New England
+Imasen Bucyrus Technology,imasen.co.jp,Ohio,Automotive,15.3,Japanese; EV seat mechanisms; Honda/Subaru; 228 retained
+Ohio Lumex,ohiolumex.com,Ohio,Energy/Tech,9,Gas/emissions measurement; energy infrastructure; 57 retained
+Wieland Chase,wieland.com,Ohio,Advanced Mfg,28,German; brass/ordnance wire; ammunition; 277 retained
+Vultr,vultr.com,Ohio,Data Center/AI,901,$1B data center; GPU capacity; AI infrastructure
+Westrafo America,westrafo.com,Ohio,Grid/Transformers,15,Italian; power transformers; 233K sqft; 12 GW capacity by 2027
+Vallourec,vallourec.com,Ohio,Energy/Mfg,39,French; seamless pipe; premium threading; $1.5B invested in OH over 15 years
+Joby Aviation (propeller blades),jobyaviation.com,Ohio,Aerospace/eVTOL,,Propeller blade manufacturing; supports 500 aircraft/year
+LayerZero Power Systems,layerzero.com,Ohio,Grid/Data Center,14,Data center power equipment; 120K sqft expansion; 278 retained
+Whirlpool,whirlpool.com,Ohio,Advanced Mfg,300,Next-gen washers/dryers; up to 600 jobs
+Steves & Sons,eveairmobility.com,Georgia,Jackson,100,https://georgia.org/press-release/manufacturer-steves-sons-inc-invest-over-100-million-jackson-count
+TMC Transformers,tmctransformers.com,Georgia,Grid/Transformers,,Italian; new transformer plant - GRID PLAY
+Flock Safety,flocksafety.com,Georgia,Tech/Security,10,Security camera manufacturing
+Red Cedar Steel,redcedarsteel.com,Iowa,Advanced Mfg,8,Steel fabrication; IEDA board approved
+Hyundai Steel,hyundai.com,Louisiana,Steel/Metals,5800,Korean; first NA manufacturing; Platinum Deal of Year
+Moderna,modernatx.com,Massachusetts,Life Sciences,140,mRNA vaccines; manufacturing expansion; hundreds of jobs
+Various AI Data Centers,,Nevada,Data Center/AI,3000,$3B in new AI data center investments; federal Tech Hub designation
+Switch,switch.com,Nevada,Data Center,85.5,176 acres at Apex Industrial Park; expansion
+Eco King Solutions (Kingsun),kingsun.com,North Carolina,Advanced Mfg,80.5,Chinese; biodegradable paper tableware; first US facility
+Citigroup Technology,citigroup.com,North Carolina,Financial Services,16,Tech hub; $130K avg salary
+(Data center development),eveairmobility.com,North Dakota,Data Center,,Data center development in rural areas; housing impact noted
+Axium Packaging,axiumpackaging.com,Ohio,Advanced Mfg,45,Canadian; plastic packaging; personal care industry
+Becker Mining,bfrg.com,Ohio,Advanced Mfg,4.25,German; mining systems; reshoring from Poland; new NA HQ
+ATSG/AMES,atsginc.com,Ohio,Aerospace,0.25,Aviation maintenance; cargo aircraft; 653 retained
+PRC-Saltillo,prc-saltillo.com,Ohio,Tech/Healthcare,1.8,Assistive communication devices; AAC; 226 retained
+EPC-Columbia,epccompanies.com,Ohio,Advanced Mfg,13.5,Injection molding; Honda/Ford/GM supplier; 300K sqft
+U.S. Bridge,usbridge.com,Ohio,Advanced Mfg/Infrastructure,6.4,Bridge manufacturing; 70K sqft new facility; 69 retained
+Centrus/Fluor,centrusenergy.com,Ohio,Nuclear/Energy,900,$900M DOE HALEU task order; uranium enrichment
+Pacific Manufacturing,pacmfg.com,Ohio,Automotive/EV,,Japanese; EV components; hiring ramp 2026
+Ohio Gratings,ohiogratings.com,Ohio,Advanced Mfg,,Metal bar grating manufacturer
+Vaughn Industries,vaughnindustries.com,Ohio,Electrical/Renewables,,120K sqft; electrical-mechanical contractor
+Wieland Group,wieland.com,Ohio,Metals,28,German; brass alloys
+Google,google.com,Oklahoma,Data Center/AI,9000,Cloud and AI infrastructure expansion
+Mecad USA,mecad.com,Oklahoma,Advanced Mfg,13.4,Global advanced manufacturing; US HQ; automation focus
+Apple,apple.com,Oregon,Technology,,Part of $500B US expansion; teams expanding
+Mitsubishi Electric Power Products,mitsubishielectric.com,Pennsylvania,Grid/Energy,86,Japanese; new factory + testing lab; $6.7M state investment - GRID
+First Quality,firstquality.com,Pennsylvania,Advanced Mfg,142,Manufacturing expansion; 2441 jobs retained
+Eurofins Lancaster Labs,eurofins.com,Pennsylvania,Life Sciences,148,French; 300K sq ft lab/office expansion; $2.1M state investment
+QuaLex Manufacturing,qualexmfg.com,Pennsylvania,Advanced Mfg,1.3,Sheet metal fabrication; fire truck assemblies
+Quonset Business Park,quonset.com,Rhode Island,Various,,$7B economic impact; major industrial park; ongoing growth
+Isuzu North America,isuzucv.com,South Carolina,Auto,280,Japan FDI; new US manufacturing base
+DartPoints,dartpoints.com,South Carolina,Data Center,130,Data center expansion
+Safe Industries,safeindustries.com,South Carolina,Industrial,50,
+Vermeer Corp,vermeer.com,South Carolina,Industrial Equipment,28,135K sq ft expansion; production and training
+Span-America Medical,spanamerica.com,South Carolina,Medical Devices,20,Manufacturing expansion
+KADIA USA,kadia.de,South Carolina,Industrial,,German FDI; HQ relocation from Michigan
+Aran USA,aran.ie,South Carolina,Industrial,4,16K sq ft expansion; doubling capacity
+Georg Utz,utzgroup.com,South Carolina,Advanced Mfg,,Swiss; plastic containers; first SC operation
+Coastal Precast Systems,coastalprecast.com,South Carolina,Advanced Mfg,,Precast concrete for bridges/marine
+Hydrite Chemical,hydrite.com,South Carolina,Chemicals,,Chemical solutions expansion
+Huwell US,huwell.com,South Carolina,Consumer Products,,Korean; cosmetics/hair care; first US operation
+JGB Brothers,jgbbrothers.com,South Carolina,Food,,Food fibers manufacturer
+Ironline Metals,meta.com,South Carolina,Advanced Mfg,,Steel framing products expansion
+MCIS,,South Carolina,Data Center,7.4,Data center solutions; conveyance systems
+Fenner Precision Polymers,fennerprecision.com,South Carolina,Advanced Mfg,,Reinforced polymer technology
+Coastal Ready Mix,coastalreadymix.com,South Carolina,Advanced Mfg,4.6,Concrete manufacturer
+Woodward,woodward.com,South Carolina,Aerospace/Industrial,200,Energy control solutions
+Rolls-Royce,rolls-royce.com,South Carolina,Aerospace,75,MTU engine manufacturing; UK
+WiJo Pouches NA,wijopouches.com,South Carolina,Consumer,13.5,Norwegian; modern oral pouches; first NA facility
+(Data center pipeline),,South Dakota,Data Center,,State considering data center incentives; 37 states offer them
+LIS Technologies,,Tennessee,Energy/Nuclear,1380,Laser uranium enrichment; $1.38B
+Heil Trailer International,,Tennessee,Advanced Mfg,9.8,Trailer manufacturing expansion
+ALUKO Group,,Tennessee,Advanced Mfg,110,Second US facility
+Korea Zinc,,Tennessee,Metals,6600,First US operations; Korean FDI; MASSIVE
+CDF Distributors,,Tennessee,Advanced Mfg,26,Relocating HQ to TN
+Carlex Glass America,,Tennessee,Advanced Mfg,55,Glass manufacturing expansion
+Hyosung HICO,,Tennessee,Grid/Transformers,150,Korean transformer maker; 2nd expansion in 6 months!
+Anatolia Cabinet,,Tennessee,Advanced Mfg,10,New manufacturing facility
+Aqua Membranes,,Tennessee,Advanced Mfg,6.5,Water filtration membranes; new TN presence
+Biederman,,Tennessee,Advanced Mfg,4.4,First US location
+Radiant,,Tennessee,Energy/Nuclear,280,World's first mass-produced nuclear generator factory!
+Nidec,,Tennessee,Advanced Mfg,50,Japanese motor manufacturer expansion
+BWXT Nuclear Fuel Services,bwxt.com,Tennessee,Energy/Nuclear/Defense,122,Nuclear fuel for naval defense; since 1950s
+Microtex Composites,,Tennessee,Advanced Mfg,3.8,Italian; first US facility; automotive/aerospace composites
+Samsung,samsung.com,Texas,Semiconductors,4730,2nm chips; $250M TSIF grant
+Scotiabank,scotiabank.com,Texas,Financial Services,60,Canadian bank; regional office; $10.7M TEF
+Prysmian/Encore Wire,,Texas,Grid/Wire,500,Italian; copper wire/cable expansion - GRID
+Bridor USA,bridor.com,Texas,Food,410,French-Canadian; industrial bakery
+GCP Paper,,Texas,Advanced Mfg,400,Tissue manufacturing
+Ferrovial,,Texas,Energy/Solar,355,Spanish; 250MW solar; 450 GWh annually
+SpaceX,https://spacex.com,Texas,Aerospace/Semiconductors,280,Semiconductor R&D; $17.3M TSIF grant
+Vantage Data Centers,,Texas,Data Center,272,Hyperscale data center
+NNA Polymers,,Texas,Chemicals,250,Water-soluble polymers; oilfield
+SPC Group,spcgroup.co.kr,Texas,Food,208,Korean; Paris Baguette bakery
+Ninth Avenue Foods,ninthavefoods.com,Texas,Food,200,Dairy; 3rd facility
+MGC Pure Chemicals,mgc.co.jp,Texas,Semiconductors,150,Japanese; $5.3M TSIF grant
+Applied Optoelectronics,,Texas,Tech/Data Center,150,Optical transceivers for AI
+Formosa Plastics,,Texas,Chemicals,150,Taiwanese; C6 feedstock
+MTU Aero Engines,mtu.de,Texas,Aerospace,120,German; jet engine expansion
+E-Space,,Texas,Aerospace/Space,115,Satellite HQ and manufacturing
+Linde,linde.com,Texas,Chemicals,100,Irish; industrial gas; SpaceX supplier
+Bionova,,Texas,Life Sciences,100,Cell manufacturing
+Select Water/Mariana Minerals,,Texas,Energy/Lithium,100,Lithium extraction plant
+Inventec,inventec.com,Texas,Tech,85,Taiwanese; AI server manufacturing
+Embraer,embraer.com,Texas,Aerospace,70,Brazilian; MRO facility
+Rowan Digital,,Texas,Data Center,700,Hyperscale data center
+MGM/VanTran Transformers,gm.com,Texas,Grid/Transformers,,430K sqft facility - GRID PLAY
+Salcomp,salcomp.com,Texas,Tech,,Finnish; mobile power supplies; US HQ
+L&T Technology,ltts.com,Texas,Tech,,Indian; engineering design center
+Lefko,,Texas,Advanced Mfg,15,First US facility; $968K TEF
+NTxBio,,Texas,Life Sciences,31,Biomanufacturing; $1.48M TEF
+PEGATRON,pegatron.com,Texas,Tech,35,Taiwanese; AI computing; first US facility
+Gattefossé,,Texas,Life Sciences,55,French; beauty/pharma ingredients
+Gerdau,,Texas,Advanced Mfg,51,Brazilian; steel recycling expansion
+BMK Pharma,,Texas,Life Sciences,50,US HQ; pharmaceutical
+Yerico Manufacturing,yerico.com,Texas,Semiconductors,13,Semiconductor equipment refurb; $1.3M TSIF
+Cancoil USA,,Texas,Industrial Mfg,,First US operations center
+Ariat International,,Texas,Consumer/Apparel,9,Regional HQ expansion
+Innovative Labs,,Utah,Life Sciences,,CDMO; health and wellness manufacturing
+Bridor,bridor.com,Utah,Food,229,French-Canadian; bakery; 13-year plan
+MCM Engineering II,,Utah,Grid/Switchgear,168,Custom MV/LV switchgear; 10-year plan - GRID!
+Holtec/Hi Tech Solutions,,Utah,Nuclear/SMR Mfg,,Operation Gigawatt; SMR component manufacturing; workforce training
+BAE Systems,https://www.baesystems.com/,Utah,Defense/Aerospace,,UK; new office; ICBM support
+Ionic Mineral Technologies,,Utah,Critical Minerals,,Silicon Ridge project; rare earth; $29M Series B
+Integrated Rail & Resources,,Utah,Rail/Resources,87,Railway and resource expansion
+Solstice Advanced Materials,,Virginia,Advanced Materials,220,$2M performance grant; $1.5M Opportunity Fund
+Infinity Global,,Virginia,Advanced Mfg,34,Packaging solutions; HQ expansion
+Anchor,,Virginia,Defense/Maritime,,Maritime and defense expansion
+Echodyne,,Washington,Defense/Radar,40,86K sq ft facility; radar production; summer 2026
+Frontieras North America,,West Virginia,Energy/Clean Coal,850,Advanced coal reformation facility; 183 acres; 2000+ construction jobs
+Calpine,,West Virginia,Energy/Natural Gas,1000,Natural gas power plant; Constellation unit
+Microsoft,microsoft.com,Wisconsin,Data Center/AI,13300,15 new data centers; two campuses; massive AI expansion
+Nestle Purina,purina.com,Wisconsin,Food,335,Swiss; pet food expansion; 35K sq ft
+Foxconn,foxconn.com,Wisconsin,Tech,569,Taiwanese; expansion; new WEDC deal
+Milwaukee Tool,,Wisconsin,Advanced Mfg,42,Power tools expansion; high-skill jobs
+Catalent,,Wisconsin,Life Sciences,45,Biohealth facility expansion
+"Enerpac Tool Group, Corp.",enerpac.com,Wisconsin,Manufacturing,15.7,Business Development Tax Credit
+Cascades Holding US Inc.,cascades.com,Wisconsin,Manufacturing,6,Business Development Tax Credit
+"Furlani Foods, LLC",furlani.com,Wisconsin,Manufacturing,43.5,Business Development Tax Credit
+Microbial Discovery Group,microbialdg.com,Wisconsin,Manufacturing,28,Business Development Tax Credit
+Vermilion Madison Development LLC,eveairmobility.com,Wisconsin,Construction,92.4,Brownfield Redevelopment Financial Assistance
+"XeteX, LLC",,Wisconsin,Manufacturing,7.8,Business Development Tax Credit
+"Associated Milk Producers, Inc.",oci-global.com,Wisconsin,Manufacturing,45.5,Business Development Tax Credit
+"Reinhart FoodService, LLC",,Wisconsin,Wholesale Trade,14,Business Development Tax Credit
+"Schutz Container Systems, Inc.",,Wisconsin,Manufacturing,166,Business Development Tax Credit
+"WHPC-Regent Street-Madison, LLC",,Wisconsin,Construction,14.5,Brownfield Redevelopment Financial Assistance
+Meta House Inc.,meta.com,Wisconsin,Health Care,26.3,Brownfield Redevelopment Financial Assistance
+Kin at Freshwater LLC,,Wisconsin,Construction,43.8,Brownfield Redevelopment Financial Assistance
+Big Lift LLC,,Wisconsin,Wholesale Trade,6.7,Business Development Tax Credit
+"Dynamic Ratings, Inc.",,Wisconsin,Manufacturing,19.4,Business Development Tax Credit
+"Urnex Brands, LLC",,Wisconsin,Manufacturing,10.6,Business Development Tax Credit
+"Worthington Cylinders Wisconsin, LLC",linde.com,Wisconsin,Manufacturing,57.5,Business Development Tax Credit
+"AmeriLux International, LLC",,Wisconsin,Manufacturing,42.7,Business Development Tax Credit
+"Four South Blair, LLC",,Wisconsin,Construction,14.5,Brownfield Redevelopment Financial Assistance
+"Degas, LLC",,Wisconsin,Info and Comm,100,Data Center Sales and Use Tax Exemption
+"FIT Investment Group, LLC",,Wisconsin,Construction,18.4,Brownfield Redevelopment Financial Assistance
+Kitchen Fresh Foods LLC,,Wisconsin,Manufacturing,6.5,Business Development Tax Credit
+Triangle Manufacturing Company,,Wisconsin,Manufacturing,6.4,Business Development Tax Credit
+"Impact Seven, Inc.",eveairmobility.com,Wisconsin,Health Care,17.7,Community Development Investment
+"New Richmond, City of",,Wisconsin,Construction,24.4,Idle Sites Redevelopment Program
+"Catalent Pharma Solutions, LLC",,Wisconsin,Manufacturing,45,Business Development Tax Credit
+Swiss-Tech LLC,,Wisconsin,Manufacturing,2.8,Business Development Tax Credit
+"Edgerton, City of",,Wisconsin,Construction,10.3,Idle Sites Redevelopment Program
+"Oshkosh, City of",,Wisconsin,Health Care,11.2,Community Development Investment
+"USV 222, LLC",,Wisconsin,Real Estate,50,Historic Preservation Tax Credit
+Brearly Street Property Group LLC,,Wisconsin,Construction,25.4,Brownfield Redevelopment Financial Assistance
+"Couleecap, Inc.",,Wisconsin,Real Estate,17.7,Community Development Investment
+"South Milwaukee, City of",,Wisconsin,Public Admin,32.7,Idle Sites Redevelopment Program
+"Wixon, Inc.",,Wisconsin,Manufacturing,22.2,Business Development Tax Credit
+NOVA GB SPE LLC,,Wisconsin,Real Estate,76.5,Brownfield Redevelopment Financial Assistance
+Kenosha Downtown Block I LLC,dow.com,Wisconsin,Real Estate,42.6,Brownfield Redevelopment Financial Assistance
+"Yaskawa America, Inc",yaskawa.com,Wisconsin,Manufacturing,130,Enterprise Zone
+2510 Good Hope LLC,,Wisconsin,Real Estate,50.9,Brownfield Redevelopment Financial Assistance
+"La Crosse, City of",,Wisconsin,Public Admin,60.7,Idle Sites Redevelopment Program
+Balcan USA Inc.,,Wisconsin,Manufacturing,68,Business Development Tax Credit
+LAG Family LLC,,Wisconsin,Accommodation,11.8,Historic Preservation Tax Credit
+Belmark Inc,,Wisconsin,Manufacturing,121.8,Business Development Tax Credit
+"PS Seasoning & Spices, Inc.",,Wisconsin,Manufacturing,4.2,Business Development Tax Credit
+Eli Lilly and Company,lilly.com,Wisconsin,Manufacturing,2232.7,Enterprise Zone
+Stanpac USA LLC,,Wisconsin,Manufacturing,4.4,Business Development Tax Credit
+"The DeLong Company, Inc.",,Wisconsin,Wholesale Trade,28,Business Development Tax Credit
+"Derse, Inc",,Wisconsin,Manufacturing,48,Business Development Tax Credit
+"Children's Museum of Rock County, Inc.",,Wisconsin,Recreation,14.8,Community Development Investment
+"Impact Confections, Inc",,Wisconsin,Manufacturing,12.4,Business Development Tax Credit
+Apple/Corning,corning.com,Kentucky,Tech/Advanced Mfg,2500,ALL iPhone & Apple Watch cover glass; 50% workforce increase
+Samsung Electronics,samsung.com,Texas,Semiconductors,17000,Korean; CHIPS Act $4.7B; operational 2026
+Stellantis,stellantis.com,Multiple,Automotive,13000,Dutch; Warren Truck + Detroit Assembly + Jeep; 50% production increase
+Tesla,tesla.com,Nevada,Automotive/EV,3600,Semi-trucks and batteries
+Sweetwater,,Indiana,Distribution,36.7,Music equipment distribution expansion
+DDP Specialty Electronic Materials,,Michigan,Chemicals/Electronics,20,Electronic-grade specialty materials
+E-Space Inc,,Texas,Aerospace/Space,115,Satellite manufacturing; 480K sq ft
+Rowan Digital Infrastructure,,Texas,Data Center,700,Hyperscale data center
+Lollicup USA,,Texas,Manufacturing,20,HQ relocation from CA; 650K sq ft
+Hennessey,hennesseyperformance.com,Texas,Automotive,15,Car modification; 100K sq ft
+Tubefab,,Texas,Manufacturing,30,Copper tube fabricator; 100K sq ft
+AeroVironment,,Utah,Aerospace/Defense,,Drone/UAS manufacturer expansion
+Edwards Lifesciences,,Utah,Life Sciences,,Medical devices
+Fervo Energy,,Utah,Energy/Geothermal,,Geothermal power plant
+Nucor,nucor.com,Utah,Steel,,Steel expansion
+ContiTech USA,,Iowa,Manufacturing/Rubber,65,German (Continental AG); new location; rubber manufacturing
