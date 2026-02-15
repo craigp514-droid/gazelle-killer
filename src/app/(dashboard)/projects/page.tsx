@@ -236,53 +236,45 @@ export default async function ProjectIntelligencePage() {
             </CardContent>
           </Card>
 
-          {/* Top Job Creators */}
+          {/* Aerospace = Job Machine */}
           <Card className="border-blue-200 bg-blue-50">
             <CardHeader className="pb-2">
               <CardTitle className="text-sm font-medium text-blue-800 flex items-center gap-2">
                 <Building2 className="h-4 w-4" />
-                Top Job Creators
+                Aerospace = Job Machine
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="space-y-1.5">
-                {topJobSectors.map((s, i) => (
-                  <div key={s.sector} className="flex justify-between text-sm">
-                    <span className={i === 0 ? "text-blue-800 font-medium" : "text-blue-700"}>
-                      {s.sector}
-                    </span>
-                    <span className={i === 0 ? "font-semibold text-blue-900" : "text-blue-700"}>
-                      {formatNumber(s.jobs)}
-                    </span>
-                  </div>
-                ))}
-              </div>
-              <p className="text-xs text-blue-500 mt-3 pt-2 border-t border-blue-200">
-                Total: {formatNumber(totalJobs)} jobs announced
+              <p className="text-2xl font-bold text-blue-900">
+                {formatNumber(bySector['Aerospace & Defense']?.jobs || 0)}
+              </p>
+              <p className="text-sm text-blue-700 mt-1">
+                jobs from only <span className="font-semibold">{formatCurrency(bySector['Aerospace & Defense']?.capex || 0)}</span> capex
+              </p>
+              <p className="text-xs text-blue-600 mt-2 pt-2 border-t border-blue-200">
+                {((bySector['Aerospace & Defense']?.jobs || 0) / (bySector['Aerospace & Defense']?.capex || 1)).toFixed(1)} jobs per $1M — <span className="font-medium">85x more than Semiconductors</span>
               </p>
             </CardContent>
           </Card>
 
-          {/* Concentration Insight */}
-          <Card className="border-emerald-200 bg-emerald-50">
+          {/* Capital Sinks Insight */}
+          <Card className="border-amber-200 bg-amber-50">
             <CardHeader className="pb-2">
-              <CardTitle className="text-sm font-medium text-emerald-800 flex items-center gap-2">
+              <CardTitle className="text-sm font-medium text-amber-800 flex items-center gap-2">
                 <Lightbulb className="h-4 w-4" />
-                Market Concentration
+                The Capital Sink Reality
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-2xl font-bold text-emerald-900">
-                {((sectorData.slice(0, 3).reduce((s, d) => s + d.capex, 0) / totalCapex) * 100).toFixed(0)}%
+              <p className="text-2xl font-bold text-amber-900">
+                0.04
               </p>
-              <p className="text-sm text-emerald-700 mt-1">
-                of all capex in <span className="font-semibold">top 3 sectors</span>
+              <p className="text-sm text-amber-700 mt-1">
+                jobs per $1M in <span className="font-semibold">Semiconductors & Data Centers</span>
               </p>
-              <div className="text-xs text-emerald-600 mt-2 space-y-0.5">
-                {sectorData.slice(0, 3).map(s => (
-                  <div key={s.sector}>{s.sector}: {formatCurrency(s.capex)}</div>
-                ))}
-              </div>
+              <p className="text-xs text-amber-600 mt-2 pt-2 border-t border-amber-200">
+                These sectors absorb <span className="font-medium">{((((bySector['Semiconductors']?.capex || 0) + (bySector['Data Centers']?.capex || 0)) / totalCapex) * 100).toFixed(0)}% of capex</span> but create minimal direct jobs
+              </p>
             </CardContent>
           </Card>
         </div>
