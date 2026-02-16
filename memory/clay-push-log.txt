@@ -1350,3 +1350,4 @@
 2026-02-15 15:43:17 | FarmWise | farmwise.io | SUCCESS
 2026-02-15 15:43:17 | Bone AI | bone.ai | SUCCESS
 2026-02-15 15:43:17 | Vinci | getvinci.ai | SUCCESS
+2026-02-16T15:35:12.471Z | Pushed 80 companies to Clay
