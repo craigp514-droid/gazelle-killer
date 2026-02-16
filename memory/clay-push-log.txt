@@ -1123,3 +1123,230 @@
 2026-02-15 10:32:58 | Immatics | https://immatics.com | SUCCESS
 2026-02-15 10:32:58 | Legend Biotech | https://legendbiotech.com | SUCCESS
 2026-02-15 10:32:58 | Rocket Pharmaceuticals | https://rocketpharma.com | SUCCESS
+2026-02-15 15:43:17 | Aquatic Leisure Technologies | https://aquatechs.com | SUCCESS
+2026-02-15 15:43:17 | SmartWiz | https://smartwiz.com | SUCCESS
+2026-02-15 15:43:17 | Performance Drone Works | https://performancedroneworks.com | SUCCESS
+2026-02-15 15:43:17 | Meta/Dotier | https://meta.com | SUCCESS
+2026-02-15 15:43:17 | DAS North America | https://das-na.com | SUCCESS
+2026-02-15 15:43:17 | Hwashin America | https://hwashin.co.kr | SUCCESS
+2026-02-15 15:43:17 | Alabama State Port Authority | https://asdd.com | SUCCESS
+2026-02-15 15:43:17 | Owens Corning Corporation Prattville | https://owenscorning.com | SUCCESS
+2026-02-15 15:43:17 | Maximus Meats Summerdale | https://maximusmeats.com | SUCCESS
+2026-02-15 15:43:17 | Butting USA Inc. Loxley | https://butting.com | SUCCESS
+2026-02-15 15:43:17 | Wayne-Sanderson Farms Union Springs | https://sandersonfarms.com | SUCCESS
+2026-02-15 15:43:17 | Phoenix Building Solutions Greenville | https://phoenixbuildingsolutions.com | SUCCESS
+2026-02-15 15:43:17 | Hwashin America Corporation Greenville | https://hwashin.co.kr | SUCCESS
+2026-02-15 15:43:17 | Interstate Sheet Metal Anniston | https://meta.com | SUCCESS
+2026-02-15 15:43:17 | AMZ Alabama Inc. Anniston | https://rheinmetall.com | SUCCESS
+2026-02-15 15:43:17 | Amazon Oxford | https://amazon.com | SUCCESS
+2026-02-15 15:43:17 | Kronospan Oxford | https://kronospan.com | SUCCESS
+2026-02-15 15:43:17 | Bryant Machine Jacksonville | https://bryantmachine.com | SUCCESS
+2026-02-15 15:43:17 | JOON LLC (AJIN USA) Cusseta | https://ajinusa.com | SUCCESS
+2026-02-15 15:43:17 | Hello Chonky Cookie Enterprise | https://hellochonkycookie.com | SUCCESS
+2026-02-15 15:43:17 | Constellium Muscle Shoals | https://constellium.com | SUCCESS
+2026-02-15 15:43:17 | Aqua Technics (aka Aquatic Leisure) Opp | https://aquatechs.com | SUCCESS
+2026-02-15 15:43:17 | Louisiana Pacific Cullman | https://lpcorp.com | SUCCESS
+2026-02-15 15:43:17 | SRM Concrete Cullman | https://srmconcrete.com | SUCCESS
+2026-02-15 15:43:17 | North Alabama Fabricating Company Cullman | https://nafco.com | SUCCESS
+2026-02-15 15:43:17 | Cobra Metal Cullman | https://meta.com | SUCCESS
+2026-02-15 15:43:17 | Sovereign American Industries LLC Rainsville | https://sovereignamerican.com | SUCCESS
+2026-02-15 15:43:17 | Nucor Vulcraft Group Fort Payne | https://vulcraft.com | SUCCESS
+2026-02-15 15:43:17 | Choice Fabricators Rainbow City | https://choicefab.com | SUCCESS
+2026-02-15 15:43:17 | Pilgrims Russellville | https://pilgrims.com | SUCCESS
+2026-02-15 15:43:17 | Franklin Manufacturing Inc. Russellville | https://franklinmfg.com | SUCCESS
+2026-02-15 15:43:17 | G&G Steel Inc. Russellville | https://ggsteel.com | SUCCESS
+2026-02-15 15:43:17 | Venture Milk LLC Cowarts | https://venturemilk.com | SUCCESS
+2026-02-15 15:43:17 | Stinson Breads LLC Opelika | https://stinsonbreads.com | SUCCESS
+2026-02-15 15:43:17 | Qualico Webb | https://qualico.us | SUCCESS
+2026-02-15 15:43:17 | U.S. Steel Corporation Fairfield | https://ussteel.com | SUCCESS
+2026-02-15 15:43:17 | Weelth Inc./TaxxWiz | https://weelth.com | SUCCESS
+2026-02-15 15:43:17 | Oak Bowery Spirits LLC Opelika | https://oakboweryspirits.com | SUCCESS
+2026-02-15 15:43:17 | SCA Inc. | https://essity.com | SUCCESS
+2026-02-15 15:43:17 | HL Mando America Corporation Opelika | https://hlmando.com | SUCCESS
+2026-02-15 15:43:17 | AGS America Inc. Opelika | https://ags-america.com | SUCCESS
+2026-02-15 15:43:17 | Korea Fuel Tech America Inc. | https://kftec.co.kr | SUCCESS
+2026-02-15 15:43:17 | SEUNGWON USA Inc. Opelika | https://seungwon.co.kr | SUCCESS
+2026-02-15 15:43:17 | Exalta (formally Intech/Turner Medical) Athens | https://exalta.com | SUCCESS
+2026-02-15 15:43:17 | Daikyo Nishikawa USA Inc. | https://daikyonishikawa.co.jp | SUCCESS
+2026-02-15 15:43:17 | A&G Holdings LLC Arab | https://agholdings.com | SUCCESS
+2026-02-15 15:43:17 | Evonik Theodore | https://evonik.com | SUCCESS
+2026-02-15 15:43:17 | SSAB Axis | https://ssab.com | SUCCESS
+2026-02-15 15:43:17 | Master Boat Builders Inc. Coden | https://masterboatbuilders.com | SUCCESS
+2026-02-15 15:43:17 | Gulf Distributing | https://gulfdist.com | SUCCESS
+2026-02-15 15:43:17 | AAA USA | https://aaa-usa.com | SUCCESS
+2026-02-15 15:43:17 | Wolverine Industries | https://wolverineindustries.com | SUCCESS
+2026-02-15 15:43:17 | J.M. Smucker Co. | https://jmsmucker.com | SUCCESS
+2026-02-15 15:43:17 | Alabama River Cellulose (Georgia Pacific) Monroeville | https://gp.com | SUCCESS
+2026-02-15 15:43:17 | NVH Georgia LLC Phenix City | https://nvhgeorgia.com | SUCCESS
+2026-02-15 15:43:17 | SoGo Packaging LLC | https://sogopackaging.com | SUCCESS
+2026-02-15 15:43:17 | Bad Boy Mowers Monroeville | https://badboycountry.com | SUCCESS
+2026-02-15 15:43:17 | Webster Fulfillment Monroeville | https://websterfulfillment.com | SUCCESS
+2026-02-15 15:43:17 | Browder Veneer Works Inc. | https://browderveneer.com | SUCCESS
+2026-02-15 15:43:17 | Ju-Young Manufacturing America Inc. | https://juyoung.co.kr | SUCCESS
+2026-02-15 15:43:17 | CIRG Industries | https://cirgindustries.com | SUCCESS
+2026-02-15 15:43:17 | Dotier LLC (Meta) | https://meta.com | SUCCESS
+2026-02-15 15:43:17 | M&J Industries | https://mjind.com | SUCCESS
+2026-02-15 15:43:17 | Pro-Fab Machine of Hartselle Hartselle | https://profabmachine.com | SUCCESS
+2026-02-15 15:43:17 | Buckner Trailers Springville | https://bucknertrailers.com | SUCCESS
+2026-02-15 15:43:17 | TSA LLC Tuskegee Macon | https://tsallc.com | SUCCESS
+2026-02-15 15:43:17 | JW Holdings Dadeville | https://jwholdings.com | SUCCESS
+2026-02-15 15:43:17 | Jones Machine & Welding Oakman | https://jonesmachinewelding.com | SUCCESS
+2026-02-15 15:43:17 | SCA Inc. Auburn Lee | https://essity.com | SUCCESS
+2026-02-15 15:43:17 | J.M. Smucker Co. Decatur Morgan | https://jmsmucker.com | SUCCESS
+2026-02-15 15:43:17 | Eli Lilly Huntsville Limestone | https://lilly.com | SUCCESS
+2026-02-15 15:43:17 | AAA USA Mobile | https://aaa-usa.com | SUCCESS
+2026-02-15 15:43:17 | Primo Mobile | https://primogrill.com | SUCCESS
+2026-02-15 15:43:17 | Daikin America Decatur Morgan | https://daikin.com | SUCCESS
+2026-02-15 15:43:17 | OCI Alabama LLC Decatur Morgan | https://oci-global.com | SUCCESS
+2026-02-15 15:43:17 | Amazon Oxford Calhoun | https://amazon.com | SUCCESS
+2026-02-15 15:43:17 | APM Terminals Mobile | https://apmterminals.com | SUCCESS
+2026-02-15 15:43:17 | M&J Industries Decatur Morgan | https://mjind.com | SUCCESS
+2026-02-15 15:43:17 | Qualico Webb Houston | https://qualico.us | SUCCESS
+2026-02-15 15:43:17 | GE Aerospace Auburn Lee | https://geaerospace.com | SUCCESS
+2026-02-15 15:43:17 | Kimberly-Clark Mobile | https://kimberly-clark.com | SUCCESS
+2026-02-15 15:43:17 | Toyota Tsusho Huntsville Limestone | https://toyota-tsusho.com | SUCCESS
+2026-02-15 15:43:17 | Core Scientific Auburn Lee | https://corescientific.com | SUCCESS
+2026-02-15 15:43:17 | SmartWiz Birmingham Jefferson | https://smartwiz.com | SUCCESS
+2026-02-15 15:43:17 | Dotier LLC (Meta) Montgomery | https://meta.com | SUCCESS
+2026-02-15 15:43:17 | KPPC Advanced Chemicals | https://kppc.com | SUCCESS
+2026-02-15 15:43:17 | Preciball USA | https://preciball.com | SUCCESS
+2026-02-15 15:43:17 | AVAIO Digital Partners | https://avaio.com | SUCCESS
+2026-02-15 15:43:17 | SPP | https://spp.org | SUCCESS
+2026-02-15 15:43:17 | R2S | https://r2s.com | SUCCESS
+2026-02-15 15:43:17 | Project Ladybug (Hypersonics) | https://ursamajor.space | SUCCESS
+2026-02-15 15:43:17 | D-Wave Quantum | https://d-wave.com | SUCCESS
+2026-02-15 15:43:17 | Dongwon Autopart Technology | https://dwat.co.kr | SUCCESS
+2026-02-15 15:43:17 | Grupo Vialume | https://vialume.com | SUCCESS
+2026-02-15 15:43:17 | Cronus Chemicals | https://cronuschemicals.com | SUCCESS
+2026-02-15 15:43:17 | Caldwell Group | https://caldwellinc.com | SUCCESS
+2026-02-15 15:43:17 | Steves & Sons | https://eveairmobility.com | SUCCESS
+2026-02-15 15:43:17 | GE Appliances | https://geappliances.com | SUCCESS
+2026-02-15 15:43:17 | Shinsung ST USA | https://shinsungst.com | SUCCESS
+2026-02-15 15:43:17 | HF Rubber | https://hfrubber.com | SUCCESS
+2026-02-15 15:43:17 | GM Fairfax | https://gm.com | SUCCESS
+2026-02-15 15:43:17 | Robinson Inc | https://robinsoncompany.com | SUCCESS
+2026-02-15 15:43:17 | Three Dog Brands | https://threedogbrands.com | SUCCESS
+2026-02-15 15:43:17 | MD Manufacturing 4.0 | https://mdmanufacturing.com | SUCCESS
+2026-02-15 15:43:17 | Samsung Biologics | https://samsung.com | SUCCESS
+2026-02-15 15:43:17 | Toyota | https://toyota.com | SUCCESS
+2026-02-15 15:43:17 | SRC Technologies | https://srctec.com | SUCCESS
+2026-02-15 15:43:17 | Bozeman Photonics | https://bozemanphotonics.com | SUCCESS
+2026-02-15 15:43:17 | CMP Advanced Mechanical Solutions | https://cmpams.com | SUCCESS
+2026-02-15 15:43:17 | Eco King Solutions (Kingsun) | https://kingsun.com | SUCCESS
+2026-02-15 15:43:17 | Toshiba Energy | toshiba-energy.com | SUCCESS
+2026-02-15 15:43:17 | Maersk | https://maersk.com | SUCCESS
+2026-02-15 15:43:17 | FIT Precast | https://fitprecast.com | SUCCESS
+2026-02-15 15:43:17 | Novartis Gene Therapies | https://novartis.com | SUCCESS
+2026-02-15 15:43:17 | AWS | https://aws.amazon.com | SUCCESS
+2026-02-15 15:43:17 | Honda/LG Battery | https://honda.com | SUCCESS
+2026-02-15 15:43:17 | Nestlé Purina | https://purina.com | SUCCESS
+2026-02-15 15:43:17 | Smucker's | https://jmsmucker.com | SUCCESS
+2026-02-15 15:43:17 | New Horizons Baking | https://newhorizonsbaking.com | SUCCESS
+2026-02-15 15:43:17 | Diversified Fall Protection | https://fallpd.com | SUCCESS
+2026-02-15 15:43:17 | Gabe's | https://gabesdiscount.com | SUCCESS
+2026-02-15 15:43:17 | Oculii | https://oculii.com | SUCCESS
+2026-02-15 15:43:17 | Supply Technologies | https://supplytech.com | SUCCESS
+2026-02-15 15:43:17 | Lubrizol | https://lubrizol.com | SUCCESS
+2026-02-15 15:43:17 | Revere Plastics Systems | https://eveairmobility.com | SUCCESS
+2026-02-15 15:43:17 | La Linea Verde | https://lalineaverde.it | SUCCESS
+2026-02-15 15:43:17 | Joby Aviation (propeller blades) | https://jobyaviation.com | SUCCESS
+2026-02-15 15:43:17 | (Data center development) | https://eveairmobility.com | SUCCESS
+2026-02-15 15:43:17 | RITZ Instrument Transformers | rfritz.de | SUCCESS
+2026-02-15 15:43:17 | Becker Mining | https://bfrg.com | SUCCESS
+2026-02-15 15:43:17 | ATSG/AMES | https://atsginc.com | SUCCESS
+2026-02-15 15:43:17 | Mecad USA | https://mecad.com | SUCCESS
+2026-02-15 15:43:17 | Span-America Medical | https://spanamerica.com | SUCCESS
+2026-02-15 15:43:17 | Aran USA | https://aran.ie | SUCCESS
+2026-02-15 15:43:17 | Huwell US | https://huwell.com | SUCCESS
+2026-02-15 15:43:17 | JGB Brothers | https://jgbbrothers.com | SUCCESS
+2026-02-15 15:43:17 | Coastal Ready Mix | https://coastalreadymix.com | SUCCESS
+2026-02-15 15:43:17 | Samsung | https://samsung.com | SUCCESS
+2026-02-15 15:43:17 | SPC Group | https://spcgroup.co.kr | SUCCESS
+2026-02-15 15:43:17 | MGM/VanTran Transformers | https://gm.com | SUCCESS
+2026-02-15 15:43:17 | L&T Technology | https://ltts.com | SUCCESS
+2026-02-15 15:43:17 | PEGATRON | https://pegatron.com | SUCCESS
+2026-02-15 15:43:17 | Yerico Manufacturing | https://yerico.com | SUCCESS
+2026-02-15 15:43:17 | Furlani Foods |  LLC,https://furlani.com | SUCCESS
+2026-02-15 15:43:17 | Associated Milk Producers |  Inc.,https://oci-global.com | SUCCESS
+2026-02-15 15:43:17 | Meta House Inc. | https://meta.com | SUCCESS
+2026-02-15 15:43:17 | U.S. Steel | https://ussteel.com | SUCCESS
+2026-02-15 15:43:17 | Green Health Laboratories Foley | https://greenhealthlabs.com | SUCCESS
+2026-02-15 15:43:17 | Kobay Enstal Oxford | https://ford.com | SUCCESS
+2026-02-15 15:43:17 | Changer & Dresser Anniston | https://changerdresser.com | SUCCESS
+2026-02-15 15:43:17 | Corrugated Supplies Corporation Cullman | https://corrubox.com | SUCCESS
+2026-02-15 15:43:17 | Perdido River Farms/Poarch Band of Creek Indians Atmore | https://pfrfarms.com | SUCCESS
+2026-02-15 15:43:17 | Oldcastle Lawn & Garden Abbeville | https://abb.com | SUCCESS
+2026-02-15 15:43:17 | ArcelorMittal Calvert | https://arcelormittal.com | SUCCESS
+2026-02-15 15:43:17 | Logan Machine Works Phenix City | https://loganmachineworks.com | SUCCESS
+2026-02-15 15:43:17 | Nat 20 Scientific LLC Buhl | https://nat20scientific.com | SUCCESS
+2026-02-15 15:43:17 | InnovAsian | https://innovasiancuisine.com | SUCCESS
+2026-02-15 15:43:17 | GE Aerospace Huntsville Limestone | https://geaerospace.com | SUCCESS
+2026-02-15 15:43:17 | Virginia Transformer | https://vatransformer.com | SUCCESS
+2026-02-15 15:43:17 | GF Casting Solutions | https://gf.com | SUCCESS
+2026-02-15 15:43:17 | Roche Diagnostics | https://roche.com | SUCCESS
+2026-02-15 15:43:17 | Louisiana-Pacific | https://lpcorp.com | SUCCESS
+2026-02-15 15:43:17 | Johns Manville Phenix City | https://jm.com | SUCCESS
+2026-02-15 15:43:17 | Ninth Avenue Foods | https://ninthavefoods.com | SUCCESS
+2026-02-15 15:43:17 | Siemens Energy Gas | siemens-energy.com | SUCCESS
+2026-02-15 15:43:17 | QuaLex Manufacturing | https://qualexmfg.com | SUCCESS
+2026-02-15 15:43:17 | Georg Utz | https://utzgroup.com | SUCCESS
+2026-02-15 15:43:17 | Ironline Metals | https://meta.com | SUCCESS
+2026-02-15 15:43:17 | Doncasters Oxford | https://ford.com | SUCCESS
+2026-02-15 15:43:17 | Yaskawa Electric | yaskawa.co.jp | SUCCESS
+2026-02-15 15:43:17 | Alfa Insurance Montgomery | https://alfainsurance.com | SUCCESS
+2026-02-15 15:43:17 | CIRG Industries Montgomery | https://cirgindustries.com | SUCCESS
+2026-02-15 15:43:17 | Lightsource BP Montgomery | https://lightsourcebp.com | SUCCESS
+2026-02-15 15:43:17 | Samkwang | https://samkwang.co.kr | SUCCESS
+2026-02-15 15:43:17 | Yamaha Motor Corporation USA Bridgeport | https://yamahamotorsports.com | SUCCESS
+2026-02-15 15:43:17 | Briggs & Stratton LLC | https://briggsandstratton.com | SUCCESS
+2026-02-15 15:43:17 | James Composites | https://jamescomposites.com | SUCCESS
+2026-02-15 15:43:17 | Joby Aviation (2nd facility) | https://jobyaviation.com | SUCCESS
+2026-02-15 15:43:17 | Wieland Chase | https://wieland.com | SUCCESS
+2026-02-15 15:43:17 | Viking Attachments | https://vikingattachments.com | SUCCESS
+2026-02-15 15:43:17 | Nestle Purina | https://purina.com | SUCCESS
+2026-02-15 15:43:17 | Novartis Cell Therapy | https://novartis.com | SUCCESS
+2026-02-15 15:43:17 | CALB | calb.tech | SUCCESS
+2026-02-15 15:43:17 | OMCO Solar | omcoracking.com | SUCCESS
+2026-02-15 15:43:17 | BD (Becton Dickinson) | https://bd.com | SUCCESS
+2026-02-15 15:43:17 | EPC-Columbia | https://epccompanies.com | SUCCESS
+2026-02-15 15:43:17 | Bridor USA | https://bridor.com | SUCCESS
+2026-02-15 15:43:17 | Microbial Discovery Group | https://microbialdg.com | SUCCESS
+2026-02-15 15:43:17 | Vermilion Madison Development LLC | https://eveairmobility.com | SUCCESS
+2026-02-15 15:43:17 | Sonnen | sonnen.com | SUCCESS
+2026-02-15 15:43:17 | II-VI Aerospace & Defense | https://www.coherent.com/ | SUCCESS
+2026-02-15 15:43:17 | Enerpac Tool Group |  Corp.,https://enerpac.com | SUCCESS
+2026-02-15 15:43:17 | Nuward (EDF) | nuward.eu | SUCCESS
+2026-02-15 15:43:17 | Pacific Manufacturing | https://pacmfg.com | SUCCESS
+2026-02-15 15:43:17 | FirstElement Fuel | firstelementfuel.com | SUCCESS
+2026-02-15 15:43:17 | Trener Robotics | trenerrobotics.com | SUCCESS
+2026-02-15 15:43:17 | Allonic | allonic.com | SUCCESS
+2026-02-15 15:43:17 | Grand River Aseptic Manufacturing | grandriveraseptic.com | SUCCESS
+2026-02-15 15:43:17 | Hanwha Aerospace | https://www.hanwhaaerospace.com | SUCCESS
+2026-02-15 15:43:17 | Urban Mining Company | urbanminingcompany.com | SUCCESS
+2026-02-15 15:43:17 | CMC Materials (Entegris) | cmcmaterials.com | SUCCESS
+2026-02-15 15:43:17 | Array Labs | arraylabs.com | SUCCESS
+2026-02-15 15:43:17 | Eli Lilly | https://lilly.com | SUCCESS
+2026-02-15 15:43:17 | TSA LLC Tuskegee | https://tsallc.com | SUCCESS
+2026-02-15 15:43:17 | 2seventy bio (BMS) | https://2seventybio.com | SUCCESS
+2026-02-15 15:43:17 | Physical Intelligence | physicalintelligence.company | SUCCESS
+2026-02-15 15:43:17 | Realtime Robotics | realtimerobotics.com | SUCCESS
+2026-02-15 15:43:17 | Spark Therapeutics (Roche) | https://sparktx.com | SUCCESS
+2026-02-15 15:43:17 | Collaborative Robotics | cobot.co | SUCCESS
+2026-02-15 15:43:17 | FANUC | fanuc.com | SUCCESS
+2026-02-15 15:43:17 | Illuminate USA (LONGi) | illuminateusa.solar | SUCCESS
+2026-02-15 15:43:17 | ES Foundry | esfoundry.com | SUCCESS
+2026-02-15 15:43:17 | Ultragenyx | https://ultragenyx.com | SUCCESS
+2026-02-15 15:43:17 | Coherent | coherent.com | SUCCESS
+2026-02-15 15:43:17 | ARC Clean Technology | arccleantech.com | SUCCESS
+2026-02-15 15:43:17 | Homology Medicines | https://homologymedicines.com | SUCCESS
+2026-02-15 15:43:17 | Resilient Structures | resilientstructures.com | SUCCESS
+2026-02-15 15:43:17 | GE Vernova Gas Power | gevernova.com | SUCCESS
+2026-02-15 15:43:17 | Orchard Robotics | orchardrobotics.ai | SUCCESS
+2026-02-15 15:43:17 | GuideNav | https://guidenav.com/ | SUCCESS
+2026-02-15 15:43:17 | Panasonic Energy | na.panasonic.com/us/energy | SUCCESS
+2026-02-15 15:43:17 | Shin-Etsu Chemical | shinetsu.com | SUCCESS
+2026-02-15 15:43:17 | 6 River Systems (Ocado) | 6river.com | SUCCESS
+2026-02-15 15:43:17 | Chang Robotics | changrobotics.com | SUCCESS
+2026-02-15 15:43:17 | FarmWise | farmwise.io | SUCCESS
+2026-02-15 15:43:17 | Bone AI | bone.ai | SUCCESS
+2026-02-15 15:43:17 | Vinci | getvinci.ai | SUCCESS
