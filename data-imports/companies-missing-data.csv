@@ -1,0 +1,1082 @@
+company_name,website,missing_fields,missing_count
+"Project Rey/Oxygen (Semis)","","website, hq_city, hq_state, linkedin, employees, description",6
+"Project Captain (Food)","","website, hq_city, hq_state, linkedin, employees, description",6
+"Nidec","","website, hq_city, hq_state, linkedin, employees, description",6
+"ALUKO Group","","website, hq_city, hq_state, linkedin, employees, description",6
+"Biederman","","website, hq_city, hq_state, linkedin, employees, description",6
+"Korea Zinc","","website, hq_city, hq_state, linkedin, employees, description",6
+"Microtex Composites","","website, hq_city, hq_state, linkedin, employees, description",6
+"Ferrovial","","website, hq_city, hq_state, linkedin, employees, description",6
+"Gattefossé","","website, hq_city, hq_state, linkedin, employees, description",6
+"Gerdau","","website, hq_city, hq_state, linkedin, employees, description",6
+"Cancoil USA","","website, hq_city, hq_state, linkedin, employees, description",6
+"Lefko","","website, hq_city, hq_state, linkedin, employees, description",6
+"Stellantis","","website, hq_city, hq_state, linkedin, employees, description",6
+"Formosa Plastics","","website, hq_city, hq_state, linkedin, employees, description",6
+"Trener Robotics","trenerrobotics.com","hq_city, hq_state, linkedin, employees, description, industry",6
+"Allonic","allonic.com","hq_city, hq_state, linkedin, employees, description, industry",6
+"Grand River Aseptic Manufacturing","grandriveraseptic.com","hq_city, hq_state, linkedin, employees, description, industry",6
+"Hanwha Aerospace","https://www.hanwhaaerospace.com","hq_city, hq_state, linkedin, employees, description, industry",6
+"Coherent","coherent.com","hq_city, hq_state, linkedin, employees, description, industry",6
+"ARC Clean Technology","arccleantech.com","hq_city, hq_state, linkedin, employees, description, industry",6
+"Resilient Structures","resilientstructures.com","hq_city, hq_state, linkedin, employees, description, industry",6
+"GE Vernova Gas Power","gevernova.com","hq_city, hq_state, linkedin, employees, description, industry",6
+"Orchard Robotics","orchardrobotics.ai","hq_city, hq_state, linkedin, employees, description, industry",6
+"GuideNav","https://guidenav.com/","hq_city, hq_state, linkedin, employees, description, industry",6
+"Panasonic Energy","na.panasonic.com/us/energy","hq_city, hq_state, linkedin, employees, description, industry",6
+"6 River Systems (Ocado)","6river.com","hq_city, hq_state, linkedin, employees, description, industry",6
+"Chang Robotics","changrobotics.com","hq_city, hq_state, linkedin, employees, description, industry",6
+"FarmWise","farmwise.io","hq_city, hq_state, linkedin, employees, description, industry",6
+"Bone AI","bone.ai","hq_city, hq_state, linkedin, employees, description, industry",6
+"Aquatic Leisure Technologies","https://aquatechs.com","hq_city, hq_state, linkedin, employees, description",5
+"DAS North America","https://das-na.com","hq_city, hq_state, linkedin, employees, description",5
+"Hwashin America","https://hwashin.co.kr","hq_city, hq_state, linkedin, employees, description",5
+"KPPC Advanced Chemicals","https://kppc.com","hq_city, hq_state, linkedin, employees, description",5
+"Dongwon Autopart Technology","https://dwat.co.kr","hq_city, hq_state, linkedin, employees, description",5
+"Grupo Vialume","https://vialume.com","hq_city, hq_state, linkedin, employees, description",5
+"California Jobs First","","website, hq_city, linkedin, employees, description",5
+"Project Caraway","","website, hq_city, linkedin, employees, description",5
+"GE Appliances","https://geappliances.com","hq_city, hq_state, linkedin, employees, description",5
+"Shinsung ST USA","https://shinsungst.com","hq_city, hq_state, linkedin, employees, description",5
+"Samsung Biologics","https://samsung.com","hq_city, hq_state, linkedin, employees, description",5
+"Pipe & Steel Industrial","","website, hq_city, linkedin, employees, description",5
+"Legacy Port Huron Paper","","website, hq_city, linkedin, employees, description",5
+"Toyota","https://toyota.com","hq_city, hq_state, linkedin, employees, description",5
+"CMP Advanced Mechanical Solutions","https://cmpams.com","hq_city, hq_state, linkedin, employees, description",5
+"Eco King Solutions (Kingsun)","https://kingsun.com","hq_city, hq_state, linkedin, employees, description",5
+"Various AI Data Centers","","website, hq_city, linkedin, employees, description",5
+"Toshiba Energy","toshiba-energy.com","hq_city, hq_state, linkedin, employees, description",5
+"Maersk","https://maersk.com","hq_city, hq_state, linkedin, employees, description",5
+"Novartis Gene Therapies","https://novartis.com","hq_city, hq_state, linkedin, employees, description",5
+"La Linea Verde","https://lalineaverde.it","hq_city, hq_state, linkedin, employees, description",5
+"Becker Mining","https://bfrg.com","hq_city, hq_state, linkedin, employees, description",5
+"Mecad USA","https://mecad.com","hq_city, hq_state, linkedin, employees, description",5
+"Aran USA","https://aran.ie","hq_city, hq_state, linkedin, employees, description",5
+"Huwell US","https://huwell.com","hq_city, hq_state, linkedin, employees, description",5
+"MCIS","","website, hq_city, linkedin, employees, description",5
+"LIS Technologies","","website, hq_city, linkedin, employees, description",5
+"Carlex Glass America","","website, hq_city, linkedin, employees, description",5
+"Anatolia Cabinet","","website, hq_city, linkedin, employees, description",5
+"(Data center pipeline)","","website, hq_city, linkedin, employees, description",5
+"CDF Distributors","","website, hq_city, linkedin, employees, description",5
+"SPC Group","https://spcgroup.co.kr","hq_city, hq_state, linkedin, employees, description",5
+"L&T Technology","https://ltts.com","hq_city, hq_state, linkedin, employees, description",5
+"PEGATRON","https://pegatron.com","hq_city, hq_state, linkedin, employees, description",5
+"Vantage Data Centers","","website, hq_city, linkedin, employees, description",5
+"E-Space","","website, hq_city, linkedin, employees, description",5
+"Bionova","","website, hq_city, linkedin, employees, description",5
+"GCP Paper","","website, hq_city, linkedin, employees, description",5
+"NNA Polymers","","website, hq_city, linkedin, employees, description",5
+"Rowan Digital","","website, hq_city, linkedin, employees, description",5
+"NTxBio","","website, hq_city, linkedin, employees, description",5
+"Ariat International","","website, hq_city, linkedin, employees, description",5
+"MCM Engineering II","","website, hq_city, linkedin, employees, description",5
+"Innovative Labs","","website, hq_city, linkedin, employees, description",5
+"Select Water/Mariana Minerals","","website, hq_city, linkedin, employees, description",5
+"Ionic Mineral Technologies","","website, hq_city, linkedin, employees, description",5
+"Integrated Rail & Resources","","website, hq_city, linkedin, employees, description",5
+"Infinity Global","","website, hq_city, linkedin, employees, description",5
+"Solstice Advanced Materials","","website, hq_city, linkedin, employees, description",5
+"Calpine","","website, hq_city, linkedin, employees, description",5
+"Anchor","","website, hq_city, linkedin, employees, description",5
+"Milwaukee Tool","","website, hq_city, linkedin, employees, description",5
+"Frontieras North America","","website, hq_city, linkedin, employees, description",5
+"Catalent","","website, hq_city, linkedin, employees, description",5
+"Holtec/Hi Tech Solutions","","website, hq_city, linkedin, employees, description",5
+"XeteX, LLC","","website, hq_city, linkedin, employees, description",5
+"Schutz Container Systems, Inc.","","website, hq_city, linkedin, employees, description",5
+"AmeriLux International, LLC","","website, hq_city, linkedin, employees, description",5
+"Degas, LLC","","website, hq_city, linkedin, employees, description",5
+"Kin at Freshwater LLC","","website, hq_city, linkedin, employees, description",5
+"Urnex Brands, LLC","","website, hq_city, linkedin, employees, description",5
+"Triangle Manufacturing Company","","website, hq_city, linkedin, employees, description",5
+"New Richmond, City of","","website, hq_city, linkedin, employees, description",5
+"Dynamic Ratings, Inc.","","website, hq_city, linkedin, employees, description",5
+"FIT Investment Group, LLC","","website, hq_city, linkedin, employees, description",5
+"Kitchen Fresh Foods LLC","","website, hq_city, linkedin, employees, description",5
+"Impact Seven, Inc.","","website, hq_city, linkedin, employees, description",5
+"Catalent Pharma Solutions, LLC","","website, hq_city, linkedin, employees, description",5
+"Swiss-Tech LLC","","website, hq_city, linkedin, employees, description",5
+"Big Lift LLC","","website, hq_city, linkedin, employees, description",5
+"Oshkosh, City of","","website, hq_city, linkedin, employees, description",5
+"USV 222, LLC","","website, hq_city, linkedin, employees, description",5
+"Brearly Street Property Group LLC","","website, hq_city, linkedin, employees, description",5
+"2510 Good Hope LLC","","website, hq_city, linkedin, employees, description",5
+"Couleecap, Inc.","","website, hq_city, linkedin, employees, description",5
+"Wixon, Inc.","","website, hq_city, linkedin, employees, description",5
+"Belmark Inc","","website, hq_city, linkedin, employees, description",5
+"PS Seasoning & Spices, Inc.","","website, hq_city, linkedin, employees, description",5
+"Balcan USA Inc.","","website, hq_city, linkedin, employees, description",5
+"LAG Family LLC","","website, hq_city, linkedin, employees, description",5
+"Edgerton, City of","","website, hq_city, linkedin, employees, description",5
+"Stanpac USA LLC","","website, hq_city, linkedin, employees, description",5
+"Derse, Inc","","website, hq_city, linkedin, employees, description",5
+"Impact Confections, Inc","","website, hq_city, linkedin, employees, description",5
+"Apple/Corning","","website, hq_city, linkedin, employees, description",5
+"Sweetwater","","website, hq_city, linkedin, employees, description",5
+"Children's Museum of Rock County, Inc.","","website, hq_city, linkedin, employees, description",5
+"Rowan Digital Infrastructure","","website, hq_city, linkedin, employees, description",5
+"E-Space Inc","","website, hq_city, linkedin, employees, description",5
+"Tubefab","","website, hq_city, linkedin, employees, description",5
+"Hennessey","","website, hq_city, linkedin, employees, description",5
+"Edwards Lifesciences","","website, hq_city, linkedin, employees, description",5
+"Fervo Energy","","website, hq_city, linkedin, employees, description",5
+"ContiTech USA","","website, hq_city, linkedin, employees, description",5
+"Nucor","","website, hq_city, linkedin, employees, description",5
+"AeroVironment","","website, hq_city, linkedin, employees, description",5
+"Lollicup USA","","website, hq_city, linkedin, employees, description",5
+"DDP Specialty Electronic Materials","","website, hq_city, linkedin, employees, description",5
+"GF Casting Solutions","https://gf.com","hq_city, hq_state, linkedin, employees, description",5
+"Roche Diagnostics","https://roche.com","hq_city, hq_state, linkedin, employees, description",5
+"Heil Trailer International","","website, hq_city, linkedin, employees, description",5
+"Aqua Membranes","","website, hq_city, linkedin, employees, description",5
+"Siemens Energy Gas","siemens-energy.com","hq_city, hq_state, linkedin, employees, description",5
+"Georg Utz","https://utzgroup.com","hq_city, hq_state, linkedin, employees, description",5
+"Yaskawa Electric","yaskawa.co.jp","hq_city, hq_state, linkedin, employees, description",5
+"Samkwang","https://samkwang.co.kr","hq_city, hq_state, linkedin, employees, description",5
+"Wieland Chase","https://wieland.com","hq_city, hq_state, linkedin, employees, description",5
+"WHPC-Regent Street-Madison, LLC","","website, hq_city, linkedin, employees, description",5
+"South Milwaukee, City of","","website, hq_city, linkedin, employees, description",5
+"Novartis Cell Therapy","https://novartis.com","hq_city, hq_state, linkedin, employees, description",5
+"Nestle Purina","https://purina.com","hq_city, hq_state, linkedin, employees, description",5
+"BMK Pharma","","website, hq_city, linkedin, employees, description",5
+"Kenosha Downtown Block I LLC","","website, hq_city, linkedin, employees, description",5
+"CALB","calb.tech","hq_city, hq_state, linkedin, employees, description",5
+"OMCO Solar","omcoracking.com","hq_city, hq_state, linkedin, employees, description",5
+"Bridor USA","https://bridor.com","hq_city, hq_state, linkedin, employees, description",5
+"Worthington Cylinders Wisconsin, LLC","","website, hq_city, linkedin, employees, description",5
+"NOVA GB SPE LLC","","website, hq_city, linkedin, employees, description",5
+"Sonnen","sonnen.com","hq_city, hq_state, linkedin, employees, description",5
+"Four South Blair, LLC","","website, hq_city, linkedin, employees, description",5
+"La Crosse, City of","","website, hq_city, linkedin, employees, description",5
+"II-VI Aerospace & Defense","https://www.coherent.com/","hq_city, hq_state, linkedin, employees, description",5
+"Reinhart FoodService, LLC","","website, hq_city, linkedin, employees, description",5
+"Nuward (EDF)","nuward.eu","hq_city, hq_state, linkedin, employees, description",5
+"Pacific Manufacturing","https://pacmfg.com","hq_city, hq_state, linkedin, employees, description",5
+"FirstElement Fuel","firstelementfuel.com","hq_city, hq_state, linkedin, employees, description",5
+"RITZ Instrument Transformers","rfritz.de","hq_city, hq_state, linkedin, employees, description",5
+"Urban Mining Company","urbanminingcompany.com","hq_city, hq_state, linkedin, employees, description",5
+"CMC Materials (Entegris)","cmcmaterials.com","hq_city, hq_state, linkedin, employees, description",5
+"2seventy bio (BMS)","https://2seventybio.com","hq_city, hq_state, linkedin, employees, description",5
+"Physical Intelligence","physicalintelligence.company","hq_city, hq_state, linkedin, employees, description",5
+"Realtime Robotics","realtimerobotics.com","hq_city, hq_state, linkedin, employees, description",5
+"Spark Therapeutics (Roche)","https://sparktx.com","hq_city, hq_state, linkedin, employees, description",5
+"Collaborative Robotics","cobot.co","hq_city, hq_state, linkedin, employees, description",5
+"FANUC","fanuc.com","hq_city, hq_state, linkedin, employees, description",5
+"Illuminate USA (LONGi)","illuminateusa.solar","hq_city, hq_state, linkedin, employees, description",5
+"ES Foundry","esfoundry.com","hq_city, hq_state, linkedin, employees, description",5
+"Ultragenyx","https://ultragenyx.com","hq_city, hq_state, linkedin, employees, description",5
+"Homology Medicines","https://homologymedicines.com","hq_city, hq_state, linkedin, employees, description",5
+"SmartWiz","https://smartwiz.com","hq_city, linkedin, employees, description",4
+"Performance Drone Works","https://performancedroneworks.com","hq_city, linkedin, employees, description",4
+"Meta/Dotier","https://meta.com","hq_city, linkedin, employees, description",4
+"Alabama State Port Authority","https://asdd.com","hq_city, linkedin, employees, description",4
+"Owens Corning Corporation Prattville","https://owenscorning.com","hq_city, linkedin, employees, description",4
+"Maximus Meats Summerdale","https://maximusmeats.com","hq_city, linkedin, employees, description",4
+"Butting USA Inc. Loxley","https://butting.com","hq_city, linkedin, employees, description",4
+"Wayne-Sanderson Farms Union Springs","https://sandersonfarms.com","hq_city, linkedin, employees, description",4
+"Phoenix Building Solutions Greenville","https://phoenixbuildingsolutions.com","hq_city, linkedin, employees, description",4
+"Hwashin America Corporation Greenville","https://hwashin.co.kr","hq_city, linkedin, employees, description",4
+"Interstate Sheet Metal Anniston","https://meta.com","hq_city, linkedin, employees, description",4
+"AMZ Alabama Inc. Anniston","https://rheinmetall.com","hq_city, linkedin, employees, description",4
+"Amazon Oxford","https://amazon.com","hq_city, linkedin, employees, description",4
+"Kronospan Oxford","https://kronospan.com","hq_city, linkedin, employees, description",4
+"Bryant Machine Jacksonville","https://bryantmachine.com","hq_city, linkedin, employees, description",4
+"JOON LLC (AJIN USA) Cusseta","https://ajinusa.com","hq_city, linkedin, employees, description",4
+"Hello Chonky Cookie Enterprise","https://hellochonkycookie.com","hq_city, linkedin, employees, description",4
+"Constellium Muscle Shoals","https://constellium.com","hq_city, linkedin, employees, description",4
+"Aqua Technics (aka Aquatic Leisure) Opp","https://aquatechs.com","hq_city, linkedin, employees, description",4
+"Louisiana Pacific Cullman","https://lpcorp.com","hq_city, linkedin, employees, description",4
+"SRM Concrete Cullman","https://srmconcrete.com","hq_city, linkedin, employees, description",4
+"North Alabama Fabricating Company Cullman","https://nafco.com","hq_city, linkedin, employees, description",4
+"Cobra Metal Cullman","https://meta.com","hq_city, linkedin, employees, description",4
+"Sovereign American Industries LLC Rainsville","https://sovereignamerican.com","hq_city, linkedin, employees, description",4
+"Nucor Vulcraft Group Fort Payne","https://vulcraft.com","hq_city, linkedin, employees, description",4
+"Choice Fabricators Rainbow City","https://choicefab.com","hq_city, linkedin, employees, description",4
+"Pilgrims Russellville","https://pilgrims.com","hq_city, linkedin, employees, description",4
+"Franklin Manufacturing Inc. Russellville","https://franklinmfg.com","hq_city, linkedin, employees, description",4
+"G&G Steel Inc. Russellville","https://ggsteel.com","hq_city, linkedin, employees, description",4
+"Venture Milk LLC Cowarts","https://venturemilk.com","hq_city, linkedin, employees, description",4
+"Qualico Webb","https://qualico.us","hq_city, linkedin, employees, description",4
+"U.S. Steel Corporation Fairfield","https://ussteel.com","hq_city, linkedin, employees, description",4
+"Weelth Inc./TaxxWiz","https://weelth.com","hq_city, linkedin, employees, description",4
+"Oak Bowery Spirits LLC Opelika","https://oakboweryspirits.com","hq_city, linkedin, employees, description",4
+"SCA Inc.","https://essity.com","hq_city, linkedin, employees, description",4
+"HL Mando America Corporation Opelika","https://hlmando.com","hq_city, linkedin, employees, description",4
+"AGS America Inc. Opelika","https://ags-america.com","hq_city, linkedin, employees, description",4
+"Korea Fuel Tech America Inc.","https://kftec.co.kr","hq_city, linkedin, employees, description",4
+"SEUNGWON USA Inc. Opelika","https://seungwon.co.kr","hq_city, linkedin, employees, description",4
+"Exalta (formally Intech/Turner Medical) Athens","https://exalta.com","hq_city, linkedin, employees, description",4
+"Daikyo Nishikawa USA Inc.","https://daikyonishikawa.co.jp","hq_city, linkedin, employees, description",4
+"A&G Holdings LLC Arab","https://agholdings.com","hq_city, linkedin, employees, description",4
+"Evonik Theodore","https://evonik.com","hq_city, linkedin, employees, description",4
+"SSAB Axis","https://ssab.com","hq_city, linkedin, employees, description",4
+"Master Boat Builders Inc. Coden","https://masterboatbuilders.com","hq_city, linkedin, employees, description",4
+"Gulf Distributing","https://gulfdist.com","hq_city, linkedin, employees, description",4
+"AAA USA","https://aaa-usa.com","hq_city, linkedin, employees, description",4
+"J.M. Smucker Co.","https://jmsmucker.com","hq_city, linkedin, employees, description",4
+"Alabama River Cellulose (Georgia Pacific) Monroeville","https://gp.com","hq_city, linkedin, employees, description",4
+"NVH Georgia LLC Phenix City","https://nvhgeorgia.com","hq_city, linkedin, employees, description",4
+"SoGo Packaging LLC","https://sogopackaging.com","hq_city, linkedin, employees, description",4
+"Bad Boy Mowers Monroeville","https://badboycountry.com","hq_city, linkedin, employees, description",4
+"Webster Fulfillment Monroeville","https://websterfulfillment.com","hq_city, linkedin, employees, description",4
+"Browder Veneer Works Inc.","https://browderveneer.com","hq_city, linkedin, employees, description",4
+"Ju-Young Manufacturing America Inc.","https://juyoung.co.kr","hq_city, linkedin, employees, description",4
+"CIRG Industries","https://cirgindustries.com","hq_city, linkedin, employees, description",4
+"Dotier LLC (Meta)","https://meta.com","hq_city, linkedin, employees, description",4
+"M&J Industries","https://mjind.com","hq_city, linkedin, employees, description",4
+"Pro-Fab Machine of Hartselle Hartselle","https://profabmachine.com","hq_city, linkedin, employees, description",4
+"Buckner Trailers Springville","https://bucknertrailers.com","hq_city, linkedin, employees, description",4
+"JW Holdings Dadeville","https://jwholdings.com","hq_city, linkedin, employees, description",4
+"Jones Machine & Welding Oakman","https://jonesmachinewelding.com","hq_city, linkedin, employees, description",4
+"SCA Inc. Auburn Lee","https://essity.com","hq_city, linkedin, employees, description",4
+"J.M. Smucker Co. Decatur Morgan","https://jmsmucker.com","hq_city, linkedin, employees, description",4
+"Eli Lilly Huntsville Limestone","https://lilly.com","hq_city, linkedin, employees, description",4
+"AAA USA Mobile","https://aaa-usa.com","hq_city, linkedin, employees, description",4
+"Primo Mobile","https://primogrill.com","hq_city, linkedin, employees, description",4
+"Daikin America Decatur Morgan","https://daikin.com","hq_city, linkedin, employees, description",4
+"OCI Alabama LLC Decatur Morgan","https://oci-global.com","hq_city, linkedin, employees, description",4
+"Amazon Oxford Calhoun","https://amazon.com","hq_city, linkedin, employees, description",4
+"APM Terminals Mobile","https://apmterminals.com","hq_city, linkedin, employees, description",4
+"M&J Industries Decatur Morgan","https://mjind.com","hq_city, linkedin, employees, description",4
+"Qualico Webb Houston","https://qualico.us","hq_city, linkedin, employees, description",4
+"GE Aerospace Auburn Lee","https://geaerospace.com","hq_city, linkedin, employees, description",4
+"Kimberly-Clark Mobile","https://kimberly-clark.com","hq_city, linkedin, employees, description",4
+"Toyota Tsusho Huntsville Limestone","https://toyota-tsusho.com","hq_city, linkedin, employees, description",4
+"Core Scientific Auburn Lee","https://corescientific.com","hq_city, linkedin, employees, description",4
+"SmartWiz Birmingham Jefferson","https://smartwiz.com","hq_city, linkedin, employees, description",4
+"Dotier LLC (Meta) Montgomery","https://meta.com","hq_city, linkedin, employees, description",4
+"AVAIO Digital Partners","https://avaio.com","hq_city, linkedin, employees, description",4
+"SPP","https://spp.org","hq_city, linkedin, employees, description",4
+"R2S","https://r2s.com","hq_city, linkedin, employees, description",4
+"Project Ladybug (Hypersonics)","https://ursamajor.space","hq_city, linkedin, employees, description",4
+"D-Wave Quantum","https://d-wave.com","hq_city, linkedin, employees, description",4
+"Cronus Chemicals","https://cronuschemicals.com","hq_city, linkedin, employees, description",4
+"Caldwell Group","https://caldwellinc.com","hq_city, linkedin, employees, description",4
+"Steves & Sons","https://eveairmobility.com","hq_city, linkedin, employees, description",4
+"HF Rubber","https://hfrubber.com","hq_city, linkedin, employees, description",4
+"GM Fairfax","https://gm.com","hq_city, linkedin, employees, description",4
+"Robinson Inc","https://robinsoncompany.com","hq_city, linkedin, employees, description",4
+"Three Dog Brands","https://threedogbrands.com","hq_city, linkedin, employees, description",4
+"MD Manufacturing 4.0","https://mdmanufacturing.com","hq_city, linkedin, employees, description",4
+"SRC Technologies","https://srctec.com","hq_city, linkedin, employees, description",4
+"Bozeman Photonics","https://bozemanphotonics.com","hq_city, linkedin, employees, description",4
+"FIT Precast","https://fitprecast.com","hq_city, linkedin, employees, description",4
+"AWS","https://aws.amazon.com","hq_city, linkedin, employees, description",4
+"Honda/LG Battery","https://honda.com","hq_city, linkedin, employees, description",4
+"Nestlé Purina","https://purina.com","hq_city, linkedin, employees, description",4
+"Smucker's","https://jmsmucker.com","hq_city, linkedin, employees, description",4
+"New Horizons Baking","https://newhorizonsbaking.com","hq_city, linkedin, employees, description",4
+"Diversified Fall Protection","https://fallpd.com","hq_city, linkedin, employees, description",4
+"Gabe's","https://gabesdiscount.com","hq_city, linkedin, employees, description",4
+"Oculii","https://oculii.com","hq_city, linkedin, employees, description",4
+"Supply Technologies","https://supplytech.com","hq_city, linkedin, employees, description",4
+"Lubrizol","https://lubrizol.com","hq_city, linkedin, employees, description",4
+"Revere Plastics Systems","https://eveairmobility.com","hq_city, linkedin, employees, description",4
+"Joby Aviation (propeller blades)","https://jobyaviation.com","hq_city, linkedin, employees, description",4
+"(Data center development)","https://eveairmobility.com","hq_city, linkedin, employees, description",4
+"ATSG/AMES","https://atsginc.com","hq_city, linkedin, employees, description",4
+"Span-America Medical","https://spanamerica.com","hq_city, linkedin, employees, description",4
+"JGB Brothers","https://jgbbrothers.com","hq_city, linkedin, employees, description",4
+"Coastal Ready Mix","https://coastalreadymix.com","hq_city, linkedin, employees, description",4
+"Samsung","https://samsung.com","hq_city, linkedin, employees, description",4
+"MGM/VanTran Transformers","https://gm.com","hq_city, linkedin, employees, description",4
+"Yerico Manufacturing","https://yerico.com","hq_city, linkedin, employees, description",4
+"Furlani Foods, LLC","https://furlani.com","hq_city, linkedin, employees, description",4
+"Associated Milk Producers, Inc.","https://oci-global.com","hq_city, linkedin, employees, description",4
+"Meta House Inc.","https://meta.com","hq_city, linkedin, employees, description",4
+"U.S. Steel","https://ussteel.com","hq_city, linkedin, employees, description",4
+"Green Health Laboratories Foley","https://greenhealthlabs.com","hq_city, linkedin, employees, description",4
+"Kobay Enstal Oxford","https://ford.com","hq_city, linkedin, employees, description",4
+"Changer & Dresser Anniston","https://changerdresser.com","hq_city, linkedin, employees, description",4
+"Corrugated Supplies Corporation Cullman","https://corrubox.com","hq_city, linkedin, employees, description",4
+"Perdido River Farms/Poarch Band of Creek Indians Atmore","https://pfrfarms.com","hq_city, linkedin, employees, description",4
+"Oldcastle Lawn & Garden Abbeville","https://abb.com","hq_city, linkedin, employees, description",4
+"ArcelorMittal Calvert","https://arcelormittal.com","hq_city, linkedin, employees, description",4
+"Logan Machine Works Phenix City","https://loganmachineworks.com","hq_city, linkedin, employees, description",4
+"Nat 20 Scientific LLC Buhl","https://nat20scientific.com","hq_city, linkedin, employees, description",4
+"GE Aerospace Huntsville Limestone","https://geaerospace.com","hq_city, linkedin, employees, description",4
+"Virginia Transformer","https://vatransformer.com","hq_city, linkedin, employees, description",4
+"Louisiana-Pacific","https://lpcorp.com","hq_city, linkedin, employees, description",4
+"Johns Manville Phenix City","https://jm.com","hq_city, linkedin, employees, description",4
+"Ninth Avenue Foods","https://ninthavefoods.com","hq_city, linkedin, employees, description",4
+"QuaLex Manufacturing","https://qualexmfg.com","hq_city, linkedin, employees, description",4
+"Ironline Metals","https://meta.com","hq_city, linkedin, employees, description",4
+"Doncasters Oxford","https://ford.com","hq_city, linkedin, employees, description",4
+"Alfa Insurance Montgomery","https://alfainsurance.com","hq_city, linkedin, employees, description",4
+"CIRG Industries Montgomery","https://cirgindustries.com","hq_city, linkedin, employees, description",4
+"Lightsource BP Montgomery","https://lightsourcebp.com","hq_city, linkedin, employees, description",4
+"Yamaha Motor Corporation USA Bridgeport","https://yamahamotorsports.com","hq_city, linkedin, employees, description",4
+"Briggs & Stratton LLC","https://briggsandstratton.com","hq_city, linkedin, employees, description",4
+"James Composites","https://jamescomposites.com","hq_city, linkedin, employees, description",4
+"Joby Aviation (2nd facility)","https://jobyaviation.com","hq_city, linkedin, employees, description",4
+"Viking Attachments","https://vikingattachments.com","hq_city, linkedin, employees, description",4
+"BD (Becton Dickinson)","https://bd.com","hq_city, linkedin, employees, description",4
+"EPC-Columbia","https://epccompanies.com","hq_city, linkedin, employees, description",4
+"Microbial Discovery Group","https://microbialdg.com","hq_city, linkedin, employees, description",4
+"Vermilion Madison Development LLC","https://eveairmobility.com","hq_city, linkedin, employees, description",4
+"Enerpac Tool Group, Corp.","https://enerpac.com","hq_city, linkedin, employees, description",4
+"Hyundai Mobis","mobis.com","hq_city, hq_state, description, industry",4
+"LG Energy Solution Michigan","https://www.lgenergymi.com/","hq_city, hq_state, description, industry",4
+"ESMC (TSMC/Bosch/Infineon/NXP)","esmc.eu","hq_state, employees, description, industry",4
+"Galbot","galbot.com","hq_city, hq_state, description, industry",4
+"AutoStore","autostoresystem.com","hq_city, hq_state, description, industry",4
+"LG Energy Solution","lgensol.com","hq_city, hq_state, description, industry",4
+"HD Hyundai Robotics","hyundai-robotics.com","hq_city, hq_state, description, industry",4
+"Shin-Etsu Chemical","shinetsu.com","hq_state, linkedin, employees, description",4
+"Butting USA","https://butting.com","hq_city, hq_state, description",3
+"Delta Star","deltastar.com","hq_state, description, industry",3
+"TSA LLC Tuskegee Macon","https://tsallc.com","hq_city, employees, description",3
+"GEALAN","https://gealan.de","hq_city, hq_state, description",3
+"Autolus Therapeutics","https://autolus.com","hq_city, hq_state, description",3
+"MGC Pure Chemicals","https://mgc.co.jp","hq_city, hq_state, description",3
+"Shinkawa (Yamaha)","yamaha-robotics.com/shinkawa","hq_state, employees, description",3
+"Eugene Technology","eugenetech.co.kr","hq_state, employees, description",3
+"Powertech Technology (PTI)","pti.com.tw","hq_state, employees, description",3
+"King Yuan Electronics (KYEC)","kyec.com.tw","hq_state, employees, description",3
+"AAVantgarde Bio","https://aavantgarde.com","hq_city, hq_state, description",3
+"UMC","umc.com","hq_state, employees, description",3
+"SPTS Technologies (KLA)","spts.com","hq_state, employees, description",3
+"Hyosung HICO","hyosungheavyindustries.com","hq_city, hq_state, description",3
+"Inventec","https://inventec.com","hq_city, hq_state, description",3
+"Tokyo Ohka Kogyo (TOK)","tok.co.jp","hq_state, employees, description",3
+"ESMC (TSMC/Bosch/Infineon/NXP)","esmc.eu","hq_city, hq_state, description",3
+"MTU Aero Engines","https://mtu.de","hq_city, hq_state, description",3
+"Corintis","corintis.com","hq_city, hq_state, description",3
+"SK Siltron","sksiltron.com","hq_state, employees, description",3
+"Samsung Foundry","samsung.com/semiconductor","hq_state, employees, description",3
+"Array Labs","arraylabs.com","hq_city, hq_state, description",3
+"SSAB","https://ssab.com","hq_city, hq_state, description",3
+"Constellium","https://constellium.com","hq_city, hq_state, description",3
+"Eli Lilly","https://lilly.com","linkedin, employees, description",3
+"TSA LLC Tuskegee","https://tsallc.com","hq_city, employees, description",3
+"Foxconn","https://foxconn.com","hq_city, hq_state, description",3
+"Eternity Technologies","https://eternitytechnologies.com","hq_city, hq_state, description",3
+"DSV","https://dsv.com","hq_city, hq_state, description",3
+"KettenWulf","https://kettenwulf.com","hq_city, hq_state, description",3
+"Socomec","https://socomec.com","hq_city, hq_state, description",3
+"Amber Bio","https://amber.bio","hq_city, hq_state, description",3
+"Purespring Therapeutics","https://purespringtx.com","hq_city, hq_state, description",3
+"TMC Transformers","https://tmctransformers.com","hq_city, hq_state, description",3
+"Instil Bio","https://instilbio.com","hq_city, hq_state, description",3
+"Cellectis","https://cellectis.com","hq_city, hq_state, description",3
+"ElementUSA","https://elementusa.com","hq_city, employees, description",3
+"ChipMOS","chipmos.com","hq_state, employees, description",3
+"Toray Engineering","toray-eng.com","hq_state, employees, description",3
+"ArcelorMittal","https://arcelormittal.com","hq_city, hq_state, description",3
+"Rainbow Robotics","rainbow-robotics.com","hq_city, hq_state, description",3
+"Scott Technology","scottautomation.com","hq_city, hq_state, description",3
+"Reju","https://reju.com","hq_city, hq_state, description",3
+"Celltrion","https://celltrion.com","hq_city, hq_state, description",3
+"Gotion","https://www.gotion.com/","hq_state, description, industry",3
+"Diageo","https://diageo.com","hq_city, hq_state, description",3
+"Cummins Accelera","accelerazero.com","hq_city, hq_state, description",3
+"BYD Energy Storage","https://www.byd.com/","hq_state, description, industry",3
+"Roche","https://roche.com","hq_city, hq_state, description",3
+"Samsung SDI America","https://www.samsungsdi.com/","hq_state, description, industry",3
+"Wieland Group","https://wieland.com","hq_city, hq_state, description",3
+"HIWIN","hiwin.tw","hq_city, hq_state, description",3
+"TSMC","https://tsmc.com","hq_state, employees, description",3
+"Immatics","https://immatics.com","hq_city, hq_state, description",3
+"ITM Power","itm-power.com","hq_state, description, industry",3
+"Enel 3Sun","3sun.com","hq_state, description, industry",3
+"SEL (Schweitzer Engineering)","selinc.com","hq_state, description, industry",3
+"OSI (Open Systems International)","osii.com","hq_state, description, industry",3
+"Caterpillar Electric Power","cat.com","hq_state, description, industry",3
+"Special Metals","https://www.specialmetals.com/","hq_state, description, industry",3
+"Kawasaki Gas Turbines","kawasaki.com","hq_state, description, industry",3
+"Dynetics","https://www.leidos.com/","hq_state, description, industry",3
+"Honeywell Aerospace","https://aerospace.honeywell.com/","hq_state, description, industry",3
+"TE Connectivity","https://www.te.com/","hq_state, description, industry",3
+"BAE Systems","https://www.baesystems.com/","hq_state, description, industry",3
+"Raytheon","https://www.rtx.com/","hq_state, description, industry",3
+"Hanwha Qcells","https://www.hanwhaaerospace.com","hq_state, description, industry",3
+"ASM International","asm.com","hq_state, employees, description",3
+"Bad Boy Mowers","https://badboycountry.com","hq_city, description",2
+"Stinson Breads LLC Opelika","https://stinsonbreads.com","hq_city, description",2
+"Guyoungtech USA Inc.","https://guyoungtech.com","hq_city, description",2
+"OCI Alabama LLC","https://oci-global.com","hq_city, description",2
+"Preciball USA","https://preciball.com","hq_city, description",2
+"BioTouch","https://biotouch.com","hq_city, description",2
+"xAI","https://x.ai","hq_city, description",2
+"Whirlpool","https://whirlpool.com","hq_city, description",2
+"WEG Transformers USA","weg.us","description, industry",2
+"NanoAvionics","https://nanoavionics.com","hq_state, employees",2
+"Ardentec","ardentec.com","hq_state, description",2
+"Rehlko (Kohler Energy)","rehlko.com","description, industry",2
+"Ansaldo Energia","ansaldoenergia.com","description, industry",2
+"Microchip Technology","microchip.com","employees, description",2
+"Nanya Technology","nanya.com","hq_state, description",2
+"Honeybee Robotics","https://honeybeerobotics.com","employees, industry",2
+"Tesla Energy","https://www.tesla.com/megapack","hq_state, description",2
+"Kokusai Electric","kokusai-electric.com","hq_state, description",2
+"Substrate","substrate.com","hq_state, description",2
+"DNP (Dai Nippon Printing)","global.dnp","hq_state, description",2
+"Swinburne University of Technology (Space)","swinburne.edu.au","hq_state, description",2
+"ON Semiconductor","onsemi.com","employees, description",2
+"Siemens Energy","siemens-energy.com","hq_state, description",2
+"Howard Industries","howard-ind.com","description, industry",2
+"Rebellions","rebellions.ai","hq_state, description",2
+"Vertiv","vertiv.com","description, industry",2
+"Lucy Electric","lucyelectric.com","description, industry",2
+"Graham Corp","https://grahamcorp.com","description, industry",2
+"JinkoSolar","jinkosolar.com","hq_state, description",2
+"L3Harris","https://www.l3harris.com/","hq_state, description",2
+"ASML","asml.com","hq_state, description",2
+"Advantest","advantest.com","hq_state, description",2
+"American Resources / ReElement","https://www.americanresourcescorp.com/","hq_state, description",2
+"Vecna Robotics","vecnarobotics.com","description, industry",2
+"Texas Instruments","https://ti.com","employees, description",2
+"K2 Space","k2space.com","hq_state, description",2
+"Preformed Line Products","plp.com","hq_state, description",2
+"Haynes International","https://haynesintl.com/","description, industry",2
+"Hyosung Heavy Industries","hyosungheavyindustries.com","hq_state, description",2
+"Kronospan","https://kronospan.com","hq_city, description",2
+"PPC Insulators","ppcinsulators.com","hq_state, description",2
+"Tex Tech Industries","https://textechindustries.com/","description, industry",2
+"Derichebourg","https://derichebourg.com","hq_city, description",2
+"Trina Solar (T1 Energy)","trinasolar.com","hq_state, description",2
+"Maxeon Solar","maxeon.com","hq_state, description",2
+"Tosyali International Ltd.","https://tosyali.com.tr","hq_city, description",2
+"Rolls-Royce MTU","mtu-solutions.com","hq_state, description",2
+"Derichebourg Mobile","https://derichebourg.com","hq_city, description",2
+"Radiant Industries","radiantnuclear.com","hq_state, description",2
+"Bloom Energy","bloomenergy.com","description, industry",2
+"Lilium","lilium.com","description, industry",2
+"Ohmium","ohmium.com","hq_state, description",2
+"Supernal","supernal.aero","description, industry",2
+"Rohm Semiconductor","rohm.com","hq_state, description",2
+"Pratt & Whitney Power Systems","pwps.com","hq_state, description",2
+"GE Hitachi Nuclear Energy","gevernova.com/nuclear","hq_state, description",2
+"Teradyne Robotics","https://www.universal-robots.com/","hq_state, description",2
+"Soitec","soitec.com","hq_state, description",2
+"Yaskawa America","https://www.yaskawa.com/","hq_state, description",2
+"Shield AI","shield.ai","description, industry",2
+"Ford Energy","https://www.ford.com/","hq_state, description",2
+"Sungrow","https://www.sungrow.com/","employees, description",2
+"C-CAT","https://www.c-cat.net/","hq_state, description",2
+"General Atomics EMS","https://www.ga.com/","hq_state, description",2
+"Nel ASA","nelhydrogen.com","hq_state, description",2
+"MediaTek","mediatek.com","hq_state, description",2
+"Rolls-Royce SMR","rolls-royce-smr.com","hq_state, description",2
+"IQE","iqep.com","hq_state, description",2
+"Powin","https://powin.com/","description, industry",2
+"NextEra Energy Resources","https://www.nexteraenergyresources.com/","description, industry",2
+"Zhuque Aerospace (Landspace)","https://landspace.com","hq_state, employees",2
+"Tridelta Meidensha","tridelta-meidensha.de","hq_state, description",2
+"Encore Wire","encorewire.com","hq_state, description",2
+"Prysmian Group","prysmian.com","hq_state, description",2
+"Sila Nanotechnologies","silanano.com","description, industry",2
+"Landis+Gyr","landisgyr.com","hq_state, description",2
+"Mitsubishi Power","power.mhi.com","hq_state, description",2
+"Ascend Elements","ascendelements.com","description, industry",2
+"Convalt Energy","convalt.com","hq_state, description",2
+"Eve Air Mobility","https://eveairmobility.com","description, industry",2
+"Wisk Aero","wisk.aero","description, industry",2
+"Vertical Aerospace","vertical-aerospace.com","description, industry",2
+"Volocopter","volocopter.com","description, industry",2
+"Textron eAviation","txtav.com","description, industry",2
+"S&C Electric","sandc.com","hq_state, description",2
+"ABB Robotics","https://new.abb.com/","hq_state, description",2
+"Coherent Corp","coherent.com","description, industry",2
+"Modine Manufacturing","https://modine.com","description, industry",2
+"Soulbrain","soulbrain.co.kr","hq_state, description",2
+"Wärtsilä Energy","wartsila.com","hq_state, description",2
+"Perkins Engines","perkins.com","hq_state, description",2
+"Centrus Energy","centrusenergy.com","hq_state, description",2
+"Unimicron","unimicron.com","hq_state, description",2
+"Beta Technologies","beta.team","description, industry",2
+"BWX Technologies","bwxt.com","hq_state, description",2
+"Hitachi Energy","hitachienergy.com","hq_state, description",2
+"Intel","https://intel.com","employees, description",2
+"Ucore Rare Metals","https://ucore.com/","hq_state, description",2
+"Nauticus Robotics","nauticusrobotics.com","description, industry",2
+"Nuro","nuro.ai","description, industry",2
+"Blue Pony Energy","blueponyenergy.com","description, industry",2
+"Plug Power","plugpower.com","description, industry",2
+"FuriosaAI","furiosa.ai","hq_state, description",2
+"Southwire","southwire.com","description, industry",2
+"PharmaEssentia","pharmaessentia.com","description, industry",2
+"TerraPower","terrapower.com","description, industry",2
+"Verdagy","verdagy.com","description, industry",2
+"SolarEdge Technologies","solaredge.com","description, industry",2
+"Cabaletta Bio","cabalettabio.com","description, industry",2
+"Lyten","lyten.com","description, industry",2
+"Boom Supersonic","boomsupersonic.com","description, industry",2
+"Graybar Electric","graybar.com","description, industry",2
+"Nova Ltd","novami.com","hq_state, description",2
+"TMEIC","tmeic.com","description, industry",2
+"Melexis","melexis.com","hq_state, description",2
+"Dexory","dexory.com","description, industry",2
+"Fluence Energy","https://fluenceenergy.com/","description, industry",2
+"Hexcel Corporation","https://hexcel.com/","description, industry",2
+"Blue Star Power Systems","bluestarps.com","description, industry",2
+"Vulcan Elements","https://vulcanelements.com/","hq_state, description",2
+"Mujin","mujin-corp.com","description, industry",2
+"Locus Robotics","https://locusrobotics.com/","description, industry",2
+"Osaro","osaro.com","description, industry",2
+"Sabre Industries","sabreindustries.com","description, industry",2
+"Figure AI","https://www.figure.ai/","description, industry",2
+"Plus One Robotics","plusonerobotics.com","description, industry",2
+"Prolec GE","prolec.energy","description, industry",2
+"Koppers","koppers.com","description, industry",2
+"Energy Fuels","https://www.energyfuels.com/","hq_state, description",2
+"Exotec","exotec.com","description, industry",2
+"Geek+","geekplus.com","description, industry",2
+"A123 Systems","https://a123systems.com","description, industry",2
+"Seegrid","seegrid.com","description, industry",2
+"Solid Power","solidpowerbattery.com","description, industry",2
+"ESS Inc.","https://essinc.com/","description, industry",2
+"RightHand Robotics","righthandrobotics.com","description, industry",2
+"Modus Advanced","https://www.modusadvanced.com/","description, industry",2
+"Hera Technologies","https://www.heratechnologies.com/","description, industry",2
+"Thales","https://www.thalesgroup.com/","description, industry",2
+"Lockheed Martin","https://www.lockheedmartin.com/","description, industry",2
+"Concept Group LLC","https://conceptgroupllc.com/","description, industry",2
+"Gotion High-Tech","gotion.com","description, industry",2
+"Energy Vault","energyvault.com","description, industry",2
+"Polaris Sensor Technologies","https://www.polarissensor.com/","description, industry",2
+"Stratolaunch","https://www.stratolaunch.com/","description, industry",2
+"GE Aerospace","https://geaerospace.com","description, industry",2
+"Atomic-6","https://www.atomic-6.com/","description, industry",2
+"Balyo","balyo.com","description, industry",2
+"QuantumScape","quantumscape.com","description, industry",2
+"Enovix","enovix.com","description, industry",2
+"Amprius Technologies","amprius.com","description, industry",2
+"Kratos Defense","https://www.kratosdefense.com/","description, industry",2
+"Orbital Composites","https://www.orbitalcomposites.com/","description, industry",2
+"Mentis Sciences","https://www.mentissciences.com/","description, industry",2
+"General Dynamics","https://gm.com","description, industry",2
+"Berkshire Grey","https://www.berkshiregrey.com/","description, industry",2
+"Built Robotics","builtrobotics.com","description, industry",2
+"Iron Ox","ironox.com","description, industry",2
+"Castelion","https://www.castelion.com/","description, industry",2
+"Spirit AeroSystems","https://www.spiritaero.com/","description, industry",2
+"Kawasaki Robotics","kawasakirobotics.com","description, industry",2
+"BYD","byd.com","description, industry",2
+"HAMR Industries","https://www.hamrindustries.com/","description, industry",2
+"Microvast","microvast.com","description, industry",2
+"Northvolt","northvolt.com","description, industry",2
+"Oceaneering","https://www.oceaneering.com/","description, industry",2
+"Albany Engineered Composites","https://www.albint.com/","description, industry",2
+"Axiom Materials","https://axiommaterials.com/","description, industry",2
+"Heliene","heliene.com","description, industry",2
+"Hanmi Semiconductor","hanmisemi.com","hq_state, description",2
+"Vinci","getvinci.ai","hq_state, description",2
+"LONGi Green Energy","longi.com","description, industry",2
+"Silfab Solar","silfabsolar.com","description, industry",2
+"Mission Solar","missionsolar.com","description, industry",2
+"JA Solar","jasolar.com","description, industry",2
+"Boviet Solar","bovietsolar.com","description, industry",2
+"Array Technologies","arraytechinc.com","description, industry",2
+"Fratco","https://fratco.com","description",1
+"Pilgrims","https://pilgrims.com","description",1
+"Envision Cold Storage","https://envisioncold.com","description",1
+"Core Scientific","https://corescientific.com","description",1
+"StrideBio","https://stridebio.com","description",1
+"Tyson Garden City","https://tysonfoods.com","description",1
+"Taysha Gene Therapies","https://tayshagtx.com","description",1
+"Andelyn Biosciences","https://andelynbio.com","description",1
+"Advance Displays Inc. Scottsboro","https://advancedisplays.com","description",1
+"Toyota Tsusho","https://toyota.com","description",1
+"Hybird Space Systems","https://hybirdspace.com","description",1
+"Plasma Processes","https://plasmapros.com","description",1
+"Primo","https://primogrill.com","description",1
+"Hartzell Engine Technologies","https://hartzell.aero","description",1
+"Wolverine Industries","https://wolverineindustries.com","description",1
+"Lear Corporation","https://lear.com","description",1
+"Kite Pharma (Gilead)","https://kitepharma.com","description",1
+"Jasper Lumber Company LLC Jasper","https://jasperlumber.com","description",1
+"Cooper Marine Inc. Calvert","https://coopermarine.com","description",1
+"Gifthealth","https://gifthealth.com","description",1
+"AbbVie","https://abbvie.com","description",1
+"Packaging Specialties","https://packagingspecialties.com","description",1
+"Otto Aerospace","https://ottoaviation.com","description",1
+"Underwood Ammo","https://underwoodammo.com","description",1
+"Salesforce","https://salesforce.com","description",1
+"Archer Aviation","https://archer.com","description",1
+"John Deere","https://deere.com","description",1
+"Panasonic","na.panasonic.com/us/energy","description",1
+"SLB","https://slb.com","description",1
+"Saronic Technologies","https://saronic.com","description",1
+"Prysmian/Encore Wire","prysmian.com","description",1
+"Ampirical","https://ampirical.com","description",1
+"Sioux Honey","https://siouxhoney.com","description",1
+"Morrison Weighing Systems","https://morrisonweighing.com","description",1
+"MP Materials","https://mpmaterials.com/","description",1
+"AstraZeneca","https://astrazeneca.com","description",1
+"DuPont/DDP","https://dupont.com","description",1
+"Canfor","https://canfor.com","description",1
+"Hut 8","https://hut8.com","description",1
+"BWC Terminals","https://bwcterminals.com","description",1
+"Environmental Air Systems","https://environmentalairsystems.com","description",1
+"Switch","https://switch.com","description",1
+"Sheetz","https://sheetz.com","description",1
+"BJ's Wholesale Club","https://bjs.com","description",1
+"MRI Software","https://mrisoftware.com","description",1
+"SencorpWhite","https://sencorpwhite.com","description",1
+"Vultr","https://vultr.com","description",1
+"SkyWater Technology","skywatertechnology.com","description",1
+"Kulicke & Soffa","kns.com","description",1
+"STMicroelectronics","st.com","description",1
+"Amkor Technology","amkor.com","description",1
+"Encore Technologies","https://encoretg.com","description",1
+"DartPoints","https://dartpoints.com","description",1
+"Google","https://google.com","description",1
+"Quonset Business Park","https://quonset.com","description",1
+"Coastal Precast Systems","https://coastalprecast.com","description",1
+"U.S. Bridge","https://usbridge.com","description",1
+"Hydrite Chemical","https://hydrite.com","description",1
+"Woodward","https://woodward.com","description",1
+"Radiant","radiantnuclear.com","description",1
+"Embraer","https://embraer.com","description",1
+"Cascades Holding US Inc.","https://cascades.com","description",1
+"Ohio Gratings","https://ohiogratings.com","description",1
+"DB HiTek","dbhitek.com","description",1
+"Niagara Power Transformer","niagarapowertransformer.com","description",1
+"Teradyne","teradyne.com","description",1
+"d-Matrix","d-matrix.ai","description",1
+"bluebird bio","https://bluebirdbio.com","description",1
+"U.S. Space Command","https://spacecom.mil","description",1
+"Titomic USA Inc.","https://titomic.com","description",1
+"Vaughn Industries","https://vaughnindustries.com","description",1
+"PRC-Saltillo","https://prc-saltillo.com","description",1
+"Nelson Brothers LLC Parrish Walker","https://nelsonbros.com","description",1
+"InnovAsian","https://innovasiancuisine.com","description",1
+"Pacific Life Insurance","https://pacificlife.com","description",1
+"Resilience","https://resilience.com","description",1
+"Dutch Bros","https://dutchbros.com","description",1
+"Merck","https://merck.com","description",1
+"Scotiabank","https://scotiabank.com","description",1
+"Veeco Instruments","veeco.com","description",1
+"MacLean Power Systems","macleanpower.com","description",1
+"First Quality","https://firstquality.com","description",1
+"Eurofins Lancaster Labs","https://eurofins.com","description",1
+"Isuzu North America","https://isuzucv.com","description",1
+"Iovance Biotherapeutics","https://iovance.com","description",1
+"Shinko Electric Industries","shinko.co.jp","description",1
+"Attabotics","attabotics.com","description",1
+"Safe Industries","https://safeindustries.com","description",1
+"Atara Biotherapeutics","https://atarabio.com","description",1
+"Edgar's Old Style Bakery Pelham","https://edgarsbakery.com","description",1
+"Prystup Packaging Products Livingston","https://prystup.com","description",1
+"Zero 2 Infinity","https://zero2infinity.space","industry",1
+"Rolls-Royce","https://rolls-royce.com","description",1
+"Vishay Intertechnology","vishay.com","description",1
+"Millennium Space Systems","https://millennium-space.com","industry",1
+"Tokyo Electron","tok.co.jp","description",1
+"Toppan / Tekscend Photomask","holdings.toppan.com","description",1
+"Komatsu","https://komatsu.com","description",1
+"Gracell Biotechnologies (AstraZeneca)","https://gracellbio.com","description",1
+"Arcellx","https://arcellx.com","description",1
+"Camtek","camtek.com","description",1
+"Vermeer Corp","https://vermeer.com","description",1
+"KADIA USA","https://kadia.de","description",1
+"EVE Energy","evebattery.com","description",1
+"CITEL America","https://citel.us","description",1
+"NVIDIA","nvidia.com","description",1
+"Powell Industries","powellind.com","description",1
+"Entegris","cmcmaterials.com","description",1
+"Marvell Technology","marvell.com","description",1
+"X-energy","x-energy.com","description",1
+"SK Hynix","skhynix.com","description",1
+"Brooks Automation","brooks.com","description",1
+"Tesla","https://www.tesla.com/megapack","description",1
+"Mitsubishi Electric","https://mitsubishielectric.com","description",1
+"Fenner Precision Polymers","https://fennerprecision.com","description",1
+"LEENO Industrial","leeno.com","description",1
+"Linde","linde.com","description",1
+"WiJo Pouches NA","https://wijopouches.com","description",1
+"SCREEN Semiconductor Solutions","screen.co.jp","description",1
+"SUMCO","sumco.com","description",1
+"Wooptix","wooptix.com","description",1
+"MemryX","memryx.com","description",1
+"L3Harris Technologies","https://www.l3harris.com/","description",1
+"Polar Semiconductor","polarsemi.com","description",1
+"LS Cable & System","lscns.co.kr","description",1
+"Infineon Technologies","infineon.com","description",1
+"Besi (BE Semiconductor)","besi.com","description",1
+"ASMPT","asm.com","description",1
+"BWXT Nuclear Fuel Services","https://bwxt.com","description",1
+"Survalent Technology","survalent.com","description",1
+"DISCO Corporation","disco.co.jp","description",1
+"Sarepta Therapeutics","https://sarepta.com","description",1
+"Analog Devices","analog.com","description",1
+"Tower Semiconductor","towersemi.com","description",1
+"Paragraf","paragraf.com","description",1
+"Clas-SiC Wafer Fab","clas-sic.com","description",1
+"Aixtron","aixtron.com","description",1
+"American Resources","https://honda.com","description",1
+"Lattice Semiconductor","latticesemi.com","description",1
+"StressCrete Group","scgrp.com","description",1
+"EnerVenue","https://enervenue.com/","description",1
+"Stem Inc","stem.com","description",1
+"NeoVolta","https://neovolta.com/","description",1
+"Rapidus","rapidus.inc","description",1
+"Wonik IPS","ips.co.kr","description",1
+"Novartis","https://novartis.com","description",1
+"Mitsubishi Electric Power Products","pwps.com","description",1
+"Generac Power Systems","generac.com","description",1
+"Solar Turbines","solarturbines.com","description",1
+"Hai Robotics","hairobotics.com","description",1
+"GomSpace","https://gomspace.com","hq_state",1
+"RobCo","https://www.robco.de/","description",1
+"Cohu","cohu.com","description",1
+"Space Forge","https://spaceforge.com","hq_state",1
+"Ultramet","https://ultramet.com/","description",1
+"USA Rare Earth","https://www.usare.com/","description",1
+"FormFactor","formfactor.com","description",1
+"Salcomp","https://salcomp.com","description",1
+"Ace Aeronautics","https://aceaero.com","description",1
+"CPT America","https://cptgroup.com","description",1
+"Georgia Pacific/Alabama River Cellulose","https://gp.com","description",1
+"Aerospacelab","https://aerospacelab.be","hq_state",1
+"Satrec Initiative","https://satreci.com","hq_state",1
+"Lynas Rare Earths","https://lynasrareearths.com/","description",1
+"Corning Optical Communications","https://corning.com","description",1
+"Canopy Aerospace","https://www.canopyaerospace.com/","description",1
+"REEtec","https://reetec.no/","description",1
+"Yaskawa America, Inc","https://www.yaskawa.com/","description",1
+"Evonik","https://evonik.com","description",1
+"Olsun Electrics","olsun.com","description",1
+"Eos Energy","https://www.eose.com/","description",1
+"Orbital Assembly","https://orbitalassembly.com","employees",1
+"Park Aerospace","https://parkaerospace.com/","description",1
+"Honeywell Intelligrated","https://honeywell.com","description",1
+"ABB","https://abb.com","description",1
+"VAT Group","vatgroup.com","description",1
+"Sims Bark Florala","https://simsbark.com","description",1
+"Omaha Track Attalla","https://omahatrack.com","description",1
+"Kimberly-Clark","https://kimberly-clark.com","description",1
+"Schneider Electric","se.com","description",1
+"Jasper Lumber","https://jasperlumber.com","description",1
+"Virginia Transformer Corp","https://vatransformer.com","description",1
+"Owens Corning","https://owenscorning.com","description",1
+"Altex Packaging Inc. Anniston","https://altexpackaging.com","description",1
+"Tree Brand Packaging Ranburne","https://treebrand.com","description",1
+"Maddox Industrial Transformer","maddox.com","description",1
+"Rusken Packaging Cullman","https://rusken.com","description",1
+"Tavrida Electric","tavrida.com","description",1
+"SMD Steel Rainbow City","https://smdsteel.com","description",1
+"Ormazabal","ormazabal.com","description",1
+"Hubbell","hubbell.com","description",1
+"Miele Manufacturing Inc. Opelika","https://miele.com","description",1
+"Valmont Industries","valmontutility.com","description",1
+"NGK-Locke","ngk-locke.com","description",1
+"Siren Biotechnology","https://sirenbiotechnology.com","description",1
+"CPT America LLC Tuskegee","https://cptgroup.com","description",1
+"Parsons Corporation","https://parsons.com","description",1
+"Victor Insulators","victorinsulators.com","description",1
+"International Paper","https://internationalpaper.com","description",1
+"Cargill Guntersville","https://cargill.com","description",1
+"PrismFlex Guntersville","https://prismflex.com","description",1
+"Itron","itron.com","description",1
+"SES Inc.","https://ses.com","description",1
+"Prism Systems","https://prismsystems.com","description",1
+"Nexans","nexans.com","description",1
+"The Distribution Point LLC Moody","https://lubrizol.com","description",1
+"Applied Optoelectronics","https://appliedionsystems.com","description",1
+"UTAC","utacgroup.com","description",1
+"Canadian Solar","canadiansolar.com","description",1
+"Nikola","nikolamotor.com","description",1
+"Cima Solutions LLC Phenix City","https://cimasolutions.com","description",1
+"Lightsource BP","https://lightsourcebp.com","description",1
+"NovaTech Automation","novatechautomation.com","description",1
+"Specification Rubber Pelham","https://specrubber.com","description",1
+"Mercedes-Benz USA LLC Vance","https://mercedes-benz.com","description",1
+"John Cockerill","johncockerill.com","description",1
+"Southern Ionics Incorporated","https://southernionics.com","description",1
+"Tate Inc","https://tateinc.com","description",1
+"Valicor Environmental Services Adamsville","https://valicor.com","description",1
+"The Shaw Group","https://jmsmucker.com","description",1
+"Arteche","arteche.com","description",1
+"Daikin America","https://daikin.com","description",1
+"Titomic USA Inc. Huntsville Limestone","https://titomic.com","description",1
+"Microsoft","https://microsoft.com","description",1
+"Micron","micron.com","description",1
+"APM Terminals","https://apmterminals.com","description",1
+"SES Inc. Huntsville Madison","https://ses.com","description",1
+"SEA Wire & Cable Madison","https://sea-wire.com","description",1
+"Brewer Science","https://brewerscience.com","description",1
+"Kestra Holdings","https://kestraholdings.com","description",1
+"Quantum Computing Inc","https://quantumcomputinginc.com","description",1
+"Cognite","https://cognite.com","description",1
+"Red Cedar Steel","https://redcedarsteel.com","description",1
+"Hyundai Steel","https://hyundai.com","description",1
+"GKN Aerospace","https://gknaerospace.com","description",1
+"Williams International","https://williams-int.com","description",1
+"Briggs & Stratton","https://briggsandstratton.com","description",1
+"Rivian","https://rivian.com","description",1
+"HydrogenPro","hydrogenpro.com","description",1
+"stow Group","https://stow-group.com","description",1
+"Anovion Technologies","https://anoviontech.com","description",1
+"Jack Links","https://jacklinks.com","description",1
+"Savencia Cheese USA","https://savencia.com","description",1
+"Baker Hughes Turbines","bakerhughes.com","description",1
+"Tangent","https://tangent.com","description",1
+"AssetCool","assetcool.com","description",1
+"Agility Robotics","https://www.agilityrobotics.com/","description",1
+"Holtec International","holtecinternational.com","description",1
+"Amazon","https://amazon.com","description",1
+"Boston Dynamics","https://bostondynamics.com/","description",1
+"The DeLong Company, Inc.","https://caldwellinc.com","description",1
+"Machina Labs","https://machinalabs.ai/","description",1
+"Photronics","photronics.com","description",1
+"Siltronic","siltronic.com","description",1
+"Kimball Electronics","https://kimballelectronics.com","description",1
+"Flock Safety","https://flocksafety.com","description",1
+"Kraft Heinz","https://kraftheinzcompany.com","description",1
+"Caterpillar","https://caterpillar.com","description",1
+"Walmart","https://walmart.com","description",1
+"AMG Vanadium","https://amg-v.com","description",1
+"PureCycle Technologies","https://purecycle.com","description",1
+"Gecko Robotics","geckorobotics.com","description",1
+"Path Robotics","path-robotics.com","description",1
+"Electro Freeze (H.C. Duke)","https://electrofreeze.com","description",1
+"TPI Composites","https://tpicomposites.com","description",1
+"LMT Defense","https://lmtdefense.com","description",1
+"FANUC America","fanuc.com","description",1
+"Newcleo","newcleo.com","description",1
+"ASE Technology","aseglobal.com","description",1
+"Applied Ion Systems","https://appliedionsystems.com","employees",1
+"Critical Materials Recycling","https://criticalmaterialsrecycling.com","description",1
+"Joby Aviation","https://jobyaviation.com","industry",1
+"Dexter Laundry","https://dexter.com","description",1
+"Tate Inc./Kingspan","https://tateinc.com","description",1
+"Symbotic","https://www.symbotic.com/","description",1
+"KUKA","https://www.kuka.com/","description",1
+"Rockwell Automation","https://www.rockwellautomation.com/","description",1
+"Nextracker","nextracker.com","description",1
+"Canvas","canvas.build","description",1
+"Serve Robotics","https://www.serverobotics.com/","description",1
+"Rocket Pharmaceuticals","https://rocketpharma.com","description",1
+"Ambi Robotics","ambirobotics.com","description",1
+"Covariant","covariant.ai","description",1
+"Plastipak Packaging","https://plastipak.com","description",1
+"Toggle","togglerobotics.com","description",1
+"TransMedics","https://transmedics.com","description",1
+"Samsung Electronics","https://samsung.com","description",1
+"Verdant Robotics","verdantrobotics.com","description",1
+"Qualcomm","qualcomm.com","description",1
+"ARM Holdings","arm.com","description",1
+"Tenaya Therapeutics","https://tenayatherapeutics.com","description",1
+"Patton/PTI","https://pattonelectronics.com","description",1
+"Volkswagen","https://volkswagen.com","description",1
+"Doosan Robotics","doosanrobotics.com","description",1
+"Utilidata","https://utilidata.com","description",1
+"MOTIV Bowling","https://motivbowling.com","description",1
+"Forgent Power Solutions","https://forgentpower.com","description",1
+"Sofidel","https://sofidel.com","description",1
+"Delta Electronics","deltaww.com","description",1
+"Encoded Therapeutics","https://encoded.com","description",1
+"Oerlikon","https://oerlikon.com","description",1
+"Delkor","https://delkorsystems.com","description",1
+"Entergy Mississippi","https://entergy.com","description",1
+"Endurosat","https://endurosat.com","hq_state",1
+"CATL","https://www.catl.com/","description",1
+"Ilika","ilika.com","description",1
+"Moderna","https://modernatx.com","description",1
+"Krystal Biotech","https://krystalbio.com","description",1
+"Zenobe","zenobe.com","description",1
+"Hitchiner","https://hitchiner.com","description",1
+"JetZero","https://jetzero.aero","description",1
+"Mitra Chem","mitrachem.com","description",1
+"Scout Motors","https://scoutmotors.com","description",1
+"Aspida Financial","https://aspidafinancial.com","description",1
+"Hermeus","https://www.hermeus.com/","description",1
+"Venus Aerospace","https://www.venusaero.com/","description",1
+"Battelle Memorial Institute","https://www.battelle.org/","description",1
+"BorgWarner","https://borgwarner.com","description",1
+"Apollo Fusion (Astra)","https://apollo-fusion.com","employees",1
+"Louis Dreyfus Company","https://ldc.com","description",1
+"PDF Solutions","pdf.com","description",1
+"Broadcom","broadcom.com","description",1
+"Great Day Improvements","https://greatdayimprovements.com","description",1
+"New Horizon Cuisine","https://newhorizonsbaking.com","description",1
+"Medpace","https://medpace.com","description",1
+"Draper Laboratory","https://www.draper.com/","description",1
+"Firehawk Aerospace","https://firehawkaerospace.com/","description",1
+"Crocs","https://crocs.com","description",1
+"EGLO USA","https://eglo.com","description",1
+"Riverain Technologies","https://riveraintech.com","description",1
+"Poly6 Technologies","https://poly6.com","description",1
+"Salvagnini America","https://salvagninigroup.com","description",1
+"Hims & Hers","https://forhims.com","description",1
+"RUPES USA","https://rupes.com","description",1
+"ACP Composites","https://acpcomposites.com/","description",1
+"Upstart","https://upstart.com","description",1
+"Ohio Lumex","https://ohiolumex.com","description",1
+"Imasen Bucyrus Technology","https://imasen.co.jp","description",1
+"Meyer Burger","meyerburger.com","description",1
+"LayerZero Power Systems","https://layerzero.com","description",1
+"REC Group","recgroup.com","description",1
+"IronRidge","ironridge.com","description",1
+"Westinghouse Electric","westinghousenuclear.com","description",1
+"Vallourec","https://vallourec.com","description",1
+"Axium Packaging","https://axiumpackaging.com","description",1
+"Prism Systems Mobile","https://prismsystems.com","description",1
+"Ultra Safe Nuclear","usnc.com","description",1
+"Abeona Therapeutics","https://abeonatherapeutics.com","description",1
+"Neurogene","https://neurogene.com","description",1
+"Solid Biosciences","https://solidbio.com","description",1
+"Ascent Aviation Services","https://ascentmro.com","description",1
+"Capsida Biotherapeutics","https://capsida.com","description",1
+"Epic Piping","https://epicpiping.com","description",1
+"SynQor","https://synqor.com","description",1
+"FreeFlyer (AI Solutions)","https://ai-solutions.com","employees",1
+"Syngene International","https://syngeneintl.com","description",1
+"Missouri Technology Corp","https://missouritechnology.com","description",1
+"Tune Therapeutics","https://tunetx.com","description",1
+"AskBio (Bayer)","https://askbio.com","description",1
+"Forge Biologics","https://forgebiologics.com","description",1
+"NSG Group/Pilkington","https://nsg.com","description",1
+"Apertura Gene Therapy","https://aperturagtx.com","description",1
+"Chatsworth Products","https://chatsworth.com","description",1
+"Westrafo America","https://westrafo.com","description",1
+"Viralgen","https://viralgen.com","description",1
+"Caribou Biosciences","https://cariboubio.com","description",1
+"Aerospace Lubricants","https://aerospacelubricants.com","description",1
+"Citigroup Technology","https://citigroup.com","description",1
+"LEWCO/LogistiQ","https://lewcoinc.com","description",1
+"Poseida Therapeutics (Roche)","https://poseida.com","description",1
+"Johnson & Johnson","https://jm.com","description",1
+"Peak Energy","https://www.peakenergy.com/","description",1
+"Meta","https://meta.com","description",1
+"Eaton","eaton.com","description",1
+"KoMiCo","https://komico.com","description",1
+"RESRG Automotive Cullman","https://resrgautomotive.com","description",1
+"Synthetaic","https://synthetaic.com","employees",1
+"Arcosa","arcosa.com","description",1
+"Ford Motor Company","https://ford.com","description",1
+"Sediver","sediver.com","description",1
+"WESCO International","wesco.com","description",1
+"Wellborn Cabinet","https://wellborn.com","description",1
+"Trench Group","trench-group.com","description",1
+"ISISPACE","https://isispace.nl","hq_state",1
+"Ace Aeronautics LLC Guntersville","https://aceaero.com","description",1
+"Microchip Technology Inc.","https://microchip.com","description",1
+"Alfa Insurance","https://alfainsurance.com","description",1
+"ERMCO","ermco-eci.com","description",1
+"INNIO Group","innio.com","description",1
+"Formic","formic.co","description",1
+"Hammond Power Solutions","hammondpowersolutions.com","description",1
+"Cummins Power Generation","cummins.com","description",1
+"Apptronik","https://apptronik.com","description",1
+"LAPP Insulators","lappinsulators.com","description",1
+"Advanced Navigation","https://www.advancednavigation.com/","description",1
+"Trystar","trystar.com","description",1
+"Mayo Clinic","https://mayoclinic.org","description",1
+"Crown Equipment","https://crown.com","description",1
+"Stella-Jones","stella-jones.com","description",1
+"GreyOrange","greyorange.com","description",1
+"Samsung SDI","samsungsdi.com","description",1
+"HIMOINSA","himoinsa.com","description",1
+"Neura Robotics","https://neura-robotics.com/","description",1
+"Boston Materials","https://bostonmaterials.co/","description",1
+"Sanctuary AI","sanctuary.ai","description",1
+"Carbon Robotics","carbonrobotics.com","description",1
+"Bridor","https://bridor.com","description",1
+"Pennsylvania Transformer Technology","https://patransformer.com","description",1
+"Verkor","verkor.com","description",1
+"Toray Composite Materials","https://www.toraycma.com/","description",1
+"Centrus/Fluor","https://centrusenergy.com","description",1
+"Cambium","https://cambium-usa.com/","description",1
+"Thyssenkrupp Nucera","thyssenkrupp-nucera.com","description",1
+"FuelCell Energy","fuelcellenergy.com","description",1
+"The Aerospace Corporation","https://jmsmucker.com","description",1
+"HyperSciences","https://hypersciences.com/","description",1
+"NuScale Power","nuscalepower.com","description",1
+"GameChange Solar","gamechangesolar.com","description",1
+"Unirac","unirac.com","description",1
+"Pharmavite","https://pharmavite.com","description",1
+"Oklo","oklo.com","description",1
+"Last Energy","lastenergy.com","description",1
+"Advanced Composites Inc","https://www.advancedcomposites.com/","description",1
+"Stryten Energy","https://www.stryten.com/","description",1
+"Wolfspeed","wolfspeed.com","description",1
+"Ibiden","ibiden.co.jp","description",1
+"SPX Transformer Solutions","spxtransformersolutions.com","description",1
+"Electric Hydrogen","eh2.com","description",1
+"Noveon Magnetics","https://noveon.co/","description",1
+"Enphase Energy","https://enphase.com/","description",1
+"X-Bow Systems","https://www.xbowsystems.com/","description",1
+"Suniva","suniva.com","description",1
+"Ajinomoto","https://ajinusa.com","description",1
+"Eli Lilly and Company","https://lilly.com","description",1
+"Replimune","https://replimune.com","description",1
+"Kairos Power","kairospower.com","description",1
+"Redwood Materials","https://redwoodmaterials.com","industry",1
+"Applied Materials","appliedmaterials.com","description",1
+"AGC Inc","agc.com","description",1
+"Genentech","https://sparktx.com","description",1
+"Hypersonix Launch Systems","https://www.hypersonix.com","description",1
+"Ballard Power","ballard.com","description",1
+"Boeing","https://www.boeing.com/","description",1
+"Axcelis Technologies","axcelis.com","description",1
+"Coherent (II-VI)","https://coherent.com","description",1
+"GlobalFoundries","https://gf.com","description",1
+"Enel North America","enelnorthamerica.com","description",1
+"First Solar","firstsolar.com","description",1
+"GE Vernova","gevernova.com","description",1
+"Sangamo Therapeutics","https://sangamo.com","description",1
+"Commonwealth Fusion Systems","https://cfs.energy","industry",1
+"Echodyne","https://echodyne.com","description",1
+"Apple","https://apple.com","description",1
+"Hadrian","https://hadrian.co","description",1
+"Onto Innovation","ontoinnovation.com","description",1
+"Mkango Resources","https://mkango.ca/","description",1
+"Lam Research","lamresearch.com","description",1
+"Surrey Satellite Technology Ltd","https://sstl.co.uk","industry",1
+"Monolithic Power Systems","monolithicpower.com","description",1
+"Kythera Space Solutions","https://kythera.space","industry",1
+"Hitachi High-Tech","hitachi-hightech.com","description",1
+"Diodes Incorporated","diodes.com","description",1
+"ICEYE","https://iceye.com","hq_state",1
+"Niron Magnetics","https://www.nironmagnetics.com/","description",1
+"Beyond Gravity","https://beyondgravity.com","hq_state",1
+"ClearSpace","https://clearspace.today","hq_state",1
+"Lexeo Therapeutics","https://lexeotx.com","description",1
+"Cyclic Materials","https://cyclicmaterials.earth/","description",1
+"KLA","spts.com","description",1
+"Voyager Space","https://voyagerspace.com","industry",1
+"Kinsus Interconnect","kinsus.com.tw","description",1
+"Plasma-Therm","plasmatherm.com","description",1
+"SUSS MicroTec","suss.com","description",1
+"Atlant 3D","atlant3d.com","description",1
+"X-FAB","xfab.com","description",1
+"Passage Bio","https://passagebio.com","description",1
+"Renesas Electronics","renesas.com","description",1
+"Hoya","hoya.com","description",1
+"ams-OSRAM","ams-osram.com","description",1
+"Satellogic","https://satellogic.com","industry",1
+"United Launch Alliance","https://ussteel.com","industry",1
+"Capella Space","https://capellaspace.com","industry",1
+"ThinkOrbital","https://thinkorbital.com","industry",1
+"SpaceX","https://spacex.com","industry",1
+"Momentus","https://momentus.space","industry",1
+"KSAT","https://ksat.no","industry",1
+"Galactic Energy","https://galactic-energy.cn","industry",1
+"Lasertec","lasertec.co.jp","description",1
+"Cirrus Logic","cirrus.com","description",1
+"Sierra Space","https://sierraspace.com","industry",1
+"SpinLaunch","https://spinlaunch.com","industry",1
+"OroraTech","https://ororatech.com","industry",1
+"Advanced Space","https://advancedspace.com","industry",1
+"Heraeus Electronics","heraeus-electronics.com","description",1
+"REGENXBIO","https://regenxbio.com","description",1
+"4D Molecular Therapeutics","https://4dmoleculartherapeutics.com","description",1
+"JSR Corporation","jsr.co.jp","description",1
+"Jaguar Gene Therapy","https://jaguargenetherapy.com","description",1
+"Legend Biotech","https://legendbiotech.com","description",1
+"Nordson Electronics","nordson.com","description",1
+"AMD","amd.com","description",1
+"Allogene Therapeutics","https://allogene.com","description",1
+"Fate Therapeutics","https://fatetherapeutics.com","description",1
+"Affinia Therapeutics","https://affiniatx.com","description",1
+"Stoke Therapeutics","https://stoketherapeutics.com","description",1
+"Spirovant Sciences","https://spirovant.com","description",1
+"EnCharge AI","enchargeai.com","description",1
+"Anduril Industries","https://anduril.com","industry",1
+"Air Products","https://atsginc.com","description",1
+"Capricor Therapeutics","https://capricor.com","description",1
+"Generation Bio","https://generationbio.com","description",1
