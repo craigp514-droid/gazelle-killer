@@ -73,10 +73,10 @@ export function SignalCard({ signal, industry, segment }: SignalCardProps) {
 
   return (
     <Link href={`/companies/${company.slug}`}>
-      <Card className={`h-full transition-all hover:shadow-lg hover:-translate-y-0.5 cursor-pointer ${
+      <Card className={`h-full overflow-hidden transition-all hover:shadow-lg hover:-translate-y-0.5 cursor-pointer ${
         isSiteSearch ? 'ring-2 ring-red-400 bg-red-50/30' : ''
       }`}>
-        <CardContent className="p-4">
+        <CardContent className="p-4 overflow-hidden">
           {/* Header: Logo + Tags */}
           <div className="flex items-start gap-3 mb-3">
             <CompanyLogo 
