@@ -40,15 +40,21 @@ const highLevelTags: Record<string, { label: string; color: string }> = {
 
 const signalTypeLabels: Record<string, string> = {
   site_search: '🔥 Site Search',
+  SITE_SEARCH: '🔥 Site Search',
   expansion_announcement: 'Expansion',
+  INVESTMENT_PLAN_ANNOUNCED: 'Expansion',
   new_facility: 'New Facility',
   funding_round: 'Funding',
+  FUNDING_LADDER: 'Funding',
   contract_award: 'Contract',
+  CONTRACT_WIN: 'Contract',
   hiring_surge: 'Hiring',
   partnership: 'Partnership',
   acquisition: 'Acquisition',
   earnings_signal: 'Earnings Signal',
   facility_opening: 'Facility Opening',
+  regulatory_approval: 'Regulatory',
+  REGULATORY_MILESTONE: 'Regulatory',
 }
 
 export function SignalCard({ signal, industry, segment }: SignalCardProps) {
@@ -78,13 +84,13 @@ export function SignalCard({ signal, industry, segment }: SignalCardProps) {
               name={company.name} 
               size="md"
             />
-            <div className="flex-1 min-w-0">
+            <div className="flex-1 min-w-0 overflow-hidden">
               <div className="flex flex-wrap gap-1.5 mb-1">
-                <Badge variant="outline" className={`text-xs ${tag.color}`}>
+                <Badge variant="outline" className={`text-xs whitespace-nowrap ${tag.color}`}>
                   {tag.label}
                 </Badge>
                 {segment && (
-                  <Badge variant="outline" className="text-xs bg-slate-50">
+                  <Badge variant="outline" className="text-xs bg-slate-50 max-w-[140px] truncate">
                     {segment}
                   </Badge>
                 )}
@@ -106,8 +112,8 @@ export function SignalCard({ signal, industry, segment }: SignalCardProps) {
                 GOLD LEAD
               </Badge>
             ) : (
-              <Badge variant="outline" className="text-xs">
-                {signalTypeLabels[signal.signal_type] || signal.signal_type}
+              <Badge variant="outline" className="text-xs max-w-full truncate">
+                {signalTypeLabels[signal.signal_type] || signal.signal_type.replace(/_/g, ' ').toLowerCase().replace(/\b\w/g, c => c.toUpperCase())}
               </Badge>
             )}
           </div>
