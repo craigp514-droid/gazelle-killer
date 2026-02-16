@@ -73,10 +73,10 @@ export function SignalCard({ signal, industry, segment }: SignalCardProps) {
 
   return (
     <Link href={`/companies/${company.slug}`}>
-      <Card className={`h-full overflow-hidden transition-all hover:shadow-lg hover:-translate-y-0.5 cursor-pointer ${
+      <Card className={`h-full transition-all hover:shadow-lg hover:-translate-y-0.5 cursor-pointer ${
         isSiteSearch ? 'ring-2 ring-red-400 bg-red-50/30' : ''
       }`}>
-        <CardContent className="p-4 overflow-hidden">
+        <CardContent className="p-4">
           {/* Header: Logo + Tags */}
           <div className="flex items-start gap-3 mb-3">
             <CompanyLogo 
@@ -84,13 +84,13 @@ export function SignalCard({ signal, industry, segment }: SignalCardProps) {
               name={company.name} 
               size="md"
             />
-            <div className="flex-1 min-w-0 overflow-hidden">
-              <div className="flex flex-wrap gap-1.5 mb-1">
-                <Badge variant="outline" className={`text-xs whitespace-nowrap ${tag.color}`}>
+            <div className="flex-1 min-w-0">
+              <div className="flex flex-wrap gap-1 mb-1">
+                <Badge variant="outline" className={`text-xs ${tag.color}`}>
                   {tag.label}
                 </Badge>
                 {segment && (
-                  <Badge variant="outline" className="text-xs bg-slate-50 max-w-[140px] truncate">
+                  <Badge variant="outline" className="text-xs bg-slate-50">
                     {segment}
                   </Badge>
                 )}
@@ -112,7 +112,7 @@ export function SignalCard({ signal, industry, segment }: SignalCardProps) {
                 GOLD LEAD
               </Badge>
             ) : (
-              <Badge variant="outline" className="text-xs max-w-full truncate">
+              <Badge variant="outline" className="text-xs">
                 {signalTypeLabels[signal.signal_type] || signal.signal_type.replace(/_/g, ' ').toLowerCase().replace(/\b\w/g, c => c.toUpperCase())}
               </Badge>
             )}
