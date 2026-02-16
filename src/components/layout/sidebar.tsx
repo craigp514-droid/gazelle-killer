@@ -12,7 +12,8 @@ import {
   Settings,
   Compass,
   List,
-  TrendingUp
+  TrendingUp,
+  Shield
 } from 'lucide-react'
 
 export function Sidebar() {
@@ -67,8 +68,20 @@ export function Sidebar() {
           </ul>
         </nav>
 
-        {/* Settings */}
-        <div className="border-t border-slate-800 p-3">
+        {/* Admin & Settings */}
+        <div className="border-t border-slate-800 p-3 space-y-1">
+          <Link
+            href="/admin"
+            className={cn(
+              'flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-colors',
+              pathname === '/admin'
+                ? 'bg-orange-600 text-white'
+                : 'text-slate-400 hover:bg-slate-800 hover:text-white'
+            )}
+          >
+            <Shield className="h-5 w-5" />
+            Admin
+          </Link>
           <Link
             href="/settings"
             className={cn(
