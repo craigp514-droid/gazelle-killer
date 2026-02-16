@@ -53,7 +53,7 @@ export default function LoginPage() {
       <Card className="w-full max-w-md">
         <CardHeader className="space-y-1 text-center">
           <div className="mx-auto mb-4">
-            <Image src="/logo.jpg" alt="SignalFeed" width={280} height={70} className="h-16 w-auto" />
+            <Image src="/logo.jpg" alt="SignalFeed" width={360} height={90} className="h-24 w-auto" />
           </div>
           <CardTitle className="text-2xl font-bold">Welcome back</CardTitle>
           <CardDescription>
