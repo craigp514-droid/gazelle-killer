@@ -101,7 +101,7 @@ export default async function DashboardPage() {
           </div>
           <Link 
             href="/signals" 
-            className="flex items-center gap-1 text-sm font-medium text-emerald-600 hover:text-emerald-700"
+            className="flex items-center gap-1 text-sm font-medium text-orange-500 hover:text-orange-600"
           >
             View All Signals
             <ArrowRight className="w-4 h-4" />
@@ -135,7 +135,7 @@ export default async function DashboardPage() {
             <CardTitle className="text-sm font-medium text-slate-600">
               Signals This Week
             </CardTitle>
-            <Radio className="h-4 w-4 text-emerald-600" />
+            <Radio className="h-4 w-4 text-orange-500" />
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">{signalCount || 0}</div>
@@ -146,7 +146,7 @@ export default async function DashboardPage() {
             <CardTitle className="text-sm font-medium text-slate-600">
               Total Companies
             </CardTitle>
-            <Building2 className="h-4 w-4 text-emerald-600" />
+            <Building2 className="h-4 w-4 text-orange-500" />
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">{companyCount || 0}</div>
@@ -157,7 +157,7 @@ export default async function DashboardPage() {
             <CardTitle className="text-sm font-medium text-slate-600">
               Tier A Companies
             </CardTitle>
-            <TrendingUp className="h-4 w-4 text-emerald-600" />
+            <TrendingUp className="h-4 w-4 text-orange-500" />
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">
@@ -214,7 +214,7 @@ export default async function DashboardPage() {
                     >
                       Tier {company.tier}
                     </Badge>
-                    <span className="text-lg font-semibold text-emerald-600">
+                    <span className="text-lg font-semibold text-orange-500">
                       {company.composite_score}
                     </span>
                   </div>

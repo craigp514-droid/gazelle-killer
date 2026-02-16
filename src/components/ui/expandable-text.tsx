@@ -22,7 +22,7 @@ export function ExpandableText({ text, maxLength = 250, className = '' }: Expand
       {shouldTruncate && (
         <button
           onClick={() => setIsExpanded(!isExpanded)}
-          className="mt-2 text-sm font-medium text-emerald-600 hover:text-emerald-700"
+          className="mt-2 text-sm font-medium text-orange-500 hover:text-orange-600"
         >
           {isExpanded ? 'Show less' : 'Read more'}
         </button>

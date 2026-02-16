@@ -64,7 +64,7 @@ export default async function SignalsPage({ searchParams }: PageProps) {
       <div className="flex items-center justify-between">
         <div>
           <div className="flex items-center gap-2">
-            <Radio className="w-6 h-6 text-emerald-600" />
+            <Radio className="w-6 h-6 text-orange-500" />
             <h1 className="text-2xl font-bold text-slate-900">Signal Feed</h1>
           </div>
           <p className="text-slate-600 mt-1">
@@ -82,7 +82,7 @@ export default async function SignalsPage({ searchParams }: PageProps) {
           <Badge 
             variant={isFilteringSiteSearch ? "outline" : "default"}
             className={`cursor-pointer px-4 py-2 text-sm ${
-              !isFilteringSiteSearch ? 'bg-emerald-600 hover:bg-emerald-700' : 'hover:bg-slate-100'
+              !isFilteringSiteSearch ? 'bg-orange-500 hover:bg-orange-600' : 'hover:bg-slate-100'
             }`}
           >
             All Signals ({totalCount || 0})

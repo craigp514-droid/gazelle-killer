@@ -137,7 +137,7 @@ export function CompanyList({
               industry: e.target.value || null,
               segment: null // Reset segment when industry changes
             })}
-            className="px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
+            className="px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
           >
             <option value="">All Industries</option>
             {industries.map((industry) => (
@@ -155,7 +155,7 @@ export function CompanyList({
             <select
               value={selectedSegment || ''}
               onChange={(e) => updateFilters({ segment: e.target.value || null })}
-              className="px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
+              className="px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
             >
               <option value="">All Segments</option>
               {segments.map((segment) => (
@@ -173,7 +173,7 @@ export function CompanyList({
           <select
             value={selectedFilter || ''}
             onChange={(e) => updateFilters({ filter: e.target.value || null })}
-            className="px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
+            className="px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
           >
             <option value="">All Companies</option>
             <option value="expanded">Recently Expanded</option>
@@ -255,7 +255,7 @@ export function CompanyList({
                       <td className="py-4 pr-4">
                         <Link
                           href={`/companies/${company.slug}`}
-                          className="font-medium text-slate-900 hover:text-emerald-600"
+                          className="font-medium text-slate-900 hover:text-orange-500"
                         >
                           {company.name}
                         </Link>
@@ -292,7 +292,7 @@ export function CompanyList({
                         </Badge>
                       </td>
                       <td className="py-4 pr-4">
-                        <span className="font-semibold text-emerald-600">{company.composite_score}</span>
+                        <span className="font-semibold text-orange-500">{company.composite_score}</span>
                       </td>
                       {!isCompact && (
                         <>

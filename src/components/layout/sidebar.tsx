@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { cn } from '@/lib/utils'
 import { 
@@ -30,11 +31,15 @@ export function Sidebar() {
     <aside className="fixed left-0 top-0 z-40 h-screen w-64 bg-slate-900 text-white">
       <div className="flex h-full flex-col">
         {/* Logo */}
-        <div className="flex h-16 items-center gap-2 border-b border-slate-800 px-6">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-500">
-            <Building2 className="h-5 w-5 text-white" />
-          </div>
-          <span className="text-lg font-semibold">Gazelle Killer</span>
+        <div className="flex h-16 items-center gap-3 border-b border-slate-800 px-4">
+          <Image 
+            src="/logo.jpg" 
+            alt="SignalFeed" 
+            width={180} 
+            height={40}
+            className="h-10 w-auto"
+            priority
+          />
         </div>
 
         {/* Navigation */}

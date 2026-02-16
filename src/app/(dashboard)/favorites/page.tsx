@@ -96,7 +96,7 @@ export default async function FavoritesPage() {
             <CardTitle className="text-sm font-medium text-slate-600">
               Recent Signals
             </CardTitle>
-            <Radio className="h-4 w-4 text-emerald-600" />
+            <Radio className="h-4 w-4 text-orange-500" />
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">
@@ -137,7 +137,7 @@ export default async function FavoritesPage() {
                       <div className="flex items-center gap-3">
                         <Link
                           href={`/companies/${company?.slug}`}
-                          className="font-medium text-slate-900 hover:text-emerald-600"
+                          className="font-medium text-slate-900 hover:text-orange-500"
                         >
                           {company?.name}
                         </Link>
@@ -147,7 +147,7 @@ export default async function FavoritesPage() {
                         >
                           Tier {company?.tier}
                         </Badge>
-                        <span className="font-semibold text-emerald-600">
+                        <span className="font-semibold text-orange-500">
                           {company?.composite_score}
                         </span>
                       </div>
@@ -206,7 +206,7 @@ export default async function FavoritesPage() {
               </p>
               <Link
                 href="/segments"
-                className="mt-4 inline-block text-sm font-medium text-emerald-600 hover:underline"
+                className="mt-4 inline-block text-sm font-medium text-orange-500 hover:underline"
               >
                 Browse segments →
               </Link>

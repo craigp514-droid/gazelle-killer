@@ -109,7 +109,7 @@ export default async function ProjectIntelligencePage() {
 
       {/* Hero Stats Bar */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <Card className="bg-gradient-to-br from-emerald-500 to-emerald-600 border-0">
+        <Card className="bg-gradient-to-br from-orange-500 to-orange-500 border-0">
           <CardContent className="pt-6">
             <div className="flex items-center gap-3">
               <div className="p-2 bg-white/20 rounded-lg">
@@ -173,7 +173,7 @@ export default async function ProjectIntelligencePage() {
         <Card className="lg:col-span-2">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
-              <TrendingUp className="h-5 w-5 text-emerald-600" />
+              <TrendingUp className="h-5 w-5 text-orange-500" />
               Capex by Sector
             </CardTitle>
             <CardDescription>
@@ -185,7 +185,7 @@ export default async function ProjectIntelligencePage() {
               {sectorData.map((sector, i) => {
                 const percentage = (sector.capex / totalCapex) * 100
                 const colors = [
-                  'bg-emerald-500',
+                  'bg-orange-500',
                   'bg-blue-500',
                   'bg-purple-500',
                   'bg-orange-500',
@@ -331,7 +331,7 @@ export default async function ProjectIntelligencePage() {
       <Card>
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <DollarSign className="h-5 w-5 text-emerald-600" />
+            <DollarSign className="h-5 w-5 text-orange-500" />
             Mega Deals
             <Badge variant="secondary" className="ml-2">${'10B+'}</Badge>
           </CardTitle>
@@ -359,7 +359,7 @@ export default async function ProjectIntelligencePage() {
                       {project.companies?.slug ? (
                         <Link 
                           href={`/companies/${project.companies.slug}`}
-                          className="font-medium text-slate-900 hover:text-emerald-600"
+                          className="font-medium text-slate-900 hover:text-orange-500"
                         >
                           {project.companies?.name || 'Unknown'}
                         </Link>
@@ -377,7 +377,7 @@ export default async function ProjectIntelligencePage() {
                         {project.sector || 'Other'}
                       </Badge>
                     </td>
-                    <td className="py-3 pr-4 text-right font-semibold text-emerald-600">
+                    <td className="py-3 pr-4 text-right font-semibold text-orange-500">
                       {formatCurrency(project.capex_millions || 0)}
                     </td>
                     <td className="py-3 pr-4 text-right text-slate-600">

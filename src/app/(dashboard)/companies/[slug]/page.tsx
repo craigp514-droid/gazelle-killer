@@ -119,7 +119,7 @@ export default async function CompanyPage({ params }: PageProps) {
                   href={company.website.startsWith('http') ? company.website : `https://${company.website}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1 hover:text-emerald-600"
+                  className="flex items-center gap-1 hover:text-orange-500"
                 >
                   <Globe className="h-4 w-4" />
                   {company.website.replace(/^https?:\/\//, '').replace(/\/$/, '')}
@@ -214,14 +214,14 @@ export default async function CompanyPage({ params }: PageProps) {
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <TrendingUp className="h-5 w-5 text-emerald-600" />
+                <TrendingUp className="h-5 w-5 text-orange-500" />
                 Score & Tier
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-4xl font-bold text-emerald-600">
+                  <p className="text-4xl font-bold text-orange-500">
                     {company.composite_score}
                   </p>
                   <p className="text-sm text-slate-500">Composite Score</p>
@@ -254,18 +254,18 @@ export default async function CompanyPage({ params }: PageProps) {
 
           {/* Messaging Hook */}
           {company.messaging_hook && (
-            <Card className="border-emerald-200 bg-emerald-50">
+            <Card className="border-orange-200 bg-orange-50">
               <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-emerald-800">
+                <CardTitle className="flex items-center gap-2 text-slate-800">
                   <MessageSquare className="h-5 w-5" />
                   Messaging Hook
                 </CardTitle>
-                <CardDescription className="text-emerald-700">
+                <CardDescription className="text-orange-600">
                   Suggested outreach angle
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-emerald-900">{company.messaging_hook}</p>
+                <p className="text-sm text-slate-900">{company.messaging_hook}</p>
               </CardContent>
             </Card>
           )}
@@ -345,7 +345,7 @@ export default async function CompanyPage({ params }: PageProps) {
                             href={signal.source_url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1 text-sm text-emerald-600 hover:underline"
+                            className="inline-flex items-center gap-1 text-sm text-orange-500 hover:underline"
                           >
                             {signal.source_name || 'Source'}
                             <ExternalLink className="h-3 w-3" />
@@ -360,7 +360,7 @@ export default async function CompanyPage({ params }: PageProps) {
                                   key={i}
                                   className={`h-2 w-2 rounded-full ${
                                     i < signal.signal_strength
-                                      ? 'bg-emerald-500'
+                                      ? 'bg-orange-500'
                                       : 'bg-slate-200'
                                   }`}
                                 />
@@ -451,7 +451,7 @@ export default async function CompanyPage({ params }: PageProps) {
                           href={project.source_url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1 text-sm text-emerald-600 hover:underline"
+                          className="inline-flex items-center gap-1 text-sm text-orange-500 hover:underline"
                         >
                           Source
                           <ExternalLink className="h-3 w-3" />

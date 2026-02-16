@@ -8,7 +8,8 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
-import { Building2, Loader2 } from 'lucide-react'
+import { Loader2 } from 'lucide-react'
+import Image from 'next/image'
 
 export default function SignupPage() {
   const router = useRouter()
@@ -48,8 +49,8 @@ export default function SignupPage() {
     <div className="flex min-h-screen items-center justify-center bg-slate-50 px-4">
       <Card className="w-full max-w-md">
         <CardHeader className="space-y-1 text-center">
-          <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500">
-            <Building2 className="h-7 w-7 text-white" />
+          <div className="mx-auto mb-4">
+            <Image src="/logo.jpg" alt="SignalFeed" width={200} height={50} className="h-12 w-auto" />
           </div>
           <CardTitle className="text-2xl font-bold">Create an account</CardTitle>
           <CardDescription>
@@ -99,7 +100,7 @@ export default function SignupPage() {
             </div>
           </CardContent>
           <CardFooter className="flex flex-col space-y-4">
-            <Button type="submit" className="w-full bg-emerald-600 hover:bg-emerald-700" disabled={loading}>
+            <Button type="submit" className="w-full bg-orange-500 hover:bg-orange-600" disabled={loading}>
               {loading ? (
                 <>
                   <Loader2 className="mr-2 h-4 w-4 animate-spin" />
@@ -111,7 +112,7 @@ export default function SignupPage() {
             </Button>
             <p className="text-center text-sm text-slate-600">
               Already have an account?{' '}
-              <Link href="/login" className="text-emerald-600 hover:underline">
+              <Link href="/login" className="text-orange-500 hover:underline">
                 Sign in
               </Link>
             </p>

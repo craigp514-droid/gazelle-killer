@@ -73,18 +73,18 @@ export default async function ExplorePage() {
       {/* View All Option */}
       <Link
         href="/companies"
-        className="flex items-center justify-between p-4 bg-emerald-50 border border-emerald-200 rounded-xl hover:bg-emerald-100 transition-colors group"
+        className="flex items-center justify-between p-4 bg-orange-50 border border-orange-200 rounded-xl hover:bg-orange-100 transition-colors group"
       >
         <div className="flex items-center gap-4">
-          <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500">
+          <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-500">
             <Sparkles className="h-6 w-6 text-white" />
           </div>
           <div>
-            <h3 className="font-semibold text-emerald-900">View Entire Database</h3>
-            <p className="text-sm text-emerald-700">Browse all companies across all industries</p>
+            <h3 className="font-semibold text-slate-900">View Entire Database</h3>
+            <p className="text-sm text-orange-600">Browse all companies across all industries</p>
           </div>
         </div>
-        <ArrowRight className="h-5 w-5 text-emerald-600 group-hover:translate-x-1 transition-transform" />
+        <ArrowRight className="h-5 w-5 text-orange-500 group-hover:translate-x-1 transition-transform" />
       </Link>
 
       {/* High Growth Industries */}
@@ -122,7 +122,7 @@ export default async function ExplorePage() {
                   </div>
 
                   {/* Content */}
-                  <h3 className="font-semibold text-slate-900 group-hover:text-emerald-600 transition-colors">
+                  <h3 className="font-semibold text-slate-900 group-hover:text-orange-500 transition-colors">
                     {industry.name}
                   </h3>
                   <p className="text-sm text-slate-500 mt-1 line-clamp-2">
@@ -134,7 +134,7 @@ export default async function ExplorePage() {
                     <span className="text-sm text-slate-600">
                       <span className="font-semibold text-slate-900">{companyCount}</span> companies
                     </span>
-                    <ArrowRight className="h-4 w-4 text-slate-400 group-hover:text-emerald-600 group-hover:translate-x-1 transition-all" />
+                    <ArrowRight className="h-4 w-4 text-slate-400 group-hover:text-orange-500 group-hover:translate-x-1 transition-all" />
                   </div>
                 </div>
               </Link>
