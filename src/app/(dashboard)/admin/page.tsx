@@ -1,4 +1,5 @@
 import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
 import { redirect } from 'next/navigation'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
@@ -28,14 +29,17 @@ export default async function AdminPage() {
     redirect('/dashboard')
   }
 
+  // Use admin client for queries that need to see all users (bypasses RLS)
+  const adminDb = createAdminClient()
+
   // Get all users with their stats
-  const { data: users } = await supabase
+  const { data: users } = await adminDb
     .from('profiles')
     .select('id, full_name, email, platform_admin, role, created_at, last_login_at')
     .order('created_at', { ascending: false })
 
   // Get favorites count per user
-  const { data: bookmarks } = await supabase
+  const { data: bookmarks } = await adminDb
     .from('user_bookmarks')
     .select('user_id')
 
@@ -61,13 +65,13 @@ export default async function AdminPage() {
   const oneWeekAgo = new Date()
   oneWeekAgo.setDate(oneWeekAgo.getDate() - 7)
   
-  const { count: newUsersThisWeek } = await supabase
+  const { count: newUsersThisWeek } = await adminDb
     .from('profiles')
     .select('*', { count: 'exact', head: true })
     .gte('created_at', oneWeekAgo.toISOString())
 
   // Get active users (logged in within last 7 days)
-  const { count: activeUsers } = await supabase
+  const { count: activeUsers } = await adminDb
     .from('profiles')
     .select('*', { count: 'exact', head: true })
     .gte('last_login_at', oneWeekAgo.toISOString())
