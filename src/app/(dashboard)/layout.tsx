@@ -1,6 +1,6 @@
 import { createClient } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
-import { Sidebar } from '@/components/layout/sidebar'
+import { MobileSidebar } from '@/components/layout/mobile-sidebar'
 import { Header } from '@/components/layout/header'
 import { Profile } from '@/types/database'
 
@@ -26,10 +26,11 @@ export default async function DashboardLayout({
 
   return (
     <div className="min-h-screen bg-slate-50">
-      <Sidebar />
-      <div className="pl-64">
+      <MobileSidebar />
+      {/* Main content - full width on mobile, offset on desktop */}
+      <div className="lg:pl-64">
         <Header user={profile as Profile | null} />
-        <main className="p-6">{children}</main>
+        <main className="p-4 lg:p-6 pt-16 lg:pt-6">{children}</main>
       </div>
     </div>
   )

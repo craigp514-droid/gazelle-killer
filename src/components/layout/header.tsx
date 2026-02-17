@@ -39,9 +39,11 @@ export function Header({ user }: HeaderProps) {
     : user?.email?.[0].toUpperCase() || '?'
 
   return (
-    <header className="sticky top-0 z-30 flex h-16 items-center justify-between border-b bg-white px-6">
-      {/* Search */}
-      <CommandSearch />
+    <header className="sticky top-0 z-30 flex h-16 items-center justify-between border-b bg-white px-4 lg:px-6">
+      {/* Search - with left margin on mobile for hamburger button */}
+      <div className="ml-12 lg:ml-0 flex-1">
+        <CommandSearch />
+      </div>
 
       {/* Right side */}
       <div className="flex items-center gap-4">
