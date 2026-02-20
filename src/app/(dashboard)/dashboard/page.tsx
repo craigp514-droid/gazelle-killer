@@ -1,9 +1,6 @@
 import { createClient } from '@/lib/supabase/server'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
-import { TrendingUp, Building2, Radio, Star, ArrowRight, Flame } from 'lucide-react'
+import { Building2, Radio, Star, TrendingUp, Search, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
-import { SignalCard } from '@/components/signals/signal-card'
 
 export default async function DashboardPage() {
   const supabase = await createClient()
@@ -16,222 +13,124 @@ export default async function DashboardPage() {
     .eq('id', user?.id)
     .single()
 
-  // Get recent signals for cards (up to 8)
-  const { data: recentSignals } = await supabase
-    .from('signals')
-    .select('*, companies(name, slug, website)')
-    .order('signal_date', { ascending: false })
-    .limit(8)
-
-  // Get company segments for industry/segment display
-  const companyIds = recentSignals?.map(s => s.company_id).filter(Boolean) || []
-  const { data: companySegments } = await supabase
-    .from('company_segments')
-    .select('company_id, is_primary, segments(name, industries(name))')
-    .in('company_id', companyIds)
-    .eq('is_primary', true)
-
-  // Build lookup for company -> industry/segment
-  const companyIndustryMap: Record<string, { industry: string; segment: string }> = {}
-  companySegments?.forEach((cs: any) => {
-    if (cs.segments) {
-      companyIndustryMap[cs.company_id] = {
-        industry: cs.segments.industries?.name || '',
-        segment: cs.segments.name || ''
-      }
-    }
-  })
-
-  // Count signals added this week (by created_at, not signal_date)
-  const sevenDaysAgo = new Date()
-  sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7)
-  
-  const { count: signalCount } = await supabase
-    .from('signals')
-    .select('*', { count: 'exact', head: true })
-    .gte('created_at', sevenDaysAgo.toISOString())
-
-  // Count site search signals
-  const { count: siteSearchCount } = await supabase
-    .from('signals')
-    .select('*', { count: 'exact', head: true })
-    .eq('signal_type', 'site_search')
-
-  // Get top companies by score
-  const { data: topCompanies } = await supabase
-    .from('companies')
-    .select('*')
-    .order('composite_score', { ascending: false })
-    .limit(5)
-
-  // Get total company count
+  // Get counts for the cards
   const { count: companyCount } = await supabase
     .from('companies')
     .select('*', { count: 'exact', head: true })
 
-  // Get user's favorites count
+  const sevenDaysAgo = new Date()
+  sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7)
+  
+  const { count: recentSignalCount } = await supabase
+    .from('signals')
+    .select('*', { count: 'exact', head: true })
+    .gte('created_at', sevenDaysAgo.toISOString())
+
+  const { count: totalSignalCount } = await supabase
+    .from('signals')
+    .select('*', { count: 'exact', head: true })
+
   const { count: favoritesCount } = await supabase
     .from('user_bookmarks')
     .select('*', { count: 'exact', head: true })
     .eq('user_id', user?.id)
 
+  const { count: projectCount } = await supabase
+    .from('projects')
+    .select('*', { count: 'exact', head: true })
+
+  const firstName = profile?.full_name?.split(' ')[0] || 'there'
+
   return (
-    <div className="space-y-6">
+    <div className="max-w-5xl mx-auto space-y-8">
       {/* Welcome */}
-      <div>
-        <h1 className="text-2xl font-bold text-slate-900">
-          Welcome back, {profile?.full_name || 'there'}
+      <div className="text-center pt-4">
+        <h1 className="text-3xl font-bold text-slate-900">
+          Welcome back, {firstName}
         </h1>
-        <p className="text-slate-600">
-          Here&apos;s what&apos;s happening with your target companies.
+        <p className="text-slate-600 mt-2">
+          What would you like to do today?
         </p>
       </div>
 
-      {/* 🔥 Recent Signals - THE DAILY RETENTION HOOK */}
-      <div className="space-y-4">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Flame className="w-5 h-5 text-red-500" />
-            <h2 className="text-lg font-semibold text-slate-900">Recent Signals</h2>
-            {siteSearchCount && siteSearchCount > 0 && (
-              <Badge className="bg-red-600 text-white text-xs">
-                {siteSearchCount} Gold Lead{siteSearchCount > 1 ? 's' : ''}
-              </Badge>
-            )}
-          </div>
-          <Link 
-            href="/signals" 
-            className="flex items-center gap-1 text-sm font-medium text-orange-500 hover:text-orange-600"
-          >
-            View All Signals
-            <ArrowRight className="w-4 h-4" />
-          </Link>
-        </div>
-        
-        {recentSignals && recentSignals.length > 0 ? (
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {recentSignals.map((signal: any) => (
-              <SignalCard
-                key={signal.id}
-                signal={signal}
-                industry={companyIndustryMap[signal.company_id]?.industry}
-                segment={companyIndustryMap[signal.company_id]?.segment}
-              />
-            ))}
-          </div>
-        ) : (
-          <Card>
-            <CardContent className="py-8 text-center text-slate-500">
-              No recent signals. Check back soon!
-            </CardContent>
-          </Card>
-        )}
-      </div>
-
-      {/* Stats */}
-      <div className="grid gap-4 md:grid-cols-4">
-        <Link href="/signals">
-          <Card className="hover:shadow-md transition-shadow cursor-pointer">
-            <CardHeader className="flex flex-row items-center justify-between pb-2">
-              <CardTitle className="text-sm font-medium text-slate-600">
-                Signals This Week
-              </CardTitle>
-              <Radio className="h-4 w-4 text-orange-500" />
-            </CardHeader>
-            <CardContent>
-              <div className="text-2xl font-bold">{signalCount || 0}</div>
-            </CardContent>
-          </Card>
-        </Link>
-        <Link href="/companies">
-          <Card className="hover:shadow-md transition-shadow cursor-pointer">
-            <CardHeader className="flex flex-row items-center justify-between pb-2">
-              <CardTitle className="text-sm font-medium text-slate-600">
-                Total Companies
-              </CardTitle>
-              <Building2 className="h-4 w-4 text-orange-500" />
-            </CardHeader>
-            <CardContent>
-              <div className="text-2xl font-bold">{companyCount || 0}</div>
-            </CardContent>
-          </Card>
-        </Link>
-        <Link href="/signals">
-          <Card className="hover:shadow-md transition-shadow cursor-pointer">
-            <CardHeader className="flex flex-row items-center justify-between pb-2">
-              <CardTitle className="text-sm font-medium text-slate-600">
-                Tier A Companies
-              </CardTitle>
-              <TrendingUp className="h-4 w-4 text-orange-500" />
-            </CardHeader>
-            <CardContent>
-              <div className="text-2xl font-bold">
-                {topCompanies?.filter((c) => c.tier === 'A').length || 0}
+      {/* Action Cards */}
+      <div className="grid gap-6 md:grid-cols-2">
+        {/* Find Companies */}
+        <Link href="/companies" className="group">
+          <div className="h-full p-6 bg-white rounded-2xl border-2 border-slate-200 hover:border-orange-300 hover:shadow-lg transition-all">
+            <div className="flex items-start justify-between">
+              <div className="p-3 bg-orange-100 rounded-xl">
+                <Search className="h-8 w-8 text-orange-600" />
               </div>
-            </CardContent>
-          </Card>
+              <ArrowRight className="h-5 w-5 text-slate-300 group-hover:text-orange-500 group-hover:translate-x-1 transition-all" />
+            </div>
+            <h2 className="text-xl font-bold text-slate-900 mt-4">Find Companies</h2>
+            <p className="text-slate-600 mt-2">
+              Search {companyCount?.toLocaleString() || 0} companies by industry, tier, or location
+            </p>
+          </div>
         </Link>
-        <Link href="/favorites">
-          <Card className="hover:shadow-md transition-shadow cursor-pointer">
-            <CardHeader className="flex flex-row items-center justify-between pb-2">
-              <CardTitle className="text-sm font-medium text-slate-600">
-                Favorites
-              </CardTitle>
-              <Star className="h-4 w-4 text-yellow-500" />
-            </CardHeader>
-            <CardContent>
-              <div className="text-2xl font-bold">{favoritesCount || 0}</div>
-            </CardContent>
-          </Card>
+
+        {/* Latest Signals */}
+        <Link href="/signals" className="group">
+          <div className="h-full p-6 bg-white rounded-2xl border-2 border-slate-200 hover:border-orange-300 hover:shadow-lg transition-all">
+            <div className="flex items-start justify-between">
+              <div className="p-3 bg-purple-100 rounded-xl">
+                <Radio className="h-8 w-8 text-purple-600" />
+              </div>
+              <ArrowRight className="h-5 w-5 text-slate-300 group-hover:text-orange-500 group-hover:translate-x-1 transition-all" />
+            </div>
+            <h2 className="text-xl font-bold text-slate-900 mt-4">Latest Signals</h2>
+            <p className="text-slate-600 mt-2">
+              {recentSignalCount || 0} new signals this week • {totalSignalCount?.toLocaleString() || 0} total
+            </p>
+          </div>
+        </Link>
+
+        {/* My Watchlist */}
+        <Link href="/favorites" className="group">
+          <div className="h-full p-6 bg-white rounded-2xl border-2 border-slate-200 hover:border-orange-300 hover:shadow-lg transition-all">
+            <div className="flex items-start justify-between">
+              <div className="p-3 bg-yellow-100 rounded-xl">
+                <Star className="h-8 w-8 text-yellow-600" />
+              </div>
+              <ArrowRight className="h-5 w-5 text-slate-300 group-hover:text-orange-500 group-hover:translate-x-1 transition-all" />
+            </div>
+            <h2 className="text-xl font-bold text-slate-900 mt-4">My Watchlist</h2>
+            <p className="text-slate-600 mt-2">
+              {favoritesCount || 0} companies you're tracking
+            </p>
+          </div>
+        </Link>
+
+        {/* Project Intelligence */}
+        <Link href="/projects" className="group">
+          <div className="h-full p-6 bg-white rounded-2xl border-2 border-slate-200 hover:border-orange-300 hover:shadow-lg transition-all">
+            <div className="flex items-start justify-between">
+              <div className="p-3 bg-green-100 rounded-xl">
+                <TrendingUp className="h-8 w-8 text-green-600" />
+              </div>
+              <ArrowRight className="h-5 w-5 text-slate-300 group-hover:text-orange-500 group-hover:translate-x-1 transition-all" />
+            </div>
+            <h2 className="text-xl font-bold text-slate-900 mt-4">Project Intelligence</h2>
+            <p className="text-slate-600 mt-2">
+              {projectCount?.toLocaleString() || 0} announced facility projects
+            </p>
+          </div>
         </Link>
       </div>
 
-      {/* Top Companies */}
-      <Card>
-        <CardHeader>
-          <CardTitle>Top Companies</CardTitle>
-          <CardDescription>Highest scoring targets</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <div className="space-y-4">
-            {topCompanies && topCompanies.length > 0 ? (
-              topCompanies.map((company: any) => (
-                <Link
-                  key={company.id}
-                  href={`/companies/${company.slug}`}
-                  className="flex items-center justify-between border-b border-slate-100 pb-4 last:border-0 last:pb-0 hover:bg-slate-50 -mx-2 px-2 rounded-lg transition-colors"
-                >
-                  <div className="space-y-1">
-                    <p className="font-medium text-slate-900">{company.name}</p>
-                    <p className="text-sm text-slate-600">
-                      {company.hq_city}, {company.hq_state}
-                    </p>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Badge
-                      variant="secondary"
-                      className={
-                        company.tier === 'A'
-                          ? 'bg-green-100 text-green-800'
-                          : company.tier === 'B'
-                          ? 'bg-yellow-100 text-yellow-800'
-                          : 'bg-slate-100 text-slate-800'
-                      }
-                    >
-                      Tier {company.tier}
-                    </Badge>
-                    <span className="text-lg font-semibold text-orange-500">
-                      {company.composite_score}
-                    </span>
-                  </div>
-                </Link>
-              ))
-            ) : (
-              <p className="text-sm text-slate-500">No companies yet</p>
-            )}
-          </div>
-        </CardContent>
-      </Card>
+      {/* Explore Industries */}
+      <div className="text-center pt-4">
+        <Link 
+          href="/explore" 
+          className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium text-slate-600 hover:text-orange-600 transition-colors"
+        >
+          <Building2 className="h-4 w-4" />
+          Explore by Industry
+          <ArrowRight className="h-4 w-4" />
+        </Link>
+      </div>
     </div>
   )
 }
