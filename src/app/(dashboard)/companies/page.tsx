@@ -129,7 +129,7 @@ export default async function CompaniesPage({ searchParams }: PageProps) {
     .from('signals')
     .select('*')
     .in('company_id', companies.map(c => c.id))
-    .order('signal_date', { ascending: false })
+    .order('created_at', { ascending: false })
 
   const signalsByCompany = signals?.reduce((acc: Record<string, any>, signal) => {
     if (!acc[signal.company_id]) acc[signal.company_id] = signal

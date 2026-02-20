@@ -32,7 +32,7 @@ export default async function FavoritesPage() {
     .from('signals')
     .select('*')
     .in('company_id', companyIds)
-    .order('signal_date', { ascending: false })
+    .order('created_at', { ascending: false })
 
   // Map latest signal to each company
   const signalsByCompany = signals?.reduce((acc: Record<string, any>, signal) => {

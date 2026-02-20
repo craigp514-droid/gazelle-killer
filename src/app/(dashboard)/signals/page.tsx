@@ -9,7 +9,7 @@ export default async function SignalsPage() {
   const { data: signals } = await supabase
     .from('signals')
     .select('*, companies(name, slug, website)')
-    .order('signal_date', { ascending: false })
+    .order('created_at', { ascending: false })
     .limit(100)
 
   // Get company segments for industry/segment display

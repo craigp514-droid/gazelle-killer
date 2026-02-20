@@ -51,7 +51,7 @@ export default async function CompanyPage({ params }: PageProps) {
     .from('signals')
     .select('*')
     .eq('company_id', company.id)
-    .order('signal_date', { ascending: false })
+    .order('created_at', { ascending: false })
 
   // Get projects for this company
   const { data: projects } = await supabase
