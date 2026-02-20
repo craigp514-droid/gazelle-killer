@@ -4,6 +4,7 @@ import { Badge } from '@/components/ui/badge'
 import { Star, MapPin, TrendingUp, Radio } from 'lucide-react'
 import Link from 'next/link'
 import { FavoriteButton } from '@/components/favorites/favorite-button'
+import { ExportFavoritesButton } from '@/components/favorites/export-favorites-button'
 
 export default async function FavoritesPage() {
   const supabase = await createClient()
@@ -12,9 +13,16 @@ export default async function FavoritesPage() {
   // Get user's bookmarks with company info
   const { data: bookmarks } = await supabase
     .from('user_bookmarks')
-    .select('*, companies(*)')
+    .select('*, notes, companies(*)')
     .eq('user_id', user?.id)
     .order('created_at', { ascending: false })
+
+  // Prepare data for export
+  const exportData = bookmarks?.map((b: any) => ({
+    company: b.companies,
+    notes: b.notes,
+    created_at: b.created_at
+  })) || []
 
   // Get company IDs to fetch their latest signals
   const companyIds = bookmarks?.map((b: any) => b.company_id) || []
@@ -58,11 +66,14 @@ export default async function FavoritesPage() {
 
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold text-slate-900">Favorites</h1>
-        <p className="text-slate-600">
-          Companies you&apos;re tracking
-        </p>
+      <div className="flex items-center justify-between">
+        <div>
+          <h1 className="text-2xl font-bold text-slate-900">Favorites</h1>
+          <p className="text-slate-600">
+            Companies you&apos;re tracking
+          </p>
+        </div>
+        <ExportFavoritesButton favorites={exportData} />
       </div>
 
       {/* Stats */}

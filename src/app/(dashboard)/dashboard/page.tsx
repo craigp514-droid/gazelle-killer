@@ -42,14 +42,14 @@ export default async function DashboardPage() {
     }
   })
 
-  // Count signals this week
+  // Count signals added this week (by created_at, not signal_date)
   const sevenDaysAgo = new Date()
   sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7)
   
   const { count: signalCount } = await supabase
     .from('signals')
     .select('*', { count: 'exact', head: true })
-    .gte('signal_date', sevenDaysAgo.toISOString().split('T')[0])
+    .gte('created_at', sevenDaysAgo.toISOString())
 
   // Count site search signals
   const { count: siteSearchCount } = await supabase
