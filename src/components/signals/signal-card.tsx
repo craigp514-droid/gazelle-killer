@@ -65,11 +65,6 @@ export function SignalCard({ signal, industry, segment }: SignalCardProps) {
   const tag = highLevelTags[industryKey] || { label: 'Signal Watch', color: 'bg-slate-100 text-slate-800' }
   
   const isSiteSearch = signal.signal_type === 'site_search'
-  
-  const formatDate = (dateStr: string) => {
-    const date = new Date(dateStr)
-    return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
-  }
 
   return (
     <Link href={`/companies/${company.slug}`}>
@@ -98,11 +93,8 @@ export function SignalCard({ signal, industry, segment }: SignalCardProps) {
             </div>
           </div>
 
-          {/* Company Name + Date */}
-          <div className="mb-2">
-            <h3 className="font-semibold text-slate-900 truncate">{company.name}</h3>
-            <p className="text-xs text-slate-500">{formatDate(signal.signal_date)}</p>
-          </div>
+          {/* Company Name */}
+          <h3 className="font-semibold text-slate-900 truncate mb-2">{company.name}</h3>
 
           {/* Signal Type Badge */}
           <div className="mb-2">
