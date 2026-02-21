@@ -20,6 +20,7 @@ import {
 import { FavoriteButton } from '@/components/favorites/favorite-button'
 import { CompanyLogo } from '@/components/ui/company-logo'
 import { ExpandableText } from '@/components/ui/expandable-text'
+import { OutreachButton } from '@/components/email/outreach-button'
 
 interface PageProps {
   params: Promise<{ slug: string }>
@@ -145,7 +146,25 @@ export default async function CompanyPage({ params }: PageProps) {
             </div>
           </div>
         </div>
-        <FavoriteButton companyId={company.id} companyName={company.name} initialFavorited={isFavorited} />
+        <div className="flex items-center gap-2">
+          <OutreachButton 
+            company={{
+              id: company.id,
+              name: company.name,
+              website: company.website,
+              industry: company.industry,
+              hq_state: company.hq_state,
+              messaging_hook: company.messaging_hook,
+              linkedin_description: company.linkedin_description,
+            }}
+            signals={signals?.map(s => ({
+              signal_type: s.signal_type,
+              title: s.title,
+              signal_date: s.signal_date,
+            })) || []}
+          />
+          <FavoriteButton companyId={company.id} companyName={company.name} initialFavorited={isFavorited} />
+        </div>
       </div>
 
       {/* Industry & Segments */}
