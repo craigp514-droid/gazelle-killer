@@ -1,0 +1,2 @@
+company_name,website,signal_type,signal_tier,signal_date,title,source_url,messaging_hook,composite_score
+Example Company,example.com,funding_round,1,2026-02-23,Example raises $100M Series B,https://example.com/news,"Great funding momentum - location not yet decided",8

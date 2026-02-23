@@ -31,7 +31,7 @@ try {
   console.log('⚠ Clay API key not found - will skip Clay push');
 }
 
-const REQUIRED_COLUMNS = ['company_name', 'website', 'signal_type', 'signal_tier', 'signal_date', 'title', 'source_url', 'messaging_hook'];
+const REQUIRED_COLUMNS = ['company_name', 'website', 'signal_type', 'signal_tier', 'signal_date', 'title', 'source_url', 'messaging_hook', 'composite_score'];
 
 async function processDaily() {
   console.log('🚀 DAILY SIGNAL PROCESSOR\n');
@@ -115,6 +115,7 @@ async function processDaily() {
     const title = row[colIndex['title']]?.trim();
     const sourceUrl = row[colIndex['source_url']]?.trim();
     const messagingHook = row[colIndex['messaging_hook']]?.trim();
+    const compositeScore = parseInt(row[colIndex['composite_score']]) || 5;
 
     // Validate required fields
     if (!companyName || !website || !signalType || !signalDate || !title || !sourceUrl) {
@@ -147,12 +148,8 @@ async function processDaily() {
       company = byName?.[0];
     }
 
-    // Calculate score from signal tier (tier 1 = 9, tier 2 = 7, tier 3 = 5)
-    const tierToScore = { 1: 9, 2: 7, 3: 5 };
-    const scoreFromSignal = tierToScore[signalTier] || 5;
-
     if (!company) {
-      // Create new company with score based on signal tier
+      // Create new company with score from Todd's CSV
       const { data: newCompany, error: createError } = await supabase
         .from('companies')
         .insert({
@@ -160,7 +157,7 @@ async function processDaily() {
           slug: slug,
           website: fullWebsite,
           messaging_hook: messagingHook,
-          composite_score: scoreFromSignal
+          composite_score: compositeScore
         })
         .select('id, name, composite_score')
         .single();
@@ -176,19 +173,19 @@ async function processDaily() {
       results.companiesCreated++;
       results.clayQueued.push({ name: companyName, website: fullWebsite });
     } else {
-      // Update existing company - bump score if new signal is higher tier
+      // Update existing company - bump score if new signal has higher score
       const updates = {};
       if (messagingHook) updates.messaging_hook = messagingHook;
       
-      // Get current score and update if new signal warrants higher score
+      // Get current score and update if new signal has higher score
       const { data: current } = await supabase
         .from('companies')
         .select('composite_score')
         .eq('id', company.id)
         .single();
       
-      if (scoreFromSignal > (current?.composite_score || 0)) {
-        updates.composite_score = scoreFromSignal;
+      if (compositeScore > (current?.composite_score || 0)) {
+        updates.composite_score = compositeScore;
       }
       
       if (Object.keys(updates).length > 0) {
