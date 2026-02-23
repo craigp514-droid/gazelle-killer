@@ -144,3 +144,4 @@ Return in this exact format:
     return NextResponse.json({ error: 'Failed to generate' }, { status: 500 })
   }
 }
+// env refresh
