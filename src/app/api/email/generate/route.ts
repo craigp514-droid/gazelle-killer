@@ -140,8 +140,9 @@ Return in this exact format:
         content: (message.content[0] as any).text.trim()
       })
     }
-  } catch (error) {
+  } catch (error: any) {
     console.error('AI generation error:', error)
-    return NextResponse.json({ error: 'Failed to generate' }, { status: 500 })
+    const message = error?.message || error?.toString() || 'Unknown error'
+    return NextResponse.json({ error: `AI Error: ${message}` }, { status: 500 })
   }
 }

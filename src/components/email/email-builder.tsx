@@ -142,6 +142,7 @@ export function EmailBuilder({ company, signals, open, onOpenChange }: EmailBuil
   const [close, setClose] = useState('')
   const [editingSection, setEditingSection] = useState<'intro' | 'context' | 'close' | null>(null)
   const [loading, setLoading] = useState<'intro' | 'context' | 'close' | 'all' | null>(null)
+  const [error, setError] = useState<string | null>(null)
   const [copied, setCopied] = useState(false)
   const [templates, setTemplates] = useState<Template[]>([])
   const [saveTemplateName, setSaveTemplateName] = useState('')
@@ -201,6 +202,7 @@ export function EmailBuilder({ company, signals, open, onOpenChange }: EmailBuil
 
   const generateAll = async () => {
     setLoading('all')
+    setError(null)
     try {
       const res = await fetch('/api/email/generate', {
         method: 'POST',
@@ -212,14 +214,18 @@ export function EmailBuilder({ company, signals, open, onOpenChange }: EmailBuil
         }),
       })
       
+      const data = await res.json()
+      
       if (res.ok) {
-        const data = await res.json()
         setIntro(data.intro || '')
         setContext(data.context || '')
         setClose(data.close || '')
+      } else {
+        setError(data.error || `Error: ${res.status}`)
       }
     } catch (e) {
       console.error('Failed to generate:', e)
+      setError('Failed to connect to server')
     } finally {
       setLoading(null)
     }
@@ -311,6 +317,13 @@ export function EmailBuilder({ company, signals, open, onOpenChange }: EmailBuil
         <div className="grid gap-6 lg:grid-cols-3">
           {/* Email Builder */}
           <div className="lg:col-span-2 space-y-4">
+            {/* Error Display */}
+            {error && (
+              <div className="p-3 bg-red-50 border border-red-200 rounded-lg text-sm text-red-700">
+                {error}
+              </div>
+            )}
+
             {/* Generate All Button */}
             {!intro && !context && !close && (
               <Button
