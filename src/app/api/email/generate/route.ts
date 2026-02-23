@@ -2,9 +2,10 @@ import { createClient } from '@/lib/supabase/server'
 import { NextRequest, NextResponse } from 'next/server'
 import Anthropic from '@anthropic-ai/sdk'
 
-const anthropic = new Anthropic()
-
 export async function POST(request: NextRequest) {
+  const anthropic = new Anthropic({
+    apiKey: process.env.ANTHROPIC_API_KEY,
+  })
   const supabase = await createClient()
   
   const { data: { user } } = await supabase.auth.getUser()
@@ -144,4 +145,3 @@ Return in this exact format:
     return NextResponse.json({ error: 'Failed to generate' }, { status: 500 })
   }
 }
-// env refresh
