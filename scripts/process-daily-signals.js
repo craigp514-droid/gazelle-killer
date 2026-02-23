@@ -147,17 +147,22 @@ async function processDaily() {
       company = byName?.[0];
     }
 
+    // Calculate score from signal tier (tier 1 = 9, tier 2 = 7, tier 3 = 5)
+    const tierToScore = { 1: 9, 2: 7, 3: 5 };
+    const scoreFromSignal = tierToScore[signalTier] || 5;
+
     if (!company) {
-      // Create new company
+      // Create new company with score based on signal tier
       const { data: newCompany, error: createError } = await supabase
         .from('companies')
         .insert({
           name: companyName,
           slug: slug,
           website: fullWebsite,
-          messaging_hook: messagingHook
+          messaging_hook: messagingHook,
+          composite_score: scoreFromSignal
         })
-        .select('id, name')
+        .select('id, name, composite_score')
         .single();
 
       if (createError) {
@@ -171,11 +176,25 @@ async function processDaily() {
       results.companiesCreated++;
       results.clayQueued.push({ name: companyName, website: fullWebsite });
     } else {
-      // Update existing company messaging hook
-      if (messagingHook) {
+      // Update existing company - bump score if new signal is higher tier
+      const updates = {};
+      if (messagingHook) updates.messaging_hook = messagingHook;
+      
+      // Get current score and update if new signal warrants higher score
+      const { data: current } = await supabase
+        .from('companies')
+        .select('composite_score')
+        .eq('id', company.id)
+        .single();
+      
+      if (scoreFromSignal > (current?.composite_score || 0)) {
+        updates.composite_score = scoreFromSignal;
+      }
+      
+      if (Object.keys(updates).length > 0) {
         await supabase
           .from('companies')
-          .update({ messaging_hook: messagingHook })
+          .update(updates)
           .eq('id', company.id);
         results.companiesUpdated++;
       }
