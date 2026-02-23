@@ -3,6 +3,11 @@ import { NextRequest, NextResponse } from 'next/server'
 import Anthropic from '@anthropic-ai/sdk'
 
 export async function POST(request: NextRequest) {
+  // Check for API key
+  if (!process.env.ANTHROPIC_API_KEY) {
+    return NextResponse.json({ error: 'ANTHROPIC_API_KEY not configured' }, { status: 500 })
+  }
+
   const anthropic = new Anthropic({
     apiKey: process.env.ANTHROPIC_API_KEY,
   })
@@ -16,22 +21,34 @@ export async function POST(request: NextRequest) {
   const body = await request.json()
   const { section, company, signals, existingIntro, existingContext } = body
 
-  // Get user profile for personalization
-  const { data: profile } = await supabase
-    .from('profiles')
-    .select('full_name, organization_name, organization_state')
-    .eq('id', user.id)
-    .single()
+  // Get user profile for personalization (gracefully handle missing columns)
+  let profile: any = null
+  try {
+    const { data, error } = await supabase
+      .from('profiles')
+      .select('full_name')
+      .eq('id', user.id)
+      .single()
+    if (!error) profile = data
+  } catch (e) {
+    console.log('Profile fetch skipped:', e)
+  }
 
-  // Get recent approved drafts for style learning (max 5)
-  const { data: approvedDrafts } = await supabase
-    .from('email_approved_drafts')
-    .select('full_email')
-    .eq('user_id', user.id)
-    .order('created_at', { ascending: false })
-    .limit(5)
-
-  const styleExamples = approvedDrafts?.map(d => d.full_email).filter(Boolean) || []
+  // Get recent approved drafts for style learning (gracefully handle if table doesn't exist)
+  let styleExamples: string[] = []
+  try {
+    const { data: approvedDrafts, error } = await supabase
+      .from('email_approved_drafts')
+      .select('full_email')
+      .eq('user_id', user.id)
+      .order('created_at', { ascending: false })
+      .limit(5)
+    if (!error && approvedDrafts) {
+      styleExamples = approvedDrafts.map(d => d.full_email).filter(Boolean)
+    }
+  } catch (e) {
+    console.log('Approved drafts fetch skipped:', e)
+  }
 
   // Build context for AI
   const companyContext = `
@@ -47,8 +64,8 @@ ${signals?.slice(0, 3).map((s: any) => `- ${s.signal_type}: ${s.title}`).join('\
 `.trim()
 
   const userContext = `
-User's Organization: ${profile?.organization_name || 'Economic Development Organization'}
-User's State/Region: ${profile?.organization_state || 'Tennessee'}
+User's Organization: Economic Development Organization
+User's State/Region: Your Region
 User's Role: Economic Development Professional
 `.trim()
 
