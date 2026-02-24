@@ -31,7 +31,8 @@ try {
   console.log('⚠ Clay API key not found - will skip Clay push');
 }
 
-const REQUIRED_COLUMNS = ['company_name', 'website', 'signal_type', 'signal_tier', 'signal_date', 'title', 'source_url', 'messaging_hook', 'composite_score'];
+const REQUIRED_COLUMNS = ['company_name', 'website', 'signal_type', 'signal_tier', 'signal_date', 'title', 'source_url', 'messaging_hook'];
+// composite_score is optional - defaults to tier-based score if not provided
 
 async function processDaily() {
   console.log('🚀 DAILY SIGNAL PROCESSOR\n');
@@ -115,7 +116,11 @@ async function processDaily() {
     const title = row[colIndex['title']]?.trim();
     const sourceUrl = row[colIndex['source_url']]?.trim();
     const messagingHook = row[colIndex['messaging_hook']]?.trim();
-    const compositeScore = parseInt(row[colIndex['composite_score']]) || 5;
+    // composite_score from CSV, or calculate from signal_tier if not provided
+    const tierToScore = { 1: 9, 2: 7, 3: 5 };
+    const compositeScore = colIndex['composite_score'] !== undefined 
+      ? (parseInt(row[colIndex['composite_score']]) || tierToScore[signalTier] || 5)
+      : (tierToScore[signalTier] || 5);
 
     // Validate required fields
     if (!companyName || !website || !signalType || !signalDate || !title || !sourceUrl) {
