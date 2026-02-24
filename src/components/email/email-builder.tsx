@@ -26,8 +26,9 @@ import {
   Save,
   Sparkles,
   X,
-  ChevronDown,
+  Settings,
 } from 'lucide-react'
+import { EmailOnboarding } from './email-onboarding'
 
 interface Company {
   id: string
@@ -45,11 +46,12 @@ interface Signal {
   signal_date: string
 }
 
-interface Template {
+interface Snippet {
   id: string
   name: string
   content: string
-  category: 'intro' | 'context' | 'close'
+  snippet_type: 'intro' | 'close'
+  is_default: boolean
 }
 
 interface EmailBuilderProps {
@@ -72,7 +74,6 @@ function calculateReadingLevel(text: string): number {
   const avgWordsPerSentence = words.length / sentences.length
   const avgSyllablesPerWord = syllables / words.length
   
-  // Flesch-Kincaid Grade Level formula
   const grade = 0.39 * avgWordsPerSentence + 11.8 * avgSyllablesPerWord - 15.59
   return Math.max(1, Math.min(16, Math.round(grade)))
 }
@@ -90,7 +91,6 @@ function countSyllables(word: string): number {
 function calculateHumanScore(text: string): number {
   let score = 100
   
-  // Penalize common AI phrases
   const aiPhrases = [
     'i hope this email finds you',
     'i wanted to reach out',
@@ -108,21 +108,17 @@ function calculateHumanScore(text: string): number {
     if (lowerText.includes(phrase)) score -= 8
   })
   
-  // Penalize overly formal language
   if (lowerText.includes('furthermore')) score -= 5
   if (lowerText.includes('moreover')) score -= 5
   if (lowerText.includes('in conclusion')) score -= 5
   if (lowerText.includes('regarding')) score -= 3
   
-  // Penalize excessive exclamation marks
   const exclamations = (text.match(/!/g) || []).length
   if (exclamations > 2) score -= exclamations * 3
   
-  // Reward contractions (more human)
   const contractions = (text.match(/\b(I'm|we're|you're|don't|can't|won't|isn't|aren't)\b/gi) || []).length
   score += contractions * 3
   
-  // Reward sentence variety
   const sentences = text.split(/[.!?]+/).filter(s => s.trim().length > 0)
   if (sentences.length > 2) {
     const lengths = sentences.map(s => s.trim().split(/\s+/).length)
@@ -144,90 +140,173 @@ export function EmailBuilder({ company, signals, open, onOpenChange }: EmailBuil
   const [loading, setLoading] = useState<'intro' | 'context' | 'close' | 'all' | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [copied, setCopied] = useState(false)
-  const [templates, setTemplates] = useState<Template[]>([])
-  const [saveTemplateName, setSaveTemplateName] = useState('')
-  const [savingTemplate, setSavingTemplate] = useState<'intro' | 'context' | 'close' | null>(null)
+  
+  // Snippets
+  const [introSnippets, setIntroSnippets] = useState<Snippet[]>([])
+  const [closeSnippets, setCloseSnippets] = useState<Snippet[]>([])
+  
+  // Onboarding
+  const [showOnboarding, setShowOnboarding] = useState(false)
+  const [onboardingChecked, setOnboardingChecked] = useState(false)
+  
+  // Saving snippets
+  const [savingSnippet, setSavingSnippet] = useState<'intro' | 'close' | null>(null)
+  const [snippetName, setSnippetName] = useState('')
 
   const fullEmail = [intro, context, close].filter(Boolean).join('\n\n')
   const wordCount = fullEmail.split(/\s+/).filter(w => w.length > 0).length
   const readingLevel = calculateReadingLevel(fullEmail)
   const humanScore = calculateHumanScore(fullEmail)
 
-  // Load templates on mount
+  // Check onboarding status and load snippets
   useEffect(() => {
-    if (open) {
-      loadTemplates()
+    if (open && !onboardingChecked) {
+      checkOnboarding()
     }
-  }, [open])
+  }, [open, onboardingChecked])
 
-  const loadTemplates = async () => {
+  const checkOnboarding = async () => {
     try {
-      const res = await fetch('/api/email/templates')
+      const res = await fetch('/api/email/check-onboarding')
       if (res.ok) {
         const data = await res.json()
-        setTemplates(data.templates || [])
+        setOnboardingChecked(true)
+        
+        if (!data.complete) {
+          setShowOnboarding(true)
+        } else {
+          // Load snippets
+          loadSnippets()
+        }
       }
     } catch (e) {
-      console.error('Failed to load templates:', e)
+      console.error('Failed to check onboarding:', e)
+      setOnboardingChecked(true)
     }
   }
 
-  const generateSection = async (section: 'intro' | 'context' | 'close') => {
-    setLoading(section)
+  const loadSnippets = async () => {
     try {
-      const res = await fetch('/api/email/generate', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          section,
-          company,
-          signals,
-          existingIntro: section !== 'intro' ? intro : undefined,
-          existingContext: section === 'close' ? context : undefined,
-        }),
-      })
-      
+      const res = await fetch('/api/email/snippets')
       if (res.ok) {
         const data = await res.json()
-        if (section === 'intro') setIntro(data.content)
-        if (section === 'context') setContext(data.content)
-        if (section === 'close') setClose(data.content)
+        const intros = data.snippets?.filter((s: Snippet) => s.snippet_type === 'intro') || []
+        const closes = data.snippets?.filter((s: Snippet) => s.snippet_type === 'close') || []
+        
+        setIntroSnippets(intros)
+        setCloseSnippets(closes)
+        
+        // Set defaults
+        const defaultIntro = intros.find((s: Snippet) => s.is_default)
+        const defaultClose = closes.find((s: Snippet) => s.is_default)
+        
+        if (defaultIntro && !intro) setIntro(defaultIntro.content)
+        if (defaultClose && !close) setClose(defaultClose.content)
       }
     } catch (e) {
-      console.error('Failed to generate:', e)
-    } finally {
-      setLoading(null)
+      console.error('Failed to load snippets:', e)
     }
   }
 
-  const generateAll = async () => {
-    setLoading('all')
+  const handleOnboardingComplete = () => {
+    setShowOnboarding(false)
+    loadSnippets()
+  }
+
+  const generateContext = async () => {
+    setLoading('context')
     setError(null)
     try {
-      const res = await fetch('/api/email/generate', {
+      const res = await fetch('/api/email/generate-context', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          section: 'all',
-          company,
-          signals,
-        }),
+        body: JSON.stringify({ company, signals }),
       })
       
       const data = await res.json()
       
       if (res.ok) {
-        setIntro(data.intro || '')
-        setContext(data.context || '')
-        setClose(data.close || '')
+        setContext(data.content || '')
       } else {
-        setError(data.error || `Error: ${res.status}`)
+        setError(data.error || 'Failed to generate')
       }
     } catch (e) {
       console.error('Failed to generate:', e)
       setError('Failed to connect to server')
     } finally {
       setLoading(null)
+    }
+  }
+
+  const generateIntro = async () => {
+    setLoading('intro')
+    setError(null)
+    try {
+      const res = await fetch('/api/email/generate-snippet', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ type: 'intro' }),
+      })
+      
+      const data = await res.json()
+      if (res.ok) {
+        setIntro(data.content || '')
+      } else {
+        setError(data.error || 'Failed to generate')
+      }
+    } catch (e) {
+      setError('Failed to generate intro')
+    } finally {
+      setLoading(null)
+    }
+  }
+
+  const generateClose = async () => {
+    setLoading('close')
+    setError(null)
+    try {
+      const res = await fetch('/api/email/generate-snippet', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ type: 'close' }),
+      })
+      
+      const data = await res.json()
+      if (res.ok) {
+        setClose(data.content || '')
+      } else {
+        setError(data.error || 'Failed to generate')
+      }
+    } catch (e) {
+      setError('Failed to generate close')
+    } finally {
+      setLoading(null)
+    }
+  }
+
+  const saveSnippet = async (type: 'intro' | 'close') => {
+    const content = type === 'intro' ? intro : close
+    if (!content || !snippetName) return
+    
+    try {
+      const res = await fetch('/api/email/snippets', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ 
+          snippet_type: type, 
+          name: snippetName, 
+          content,
+          is_default: false 
+        }),
+      })
+      
+      if (res.ok) {
+        await loadSnippets()
+        setSavingSnippet(null)
+        setSnippetName('')
+      }
+    } catch (e) {
+      console.error('Failed to save snippet:', e)
     }
   }
 
@@ -254,33 +333,6 @@ export function EmailBuilder({ company, signals, open, onOpenChange }: EmailBuil
     }
   }
 
-  const saveTemplate = async (section: 'intro' | 'context' | 'close', name: string) => {
-    const content = section === 'intro' ? intro : section === 'context' ? context : close
-    if (!content || !name) return
-    
-    try {
-      const res = await fetch('/api/email/templates', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, category: section, content }),
-      })
-      
-      if (res.ok) {
-        await loadTemplates()
-        setSavingTemplate(null)
-        setSaveTemplateName('')
-      }
-    } catch (e) {
-      console.error('Failed to save template:', e)
-    }
-  }
-
-  const applyTemplate = (template: Template) => {
-    if (template.category === 'intro') setIntro(template.content)
-    if (template.category === 'context') setContext(template.content)
-    if (template.category === 'close') setClose(template.content)
-  }
-
   const getScoreColor = (score: number, type: 'length' | 'reading' | 'human') => {
     if (type === 'length') {
       if (score >= 50 && score <= 120) return 'bg-green-500'
@@ -300,9 +352,10 @@ export function EmailBuilder({ company, signals, open, onOpenChange }: EmailBuil
     return 'bg-slate-500'
   }
 
-  const sectionTemplates = useCallback((category: 'intro' | 'context' | 'close') => {
-    return templates.filter(t => t.category === category)
-  }, [templates])
+  // Show onboarding if needed
+  if (showOnboarding) {
+    return <EmailOnboarding open={true} onComplete={handleOnboardingComplete} />
+  }
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
@@ -324,138 +377,238 @@ export function EmailBuilder({ company, signals, open, onOpenChange }: EmailBuil
               </div>
             )}
 
-            {/* Generate All Button */}
-            {!intro && !context && !close && (
-              <Button
-                onClick={generateAll}
-                disabled={loading !== null}
-                className="w-full bg-orange-500 hover:bg-orange-600"
-              >
-                {loading === 'all' ? (
-                  <RefreshCw className="h-4 w-4 mr-2 animate-spin" />
+            {/* Intro Section */}
+            <Card className="border-slate-200">
+              <CardHeader className="py-3">
+                <div className="flex items-center justify-between">
+                  <CardTitle className="text-sm font-medium text-slate-700">
+                    Intro
+                  </CardTitle>
+                  <div className="flex items-center gap-2">
+                    {introSnippets.length > 0 && (
+                      <Select onValueChange={(id) => {
+                        const snippet = introSnippets.find(s => s.id === id)
+                        if (snippet) setIntro(snippet.content)
+                      }}>
+                        <SelectTrigger className="h-7 w-[120px] text-xs">
+                          <SelectValue placeholder="Saved" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          {introSnippets.map(s => (
+                            <SelectItem key={s.id} value={s.id} className="text-xs">
+                              {s.name}
+                            </SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+                    )}
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      onClick={generateIntro}
+                      disabled={loading !== null}
+                      className="h-7 text-xs"
+                    >
+                      {loading === 'intro' ? (
+                        <RefreshCw className="h-3 w-3 animate-spin" />
+                      ) : (
+                        <Sparkles className="h-3 w-3" />
+                      )}
+                    </Button>
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      onClick={() => setEditingSection(editingSection === 'intro' ? null : 'intro')}
+                      className="h-7 text-xs"
+                    >
+                      <Pencil className="h-3 w-3" />
+                    </Button>
+                    {intro && (
+                      <Button
+                        size="sm"
+                        variant="ghost"
+                        onClick={() => setSavingSnippet('intro')}
+                        className="h-7 text-xs"
+                      >
+                        <Save className="h-3 w-3" />
+                      </Button>
+                    )}
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent className="pt-0">
+                {editingSection === 'intro' ? (
+                  <Textarea
+                    value={intro}
+                    onChange={(e) => setIntro(e.target.value)}
+                    className="min-h-[60px] text-sm"
+                    placeholder="Write your intro..."
+                  />
                 ) : (
-                  <Sparkles className="h-4 w-4 mr-2" />
+                  <p className="text-sm text-slate-600 whitespace-pre-wrap min-h-[40px]">
+                    {intro || <span className="text-slate-400 italic">Select a saved intro or generate one</span>}
+                  </p>
                 )}
-                Generate Complete Draft
-              </Button>
-            )}
+                {savingSnippet === 'intro' && (
+                  <div className="mt-2 flex gap-2">
+                    <input
+                      type="text"
+                      value={snippetName}
+                      onChange={(e) => setSnippetName(e.target.value)}
+                      placeholder="Snippet name..."
+                      className="flex-1 px-2 py-1 text-sm border rounded"
+                    />
+                    <Button size="sm" onClick={() => saveSnippet('intro')} className="h-7">Save</Button>
+                    <Button size="sm" variant="ghost" onClick={() => { setSavingSnippet(null); setSnippetName('') }} className="h-7">
+                      <X className="h-3 w-3" />
+                    </Button>
+                  </div>
+                )}
+              </CardContent>
+            </Card>
 
-            {/* Paragraph Sections */}
-            {['intro', 'context', 'close'].map((section) => {
-              const sectionKey = section as 'intro' | 'context' | 'close'
-              const value = sectionKey === 'intro' ? intro : sectionKey === 'context' ? context : close
-              const setValue = sectionKey === 'intro' ? setIntro : sectionKey === 'context' ? setContext : setClose
-              const label = sectionKey === 'intro' ? 'Intro' : sectionKey === 'context' ? 'Context / Value' : 'Close / CTA'
-              const sectionTpls = sectionTemplates(sectionKey)
+            {/* Context Section - AI Generated */}
+            <Card className="border-orange-200 bg-orange-50/50">
+              <CardHeader className="py-3">
+                <div className="flex items-center justify-between">
+                  <CardTitle className="text-sm font-medium text-slate-700">
+                    Context / Value <span className="text-orange-500 text-xs ml-1">(AI)</span>
+                  </CardTitle>
+                  <div className="flex items-center gap-2">
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      onClick={generateContext}
+                      disabled={loading !== null}
+                      className="h-7 text-xs bg-white"
+                    >
+                      {loading === 'context' ? (
+                        <RefreshCw className="h-3 w-3 animate-spin mr-1" />
+                      ) : (
+                        <Sparkles className="h-3 w-3 mr-1" />
+                      )}
+                      Generate
+                    </Button>
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      onClick={() => setEditingSection(editingSection === 'context' ? null : 'context')}
+                      className="h-7 text-xs bg-white"
+                    >
+                      <Pencil className="h-3 w-3" />
+                    </Button>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent className="pt-0">
+                {editingSection === 'context' ? (
+                  <Textarea
+                    value={context}
+                    onChange={(e) => setContext(e.target.value)}
+                    className="min-h-[80px] text-sm"
+                    placeholder="AI will generate company-specific context..."
+                  />
+                ) : (
+                  <p className="text-sm text-slate-600 whitespace-pre-wrap min-h-[60px]">
+                    {context || (
+                      <span className="text-slate-400 italic">
+                        Click "Generate" to create company-specific context based on signals and your org info
+                      </span>
+                    )}
+                  </p>
+                )}
+              </CardContent>
+            </Card>
 
-              return (
-                <Card key={section} className="border-slate-200">
-                  <CardHeader className="py-3">
-                    <div className="flex items-center justify-between">
-                      <CardTitle className="text-sm font-medium text-slate-700">
-                        {label}
-                      </CardTitle>
-                      <div className="flex items-center gap-2">
-                        {sectionTpls.length > 0 && (
-                          <Select onValueChange={(id) => {
-                            const tpl = sectionTpls.find(t => t.id === id)
-                            if (tpl) applyTemplate(tpl)
-                          }}>
-                            <SelectTrigger className="h-7 w-[120px] text-xs">
-                              <SelectValue placeholder="Templates" />
-                            </SelectTrigger>
-                            <SelectContent>
-                              {sectionTpls.map(t => (
-                                <SelectItem key={t.id} value={t.id} className="text-xs">
-                                  {t.name}
-                                </SelectItem>
-                              ))}
-                            </SelectContent>
-                          </Select>
-                        )}
-                        <Button
-                          size="sm"
-                          variant="outline"
-                          onClick={() => generateSection(sectionKey)}
-                          disabled={loading !== null}
-                          className="h-7 text-xs"
-                        >
-                          {loading === sectionKey ? (
-                            <RefreshCw className="h-3 w-3 animate-spin" />
-                          ) : (
-                            <RefreshCw className="h-3 w-3" />
-                          )}
-                        </Button>
-                        <Button
-                          size="sm"
-                          variant="outline"
-                          onClick={() => setEditingSection(editingSection === sectionKey ? null : sectionKey)}
-                          className="h-7 text-xs"
-                        >
-                          <Pencil className="h-3 w-3" />
-                        </Button>
-                        {value && (
-                          <Button
-                            size="sm"
-                            variant="ghost"
-                            onClick={() => setSavingTemplate(sectionKey)}
-                            className="h-7 text-xs"
-                          >
-                            <Save className="h-3 w-3" />
-                          </Button>
-                        )}
-                      </div>
-                    </div>
-                  </CardHeader>
-                  <CardContent className="pt-0">
-                    {editingSection === sectionKey ? (
-                      <Textarea
-                        value={value}
-                        onChange={(e) => setValue(e.target.value)}
-                        className="min-h-[80px] text-sm"
-                        placeholder={`Write your ${label.toLowerCase()}...`}
-                      />
-                    ) : (
-                      <p className="text-sm text-slate-600 whitespace-pre-wrap min-h-[40px]">
-                        {value || (
-                          <span className="text-slate-400 italic">
-                            Click generate or select a template
-                          </span>
-                        )}
-                      </p>
+            {/* Close Section */}
+            <Card className="border-slate-200">
+              <CardHeader className="py-3">
+                <div className="flex items-center justify-between">
+                  <CardTitle className="text-sm font-medium text-slate-700">
+                    Close / CTA
+                  </CardTitle>
+                  <div className="flex items-center gap-2">
+                    {closeSnippets.length > 0 && (
+                      <Select onValueChange={(id) => {
+                        const snippet = closeSnippets.find(s => s.id === id)
+                        if (snippet) setClose(snippet.content)
+                      }}>
+                        <SelectTrigger className="h-7 w-[120px] text-xs">
+                          <SelectValue placeholder="Saved" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          {closeSnippets.map(s => (
+                            <SelectItem key={s.id} value={s.id} className="text-xs">
+                              {s.name}
+                            </SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
                     )}
-                    
-                    {/* Save template inline */}
-                    {savingTemplate === sectionKey && (
-                      <div className="mt-2 flex gap-2">
-                        <input
-                          type="text"
-                          value={saveTemplateName}
-                          onChange={(e) => setSaveTemplateName(e.target.value)}
-                          placeholder="Template name..."
-                          className="flex-1 px-2 py-1 text-sm border rounded"
-                        />
-                        <Button
-                          size="sm"
-                          onClick={() => saveTemplate(sectionKey, saveTemplateName)}
-                          className="h-7"
-                        >
-                          Save
-                        </Button>
-                        <Button
-                          size="sm"
-                          variant="ghost"
-                          onClick={() => { setSavingTemplate(null); setSaveTemplateName('') }}
-                          className="h-7"
-                        >
-                          <X className="h-3 w-3" />
-                        </Button>
-                      </div>
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      onClick={generateClose}
+                      disabled={loading !== null}
+                      className="h-7 text-xs"
+                    >
+                      {loading === 'close' ? (
+                        <RefreshCw className="h-3 w-3 animate-spin" />
+                      ) : (
+                        <Sparkles className="h-3 w-3" />
+                      )}
+                    </Button>
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      onClick={() => setEditingSection(editingSection === 'close' ? null : 'close')}
+                      className="h-7 text-xs"
+                    >
+                      <Pencil className="h-3 w-3" />
+                    </Button>
+                    {close && (
+                      <Button
+                        size="sm"
+                        variant="ghost"
+                        onClick={() => setSavingSnippet('close')}
+                        className="h-7 text-xs"
+                      >
+                        <Save className="h-3 w-3" />
+                      </Button>
                     )}
-                  </CardContent>
-                </Card>
-              )
-            })}
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent className="pt-0">
+                {editingSection === 'close' ? (
+                  <Textarea
+                    value={close}
+                    onChange={(e) => setClose(e.target.value)}
+                    className="min-h-[40px] text-sm"
+                    placeholder="Write your close..."
+                  />
+                ) : (
+                  <p className="text-sm text-slate-600 whitespace-pre-wrap min-h-[30px]">
+                    {close || <span className="text-slate-400 italic">Select a saved close or generate one</span>}
+                  </p>
+                )}
+                {savingSnippet === 'close' && (
+                  <div className="mt-2 flex gap-2">
+                    <input
+                      type="text"
+                      value={snippetName}
+                      onChange={(e) => setSnippetName(e.target.value)}
+                      placeholder="Snippet name..."
+                      className="flex-1 px-2 py-1 text-sm border rounded"
+                    />
+                    <Button size="sm" onClick={() => saveSnippet('close')} className="h-7">Save</Button>
+                    <Button size="sm" variant="ghost" onClick={() => { setSavingSnippet(null); setSnippetName('') }} className="h-7">
+                      <X className="h-3 w-3" />
+                    </Button>
+                  </div>
+                )}
+              </CardContent>
+            </Card>
 
             {/* Copy Button */}
             {fullEmail && (
@@ -551,7 +704,7 @@ export function EmailBuilder({ company, signals, open, onOpenChange }: EmailBuil
             {/* Context Used */}
             <Card>
               <CardHeader className="pb-3">
-                <CardTitle className="text-sm font-medium">Context Used</CardTitle>
+                <CardTitle className="text-sm font-medium">Company Context</CardTitle>
               </CardHeader>
               <CardContent className="space-y-2">
                 <div className="flex flex-wrap gap-1">
