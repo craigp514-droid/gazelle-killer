@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
 import { Textarea } from '@/components/ui/textarea'
 import { Input } from '@/components/ui/input'
 import {
@@ -70,34 +69,6 @@ const GENERAL_VALUE_STATEMENTS = [
   "Would be glad to provide some context on our region if it's ever relevant.",
 ]
 
-// Scoring functions
-function calculateReadingLevel(text: string): number {
-  const sentences = text.split(/[.!?]+/).filter(s => s.trim().length > 0)
-  const words = text.split(/\s+/).filter(w => w.length > 0)
-  if (sentences.length === 0 || words.length === 0) return 0
-  const syllables = words.reduce((count, word) => count + countSyllables(word), 0)
-  const grade = 0.39 * (words.length / sentences.length) + 11.8 * (syllables / words.length) - 15.59
-  return Math.max(1, Math.min(16, Math.round(grade)))
-}
-
-function countSyllables(word: string): number {
-  word = word.toLowerCase().replace(/[^a-z]/g, '')
-  if (word.length <= 3) return 1
-  word = word.replace(/(?:[^laeiouy]es|ed|[^laeiouy]e)$/, '').replace(/^y/, '')
-  const matches = word.match(/[aeiouy]{1,2}/g)
-  return matches ? matches.length : 1
-}
-
-function calculateHumanScore(text: string): number {
-  let score = 100
-  const aiPhrases = ['i hope this email finds you', 'i wanted to reach out', 'please do not hesitate', 'feel free to', 'at your earliest convenience']
-  const lowerText = text.toLowerCase()
-  aiPhrases.forEach(phrase => { if (lowerText.includes(phrase)) score -= 8 })
-  const contractions = (text.match(/\b(I'm|we're|you're|don't|can't|won't)\b/gi) || []).length
-  score += contractions * 3
-  return Math.max(0, Math.min(100, score))
-}
-
 export function EmailBuilder({ company, signals, open, onOpenChange }: EmailBuilderProps) {
   const [intro, setIntro] = useState('')
   const [noticeStatement, setNoticeStatement] = useState('')
@@ -136,8 +107,6 @@ export function EmailBuilder({ company, signals, open, onOpenChange }: EmailBuil
   const contextParagraph = buildContextParagraph()
   const fullEmail = [intro, contextParagraph, close].filter(Boolean).join('\n\n')
   const wordCount = fullEmail.split(/\s+/).filter(w => w.length > 0).length
-  const readingLevel = calculateReadingLevel(fullEmail)
-  const humanScore = calculateHumanScore(fullEmail)
 
   useEffect(() => {
     if (open && !onboardingChecked) {
@@ -283,20 +252,13 @@ export function EmailBuilder({ company, signals, open, onOpenChange }: EmailBuil
     setTimeout(() => setCopied(false), 2000)
   }
 
-  const getScoreColor = (score: number, type: 'length' | 'reading' | 'human') => {
-    if (type === 'length') return score >= 50 && score <= 120 ? 'bg-green-500' : score >= 30 && score <= 150 ? 'bg-yellow-500' : 'bg-red-500'
-    if (type === 'reading') return score >= 6 && score <= 9 ? 'bg-green-500' : score >= 4 && score <= 11 ? 'bg-yellow-500' : 'bg-red-500'
-    if (type === 'human') return score >= 80 ? 'bg-green-500' : score >= 60 ? 'bg-yellow-500' : 'bg-red-500'
-    return 'bg-slate-500'
-  }
-
   if (showOnboarding) {
     return <EmailOnboarding open={true} onComplete={() => { setShowOnboarding(false); loadSnippets() }} />
   }
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-5xl max-h-[90vh] overflow-y-auto">
+      <DialogContent className="max-w-6xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <div className="flex items-center justify-between">
             <DialogTitle className="flex items-center gap-2">
@@ -502,57 +464,48 @@ export function EmailBuilder({ company, signals, open, onOpenChange }: EmailBuil
             )}
           </div>
 
-          {/* Scoring Panel */}
+          {/* Preview Panel */}
           <div className="space-y-4">
+            {/* Optimal Email Length */}
             <Card>
               <CardHeader className="pb-3">
-                <CardTitle className="text-sm font-medium">Email Quality</CardTitle>
+                <CardTitle className="text-sm font-medium">Optimal Email Length</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <div>
-                  <div className="flex items-center justify-between text-xs mb-1">
-                    <span className="text-slate-600">📏 Length</span>
-                    <span className={`font-medium ${wordCount >= 50 && wordCount <= 120 ? 'text-green-600' : 'text-yellow-600'}`}>{wordCount} words</span>
-                  </div>
-                  <div className="h-2 bg-slate-100 rounded-full overflow-hidden">
-                    <div className={`h-full ${getScoreColor(wordCount, 'length')} transition-all`} style={{ width: `${Math.min(100, (wordCount / 120) * 100)}%` }} />
-                  </div>
-                  <p className="text-[10px] text-slate-400 mt-0.5">Target: 50-120 words</p>
+              <CardContent>
+                <div className="flex items-center justify-between text-xs mb-1">
+                  <span className="text-slate-600">Words</span>
+                  <span className={`font-medium ${wordCount >= 50 && wordCount <= 120 ? 'text-green-600' : wordCount > 0 ? 'text-yellow-600' : 'text-slate-400'}`}>
+                    {wordCount} / 50-120
+                  </span>
                 </div>
-                <div>
-                  <div className="flex items-center justify-between text-xs mb-1">
-                    <span className="text-slate-600">📖 Reading Level</span>
-                    <span className={`font-medium ${readingLevel >= 6 && readingLevel <= 9 ? 'text-green-600' : 'text-yellow-600'}`}>Grade {readingLevel}</span>
-                  </div>
-                  <div className="h-2 bg-slate-100 rounded-full overflow-hidden">
-                    <div className={`h-full ${getScoreColor(readingLevel, 'reading')} transition-all`} style={{ width: `${Math.min(100, (readingLevel / 12) * 100)}%` }} />
-                  </div>
-                  <p className="text-[10px] text-slate-400 mt-0.5">Target: Grade 6-9</p>
-                </div>
-                <div>
-                  <div className="flex items-center justify-between text-xs mb-1">
-                    <span className="text-slate-600">🤖 Human Score</span>
-                    <span className={`font-medium ${humanScore >= 80 ? 'text-green-600' : 'text-yellow-600'}`}>{humanScore}%</span>
-                  </div>
-                  <div className="h-2 bg-slate-100 rounded-full overflow-hidden">
-                    <div className={`h-full ${getScoreColor(humanScore, 'human')} transition-all`} style={{ width: `${humanScore}%` }} />
-                  </div>
-                  <p className="text-[10px] text-slate-400 mt-0.5">Target: 80%+ human</p>
+                <div className="h-2 bg-slate-100 rounded-full overflow-hidden">
+                  <div 
+                    className={`h-full transition-all ${
+                      wordCount >= 50 && wordCount <= 120 ? 'bg-green-500' : 
+                      wordCount > 120 ? 'bg-red-500' : 
+                      wordCount > 0 ? 'bg-yellow-500' : 'bg-slate-200'
+                    }`} 
+                    style={{ width: `${Math.min(100, (wordCount / 120) * 100)}%` }} 
+                  />
                 </div>
               </CardContent>
             </Card>
 
+            {/* Full Email Preview */}
             <Card>
               <CardHeader className="pb-3">
-                <CardTitle className="text-sm font-medium">Company Context</CardTitle>
+                <CardTitle className="text-sm font-medium">Email Preview</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-2">
-                <div className="flex flex-wrap gap-1">
-                  {company.industry && <Badge variant="secondary" className="text-[10px]">{company.industry}</Badge>}
-                  {company.hq_state && <Badge variant="secondary" className="text-[10px]">{company.hq_state}</Badge>}
-                  {signals.length > 0 && <Badge variant="secondary" className="text-[10px]">{signals.length} signal{signals.length !== 1 ? 's' : ''}</Badge>}
-                </div>
-                {company.messaging_hook && <p className="text-[10px] text-slate-500 line-clamp-2">Hook: {company.messaging_hook}</p>}
+              <CardContent>
+                {fullEmail ? (
+                  <div className="text-sm text-slate-700 whitespace-pre-wrap leading-relaxed bg-slate-50 p-4 rounded-lg border min-h-[200px]">
+                    {fullEmail}
+                  </div>
+                ) : (
+                  <div className="text-sm text-slate-400 italic bg-slate-50 p-4 rounded-lg border min-h-[200px]">
+                    Your email will appear here as you build it...
+                  </div>
+                )}
               </CardContent>
             </Card>
           </div>
