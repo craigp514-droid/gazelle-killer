@@ -353,7 +353,16 @@ export function EmailBuilder({ company, signals, open, onOpenChange }: EmailBuil
                     {/* Context Statement Generator */}
                     <div className="space-y-2">
                       <div className="flex items-center justify-between">
-                        <p className="text-xs text-slate-500 font-medium">What caught your attention?</p>
+                        <div>
+                          <p className="text-xs text-slate-500 font-medium">What caught your attention?</p>
+                          <p className="text-[10px] text-slate-400">
+                            {signals.length > 0 
+                              ? `✓ ${signals.length} signal${signals.length > 1 ? 's' : ''} available`
+                              : company.messaging_hook 
+                                ? '○ Using company context (no signals)'
+                                : '○ Using industry trends (no signals)'}
+                          </p>
+                        </div>
                         <Button size="sm" variant="outline" onClick={generateNotice} disabled={loading !== null} className="h-7 text-xs bg-white">
                           {loading === 'notice' ? <RefreshCw className="h-3 w-3 animate-spin mr-1" /> : <Sparkles className="h-3 w-3 mr-1" />}
                           Generate
@@ -362,7 +371,11 @@ export function EmailBuilder({ company, signals, open, onOpenChange }: EmailBuil
                       {noticeStatement ? (
                         <p className="text-sm text-slate-600 p-2 bg-white rounded border">{noticeStatement}</p>
                       ) : (
-                        <p className="text-sm text-slate-400 italic p-2">Click Generate — AI references a signal and connects it to potential growth</p>
+                        <p className="text-sm text-slate-400 italic p-2">
+                          {signals.length > 0 
+                            ? 'Click Generate — AI references your signal and connects it to growth'
+                            : 'Click Generate — AI creates an industry-based opener'}
+                        </p>
                       )}
                     </div>
 
