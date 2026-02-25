@@ -78,7 +78,7 @@ export function EmailBuilder({ company, signals, open, onOpenChange }: EmailBuil
   const [sellingPointText, setSellingPointText] = useState('')
   const [close, setClose] = useState('')
   
-  const [editingSection, setEditingSection] = useState<'intro' | 'notice' | 'close' | null>(null)
+  const [editingSection, setEditingSection] = useState<'intro' | 'p2' | 'close' | null>(null)
   const [loading, setLoading] = useState<string | null>(null)
   const [error, setError] = useState<string | null>(null)
   const [copied, setCopied] = useState(false)
@@ -92,8 +92,8 @@ export function EmailBuilder({ company, signals, open, onOpenChange }: EmailBuil
   const [savingSnippet, setSavingSnippet] = useState<'intro' | 'close' | null>(null)
   const [snippetName, setSnippetName] = useState('')
 
-  // Build the context paragraph
-  const buildContextParagraph = () => {
+  // Build paragraph 2
+  const buildParagraph2 = () => {
     let parts = []
     if (noticeStatement) parts.push(noticeStatement)
     if (valueAddition === 'general' && selectedGeneralValue) {
@@ -104,8 +104,8 @@ export function EmailBuilder({ company, signals, open, onOpenChange }: EmailBuil
     return parts.join(' ')
   }
 
-  const contextParagraph = buildContextParagraph()
-  const fullEmail = [intro, contextParagraph, close].filter(Boolean).join('\n\n')
+  const paragraph2 = buildParagraph2()
+  const fullEmail = [intro, paragraph2, close].filter(Boolean).join('\n\n')
   const wordCount = fullEmail.split(/\s+/).filter(w => w.length > 0).length
 
   useEffect(() => {
@@ -275,11 +275,14 @@ export function EmailBuilder({ company, signals, open, onOpenChange }: EmailBuil
               <div className="p-3 bg-red-50 border border-red-200 rounded-lg text-sm text-red-700">{error}</div>
             )}
 
-            {/* Intro */}
-            <Card>
+            {/* PARAGRAPH 1 - Blue */}
+            <Card className="border-l-4 border-l-blue-400 bg-blue-50/30">
               <CardHeader className="py-3">
                 <div className="flex items-center justify-between">
-                  <CardTitle className="text-sm font-medium text-slate-700">Intro</CardTitle>
+                  <CardTitle className="text-sm font-medium text-slate-700 flex items-center gap-2">
+                    <span className="w-6 h-6 rounded-full bg-blue-400 text-white text-xs flex items-center justify-center font-bold">1</span>
+                    Intro
+                  </CardTitle>
                   <div className="flex items-center gap-2">
                     {introSnippets.length > 0 && (
                       <Select onValueChange={(id) => {
@@ -304,7 +307,7 @@ export function EmailBuilder({ company, signals, open, onOpenChange }: EmailBuil
               </CardHeader>
               <CardContent className="pt-0">
                 {editingSection === 'intro' ? (
-                  <Textarea value={intro} onChange={(e) => setIntro(e.target.value)} className="min-h-[60px] text-sm" />
+                  <Textarea value={intro} onChange={(e) => setIntro(e.target.value)} className="min-h-[60px] text-sm bg-white" />
                 ) : (
                   <p className="text-sm text-slate-600 whitespace-pre-wrap min-h-[40px]">
                     {intro || <span className="text-slate-400 italic">Select saved intro or generate one</span>}
@@ -320,102 +323,112 @@ export function EmailBuilder({ company, signals, open, onOpenChange }: EmailBuil
               </CardContent>
             </Card>
 
-            {/* "I noticed..." Statement */}
-            <Card className="border-orange-200 bg-orange-50/50">
+            {/* PARAGRAPH 2 - Orange */}
+            <Card className="border-l-4 border-l-orange-400 bg-orange-50/30">
               <CardHeader className="py-3">
                 <div className="flex items-center justify-between">
-                  <CardTitle className="text-sm font-medium text-slate-700">
-                    "I noticed..." <span className="text-orange-500 text-xs ml-1">(AI)</span>
+                  <CardTitle className="text-sm font-medium text-slate-700 flex items-center gap-2">
+                    <span className="w-6 h-6 rounded-full bg-orange-400 text-white text-xs flex items-center justify-center font-bold">2</span>
+                    Context
+                    <span className="text-orange-500 text-xs font-normal">(AI-assisted)</span>
                   </CardTitle>
-                  <div className="flex items-center gap-2">
-                    <Button size="sm" variant="outline" onClick={generateNotice} disabled={loading !== null} className="h-7 text-xs bg-white">
-                      {loading === 'notice' ? <RefreshCw className="h-3 w-3 animate-spin mr-1" /> : <Sparkles className="h-3 w-3 mr-1" />}
-                      Generate
-                    </Button>
-                    <Button size="sm" variant="outline" onClick={() => setEditingSection(editingSection === 'notice' ? null : 'notice')} className="h-7 text-xs bg-white">
-                      <Pencil className="h-3 w-3" />
-                    </Button>
-                  </div>
+                  <Button size="sm" variant="outline" onClick={() => setEditingSection(editingSection === 'p2' ? null : 'p2')} className="h-7 text-xs">
+                    <Pencil className="h-3 w-3" />
+                  </Button>
                 </div>
               </CardHeader>
-              <CardContent className="pt-0">
-                {editingSection === 'notice' ? (
-                  <Textarea value={noticeStatement} onChange={(e) => setNoticeStatement(e.target.value)} className="min-h-[60px] text-sm" placeholder="I noticed that..." />
+              <CardContent className="pt-0 space-y-4">
+                {editingSection === 'p2' ? (
+                  <Textarea 
+                    value={paragraph2} 
+                    onChange={(e) => {
+                      setNoticeStatement(e.target.value)
+                      setValueAddition('none')
+                    }} 
+                    className="min-h-[80px] text-sm bg-white" 
+                    placeholder="Write your context paragraph..."
+                  />
                 ) : (
-                  <p className="text-sm text-slate-600 whitespace-pre-wrap min-h-[40px]">
-                    {noticeStatement || <span className="text-slate-400 italic">Click Generate — AI will create a relevant talking point based on signals or company info</span>}
-                  </p>
-                )}
-              </CardContent>
-            </Card>
-
-            {/* Optional Value Addition */}
-            <Card>
-              <CardHeader className="py-3">
-                <CardTitle className="text-sm font-medium text-slate-700">Add Value Statement? <span className="text-slate-400 text-xs">(optional)</span></CardTitle>
-              </CardHeader>
-              <CardContent className="pt-0 space-y-3">
-                <div className="flex gap-2">
-                  <Button size="sm" variant={valueAddition === 'none' ? 'default' : 'outline'} onClick={() => setValueAddition('none')} className="text-xs">
-                    Keep it short
-                  </Button>
-                  <Button size="sm" variant={valueAddition === 'general' ? 'default' : 'outline'} onClick={() => setValueAddition('general')} className="text-xs">
-                    <Plus className="h-3 w-3 mr-1" /> General value
-                  </Button>
-                  <Button size="sm" variant={valueAddition === 'selling' ? 'default' : 'outline'} onClick={() => setValueAddition('selling')} className="text-xs">
-                    <Plus className="h-3 w-3 mr-1" /> Selling point
-                  </Button>
-                </div>
-
-                {valueAddition === 'general' && (
-                  <div className="space-y-2">
-                    <p className="text-xs text-slate-500">Select a soft value statement:</p>
-                    {GENERAL_VALUE_STATEMENTS.map((stmt, i) => (
-                      <div
-                        key={i}
-                        onClick={() => setSelectedGeneralValue(stmt)}
-                        className={`p-2 text-sm rounded-lg cursor-pointer border transition-all ${
-                          selectedGeneralValue === stmt ? 'border-orange-400 bg-orange-50' : 'border-slate-200 hover:border-orange-200'
-                        }`}
-                      >
-                        {stmt}
-                      </div>
-                    ))}
-                  </div>
-                )}
-
-                {valueAddition === 'selling' && (
-                  <div className="space-y-2">
-                    <p className="text-xs text-slate-500">Enter a keyword for your selling point:</p>
-                    <div className="flex gap-2">
-                      <Input
-                        value={sellingPointKeyword}
-                        onChange={(e) => setSellingPointKeyword(e.target.value)}
-                        placeholder="e.g., incentives, talent, proximity..."
-                        className="text-sm"
-                      />
-                      <Button size="sm" onClick={generateSellingPoint} disabled={!sellingPointKeyword || loading === 'selling'}>
-                        {loading === 'selling' ? <RefreshCw className="h-3 w-3 animate-spin" /> : <Sparkles className="h-3 w-3" />}
-                      </Button>
-                    </div>
-                    {sellingPointText && (
-                      <div className="p-2 text-sm bg-slate-50 rounded-lg border">
-                        {sellingPointText}
-                        <Button size="sm" variant="ghost" className="ml-2 h-6 text-xs" onClick={() => setEditingSection('notice')}>
-                          <Pencil className="h-3 w-3" />
+                  <>
+                    {/* Talking Point Generator */}
+                    <div className="space-y-2">
+                      <div className="flex items-center justify-between">
+                        <p className="text-xs text-slate-500 font-medium">Talking Point</p>
+                        <Button size="sm" variant="outline" onClick={generateNotice} disabled={loading !== null} className="h-7 text-xs bg-white">
+                          {loading === 'notice' ? <RefreshCw className="h-3 w-3 animate-spin mr-1" /> : <Sparkles className="h-3 w-3 mr-1" />}
+                          Generate
                         </Button>
                       </div>
-                    )}
-                  </div>
+                      {noticeStatement ? (
+                        <p className="text-sm text-slate-600 p-2 bg-white rounded border">{noticeStatement}</p>
+                      ) : (
+                        <p className="text-sm text-slate-400 italic p-2">Click Generate — AI creates a relevant talking point from signals or company info</p>
+                      )}
+                    </div>
+
+                    {/* Value Addition */}
+                    <div className="space-y-2 pt-2 border-t border-orange-200">
+                      <p className="text-xs text-slate-500 font-medium">Add Value Statement? <span className="text-slate-400 font-normal">(optional)</span></p>
+                      <div className="flex gap-2 flex-wrap">
+                        <Button size="sm" variant={valueAddition === 'none' ? 'default' : 'outline'} onClick={() => setValueAddition('none')} className="text-xs h-7">
+                          Keep it short
+                        </Button>
+                        <Button size="sm" variant={valueAddition === 'general' ? 'default' : 'outline'} onClick={() => setValueAddition('general')} className="text-xs h-7">
+                          <Plus className="h-3 w-3 mr-1" /> General value
+                        </Button>
+                        <Button size="sm" variant={valueAddition === 'selling' ? 'default' : 'outline'} onClick={() => setValueAddition('selling')} className="text-xs h-7">
+                          <Plus className="h-3 w-3 mr-1" /> Selling point
+                        </Button>
+                      </div>
+
+                      {valueAddition === 'general' && (
+                        <div className="space-y-2 mt-2">
+                          {GENERAL_VALUE_STATEMENTS.map((stmt, i) => (
+                            <div
+                              key={i}
+                              onClick={() => setSelectedGeneralValue(stmt)}
+                              className={`p-2 text-sm rounded-lg cursor-pointer border transition-all ${
+                                selectedGeneralValue === stmt ? 'border-orange-400 bg-orange-100' : 'border-slate-200 bg-white hover:border-orange-200'
+                              }`}
+                            >
+                              {stmt}
+                            </div>
+                          ))}
+                        </div>
+                      )}
+
+                      {valueAddition === 'selling' && (
+                        <div className="space-y-2 mt-2">
+                          <div className="flex gap-2">
+                            <Input
+                              value={sellingPointKeyword}
+                              onChange={(e) => setSellingPointKeyword(e.target.value)}
+                              placeholder="e.g., incentives, talent, proximity..."
+                              className="text-sm bg-white"
+                            />
+                            <Button size="sm" onClick={generateSellingPoint} disabled={!sellingPointKeyword || loading === 'selling'}>
+                              {loading === 'selling' ? <RefreshCw className="h-3 w-3 animate-spin" /> : <Sparkles className="h-3 w-3" />}
+                            </Button>
+                          </div>
+                          {sellingPointText && (
+                            <p className="text-sm text-slate-600 p-2 bg-white rounded border">{sellingPointText}</p>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  </>
                 )}
               </CardContent>
             </Card>
 
-            {/* Close */}
-            <Card>
+            {/* PARAGRAPH 3 - Green */}
+            <Card className="border-l-4 border-l-green-400 bg-green-50/30">
               <CardHeader className="py-3">
                 <div className="flex items-center justify-between">
-                  <CardTitle className="text-sm font-medium text-slate-700">Close / CTA</CardTitle>
+                  <CardTitle className="text-sm font-medium text-slate-700 flex items-center gap-2">
+                    <span className="w-6 h-6 rounded-full bg-green-400 text-white text-xs flex items-center justify-center font-bold">3</span>
+                    Close / CTA
+                  </CardTitle>
                   <div className="flex items-center gap-2">
                     {closeSnippets.length > 0 && (
                       <Select onValueChange={(id) => {
@@ -440,7 +453,7 @@ export function EmailBuilder({ company, signals, open, onOpenChange }: EmailBuil
               </CardHeader>
               <CardContent className="pt-0">
                 {editingSection === 'close' ? (
-                  <Textarea value={close} onChange={(e) => setClose(e.target.value)} className="min-h-[40px] text-sm" />
+                  <Textarea value={close} onChange={(e) => setClose(e.target.value)} className="min-h-[40px] text-sm bg-white" />
                 ) : (
                   <p className="text-sm text-slate-600 whitespace-pre-wrap min-h-[30px]">
                     {close || <span className="text-slate-400 italic">Select saved close or generate one</span>}
@@ -505,8 +518,10 @@ export function EmailBuilder({ company, signals, open, onOpenChange }: EmailBuil
               </CardHeader>
               <CardContent>
                 {fullEmail ? (
-                  <div className="text-sm text-slate-700 whitespace-pre-wrap leading-relaxed bg-slate-50 p-4 rounded-lg border min-h-[200px]">
-                    {fullEmail}
+                  <div className="text-sm text-slate-700 leading-relaxed bg-slate-50 p-4 rounded-lg border min-h-[200px] space-y-3">
+                    {intro && <p className="border-l-2 border-blue-400 pl-2">{intro}</p>}
+                    {paragraph2 && <p className="border-l-2 border-orange-400 pl-2">{paragraph2}</p>}
+                    {close && <p className="border-l-2 border-green-400 pl-2">{close}</p>}
                   </div>
                 ) : (
                   <div className="text-sm text-slate-400 italic bg-slate-50 p-4 rounded-lg border min-h-[200px]">
