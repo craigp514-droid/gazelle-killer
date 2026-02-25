@@ -228,21 +228,16 @@ export function EmailOnboarding({ open, onComplete }: EmailOnboardingProps) {
                     placeholder="https://yourorg.com"
                     value={data.orgWebsite}
                     onChange={(e) => updateData({ orgWebsite: e.target.value })}
+                    onBlur={() => {
+                      if (data.orgWebsite && !data.orgName) {
+                        scrapeWebsite()
+                      }
+                    }}
                   />
-                  <Button
-                    variant="outline"
-                    onClick={scrapeWebsite}
-                    disabled={!data.orgWebsite || scraping}
-                  >
-                    {scraping ? (
-                      <Loader2 className="h-4 w-4 animate-spin" />
-                    ) : (
-                      <Globe className="h-4 w-4" />
-                    )}
-                  </Button>
+                  {scraping && <Loader2 className="h-4 w-4 animate-spin self-center" />}
                 </div>
                 <p className="text-xs text-slate-500 mt-1">
-                  We'll extract key info to help personalize your outreach
+                  We'll auto-populate your org info from your website — you can edit after
                 </p>
               </div>
 
