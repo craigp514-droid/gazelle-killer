@@ -494,7 +494,14 @@ export function EmailBuilder({ company, signals, open, onOpenChange }: EmailBuil
             {/* Full Email Preview */}
             <Card>
               <CardHeader className="pb-3">
-                <CardTitle className="text-sm font-medium">Email Preview</CardTitle>
+                <div className="flex items-center justify-between">
+                  <CardTitle className="text-sm font-medium">Email Preview</CardTitle>
+                  {fullEmail && (
+                    <Button size="sm" variant="outline" onClick={copyToClipboard} className="h-7 text-xs">
+                      {copied ? <><Check className="h-3 w-3 mr-1" /> Copied</> : <><Copy className="h-3 w-3 mr-1" /> Copy</>}
+                    </Button>
+                  )}
+                </div>
               </CardHeader>
               <CardContent>
                 {fullEmail ? (
