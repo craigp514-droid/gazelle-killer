@@ -271,13 +271,13 @@ export function EmailOnboarding({ open, onComplete }: EmailOnboardingProps) {
               <div>
                 <Label htmlFor="valueProps">
                   {data.orgType === 'edo' 
-                    ? 'Key Incentives & Benefits' 
+                    ? 'Key Differentiators' 
                     : 'Your Services & Value Proposition'}
                 </Label>
                 <Textarea
                   id="valueProps"
                   placeholder={data.orgType === 'edo'
-                    ? "e.g., Fast-track permitting, workforce training grants, tax abatements..."
+                    ? "e.g., Strong automotive supply chain, skilled manufacturing workforce, speed to market..."
                     : "e.g., Site selection, incentive negotiation, real estate advisory..."
                   }
                   value={data.orgValueProps}
@@ -285,6 +285,11 @@ export function EmailOnboarding({ open, onComplete }: EmailOnboardingProps) {
                   className="mt-1"
                   rows={3}
                 />
+                {data.orgType === 'edo' && (
+                  <p className="text-xs text-slate-500 mt-1">
+                    List what makes your region stand out — industry-specific strengths (e.g., "EV battery supply chain") or general advantages (e.g., "central US location, low cost of living")
+                  </p>
+                )}
               </div>
             </div>
 
