@@ -30,6 +30,7 @@ import {
   Plus,
 } from 'lucide-react'
 import { EmailOnboarding } from './email-onboarding'
+import { ContextEditor } from './context-editor'
 
 interface Company {
   id: string
@@ -297,10 +298,13 @@ export function EmailBuilder({ company, signals, open, onOpenChange }: EmailBuil
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-5xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
-          <DialogTitle className="flex items-center gap-2">
-            <Sparkles className="h-5 w-5 text-orange-500" />
-            Outreach Builder — {company.name}
-          </DialogTitle>
+          <div className="flex items-center justify-between">
+            <DialogTitle className="flex items-center gap-2">
+              <Sparkles className="h-5 w-5 text-orange-500" />
+              Outreach Builder — {company.name}
+            </DialogTitle>
+            <ContextEditor />
+          </div>
         </DialogHeader>
 
         <div className="grid gap-6 lg:grid-cols-3">
