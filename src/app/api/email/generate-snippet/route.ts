@@ -78,18 +78,34 @@ Examples:
 Write only the closing paragraph, nothing else.`
   }
 
-  try {
-    const message = await anthropic.messages.create({
-      model: 'claude-sonnet-4-20250514',
-      max_tokens: 200,
-      messages: [{ role: 'user', content: prompt }]
-    })
+  // Retry logic for overloaded errors
+  const maxRetries = 3
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      const message = await anthropic.messages.create({
+        model: 'claude-sonnet-4-20250514',
+        max_tokens: 200,
+        messages: [{ role: 'user', content: prompt }]
+      })
 
-    return NextResponse.json({
-      content: (message.content[0] as any).text.trim()
-    })
-  } catch (error: any) {
-    console.error('Generate snippet error:', error)
-    return NextResponse.json({ error: error.message }, { status: 500 })
+      return NextResponse.json({
+        content: (message.content[0] as any).text.trim()
+      })
+    } catch (error: any) {
+      console.error(`Generate snippet error (attempt ${attempt}):`, error)
+      
+      if (error?.status === 529 && attempt < maxRetries) {
+        await new Promise(r => setTimeout(r, 1000 * attempt))
+        continue
+      }
+      
+      if (error?.status === 529) {
+        return NextResponse.json({ error: 'AI is busy — please try again in a moment' }, { status: 503 })
+      }
+      
+      return NextResponse.json({ error: error.message || 'Failed to generate' }, { status: 500 })
+    }
   }
+  
+  return NextResponse.json({ error: 'Failed after retries' }, { status: 500 })
 }
