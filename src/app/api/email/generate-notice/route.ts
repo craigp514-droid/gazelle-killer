@@ -16,6 +16,19 @@ export async function POST(request: NextRequest) {
 
   const { company, signals } = await request.json()
 
+  // Get user's org context for relevance
+  const { data: profile } = await supabase
+    .from('profiles')
+    .select('org_type, org_name, org_region, org_value_props')
+    .eq('id', user.id)
+    .single()
+
+  const orgContext = profile?.org_type === 'edo'
+    ? `an Economic Development Organization in ${profile?.org_region || 'their region'}`
+    : 'a site selection consultant'
+  const orgValueProps = profile?.org_value_props || ''
+  const orgRegion = profile?.org_region || ''
+
   const anthropic = new Anthropic({
     apiKey: process.env.ANTHROPIC_API_KEY,
   })
@@ -57,56 +70,66 @@ GOOD EXAMPLES:
 Write only the statement, nothing else.`
 
   } else if (hasMessagingHook || hasLinkedIn) {
-    // FALLBACK: No signals but we have company context
-    prompt = `Write a context statement for a cold email to ${company.name}. We don't have specific news, but reference what makes them interesting and connect it to potential growth.
+    // FALLBACK: No signals but we have company context - connect to org
+    prompt = `Write a context statement for a cold email to ${company.name} from ${orgContext}.
+
+We don't have specific news about them, but we know what they do. Reference their business and connect it to why our region/services might be relevant.
 
 Company info:
 - Industry: ${company.industry || 'Unknown'}
 - Location: ${company.hq_state || 'Unknown'}
 ${company.messaging_hook ? `- What makes them interesting: ${company.messaging_hook}` : ''}
-${company.linkedin_description ? `- About them: ${company.linkedin_description.slice(0, 300)}` : ''}
+${company.linkedin_description ? `- What they do: ${company.linkedin_description.slice(0, 300)}` : ''}
+
+Our org context:
+- We are: ${orgContext}
+${orgRegion ? `- Our region: ${orgRegion}` : ''}
+${orgValueProps ? `- Our strengths: ${orgValueProps}` : ''}
 
 STRICT RULES:
 1. NEVER use em-dashes (—) or double hyphens (--)
-2. Reference their business, technology, or market position
-3. Connect it to potential GROWTH or expansion
-4. Can be a statement OR a question
-5. ONE or TWO sentences max, under 35 words
-6. Sound natural and human, not generic
+2. Reference what THEY do specifically (their product, technology, market)
+3. Connect it to why OUR region or services might be relevant to them
+4. Imply potential for growth/expansion
+5. Can be a statement OR a question
+6. ONE or TWO sentences max, under 35 words
+7. Sound natural and human
 
 GOOD EXAMPLES:
-- "I've been following the [industry] space and your approach to [specific thing] stands out. Curious if growth is on the horizon?"
-- "Your work in [specific area] caught my attention. Are you exploring new markets or locations?"
-- "I came across your platform and the [specific capability] seems like it could scale. Any expansion plans brewing?"
-
-BAD (never do this):
-- Generic "I noticed your company" without specifics
-- Em-dashes
-- Overly formal or salesy language
+- "Your work in autonomous robotics caught my eye. Our region has a growing manufacturing cluster that might be relevant if you're scaling."
+- "I came across your semiconductor platform. We've been working with similar companies on expansion projects in ${orgRegion || 'our region'}."
+- "Your approach to [specific thing] stands out. Curious if you're exploring new locations? We work with companies in your space."
 
 Write only the statement, nothing else.`
 
   } else {
-    // LAST RESORT: Only have industry - use industry trends
-    prompt = `Write a context statement for a cold email to ${company.name}. We don't have specific news about them, so reference industry trends and connect it to their potential growth.
+    // LAST RESORT: Only have industry - connect industry to org relevance
+    prompt = `Write a context statement for a cold email to ${company.name} from ${orgContext}.
+
+We don't have specific news or details about them, just their industry. Reference industry activity and connect it to why our region/services might be relevant.
 
 Company info:
 - Company: ${company.name}
 - Industry: ${company.industry || 'Technology'}
 - Location: ${company.hq_state || 'Unknown'}
 
+Our org context:
+- We are: ${orgContext}
+${orgRegion ? `- Our region: ${orgRegion}` : ''}
+${orgValueProps ? `- Our strengths: ${orgValueProps}` : ''}
+
 STRICT RULES:
 1. NEVER use em-dashes (—) or double hyphens (--)
-2. Reference industry momentum or trends, not the specific company
-3. Connect it to THEIR potential growth or expansion
-4. Can be a statement OR a question
+2. Reference the industry and general growth trends
+3. Connect it to why OUR region or services might be relevant
+4. Ask about their growth/expansion plans
 5. ONE or TWO sentences max, under 35 words
 6. Sound natural and human
 
 GOOD EXAMPLES:
-- "I've been tracking the ${company.industry || 'tech'} space and there's a lot of expansion activity. Is growth on your radar too?"
-- "The ${company.industry || 'industry'} sector has been heating up lately. Curious if you're planning any expansion?"
-- "With all the momentum in ${company.industry || 'your space'}, I'm reaching out to companies that might be scaling. Are you exploring new locations?"
+- "I've been tracking the ${company.industry || 'tech'} space and there's been a lot of expansion activity. Our region has been a destination for similar companies."
+- "With the momentum in ${company.industry || 'your industry'}, I wanted to reach out. We work with companies exploring new locations."
+- "The ${company.industry || 'sector'} has been growing fast. Curious if expansion is on your radar? Our region might be a fit."
 
 Write only the statement, nothing else.`
   }
