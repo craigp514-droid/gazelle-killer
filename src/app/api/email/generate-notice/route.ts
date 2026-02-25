@@ -23,7 +23,7 @@ export async function POST(request: NextRequest) {
   // Build context about the company
   const signalInfo = signals?.slice(0, 3).map((s: any) => `${s.signal_type}: ${s.title}`).join('\n') || ''
   
-  const prompt = `Write a single "I noticed..." statement for a cold email to ${company.name}.
+  const prompt = `Write a context statement for a cold email to ${company.name} that references something specific and connects it to potential growth.
 
 Company info:
 - Industry: ${company.industry || 'Unknown'}
@@ -31,17 +31,27 @@ Company info:
 ${company.messaging_hook ? `- Key angle: ${company.messaging_hook}` : ''}
 ${signalInfo ? `\nRecent signals:\n${signalInfo}` : ''}
 
-Requirements:
-- Start with "I noticed..." or "I came across..." or "I saw that..."
-- Reference something SPECIFIC (a signal, funding round, expansion news, industry trend, etc.)
-- ONE sentence only, under 25 words
-- Sound natural and human
-- Do NOT pitch anything — just show you did your homework
+STRICT RULES:
+1. NEVER use em-dashes (—) or double hyphens (--)
+2. VARY the opener. Pick ONE randomly from: "I just came across", "I saw", "I noticed", "I read about", "I caught wind of", "Your recent", "Saw the news about", "Just read about"
+3. Reference something SPECIFIC (funding round with amount, partnership, expansion news, product launch, etc.)
+4. Connect it to potential GROWTH - imply you see it as a signal they might expand
+5. Can be a statement OR a question (mix it up)
+6. ONE or TWO sentences max, under 35 words total
+7. Sound natural and human, like a real person wrote it
 
-Examples of good statements:
-- "I noticed your recent Series B and the expansion plans mentioned in the announcement."
-- "I came across the news about your new manufacturing partnership with [Partner]."
-- "I saw that you're scaling up production capacity — exciting growth."
+GOOD EXAMPLES:
+- "I just came across your $100M Series C and I'd love to learn about your outlook for growth."
+- "Saw the news about your partnership with [Partner]. Could that lead to expanding operations?"
+- "I noticed your recent funding round. Curious if that's fueling any expansion plans?"
+- "Your capacity expansion announcement caught my eye. Are you looking at new locations?"
+- "Just read about your Series B. Sounds like you might be scaling up soon?"
+
+BAD (never do this):
+- "I noticed your recent Series B — exciting growth ahead." (em-dash = AI giveaway)
+- Starting every message with "I noticed"
+- Generic statements without specific details
+- No connection to growth/expansion
 
 Write only the statement, nothing else.`
 

@@ -40,7 +40,8 @@ export async function POST(request: NextRequest) {
     if (orgType === 'edo') {
       prompt = `Write a short, professional intro paragraph (2-3 sentences) for a cold email from an economic development professional at "${orgName || 'an EDO'}" in ${orgRegion || 'their region'}.
 
-The intro should:
+STRICT RULES:
+- NEVER use em-dashes (—) or double hyphens (--). Use commas or periods instead.
 - Be warm but professional
 - Mention they came across the company
 - NOT mention specific company details (that comes in paragraph 2)
@@ -52,27 +53,29 @@ Write only the intro paragraph, nothing else.`
     } else {
       prompt = `Write a short, professional intro paragraph (2-3 sentences) for a cold email from a site selection consultant or service provider at "${orgName || 'a consulting firm'}".
 
-The intro should:
+STRICT RULES:
+- NEVER use em-dashes (—) or double hyphens (--). Use commas or periods instead.
 - Be warm but professional  
 - Position them as a helpful resource
 - NOT mention specific company details (that comes in paragraph 2)
 - Be under 40 words
 
-Example tone: "Hi [Name], I'm [Your Name] with [Firm]. We help companies navigate site selection and expansion decisions, and I noticed [Company] might be exploring new locations."
+Example tone: "Hi [Name], I'm [Your Name] with [Firm]. We help companies navigate site selection and expansion decisions. I noticed [Company] might be exploring new locations."
 
 Write only the intro paragraph, nothing else.`
     }
   } else if (type === 'close') {
     prompt = `Write a short, low-pressure closing paragraph (1-2 sentences) for a cold email.
 
-The close should:
+STRICT RULES:
+- NEVER use em-dashes (—) or double hyphens (--). Use commas or periods instead.
 - Ask for a brief call or meeting
 - Be friendly, not pushy
 - Be under 25 words
 
 Examples:
 - "Worth a 15-minute call to explore?"
-- "Happy to share more if helpful — would a quick call work?"
+- "Happy to share more if helpful. Would a quick call work?"
 - "Open to a brief chat? I can work around your schedule."
 
 Write only the closing paragraph, nothing else.`

@@ -350,10 +350,10 @@ export function EmailBuilder({ company, signals, open, onOpenChange }: EmailBuil
                   />
                 ) : (
                   <>
-                    {/* Talking Point Generator */}
+                    {/* Context Statement Generator */}
                     <div className="space-y-2">
                       <div className="flex items-center justify-between">
-                        <p className="text-xs text-slate-500 font-medium">Talking Point</p>
+                        <p className="text-xs text-slate-500 font-medium">What caught your attention?</p>
                         <Button size="sm" variant="outline" onClick={generateNotice} disabled={loading !== null} className="h-7 text-xs bg-white">
                           {loading === 'notice' ? <RefreshCw className="h-3 w-3 animate-spin mr-1" /> : <Sparkles className="h-3 w-3 mr-1" />}
                           Generate
@@ -362,7 +362,7 @@ export function EmailBuilder({ company, signals, open, onOpenChange }: EmailBuil
                       {noticeStatement ? (
                         <p className="text-sm text-slate-600 p-2 bg-white rounded border">{noticeStatement}</p>
                       ) : (
-                        <p className="text-sm text-slate-400 italic p-2">Click Generate — AI creates a relevant talking point from signals or company info</p>
+                        <p className="text-sm text-slate-400 italic p-2">Click Generate — AI references a signal and connects it to potential growth</p>
                       )}
                     </div>
 

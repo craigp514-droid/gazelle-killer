@@ -36,7 +36,8 @@ export async function POST(request: NextRequest) {
 Context: The email is to ${company.name} (${company.industry || 'a company'}).
 The user wants to mention "${keyword}" as a selling point.
 
-Requirements:
+STRICT RULES:
+- NEVER use em-dashes (—) or double hyphens (--). Use commas or periods instead.
 - ONE sentence, under 20 words
 - Mention the keyword naturally
 - Be specific, not generic
@@ -47,7 +48,7 @@ Examples based on different keywords:
 - "incentives" → "We have some competitive incentive programs that might be relevant to your timeline."
 - "talent" → "Our region has a strong pipeline of engineering talent from three nearby universities."
 - "proximity" → "We're within a day's drive of 60% of the US population."
-- "speed" → "Our permitting process typically moves faster than most — happy to share specifics."
+- "speed" → "Our permitting process typically moves faster than most. Happy to share specifics."
 
 Write only the sentence, nothing else.`
 
