@@ -1,11 +1,12 @@
 /**
  * Import Clay enrichment data from Google Sheet
- * Reads from "Clay-Enrichment-Output" sheet and updates company records
+ * OPTIMIZED: Only processes companies that need enrichment
  * 
- * Expected columns:
- * company_slug, linkedin_url, linkedin_description, employee_range,
- * employee_count, website, founded_date, locality, industry,
- * follower_count, enriched_at (maps to linkedin_last_updated in DB)
+ * Logic:
+ * 1. Get companies where last_enriched_at is NULL (never enriched)
+ * 2. Build lookup by slug/name
+ * 3. Scan Clay sheet for matches
+ * 4. Update only those companies
  */
 const { google } = require('googleapis');
 const { createClient } = require('@supabase/supabase-js');
@@ -17,7 +18,6 @@ const supabase = createClient(
   process.env.SUPABASE_SERVICE_ROLE_KEY
 );
 
-// Google OAuth setup
 const oauth2Client = new google.auth.OAuth2(
   process.env.GOOGLE_CLIENT_ID,
   process.env.GOOGLE_CLIENT_SECRET
@@ -26,11 +26,9 @@ oauth2Client.setCredentials({
   refresh_token: process.env.GOOGLE_REFRESH_TOKEN
 });
 
-// Employee range normalization
 function normalizeEmployeeRange(range, count) {
   const countNum = parseInt(count);
   if (countNum) {
-    // If we have exact count, derive correct range
     if (countNum <= 10) return '1-10';
     if (countNum <= 50) return '11-50';
     if (countNum <= 200) return '51-200';
@@ -43,10 +41,52 @@ function normalizeEmployeeRange(range, count) {
   return range || null;
 }
 
+function slugify(str) {
+  return str?.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || '';
+}
+
 async function importClayEnrichment() {
-  const sheets = google.sheets({ version: 'v4', auth: oauth2Client });
-  
-  // Find the Clay-Enrichment-Output sheet
+  console.log('📊 Clay Enrichment Import (Optimized)\n');
+
+  // STEP 1: Get companies that need enrichment
+  console.log('Step 1: Finding companies that need enrichment...');
+  const { data: companies, error: dbError } = await supabase
+    .from('companies')
+    .select('id, name, slug, website')
+    .is('last_enriched_at', null);
+
+  if (dbError) {
+    console.error('❌ Database error:', dbError.message);
+    return;
+  }
+
+  if (!companies?.length) {
+    console.log('✅ All companies already enriched. Nothing to do.');
+    return;
+  }
+
+  console.log(`Found ${companies.length} companies needing enrichment\n`);
+
+  // STEP 2: Build lookup maps
+  const bySlug = new Map();
+  const byName = new Map();
+  const byFirstWord = new Map();
+
+  for (const c of companies) {
+    const slug = slugify(c.name);
+    bySlug.set(slug, c);
+    bySlug.set(c.slug, c);
+    byName.set(c.name.toLowerCase(), c);
+    
+    const firstWord = c.name.split(/[\s\/\-]+/)[0].toLowerCase();
+    if (firstWord.length >= 3) {
+      if (!byFirstWord.has(firstWord)) byFirstWord.set(firstWord, []);
+      byFirstWord.get(firstWord).push(c);
+    }
+  }
+
+  // STEP 3: Find Clay sheet
+  console.log('Step 2: Reading Clay sheet...');
   const drive = google.drive({ version: 'v3', auth: oauth2Client });
   const { data: files } = await drive.files.list({
     q: "name = 'Clay-Enrichment-Output' and mimeType = 'application/vnd.google-apps.spreadsheet'",
@@ -54,14 +94,13 @@ async function importClayEnrichment() {
   });
 
   if (!files.files?.length) {
-    console.log('❌ Sheet "Clay-Enrichment-Output" not found in Drive');
+    console.log('❌ Sheet "Clay-Enrichment-Output" not found');
     return;
   }
 
   const sheetId = files.files[0].id;
-  console.log(`📊 Found sheet: ${files.files[0].name} (${sheetId})\n`);
+  const sheets = google.sheets({ version: 'v4', auth: oauth2Client });
 
-  // Read the data
   const { data: sheetData } = await sheets.spreadsheets.values.get({
     spreadsheetId: sheetId,
     range: 'Sheet1!A:O',
@@ -69,130 +108,123 @@ async function importClayEnrichment() {
 
   const rows = sheetData.values || [];
   if (rows.length <= 1) {
-    console.log('No data rows found (only header or empty)');
+    console.log('No data in Clay sheet');
     return;
   }
 
   const header = rows[0];
   const dataRows = rows.slice(1);
-  
-  console.log(`Found ${dataRows.length} rows to process\n`);
+  console.log(`Clay sheet has ${dataRows.length} rows\n`);
 
   // Map header to indices
   const colIndex = {};
   header.forEach((col, i) => { colIndex[col.toLowerCase().replace(/\s+/g, '_')] = i; });
 
-  let updated = 0;
+  // STEP 4: Match and collect updates
+  console.log('Step 3: Matching companies...');
+  let matched = 0;
   let skipped = 0;
-  let notFound = 0;
+  const updates = [];
 
   for (const row of dataRows) {
-    const slug = row[colIndex['company_slug']];
-    if (!slug) {
-      skipped++;
-      continue;
+    const clayName = row[colIndex['company_slug']] || row[colIndex['company_name']] || row[colIndex['name']];
+    if (!clayName) continue;
+
+    // Try to find matching company
+    const slug = slugify(clayName);
+    let company = bySlug.get(slug) || byName.get(clayName.toLowerCase());
+    
+    // Fallback: first word match
+    if (!company) {
+      const firstWord = clayName.split(/[\s\/\-]+/)[0].toLowerCase();
+      const candidates = byFirstWord.get(firstWord);
+      if (candidates?.length === 1) company = candidates[0];
     }
 
-    // Find company by slug first, then by name, then by partial match
-    const slugified = slug.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-    
-    let { data: company } = await supabase
-      .from('companies')
-      .select('id, name, last_enriched_at')
-      .eq('slug', slugified)
-      .single();
-    
-    // Fallback: exact name match (case-insensitive)
-    if (!company) {
-      const { data: byName } = await supabase
-        .from('companies')
-        .select('id, name, last_enriched_at')
-        .ilike('name', slug);
-      company = byName?.[0];
-    }
-    
-    // Fallback: partial name match (first word)
-    if (!company) {
-      const firstWord = slug.split(/[\s\/\-]+/)[0];
-      if (firstWord.length >= 3) {
-        const { data: byPartial } = await supabase
-          .from('companies')
-          .select('id, name, last_enriched_at')
-          .ilike('name', firstWord + '%');
-        company = byPartial?.[0];
-      }
-    }
+    if (!company) continue; // Not a company we need to enrich
 
-    if (!company) {
-      console.log(`⚠ Company not found: ${slug}`);
-      notFound++;
-      continue;
-    }
-
-    // Build update object (only non-empty fields)
-    const updates = {};
+    // Build update
+    const update = { id: company.id, name: company.name };
     
     const linkedinUrl = row[colIndex['linkedin_url']];
-    if (linkedinUrl) updates.linkedin_url = linkedinUrl;
+    if (linkedinUrl) update.linkedin_url = linkedinUrl;
     
     const linkedinDesc = row[colIndex['linkedin_description']];
-    if (linkedinDesc) updates.linkedin_description = linkedinDesc;
+    if (linkedinDesc) update.linkedin_description = linkedinDesc;
     
     const employeeRange = row[colIndex['employee_range']];
     const employeeCount = row[colIndex['employee_count']];
     const normalizedRange = normalizeEmployeeRange(employeeRange, employeeCount);
-    if (normalizedRange) updates.employee_range = normalizedRange;
-    if (employeeCount) updates.employee_count = parseInt(employeeCount) || null;
+    if (normalizedRange) update.employee_range = normalizedRange;
+    if (employeeCount) update.employee_count = parseInt(employeeCount) || null;
     
     const website = row[colIndex['website']];
-    if (website) updates.website = website;
+    if (website && !company.website) update.website = website;
     
     const foundedDate = row[colIndex['founded_date']];
-    if (foundedDate) updates.founded_year = parseInt(foundedDate) || null;
+    if (foundedDate) update.founded_year = parseInt(foundedDate) || null;
     
     const locality = row[colIndex['locality']];
     if (locality) {
-      // Try to parse "City, State" or "City, State, Country"
       const parts = locality.split(',').map(p => p.trim());
       if (parts.length >= 2) {
-        if (!updates.hq_city) updates.hq_city = parts[0];
-        if (!updates.hq_state) updates.hq_state = parts[1];
+        update.hq_city = parts[0];
+        update.hq_state = parts[1];
       }
     }
     
     const followerCount = row[colIndex['follower_count']];
-    if (followerCount) updates.linkedin_followers = parseInt(followerCount) || null;
+    if (followerCount) update.linkedin_followers = parseInt(followerCount) || null;
     
-    // enriched_at in sheet = when LinkedIn was last updated (data freshness)
     const enrichedAt = row[colIndex['enriched_at']];
-    if (enrichedAt) updates.linkedin_last_updated = enrichedAt;
+    if (enrichedAt) update.linkedin_last_updated = enrichedAt;
     
-    // Always update last_enriched_at
-    updates.last_enriched_at = new Date().toISOString();
+    update.last_enriched_at = new Date().toISOString();
 
-    if (Object.keys(updates).length === 1) {
-      // Only last_enriched_at, no actual data
-      skipped++;
-      continue;
+    // Only add if we have actual data (not just last_enriched_at)
+    if (Object.keys(update).length > 3) {
+      updates.push(update);
+      matched++;
+      // Remove from lookup to avoid duplicate processing
+      bySlug.delete(slug);
+      byName.delete(company.name.toLowerCase());
     }
+  }
 
+  console.log(`Matched ${matched} companies with Clay data\n`);
+
+  // STEP 5: Apply updates
+  if (updates.length === 0) {
+    console.log('No updates to apply.');
+    return;
+  }
+
+  console.log('Step 4: Applying updates...');
+  let updated = 0;
+  let failed = 0;
+
+  for (const u of updates) {
+    const { id, name, ...fields } = u;
     const { error } = await supabase
       .from('companies')
-      .update(updates)
-      .eq('id', company.id);
+      .update(fields)
+      .eq('id', id);
 
     if (error) {
-      console.log(`✗ Failed to update ${company.name}: ${error.message}`);
+      console.log(`✗ ${name}: ${error.message}`);
+      failed++;
     } else {
-      console.log(`✓ Updated: ${company.name}`);
+      console.log(`✓ ${name}`);
       updated++;
     }
   }
 
   console.log(`\n--- Summary ---`);
+  console.log(`Companies needing enrichment: ${companies.length}`);
+  console.log(`Matched in Clay: ${matched}`);
   console.log(`Updated: ${updated}`);
-  console.log(`Skipped: ${skipped}`);
-  console.log(`Not found: ${notFound}`);
+  console.log(`Failed: ${failed}`);
+  console.log(`Still need enrichment: ${companies.length - updated}`);
 }
 
 importClayEnrichment().catch(console.error);
